@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
-
 load_dotenv()
 
 # --------------------------------------------------
@@ -15,7 +14,7 @@ sqlserver_connection_url = (
     f"mssql+pyodbc://@{SQL_SERVER_NAME}/{SQL_SERVER_DATABASE}?driver={SQL_SERVER_DRIVER}&{SQL_SERVER_AUTH}"
 )
 
-sql_server_engine = create_engine(sqlserver_connection_url, fast_executemany=True)
+SQL_SERVER_ENGINE = create_engine(sqlserver_connection_url, fast_executemany=True)
 
 
 

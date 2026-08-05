@@ -6,24 +6,25 @@
 #----------------------------------------------------------------------------------------
     #Source_1 (SQL Server)
 #----------------------------------------------------------------------------------------
-COMPANY_TYPES = ["Buyer", "Supplier", "Distributor", "Retailer", "Manufacturer"]
+COMPANY_TYPES = ["Buyer", "Supplier"]
+COMPANY_TYPE_WEIGHTS = [70, 30]
 ORDER_STATUS = ['Confirmed',"Pending","Processing","Shipped","Delivered","Cancelled"]
 ORDER_STATUS_WEIGHTS = [10, 5, 10, 20, 50, 5]
 PAYMENT_STATUS = ["pending", "paid", "failed", "refunded"]
 PAYMENT_STATUS_WEIGHTS = [10, 82, 3, 5]
 OPERATING_LOCATIONS = {                        # Used for weighted geographic distribution and Faker locale selection
-    "US": {
+    "United States": {
         "locale": "en_US",
         "weight": 70,
         "cities_hq": ["New York", "Chicago", "Dallas", "Austin", "Seattle"]
     },
-    "UK": {
+    "United Kingdom": {
         "locale": "en_GB",
         "weight": 20,
         "cities_hq": ["London","Manchester","Birmingham"]
     },
 
-    "AUS": {
+    "Australia": {
         "locale": "en_AU",
         "weight": 10,
         "cities_hq": ["Sydney","Melbourne","Brisbane"]
@@ -31,31 +32,74 @@ OPERATING_LOCATIONS = {                        # Used for weighted geographic di
 }
 
 DOMAINS = ["gmail.com", "outlook.com", "yahoo.com", "hotmail.com"]
+GENDERS = ["Male", "Female"]
+
+JOB_TITLES = [
+    "CEO",
+    "CFO",
+    "Procurement Manager",
+    "Purchasing Officer",
+    "Sales Manager",
+    "Operations Manager",
+    "Supply Chain Manager",
+    "Warehouse Manager",
+    "Inventory Manager",
+    "IT Manager",
+    "Finance Manager",
+    "Marketing Manager",
+    "HR Manager"
+]
 
 
 #-----------------------------------------------------------------------------------------
     #Source_2 (Web Logs)
 #----------------------------------------------------------------------------------------
+REFERERS = ['https://google.com', 'https://bing.com', 'https://twitter.com']
 HTTP_METHODS = ["GET","POST","PUT","DELETE"]
 STATUS_CODES = [200, 201, 301, 400, 401, 403, 404, 500]
 STATUS_CODE_WEIGHTS = [70, 5, 5, 5, 3, 2, 8, 2]
-
+REQUEST_PATHS = ["/", "/login", "/products", "/products/123", "/api/customers", "/api/orders", "/checkout", "/search?q=laptop"]
+BOT_USER_AGENTS = ["Googlebot","Bingbot", "curl","PostmanRuntime"]
 
 
 #----------------------------------------------------------------------------------------
     #Source_3 (Marketing Leads)
 #----------------------------------------------------------------------------------------
-SOURCES = ["Google Ads", "Facebook Ads", "LinkedIn", "Website", "Referral", "Email Campaign"]
+# Where the business says the lead came from
+LEAD_SOURCES = ["Website", "Referral", "Cold Call", "Trade Show", "Email Campaign", "Partner"]
 
-CAMPAIGNS = ["Summer Sale", "Enterprise Growth", "Product Launch", "Holiday Promotion", "Free Trial Campaign"]
+# Digital platform that generated the visit
+UTM_SOURCES = ["google", "facebook", "linkedin", "bing", "newsletter"]
+
+# Marketing channel/type
+UTM_MEDIUMS = ["organic", "cpc", "email", "social", "referral"]
+
+CAMPAIGNS = ["Summer Sale", "Enterprise Growth", "Product Launch", "Holiday Promotion", "Free Trial Campaign", "Industry Expo", "Referral Drive"]
 
 COMPANY_SIZES = ["1-10", "11-50", "51-200", "201-500", "500+"]
+COMPANY_SIZE_WEIGHTS = [30, 30, 20, 12, 8]
+ORDER_VALUE_RANGE = {
+    "1-10": (1_000, 10_000),
+    "11-50": (10_000, 50_000),
+    "51-200": (50_000, 150_000),
+    "201-500": (150_000, 500_000),
+    "500+": (500_000, 2_000_000)
+}
 
-INDUSTRIES = ["Technology", "Healthcare", "Finance", "Retail", "Manufacturing", "Education"]
+INDUSTRIES = ["Technology", "Healthcare", "Finance", "Retail", "Manufacturing", "Education","Construction","Logistics","Energy", "Hospitality"]
 
 FUNNEL_STAGES = ["New", "Contacted", "Qualified", "Proposal", "Negotiation", "Won", "Lost"]
+FUNNEL_STAGE_WEIGHTS = [35,25,15,10,8,4,3]
+FUNNEL_SCORE_RANGE = {
+    "New": (1, 16),
+    "Contacted": (17, 32),
+    "Qualified": (33, 48),
+    "Proposal": (49, 64),
+    "Negotiation": (65, 80),
+    "Won": (81, 100),
+    "Lost": (1, 80)
+}
 
-MEDIUM = ["cpc", "email", "social", "organic"]
 
 PRODUCT_TEMPLATES = {
     "Electronics" : ["Laptop", "Smartphone", "Wireless Headphones", "Keyboard", "Monitor", "Smart Watch", "Printer", "Mouse"],
@@ -108,7 +152,21 @@ PRODUCT_BRANDS = {
 }
    
 
-PRODUCT_VARIANTS = ["Standard","Business","Professional","Enterprise","Premium"]
+PRODUCT_VARIANTS = ["Basic","Standard","Premium"]
+
+
+PRICE_RANGES = {
+    "Electronics": (300, 2500),
+    "Furniture": (100, 1500),
+    "Clothing": (15, 200),
+    "Food": (2, 100),
+    "Automotive": (20, 800),
+    "Office Supplies": (1, 50),
+    "Industrial Equipment": (500, 10000),
+    "Medical": (5, 5000),
+    "Hardware": (40, 3000),
+    "Software": (50, 5000)
+}
 
 
 DEVICE_TYPES = ["Desktop","Mobile","Tablet"]
@@ -121,7 +179,7 @@ BROWSER_WEIGHTS = [65, 15, 10, 10]
 BUSINESS_HOURS = {"start": 8,  "end": 18}
 
 
-BOT_USER_AGENTS = ["Googlebot","Bingbot", "curl","PostmanRuntime"]
+
 
 
 

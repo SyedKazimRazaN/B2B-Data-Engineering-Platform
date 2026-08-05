@@ -1,0 +1,2971 @@
+2026-08-01 21:44:28,483 | INFO |test | 48 | Logger is working!
+2026-08-01 21:54:44,362 | INFO |test | 51 | Logger is working!
+2026-08-01 21:55:00,293 | INFO |test | 51 | Logger initialized successfully!
+2026-08-03 07:13:27,934 | INFO |__main__ | 169 | Generating Categories.....
+2026-08-03 07:13:27,971 | INFO |__main__ | 194 | Generated 10 categories
+2026-08-03 07:13:27,971 | INFO |__main__ | 195 | Categories data set generated succesfully
+2026-08-03 07:13:27,971 | INFO |__main__ | 196 | Returning Categories Data set....
+2026-08-03 07:13:27,971 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:13:28,230 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       250
+Supplier    250
+Name: count, dtype: int64
+2026-08-03 07:13:28,234 | INFO |__main__ | 147 | Company distribution:
+country
+United States     359
+United Kingdom     91
+Australia          50
+Name: count, dtype: int64
+2026-08-03 07:13:28,234 | ERROR |__main__ | 163 | Error generating companies dataset: Companies dataset validation failed
+2026-08-03 07:17:35,105 | INFO |__main__ | 169 | Generating Categories.....
+2026-08-03 07:17:35,112 | INFO |__main__ | 194 | Generated 10 categories
+2026-08-03 07:17:35,112 | INFO |__main__ | 195 | Categories data set generated succesfully
+2026-08-03 07:17:35,112 | INFO |__main__ | 196 | Returning Categories Data set....
+2026-08-03 07:17:35,113 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:17:35,319 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       250
+Supplier    250
+Name: count, dtype: int64
+2026-08-03 07:17:35,322 | INFO |__main__ | 147 | Company distribution:
+country
+United States     359
+United Kingdom     91
+Australia          50
+Name: count, dtype: int64
+2026-08-03 07:17:35,322 | ERROR |__main__ | 163 | Error generating companies dataset: Companies dataset validation failed
+2026-08-03 07:19:46,744 | INFO |__main__ | 169 | Generating Categories.....
+2026-08-03 07:19:46,751 | INFO |__main__ | 194 | Generated 10 categories
+2026-08-03 07:19:46,753 | INFO |__main__ | 195 | Categories data set generated succesfully
+2026-08-03 07:19:46,755 | INFO |__main__ | 196 | Returning Categories Data set....
+2026-08-03 07:19:46,755 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:19:46,993 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       250
+Supplier    250
+Name: count, dtype: int64
+2026-08-03 07:19:46,995 | INFO |__main__ | 147 | Company distribution:
+country
+United States     359
+United Kingdom     91
+Australia          50
+Name: count, dtype: int64
+2026-08-03 07:19:46,995 | ERROR |__main__ | 163 | Error generating companies dataset: Companies dataset validation failed
+2026-08-03 07:20:41,140 | INFO |__main__ | 176 | Generating Categories.....
+2026-08-03 07:20:41,145 | INFO |__main__ | 201 | Generated 10 categories
+2026-08-03 07:20:41,145 | INFO |__main__ | 202 | Categories data set generated succesfully
+2026-08-03 07:20:41,145 | INFO |__main__ | 203 | Returning Categories Data set....
+2026-08-03 07:20:41,145 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:20:41,424 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       250
+Supplier    250
+Name: count, dtype: int64
+2026-08-03 07:20:41,424 | INFO |__main__ | 147 | Company distribution:
+country
+United States     359
+United Kingdom     91
+Australia          50
+Name: count, dtype: int64
+2026-08-03 07:20:41,424 | INFO |__main__ | 148 | Total companies: 500
+2026-08-03 07:20:41,424 | INFO |__main__ | 149 | Unique IDs: True
+2026-08-03 07:20:41,424 | INFO |__main__ | 150 | Unique names: False
+2026-08-03 07:20:41,424 | INFO |__main__ | 151 | Unique tax IDs: False
+2026-08-03 07:20:41,434 | INFO |__main__ | 152 | No missing values: True
+2026-08-03 07:20:41,434 | ERROR |__main__ | 170 | Error generating companies dataset: Companies dataset validation failed
+2026-08-03 07:22:14,986 | INFO |__main__ | 177 | Generating Categories.....
+2026-08-03 07:22:15,002 | INFO |__main__ | 202 | Generated 10 categories
+2026-08-03 07:22:15,002 | INFO |__main__ | 203 | Categories data set generated succesfully
+2026-08-03 07:22:15,002 | INFO |__main__ | 204 | Returning Categories Data set....
+2026-08-03 07:22:15,002 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:22:15,238 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       250
+Supplier    250
+Name: count, dtype: int64
+2026-08-03 07:22:15,238 | INFO |__main__ | 163 | Generated 500 company records successfully!
+2026-08-03 07:22:15,238 | INFO |__main__ | 219 | Generating Customers.....
+2026-08-03 07:22:17,904 | INFO |__main__ | 257 | 
+Customers per company:
+count    250.000000
+mean      45.092000
+std       20.610451
+min       10.000000
+25%       27.000000
+50%       44.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 07:22:17,919 | INFO |__main__ | 276 | Generated 11273 customers
+2026-08-03 07:22:17,919 | INFO |__main__ | 277 | Customers data set generated succesfully
+2026-08-03 07:22:17,919 | INFO |__main__ | 278 | Returning Customers Data set....
+2026-08-03 07:37:36,754 | INFO |__main__ | 177 | Generating Categories.....
+2026-08-03 07:37:36,761 | INFO |__main__ | 202 | Generated 10 categories
+2026-08-03 07:37:36,761 | INFO |__main__ | 203 | Categories data set generated succesfully
+2026-08-03 07:37:36,761 | INFO |__main__ | 204 | Returning Categories Data set....
+2026-08-03 07:37:36,761 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:37:36,966 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 07:37:36,970 | INFO |__main__ | 163 | Generated 500 company records successfully!
+2026-08-03 07:37:36,970 | INFO |__main__ | 219 | Generating Customers.....
+2026-08-03 07:37:40,317 | INFO |__main__ | 257 | 
+Customers per company:
+count    350.000000
+mean      44.457143
+std       20.647738
+min       10.000000
+25%       26.000000
+50%       44.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 07:37:40,339 | INFO |__main__ | 276 | Generated 15560 customers
+2026-08-03 07:37:40,339 | INFO |__main__ | 277 | Customers data set generated succesfully
+2026-08-03 07:37:40,356 | INFO |__main__ | 278 | Returning Customers Data set....
+2026-08-03 07:38:58,398 | INFO |__main__ | 177 | Generating Categories.....
+2026-08-03 07:38:58,406 | INFO |__main__ | 202 | Generated 10 categories
+2026-08-03 07:38:58,406 | INFO |__main__ | 203 | Categories data set generated succesfully
+2026-08-03 07:38:58,406 | INFO |__main__ | 204 | Returning Categories Data set....
+2026-08-03 07:38:58,406 | INFO |__main__ | 101 | Generating Companies...
+2026-08-03 07:38:58,638 | INFO |__main__ | 146 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 07:38:58,638 | INFO |__main__ | 163 | Generated 500 company records successfully!
+2026-08-03 07:38:58,638 | INFO |__main__ | 219 | Generating Customers.....
+2026-08-03 07:39:01,925 | DEBUG |__main__ | 257 | 
+Customers per company:
+count    350.000000
+mean      44.457143
+std       20.647738
+min       10.000000
+25%       26.000000
+50%       44.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 07:39:01,942 | INFO |__main__ | 275 | Generated 15560 customers
+2026-08-03 07:39:01,950 | INFO |__main__ | 276 | Customers data set generated succesfully
+2026-08-03 07:39:01,958 | INFO |__main__ | 277 | Returning Customers Data set....
+2026-08-03 07:39:02,025 | INFO |__main__ | 308 | Companies CSV exported successfully
+2026-08-03 07:39:02,027 | INFO |__main__ | 311 | Categories CSV exported successfully
+2026-08-03 07:39:02,181 | INFO |__main__ | 314 | Customers CSV exported successfully
+2026-08-03 08:12:21,293 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 08:12:21,310 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 08:12:21,310 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 08:12:21,310 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 08:12:21,310 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 08:12:21,514 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 08:12:21,514 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 08:12:21,522 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 08:12:21,534 | ERROR |__main__ | 287 | Error Generating Customers Dataset local variable 'first_name' referenced before assignment
+2026-08-03 08:13:51,673 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 08:13:51,679 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 08:13:51,679 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 08:13:51,679 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 08:13:51,679 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 08:13:51,892 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 08:13:51,892 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 08:13:51,892 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 08:13:55,061 | DEBUG |__main__ | 263 | 
+Customers per company:
+count    350.000000
+mean      45.542857
+std       20.886983
+min       10.000000
+25%       26.000000
+50%       46.000000
+75%       63.000000
+max       80.000000
+dtype: float64
+2026-08-03 08:13:55,068 | INFO |__main__ | 281 | Generated 15940 customers
+2026-08-03 08:13:55,068 | INFO |__main__ | 282 | Customers data set generated succesfully
+2026-08-03 08:13:55,068 | INFO |__main__ | 283 | Returning Customers Data set....
+2026-08-03 08:13:55,110 | INFO |__main__ | 314 | Companies CSV exported successfully
+2026-08-03 08:13:55,114 | INFO |__main__ | 317 | Categories CSV exported successfully
+2026-08-03 08:13:55,276 | INFO |__main__ | 320 | Customers CSV exported successfully
+2026-08-03 08:36:38,711 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 08:36:38,740 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 08:36:38,740 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 08:36:38,740 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 08:36:38,740 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 08:36:39,044 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 08:36:39,044 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 08:36:39,044 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 08:36:41,997 | DEBUG |__main__ | 264 | 
+Customers per company:
+count    350.000000
+mean      45.542857
+std       20.886983
+min       10.000000
+25%       26.000000
+50%       46.000000
+75%       63.000000
+max       80.000000
+dtype: float64
+2026-08-03 08:36:42,023 | INFO |__main__ | 282 | Generated 15940 customers
+2026-08-03 08:36:42,023 | INFO |__main__ | 283 | Customers data set generated succesfully
+2026-08-03 08:36:42,026 | INFO |__main__ | 284 | Returning Customers Data set....
+2026-08-03 08:36:42,056 | INFO |__main__ | 315 | Companies CSV exported successfully
+2026-08-03 08:36:42,059 | INFO |__main__ | 318 | Categories CSV exported successfully
+2026-08-03 08:36:42,199 | INFO |__main__ | 321 | Customers CSV exported successfully
+2026-08-03 16:24:30,989 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:24:31,034 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:24:31,034 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:24:31,034 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:24:31,034 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:24:31,215 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:24:31,217 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:24:31,218 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:24:33,622 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:24:33,644 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:24:33,644 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:24:33,644 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:24:33,649 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:24:33,650 | ERROR |__main__ | 344 | Error Generating Customers Dataset 'Laptop'
+2026-08-03 16:27:04,547 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:27:04,550 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:27:04,551 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:27:04,551 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:27:04,551 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:27:04,716 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:27:04,718 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:27:04,719 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:27:07,196 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:27:07,208 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:27:07,208 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:27:07,208 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:27:07,213 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:27:07,214 | ERROR |__main__ | 344 | Error Generating Customers Dataset 'Laptop'
+2026-08-03 16:27:37,981 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:27:37,987 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:27:37,988 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:27:37,988 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:27:37,988 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:27:38,134 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:27:38,135 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:27:38,136 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:27:40,585 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:27:40,599 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:27:40,599 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:27:40,599 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:27:40,604 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:27:40,605 | ERROR |__main__ | 344 | Error Generating Customers Dataset 'Laptop'
+2026-08-03 16:30:40,147 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:30:40,147 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:30:40,147 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:30:40,147 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:30:40,147 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:30:40,299 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:30:40,300 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:30:40,301 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:30:42,631 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:30:42,641 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:30:42,642 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:30:42,642 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:30:42,649 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:30:42,649 | ERROR |__main__ | 345 | Error Generating Products Dataset 'Laptop'
+2026-08-03 16:31:50,559 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:31:50,563 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:31:50,563 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:31:50,563 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:31:50,563 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:31:50,708 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:31:50,709 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:31:50,710 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:31:53,156 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:31:53,176 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:31:53,176 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:31:53,176 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:31:53,180 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:31:53,182 | ERROR |__main__ | 345 | Error Generating Products Dataset unhashable type: 'list'
+2026-08-03 16:34:36,090 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:34:36,094 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:34:36,094 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:34:36,094 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:34:36,094 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:34:36,258 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:34:36,259 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:34:36,259 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:34:38,683 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:34:38,699 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:34:38,699 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:34:38,699 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:34:38,704 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:34:38,711 | INFO |__main__ | 330 | Starting data validation
+2026-08-03 16:34:38,712 | ERROR |__main__ | 345 | Error Generating Products Dataset The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-08-03 16:35:46,360 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:35:46,366 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:35:46,367 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:35:46,367 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:35:46,367 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:35:46,497 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:35:46,499 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:35:46,499 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:35:48,917 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:35:48,931 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:35:48,931 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:35:48,931 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:35:48,936 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:35:48,945 | INFO |__main__ | 330 | Starting data validation
+2026-08-03 16:35:48,946 | ERROR |__main__ | 346 | Error Generating Products Dataset The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-08-03 16:39:22,648 | INFO |__main__ | 178 | Generating Categories.....
+2026-08-03 16:39:22,654 | INFO |__main__ | 203 | Generated 10 categories
+2026-08-03 16:39:22,655 | INFO |__main__ | 204 | Categories data set generated succesfully
+2026-08-03 16:39:22,655 | INFO |__main__ | 205 | Returning Categories Data set....
+2026-08-03 16:39:22,655 | INFO |__main__ | 102 | Generating Companies...
+2026-08-03 16:39:22,817 | INFO |__main__ | 147 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:39:22,818 | INFO |__main__ | 164 | Generated 500 company records successfully!
+2026-08-03 16:39:22,819 | INFO |__main__ | 220 | Generating Customers.....
+2026-08-03 16:39:25,119 | DEBUG |__main__ | 265 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:39:25,134 | INFO |__main__ | 283 | Generated 15789 customers
+2026-08-03 16:39:25,135 | INFO |__main__ | 284 | Customers data set generated succesfully
+2026-08-03 16:39:25,135 | INFO |__main__ | 285 | Returning Customers Data set....
+2026-08-03 16:39:25,139 | INFO |__main__ | 296 | Generating Products......
+2026-08-03 16:39:25,150 | INFO |__main__ | 329 | Starting data validation
+2026-08-03 16:39:25,151 | INFO |__main__ | 335 | Generated 96 products
+2026-08-03 16:39:25,153 | INFO |__main__ | 336 | Products data set generated succesfully
+2026-08-03 16:39:25,153 | INFO |__main__ | 337 | Returning Products Data set....
+2026-08-03 16:39:25,158 | INFO |__main__ | 372 | Companies CSV exported successfully
+2026-08-03 16:39:25,166 | INFO |__main__ | 375 | Categories CSV exported successfully
+2026-08-03 16:39:25,289 | INFO |__main__ | 378 | Customers CSV exported successfully
+2026-08-03 16:39:25,291 | INFO |__main__ | 381 | Productss CSV exported successfully
+2026-08-03 16:46:40,103 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 16:46:40,108 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 16:46:40,108 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 16:46:40,108 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 16:46:40,108 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 16:46:40,257 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:46:40,259 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 16:46:40,259 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 16:46:42,454 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:46:42,462 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 16:46:42,462 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 16:46:42,462 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 16:46:42,471 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 16:46:42,473 | ERROR |__main__ | 347 | Error Generating Products Dataset 0
+2026-08-03 16:48:52,995 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 16:48:52,998 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 16:48:52,998 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 16:48:52,999 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 16:48:52,999 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 16:48:53,154 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:48:53,167 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 16:48:53,168 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 16:48:55,574 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:48:55,588 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 16:48:55,588 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 16:48:55,589 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 16:48:55,594 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 16:48:55,604 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 16:48:55,606 | INFO |__main__ | 338 | Generated 96 products
+2026-08-03 16:48:55,606 | INFO |__main__ | 339 | Products data set generated succesfully
+2026-08-03 16:48:55,606 | INFO |__main__ | 340 | Returning Products Data set....
+2026-08-03 16:48:55,613 | INFO |__main__ | 375 | Companies CSV exported successfully
+2026-08-03 16:48:55,615 | INFO |__main__ | 378 | Categories CSV exported successfully
+2026-08-03 16:48:55,729 | INFO |__main__ | 381 | Customers CSV exported successfully
+2026-08-03 16:48:55,732 | INFO |__main__ | 384 | Products CSV exported successfully
+2026-08-03 16:58:21,251 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 16:58:21,257 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 16:58:21,257 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 16:58:21,258 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 16:58:21,258 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 16:58:21,391 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 16:58:21,392 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 16:58:21,393 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 16:58:23,843 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 16:58:23,855 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 16:58:23,855 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 16:58:23,855 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 16:58:23,860 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 16:58:23,866 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 16:58:23,869 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 16:58:23,869 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 16:58:23,869 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 16:58:23,878 | INFO |__main__ | 376 | Companies CSV exported successfully
+2026-08-03 16:58:23,879 | INFO |__main__ | 379 | Categories CSV exported successfully
+2026-08-03 16:58:23,997 | INFO |__main__ | 382 | Customers CSV exported successfully
+2026-08-03 16:58:24,000 | INFO |__main__ | 385 | Products CSV exported successfully
+2026-08-03 17:00:53,224 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 17:00:53,228 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 17:00:53,229 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 17:00:53,229 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 17:00:53,229 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 17:00:53,379 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 17:00:53,380 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 17:00:53,380 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 17:00:55,762 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 17:00:55,787 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 17:00:55,787 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 17:00:55,787 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 17:00:55,791 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 17:00:55,802 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 17:00:55,804 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 17:00:55,804 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 17:00:55,804 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 17:00:55,812 | INFO |__main__ | 376 | Companies CSV exported successfully
+2026-08-03 17:00:55,814 | INFO |__main__ | 379 | Categories CSV exported successfully
+2026-08-03 17:00:55,931 | INFO |__main__ | 382 | Customers CSV exported successfully
+2026-08-03 17:00:55,935 | INFO |__main__ | 385 | Products CSV exported successfully
+2026-08-03 17:25:53,358 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 17:25:53,364 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 17:25:53,365 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 17:25:53,365 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 17:25:53,365 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 17:25:53,537 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 17:25:53,539 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 17:25:53,539 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 17:25:55,940 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 17:25:55,952 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 17:25:55,952 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 17:25:55,952 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 17:25:55,956 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 17:25:55,965 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 17:25:55,966 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 17:25:55,966 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 17:25:55,966 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 17:25:55,966 | INFO |__main__ | 357 | Generating Suppliers.....
+2026-08-03 17:25:55,966 | ERROR |__main__ | 405 | Error Generating Suppliers Dataset 7
+2026-08-03 17:35:38,997 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 17:35:39,002 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 17:35:39,002 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 17:35:39,003 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 17:35:39,003 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 17:35:39,133 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 17:35:39,147 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 17:35:39,147 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 17:35:41,647 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 17:35:41,658 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 17:35:41,658 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 17:35:41,659 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 17:35:41,663 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 17:35:41,670 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 17:35:41,672 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 17:35:41,672 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 17:35:41,672 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 17:35:41,672 | INFO |__main__ | 357 | Generating Suppliers.....
+2026-08-03 17:35:41,776 | INFO |__main__ | 398 | Generated 150 suppliers
+2026-08-03 17:35:41,777 | INFO |__main__ | 399 | Suppliers data set generated succesfully
+2026-08-03 17:35:41,777 | INFO |__main__ | 400 | Returning Suppliers Data set....
+2026-08-03 17:35:41,785 | INFO |__main__ | 431 | Companies CSV exported successfully
+2026-08-03 17:35:41,787 | INFO |__main__ | 434 | Categories CSV exported successfully
+2026-08-03 17:35:41,906 | INFO |__main__ | 437 | Customers CSV exported successfully
+2026-08-03 17:35:41,908 | INFO |__main__ | 440 | Products CSV exported successfully
+2026-08-03 17:36:42,491 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 17:36:42,494 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 17:36:42,495 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 17:36:42,495 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 17:36:42,495 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 17:36:42,633 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 17:36:42,635 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 17:36:42,635 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 17:36:45,057 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 17:36:45,063 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 17:36:45,063 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 17:36:45,063 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 17:36:45,075 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 17:36:45,088 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 17:36:45,090 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 17:36:45,090 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 17:36:45,090 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 17:36:45,090 | INFO |__main__ | 357 | Generating Suppliers.....
+2026-08-03 17:36:45,200 | INFO |__main__ | 398 | Generated 150 suppliers
+2026-08-03 17:36:45,201 | INFO |__main__ | 399 | Suppliers data set generated succesfully
+2026-08-03 17:36:45,201 | INFO |__main__ | 400 | Returning Suppliers Data set....
+2026-08-03 17:36:45,207 | INFO |__main__ | 431 | Companies CSV exported successfully
+2026-08-03 17:36:45,208 | INFO |__main__ | 434 | Categories CSV exported successfully
+2026-08-03 17:36:45,338 | INFO |__main__ | 437 | Customers CSV exported successfully
+2026-08-03 17:36:45,340 | INFO |__main__ | 440 | Products CSV exported successfully
+2026-08-03 17:36:45,342 | INFO |__main__ | 443 | Suppliers CSV exported successfully
+2026-08-03 17:38:22,015 | INFO |__main__ | 179 | Generating Categories.....
+2026-08-03 17:38:22,021 | INFO |__main__ | 204 | Generated 10 categories
+2026-08-03 17:38:22,022 | INFO |__main__ | 205 | Categories data set generated succesfully
+2026-08-03 17:38:22,022 | INFO |__main__ | 206 | Returning Categories Data set....
+2026-08-03 17:38:22,022 | INFO |__main__ | 103 | Generating Companies...
+2026-08-03 17:38:22,171 | INFO |__main__ | 148 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 17:38:22,173 | INFO |__main__ | 165 | Generated 500 company records successfully!
+2026-08-03 17:38:22,174 | INFO |__main__ | 221 | Generating Customers.....
+2026-08-03 17:38:24,531 | DEBUG |__main__ | 266 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 17:38:24,540 | INFO |__main__ | 284 | Generated 15789 customers
+2026-08-03 17:38:24,542 | INFO |__main__ | 285 | Customers data set generated succesfully
+2026-08-03 17:38:24,542 | INFO |__main__ | 286 | Returning Customers Data set....
+2026-08-03 17:38:24,546 | INFO |__main__ | 297 | Generating Products......
+2026-08-03 17:38:24,553 | INFO |__main__ | 332 | Starting data validation
+2026-08-03 17:38:24,555 | INFO |__main__ | 339 | Generated 96 products
+2026-08-03 17:38:24,557 | INFO |__main__ | 340 | Products data set generated succesfully
+2026-08-03 17:38:24,557 | INFO |__main__ | 341 | Returning Products Data set....
+2026-08-03 17:38:24,558 | INFO |__main__ | 357 | Generating Suppliers.....
+2026-08-03 17:38:24,669 | INFO |__main__ | 398 | Generated 150 suppliers
+2026-08-03 17:38:24,670 | INFO |__main__ | 399 | Suppliers data set generated succesfully
+2026-08-03 17:38:24,670 | INFO |__main__ | 400 | Returning Suppliers Data set....
+2026-08-03 17:38:24,677 | INFO |__main__ | 431 | Companies CSV exported successfully
+2026-08-03 17:38:24,679 | INFO |__main__ | 434 | Categories CSV exported successfully
+2026-08-03 17:38:24,809 | INFO |__main__ | 437 | Customers CSV exported successfully
+2026-08-03 17:38:24,811 | INFO |__main__ | 440 | Products CSV exported successfully
+2026-08-03 17:38:24,815 | INFO |__main__ | 443 | Suppliers CSV exported successfully
+2026-08-03 18:31:37,759 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 18:31:37,777 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 18:31:37,778 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 18:31:37,778 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 18:31:37,778 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 18:31:37,930 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 18:31:37,932 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 18:31:37,933 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 18:31:40,105 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 18:31:40,117 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 18:31:40,117 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 18:31:40,118 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 18:31:40,122 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 18:31:40,132 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 18:31:40,134 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 18:31:40,134 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 18:31:40,134 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 18:31:40,135 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 18:31:40,248 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 18:31:40,249 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 18:31:40,249 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 18:31:40,260 | INFO |__main__ | 483 | Companies CSV exported successfully
+2026-08-03 18:31:40,261 | INFO |__main__ | 486 | Categories CSV exported successfully
+2026-08-03 18:31:40,374 | INFO |__main__ | 489 | Customers CSV exported successfully
+2026-08-03 18:31:40,376 | INFO |__main__ | 492 | Products CSV exported successfully
+2026-08-03 18:31:40,378 | INFO |__main__ | 495 | Suppliers CSV exported successfully
+2026-08-03 18:33:40,818 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 18:33:40,823 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 18:33:40,823 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 18:33:40,823 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 18:33:40,823 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 18:33:40,971 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 18:33:40,972 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 18:33:40,973 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 18:33:43,417 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 18:33:43,465 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 18:33:43,466 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 18:33:43,466 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 18:33:43,470 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 18:33:43,478 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 18:33:43,481 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 18:33:43,481 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 18:33:43,481 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 18:33:43,481 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 18:33:43,604 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 18:33:43,605 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 18:33:43,605 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 18:33:43,605 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 18:33:43,606 | ERROR |__main__ | 460 | Error Generating Customers Dataset Boolean array expected for the condition, not object
+2026-08-03 18:47:31,242 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 18:47:31,261 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 18:47:31,261 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 18:47:31,261 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 18:47:31,261 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 18:47:31,407 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 18:47:31,408 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 18:47:31,408 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 18:47:33,885 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 18:47:33,923 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 18:47:33,923 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 18:47:33,923 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 18:47:33,930 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 18:47:33,947 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 18:47:33,953 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 18:47:33,954 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 18:47:33,955 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 18:47:33,956 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 18:47:34,120 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 18:47:34,120 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 18:47:34,120 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 18:47:34,120 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 18:47:34,123 | ERROR |__main__ | 463 | Error Generating Customers Dataset 'created_at'
+2026-08-03 18:48:37,270 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 18:48:37,273 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 18:48:37,273 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 18:48:37,273 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 18:48:37,274 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 18:48:37,428 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 18:48:37,429 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 18:48:37,430 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 18:48:39,793 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 18:48:39,803 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 18:48:39,803 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 18:48:39,803 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 18:48:39,808 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 18:48:39,818 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 18:48:39,820 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 18:48:39,820 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 18:48:39,820 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 18:48:39,820 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 18:48:39,931 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 18:48:39,932 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 18:48:39,932 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 18:48:39,932 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 18:48:39,935 | ERROR |__main__ | 463 | Error Generating Customers Dataset string indices must be integers
+2026-08-03 18:49:18,118 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 18:49:18,120 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 18:49:18,120 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 18:49:18,121 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 18:49:18,121 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 18:49:18,242 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 18:49:18,243 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 18:49:18,244 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 18:49:20,489 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 18:49:20,504 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 18:49:20,505 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 18:49:20,505 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 18:49:20,510 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 18:49:20,523 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 18:49:20,523 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 18:49:20,523 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 18:49:20,523 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 18:49:20,523 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 18:49:20,643 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 18:49:20,643 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 18:49:20,644 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 18:49:20,644 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 18:49:20,645 | ERROR |__main__ | 463 | Error Generating Customers Dataset string indices must be integers
+2026-08-03 19:00:07,800 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:00:07,805 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:00:07,805 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:00:07,806 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:00:07,806 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:00:07,952 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:00:07,952 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:00:07,952 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:00:10,223 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:00:10,233 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:00:10,234 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:00:10,234 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:00:10,239 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:00:10,249 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:00:10,250 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:00:10,250 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:00:10,251 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:00:10,251 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:00:10,356 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:00:10,357 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:00:10,357 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:00:10,357 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:00:10,363 | ERROR |__main__ | 463 | Error Generating Customers Dataset list indices must be integers or slices, not str
+2026-08-03 19:01:24,703 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:01:24,707 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:01:24,707 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:01:24,707 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:01:24,707 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:01:24,836 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:01:24,837 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:01:24,838 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:01:27,139 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:01:27,150 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:01:27,150 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:01:27,150 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:01:27,156 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:01:27,166 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:01:27,167 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:01:27,168 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:01:27,168 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:01:27,168 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:01:27,277 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:01:27,277 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:01:27,277 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:01:27,277 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:01:27,293 | ERROR |__main__ | 463 | Error Generating Customers Dataset 'supplier_prodcut_id'
+2026-08-03 19:03:50,312 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:03:50,315 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:03:50,316 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:03:50,316 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:03:50,316 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:03:50,448 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:03:50,448 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:03:50,448 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:03:52,815 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:03:52,828 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:03:52,828 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:03:52,828 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:03:52,834 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:03:52,842 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:03:52,843 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:03:52,844 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:03:52,844 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:03:52,844 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:03:52,972 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:03:52,973 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:03:52,973 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:03:52,973 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:03:52,987 | ERROR |__main__ | 463 | Error Generating Supplier Product Mapping Dataset 'supplier_prodcut_id'
+2026-08-03 19:06:25,517 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:06:25,521 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:06:25,521 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:06:25,521 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:06:25,521 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:06:25,653 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:06:25,653 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:06:25,653 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:06:28,002 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:06:28,012 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:06:28,013 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:06:28,013 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:06:28,017 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:06:28,028 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:06:28,030 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:06:28,030 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:06:28,030 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:06:28,030 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:06:28,139 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:06:28,139 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:06:28,139 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:06:28,139 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:06:28,160 | INFO |__main__ | 455 | Generated 320 suppliers_product_mappings
+2026-08-03 19:06:28,160 | INFO |__main__ | 456 | suppliers_product_mapping data set generated succesfully
+2026-08-03 19:06:28,160 | INFO |__main__ | 457 | Returning suppliers_product_mapping Data set....
+2026-08-03 19:06:28,173 | INFO |__main__ | 488 | Companies CSV exported successfully
+2026-08-03 19:06:28,174 | INFO |__main__ | 491 | Categories CSV exported successfully
+2026-08-03 19:06:28,283 | INFO |__main__ | 494 | Customers CSV exported successfully
+2026-08-03 19:06:28,286 | INFO |__main__ | 497 | Products CSV exported successfully
+2026-08-03 19:06:28,288 | INFO |__main__ | 500 | Suppliers CSV exported successfully
+2026-08-03 19:06:28,293 | INFO |__main__ | 503 | supplier_product_mapping CSV exported successfully
+2026-08-03 19:14:09,004 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:14:09,008 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:14:09,008 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:14:09,008 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:14:09,008 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:14:09,227 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:14:09,229 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:14:09,230 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:14:11,439 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:14:11,454 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:14:11,454 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:14:11,454 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:14:11,457 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:14:11,469 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:14:11,471 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:14:11,471 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:14:11,471 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:14:11,472 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:14:11,568 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:14:11,568 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:14:11,568 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:14:11,568 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:14:11,591 | INFO |__main__ | 457 | Generated 325 suppliers_product_mappings
+2026-08-03 19:14:11,592 | INFO |__main__ | 458 | suppliers_product_mapping data set generated succesfully
+2026-08-03 19:14:11,592 | INFO |__main__ | 459 | Returning suppliers_product_mapping Data set....
+2026-08-03 19:14:11,599 | INFO |__main__ | 490 | Companies CSV exported successfully
+2026-08-03 19:14:11,601 | INFO |__main__ | 493 | Categories CSV exported successfully
+2026-08-03 19:14:11,697 | INFO |__main__ | 496 | Customers CSV exported successfully
+2026-08-03 19:14:11,697 | INFO |__main__ | 499 | Products CSV exported successfully
+2026-08-03 19:14:11,714 | INFO |__main__ | 502 | Suppliers CSV exported successfully
+2026-08-03 19:14:11,718 | INFO |__main__ | 505 | supplier_product_mapping CSV exported successfully
+2026-08-03 19:23:48,526 | INFO |__main__ | 182 | Generating Categories.....
+2026-08-03 19:23:48,529 | INFO |__main__ | 207 | Generated 10 categories
+2026-08-03 19:23:48,530 | INFO |__main__ | 208 | Categories data set generated succesfully
+2026-08-03 19:23:48,530 | INFO |__main__ | 209 | Returning Categories Data set....
+2026-08-03 19:23:48,530 | INFO |__main__ | 106 | Generating Companies...
+2026-08-03 19:23:48,678 | INFO |__main__ | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 19:23:48,679 | INFO |__main__ | 168 | Generated 500 company records successfully!
+2026-08-03 19:23:48,679 | INFO |__main__ | 224 | Generating Customers.....
+2026-08-03 19:23:50,875 | DEBUG |__main__ | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 19:23:50,886 | INFO |__main__ | 287 | Generated 15789 customers
+2026-08-03 19:23:50,886 | INFO |__main__ | 288 | Customers data set generated succesfully
+2026-08-03 19:23:50,886 | INFO |__main__ | 289 | Returning Customers Data set....
+2026-08-03 19:23:50,891 | INFO |__main__ | 300 | Generating Products......
+2026-08-03 19:23:50,899 | INFO |__main__ | 335 | Starting data validation
+2026-08-03 19:23:50,902 | INFO |__main__ | 342 | Generated 96 products
+2026-08-03 19:23:50,902 | INFO |__main__ | 343 | Products data set generated succesfully
+2026-08-03 19:23:50,902 | INFO |__main__ | 344 | Returning Products Data set....
+2026-08-03 19:23:50,903 | INFO |__main__ | 360 | Generating Suppliers.....
+2026-08-03 19:23:51,020 | INFO |__main__ | 401 | Generated 150 suppliers
+2026-08-03 19:23:51,020 | INFO |__main__ | 402 | Suppliers data set generated succesfully
+2026-08-03 19:23:51,021 | INFO |__main__ | 403 | Returning Suppliers Data set....
+2026-08-03 19:23:51,021 | INFO |__main__ | 417 | Generating Supplier Product Mapping.....
+2026-08-03 19:23:51,049 | INFO |__main__ | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 19:23:51,050 | INFO |__main__ | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 19:23:51,050 | INFO |__main__ | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 19:23:51,057 | INFO |__main__ | 495 | Companies CSV exported successfully
+2026-08-03 19:23:51,057 | INFO |__main__ | 498 | Categories CSV exported successfully
+2026-08-03 19:23:51,203 | INFO |__main__ | 501 | Customers CSV exported successfully
+2026-08-03 19:23:51,205 | INFO |__main__ | 504 | Products CSV exported successfully
+2026-08-03 19:23:51,207 | INFO |__main__ | 507 | Suppliers CSV exported successfully
+2026-08-03 19:23:51,211 | INFO |__main__ | 510 | supplier_product_mapping CSV exported successfully
+2026-08-03 20:52:16,460 | INFO |__main__ | 75 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 20:52:16,463 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 20:52:16,483 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 20:52:16,483 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 20:52:16,483 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 20:52:16,483 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 20:52:16,654 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 20:52:16,657 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 20:52:16,658 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 20:52:19,263 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 20:52:19,322 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 20:52:19,322 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 20:52:19,323 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 20:52:19,329 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 20:52:19,344 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 20:52:19,347 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 20:52:19,349 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 20:52:19,350 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 20:52:19,350 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 20:52:19,479 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 20:52:19,479 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 20:52:19,479 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 20:52:19,479 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 20:52:19,497 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 20:52:19,497 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 20:52:19,497 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 20:52:19,498 | INFO |__main__ | 14 | Generating datasets...
+2026-08-03 20:52:19,498 | INFO |__main__ | 18 | Loading data into SQL Server...
+2026-08-03 20:52:19,606 | ERROR |__main__ | 68 | Error loading datasets: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]The client cannot connect to the server because the requested instance was not available. Use SQL Server Configuration Manager to make sure the SQL Server instance is configured correctly.  (0) (SQLDriverConnect)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-08-03 20:56:08,145 | INFO |__main__ | 75 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 20:56:08,146 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 20:56:08,149 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 20:56:08,149 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 20:56:08,149 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 20:56:08,149 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 20:56:08,288 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 20:56:08,290 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 20:56:08,290 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 20:56:10,697 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 20:56:10,715 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 20:56:10,715 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 20:56:10,716 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 20:56:10,722 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 20:56:10,733 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 20:56:10,735 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 20:56:10,736 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 20:56:10,736 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 20:56:10,737 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 20:56:10,842 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 20:56:10,843 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 20:56:10,843 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 20:56:10,843 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 20:56:10,856 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 20:56:10,856 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 20:56:10,856 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 20:56:10,857 | INFO |__main__ | 14 | Generating datasets...
+2026-08-03 20:56:10,857 | INFO |__main__ | 18 | Loading data into SQL Server...
+2026-08-03 20:56:12,023 | INFO |__main__ | 64 | All datasets loaded successfully
+2026-08-03 21:01:40,686 | INFO |__main__ | 81 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 21:01:40,687 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 21:01:40,713 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 21:01:40,713 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 21:01:40,713 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 21:01:40,714 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 21:01:40,886 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 21:01:40,889 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 21:01:40,890 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 21:01:43,506 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 21:01:43,516 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 21:01:43,516 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 21:01:43,517 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 21:01:43,521 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 21:01:43,528 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 21:01:43,530 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 21:01:43,530 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 21:01:43,531 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 21:01:43,531 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 21:01:43,640 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 21:01:43,641 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 21:01:43,641 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 21:01:43,641 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 21:01:43,659 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 21:01:43,659 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 21:01:43,659 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 21:01:43,659 | INFO |__main__ | 14 | Generating datasets...
+2026-08-03 21:01:43,659 | INFO |__main__ | 18 | Loading data into SQL Server...
+2026-08-03 21:01:44,303 | ERROR |__main__ | 74 | Error loading datasets: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'phone_number'. (207) (SQLExecute); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: INSERT INTO source.[Customers] (customer_id, company_id, first_name, last_name, email, phone_number, gender, date_of_birth, job_title, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: [('b7d4b108d5f447e89b521ff67d027144', 'b20bbfd04f0943d08538107d29a0645f', 'Cynthia', 'Burns', 'cynthia.burns787953@gmail.com', '563558909003', 'Female', datetime.datetime(1977, 2, 19, 0, 0), 'Operations Manager', datetime.datetime(2026, 5, 2, 21, 38, 54), datetime.datetime(2026, 7, 21, 6, 2, 13)), ('bd37e355fbc544daa3ac02d032af4d3c', 'b20bbfd04f0943d08538107d29a0645f', 'Kristina', 'Harrell', 'kristina.harrell827222@outlook.com', '168676886838', 'Female', datetime.datetime(1994, 4, 11, 0, 0), 'Warehouse Manager', datetime.datetime(2026, 6, 14, 12, 58, 41), datetime.datetime(2026, 6, 21, 11, 44, 54)), ('8bbf09274b9944f99fb2a0ef28a98d4a', 'b20bbfd04f0943d08538107d29a0645f', 'David', 'Obrien', 'david.obrien439683@hotmail.com', '425733409534', 'Male', datetime.datetime(1995, 2, 13, 0, 0), 'IT Manager', datetime.datetime(2026, 4, 8, 15, 24, 37), datetime.datetime(2026, 5, 31, 8, 21, 4)), ('0c1789494e88426ab5fd71c835c2fa06', 'b20bbfd04f0943d08538107d29a0645f', 'Tammy', 'Schwartz', 'tammy.schwartz285298@outlook.com', '899599819969', 'Female', datetime.datetime(1990, 11, 28, 0, 0), 'Procurement Manager', datetime.datetime(2025, 11, 23, 19, 20, 47), datetime.datetime(2026, 4, 12, 9, 46, 14)), ('f84b68180fba44e1bfb7e8fad8384467', 'b20bbfd04f0943d08538107d29a0645f', 'Megan', 'Wood', 'megan.wood737941@outlook.com', '517923711248', 'Female', datetime.datetime(1963, 11, 23, 0, 0), 'CEO', datetime.datetime(2026, 3, 9, 5, 5, 11), datetime.datetime(2026, 5, 6, 5, 57, 21)), ('34c726e5ecf6430b8c8657d77a2c357b', 'b20bbfd04f0943d08538107d29a0645f', 'Alexis', 'Thornton', 'alexis.thornton358009@yahoo.com', '199851145188', 'Female', datetime.datetime(1998, 1, 19, 0, 0), 'Inventory Manager', datetime.datetime(2026, 3, 31, 5, 34, 23), datetime.datetime(2026, 6, 10, 21, 8, 58)), ('8f3d1ae9f9454f02a454a98e9a502190', 'b20bbfd04f0943d08538107d29a0645f', 'Terry', 'Allen', 'terry.allen67953@outlook.com', '391503405118', 'Male', datetime.datetime(1997, 12, 18, 0, 0), 'Procurement Manager', datetime.datetime(2026, 4, 28, 21, 22, 8), datetime.datetime(2026, 6, 26, 5, 15, 24)), ('1d97faa09311488f911398063b046190', 'b20bbfd04f0943d08538107d29a0645f', 'Christopher', 'Salazar', 'christopher.salazar467355@gmail.com', '001587588560', 'Male', datetime.datetime(2001, 1, 6, 0, 0), 'Inventory Manager', datetime.datetime(2026, 4, 6, 4, 31, 10), datetime.datetime(2026, 4, 30, 1, 31, 48))  ... displaying 10 of 15789 total bound parameter sets ...  ('823866e458954a59a02d3f20b6c665bf', '27b6fdaf12314a1ca723d82e5dc07c53', 'Evelyn', 'Thomas', 'evelyn.thomas790488@outlook.com', '317999570392', 'Female', datetime.datetime(1955, 11, 11, 0, 0), 'Operations Manager', datetime.datetime(2025, 12, 4, 10, 10, 49), datetime.datetime(2026, 7, 5, 4, 19, 59)), ('6945ff797fe645bda0adfebf777cd8c8', '27b6fdaf12314a1ca723d82e5dc07c53', 'Laura', 'Perez', 'laura.perez154057@gmail.com', '835275301413', 'Female', datetime.datetime(1968, 1, 6, 0, 0), 'CFO', datetime.datetime(2025, 12, 17, 1, 51, 5), datetime.datetime(2026, 2, 7, 22, 30, 6))]]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-08-03 21:05:11,331 | INFO |__main__ | 81 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 21:05:11,331 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 21:05:11,337 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 21:05:11,337 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 21:05:11,338 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 21:05:11,338 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 21:05:11,503 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 21:05:11,506 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 21:05:11,506 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 21:05:13,820 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 21:05:13,831 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 21:05:13,832 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 21:05:13,832 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 21:05:13,836 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 21:05:13,843 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 21:05:13,844 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 21:05:13,845 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 21:05:13,845 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 21:05:13,845 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 21:05:13,957 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 21:05:13,957 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 21:05:13,957 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 21:05:13,957 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 21:05:13,984 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 21:05:13,985 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 21:05:13,985 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 21:05:13,986 | INFO |__main__ | 56 | Generating datasets...
+2026-08-03 21:05:13,986 | INFO |__main__ | 60 | Loading data into SQL Server...
+2026-08-03 21:05:14,372 | INFO |__main__ | 70 | All datasets loaded successfully
+2026-08-03 21:07:10,334 | INFO |__main__ | 81 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 21:07:10,334 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 21:07:10,334 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 21:07:10,334 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 21:07:10,334 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 21:07:10,334 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 21:07:10,487 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 21:07:10,490 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 21:07:10,491 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 21:07:12,887 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 21:07:12,902 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 21:07:12,902 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 21:07:12,902 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 21:07:12,909 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 21:07:12,921 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 21:07:12,921 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 21:07:12,921 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 21:07:12,921 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 21:07:12,921 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 21:07:13,051 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 21:07:13,052 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 21:07:13,052 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 21:07:13,052 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 21:07:13,063 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 21:07:13,064 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 21:07:13,064 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 21:07:13,064 | INFO |__main__ | 56 | Generating datasets...
+2026-08-03 21:07:13,064 | INFO |__main__ | 60 | Loading data into SQL Server...
+2026-08-03 21:07:13,317 | INFO |__main__ | 70 | All datasets loaded successfully
+2026-08-03 21:21:46,291 | INFO |__main__ | 81 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 21:21:46,292 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 21:21:46,294 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 21:21:46,294 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 21:21:46,295 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 21:21:46,295 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 21:21:46,436 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 21:21:46,436 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 21:21:46,436 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 21:21:49,028 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 21:21:49,036 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 21:21:49,036 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 21:21:49,036 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 21:21:49,055 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 21:21:49,063 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 21:21:49,064 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 21:21:49,065 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 21:21:49,065 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 21:21:49,065 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 21:21:49,189 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 21:21:49,189 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 21:21:49,190 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 21:21:49,190 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 21:21:49,202 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 21:21:49,202 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 21:21:49,202 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 21:21:49,202 | INFO |__main__ | 56 | Generating datasets...
+2026-08-03 21:21:49,202 | INFO |__main__ | 60 | Loading data into SQL Server...
+2026-08-03 21:21:49,592 | INFO |__main__ | 70 | All datasets loaded successfully
+2026-08-03 21:23:54,204 | INFO |__main__ | 78 | Companies dataset exported successfully to sql server (Source1)
+2026-08-03 21:23:54,204 | INFO |python.generators.master_generator | 182 | Generating Categories.....
+2026-08-03 21:23:54,208 | INFO |python.generators.master_generator | 207 | Generated 10 categories
+2026-08-03 21:23:54,208 | INFO |python.generators.master_generator | 208 | Categories data set generated succesfully
+2026-08-03 21:23:54,208 | INFO |python.generators.master_generator | 209 | Returning Categories Data set....
+2026-08-03 21:23:54,209 | INFO |python.generators.master_generator | 106 | Generating Companies...
+2026-08-03 21:23:54,339 | INFO |python.generators.master_generator | 151 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-03 21:23:54,339 | INFO |python.generators.master_generator | 168 | Generated 500 company records successfully!
+2026-08-03 21:23:54,339 | INFO |python.generators.master_generator | 224 | Generating Customers.....
+2026-08-03 21:23:56,774 | DEBUG |python.generators.master_generator | 269 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-03 21:23:56,793 | INFO |python.generators.master_generator | 287 | Generated 15789 customers
+2026-08-03 21:23:56,793 | INFO |python.generators.master_generator | 288 | Customers data set generated succesfully
+2026-08-03 21:23:56,793 | INFO |python.generators.master_generator | 289 | Returning Customers Data set....
+2026-08-03 21:23:56,799 | INFO |python.generators.master_generator | 300 | Generating Products......
+2026-08-03 21:23:56,813 | INFO |python.generators.master_generator | 335 | Starting data validation
+2026-08-03 21:23:56,817 | INFO |python.generators.master_generator | 342 | Generated 96 products
+2026-08-03 21:23:56,817 | INFO |python.generators.master_generator | 343 | Products data set generated succesfully
+2026-08-03 21:23:56,817 | INFO |python.generators.master_generator | 344 | Returning Products Data set....
+2026-08-03 21:23:56,818 | INFO |python.generators.master_generator | 360 | Generating Suppliers.....
+2026-08-03 21:23:56,929 | INFO |python.generators.master_generator | 401 | Generated 150 suppliers
+2026-08-03 21:23:56,929 | INFO |python.generators.master_generator | 402 | Suppliers data set generated succesfully
+2026-08-03 21:23:56,929 | INFO |python.generators.master_generator | 403 | Returning Suppliers Data set....
+2026-08-03 21:23:56,929 | INFO |python.generators.master_generator | 417 | Generating Supplier Product Mapping.....
+2026-08-03 21:23:56,947 | INFO |python.generators.master_generator | 462 | Generated 325 suppliers_product_mappings
+2026-08-03 21:23:56,947 | INFO |python.generators.master_generator | 463 | suppliers_product_mapping data set generated succesfully
+2026-08-03 21:23:56,948 | INFO |python.generators.master_generator | 464 | Returning suppliers_product_mapping Data set....
+2026-08-03 21:23:56,948 | INFO |__main__ | 13 | Generating datasets...
+2026-08-03 21:23:56,948 | INFO |__main__ | 17 | Loading data into SQL Server...
+2026-08-03 21:23:58,497 | INFO |__main__ | 67 | All datasets loaded successfully
+2026-08-03 22:30:46,021 | INFO |__main__ | 71 | Generating Marketing Leads...
+2026-08-03 22:30:58,279 | INFO |__main__ | 118 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17404
+Contacted      12581
+Qualified       7534
+Proposal        5081
+Negotiation     3875
+Won             2021
+Lost            1504
+Name: count, dtype: int64
+2026-08-03 22:30:58,309 | ERROR |__main__ | 137 | Error generating marketing leads dataset: Marketing Leads dataset validation failed
+2026-08-03 22:35:43,130 | INFO |__main__ | 71 | Generating Marketing Leads...
+2026-08-03 22:35:56,452 | INFO |__main__ | 118 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17404
+Contacted      12581
+Qualified       7534
+Proposal        5081
+Negotiation     3875
+Won             2021
+Lost            1504
+Name: count, dtype: int64
+2026-08-03 22:35:56,452 | INFO |__main__ | 121 | Rows: 50000
+2026-08-03 22:35:56,453 | INFO |__main__ | 122 | Expected: 50000
+2026-08-03 22:35:56,467 | INFO |__main__ | 123 | Lead IDs unique: True
+2026-08-03 22:35:56,480 | INFO |__main__ | 124 | Company names unique: True
+2026-08-03 22:35:56,516 | INFO |__main__ | 125 | No nulls: True
+2026-08-03 22:35:56,544 | ERROR |__main__ | 144 | Error generating marketing leads dataset: Marketing Leads dataset validation failed
+2026-08-03 22:39:37,299 | INFO |__main__ | 71 | Generating Marketing Leads...
+2026-08-03 22:39:49,062 | INFO |__main__ | 118 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17404
+Contacted      12581
+Qualified       7534
+Proposal        5081
+Negotiation     3875
+Won             2021
+Lost            1504
+Name: count, dtype: int64
+2026-08-03 22:39:49,062 | INFO |__main__ | 121 | Rows: 50000
+2026-08-03 22:39:49,063 | INFO |__main__ | 122 | Expected: 50000
+2026-08-03 22:39:49,075 | INFO |__main__ | 123 | Lead IDs unique: True
+2026-08-03 22:39:49,092 | INFO |__main__ | 124 | Company names unique: True
+2026-08-03 22:39:49,129 | INFO |__main__ | 125 | No nulls: True
+2026-08-03 22:39:49,162 | ERROR |__main__ | 144 | Error generating marketing leads dataset: Marketing Leads dataset validation failed
+2026-08-03 22:45:40,417 | INFO |__main__ | 72 | Generating Marketing Leads...
+2026-08-03 22:45:52,053 | INFO |__main__ | 119 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17412
+Contacted      12594
+Qualified       7614
+Proposal        4978
+Negotiation     3874
+Won             2023
+Lost            1505
+Name: count, dtype: int64
+2026-08-03 22:45:52,053 | INFO |__main__ | 122 | Rows: 50000
+2026-08-03 22:45:52,053 | INFO |__main__ | 123 | Expected: 50000
+2026-08-03 22:45:52,071 | INFO |__main__ | 124 | Lead IDs unique: True
+2026-08-03 22:45:52,086 | INFO |__main__ | 125 | Company names unique: True
+2026-08-03 22:45:52,113 | INFO |__main__ | 126 | No nulls: True
+2026-08-03 22:45:52,153 | INFO |__main__ | 136 | Generated 50000 marketing leads records successfully!
+2026-08-03 22:45:52,157 | INFO |__main__ | 137 | 
+Industry Distribution:
+industry
+Education        9205
+Logistics        4584
+Manufacturing    4577
+Hospitality      4565
+Finance          4545
+Technology       4543
+Healthcare       4515
+Energy           4512
+Retail           4491
+Construction     4463
+Name: count, dtype: int64
+2026-08-03 22:48:36,325 | INFO |__main__ | 72 | Generating Marketing Leads...
+2026-08-03 22:48:49,105 | INFO |__main__ | 119 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17333
+Contacted      12558
+Qualified       7619
+Proposal        5025
+Negotiation     3967
+Won             1960
+Lost            1538
+Name: count, dtype: int64
+2026-08-03 22:48:49,105 | INFO |__main__ | 122 | Rows: 50000
+2026-08-03 22:48:49,105 | INFO |__main__ | 123 | Expected: 50000
+2026-08-03 22:48:49,132 | INFO |__main__ | 124 | Lead IDs unique: True
+2026-08-03 22:48:49,148 | INFO |__main__ | 125 | Company names unique: True
+2026-08-03 22:48:49,173 | INFO |__main__ | 126 | No nulls: True
+2026-08-03 22:48:49,212 | INFO |__main__ | 136 | Generated 50000 marketing leads records successfully!
+2026-08-03 22:48:49,216 | INFO |__main__ | 137 | 
+Industry Distribution:
+industry
+Construction     5165
+Energy           5038
+Manufacturing    5027
+Finance          5023
+Hospitality      4984
+Logistics        4965
+Retail           4963
+Healthcare       4956
+Technology       4947
+Education        4932
+Name: count, dtype: int64
+2026-08-03 23:24:46,871 | INFO |__main__ | 75 | Generating Marketing Leads...
+2026-08-03 23:24:59,162 | INFO |__main__ | 123 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-03 23:24:59,162 | INFO |__main__ | 126 | Rows: 50000
+2026-08-03 23:24:59,163 | INFO |__main__ | 127 | Expected: 50000
+2026-08-03 23:24:59,171 | INFO |__main__ | 128 | Lead IDs unique: True
+2026-08-03 23:24:59,181 | INFO |__main__ | 129 | Company names unique: True
+2026-08-03 23:24:59,203 | INFO |__main__ | 130 | No nulls: True
+2026-08-03 23:24:59,240 | INFO |__main__ | 140 | Generated 50000 marketing leads records successfully!
+2026-08-03 23:24:59,243 | INFO |__main__ | 141 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-03 23:35:23,995 | INFO |__main__ | 75 | Generating Marketing Leads...
+2026-08-03 23:35:36,383 | INFO |__main__ | 123 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-03 23:35:36,383 | INFO |__main__ | 126 | Rows: 50000
+2026-08-03 23:35:36,383 | INFO |__main__ | 127 | Expected: 50000
+2026-08-03 23:35:36,398 | INFO |__main__ | 128 | Lead IDs unique: True
+2026-08-03 23:35:36,418 | INFO |__main__ | 129 | Company names unique: True
+2026-08-03 23:35:36,443 | INFO |__main__ | 130 | No nulls: True
+2026-08-03 23:35:36,492 | INFO |__main__ | 140 | Generated 50000 marketing leads records successfully!
+2026-08-03 23:35:36,495 | INFO |__main__ | 141 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 12:40:27,733 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 12:40:40,729 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 12:40:40,798 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 12:40:40,802 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 12:40:40,818 | INFO |__main__ | 175 | Generating Web Logs...
+2026-08-04 12:44:41,228 | INFO |__main__ | 167 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:44:41,717 | INFO |__main__ | 169 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:44:41,718 | INFO |__main__ | 236 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:44:49,303 | INFO |__main__ | 239 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:47:39,048 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 12:47:51,458 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 12:47:51,497 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 12:47:51,500 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 12:47:51,517 | INFO |__main__ | 175 | Generating Web Logs...
+2026-08-04 12:47:51,562 | INFO |__main__ | 167 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:47:52,038 | INFO |__main__ | 169 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:47:52,038 | INFO |__main__ | 236 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:47:52,042 | INFO |__main__ | 239 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:50:00,855 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 12:50:13,372 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 12:50:13,410 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 12:50:13,413 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 12:50:13,427 | INFO |__main__ | 175 | Generating Web Logs...
+2026-08-04 12:50:13,479 | INFO |__main__ | 167 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:50:13,960 | INFO |__main__ | 169 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:50:13,960 | INFO |__main__ | 236 | Loading Web Logs Dataset to File.csv........
+2026-08-04 12:50:13,963 | INFO |__main__ | 239 | Successfully loaded Web logs Dataset to File
+2026-08-04 12:52:55,655 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 12:53:08,814 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 12:53:08,879 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 12:53:08,883 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 12:53:08,900 | INFO |__main__ | 175 | Generating Web Logs...
+2026-08-04 12:53:08,951 | INFO |__main__ | 167 | Loading Marketing Dataset to File.csv........
+2026-08-04 12:53:09,404 | INFO |__main__ | 169 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 12:53:09,404 | INFO |__main__ | 253 | Loading Web Logs Dataset to File.csv........
+2026-08-04 12:53:09,406 | INFO |__main__ | 255 | Successfully loaded Web logs Dataset to File
+2026-08-04 13:01:14,366 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 13:01:26,760 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 13:01:26,812 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 13:01:26,815 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 13:01:26,831 | INFO |__main__ | 170 | Generating Web Logs...
+2026-08-04 13:02:12,627 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 13:02:25,067 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 13:02:25,128 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 13:02:25,131 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 13:02:25,148 | INFO |__main__ | 170 | Generating Web Logs...
+2026-08-04 13:06:22,664 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 13:06:34,950 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 13:06:35,008 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 13:06:35,012 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 13:06:35,038 | INFO |__main__ | 170 | Generating Web Logs...
+2026-08-04 13:07:34,086 | INFO |__main__ | 87 | Generating Marketing Leads...
+2026-08-04 13:07:46,304 | INFO |__main__ | 135 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 13:07:46,364 | INFO |__main__ | 153 | Generated 50000 marketing leads records successfully!
+2026-08-04 13:07:46,368 | INFO |__main__ | 154 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 13:07:46,391 | INFO |__main__ | 170 | Generating Web Logs...
+2026-08-04 13:07:46,462 | INFO |__main__ | 234 | Loading Marketing Dataset to File.csv........
+2026-08-04 13:07:46,871 | INFO |__main__ | 236 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 13:07:46,871 | INFO |__main__ | 242 | Loading Web Logs Dataset to File.csv........
+2026-08-04 13:07:46,875 | INFO |__main__ | 244 | Successfully loaded Web logs Dataset to File
+2026-08-04 15:47:47,409 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 15:47:59,645 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 15:47:59,705 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 15:47:59,708 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 15:48:00,419 | INFO |__main__ | 182 | Generating Orders...
+2026-08-04 15:48:01,498 | INFO |__main__ | 226 | Orders generation successfull, total no. of orders = 31987
+2026-08-04 15:48:01,592 | INFO |__main__ | 230 | Generated 31987 suppliers
+2026-08-04 15:48:01,594 | INFO |__main__ | 231 | orders data set generated succesfully
+2026-08-04 15:48:01,594 | INFO |__main__ | 232 | Returning Orders Data set....
+2026-08-04 15:48:01,605 | INFO |__main__ | 339 | Uploading orders into csv for test
+2026-08-04 15:48:34,349 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 15:48:46,848 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 15:48:46,889 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 15:48:46,902 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 15:48:47,141 | INFO |__main__ | 182 | Generating Orders...
+2026-08-04 15:48:48,080 | INFO |__main__ | 226 | Orders generation successfull, total no. of orders = 31987
+2026-08-04 15:48:48,188 | INFO |__main__ | 230 | Generated 31987 suppliers
+2026-08-04 15:48:48,188 | INFO |__main__ | 231 | orders data set generated succesfully
+2026-08-04 15:48:48,189 | INFO |__main__ | 232 | Returning Orders Data set....
+2026-08-04 15:48:48,198 | INFO |__main__ | 339 | Uploading orders into csv for test
+2026-08-04 15:50:42,982 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 15:50:55,199 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 15:50:55,247 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 15:50:55,252 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 15:50:55,744 | INFO |__main__ | 182 | Generating Orders...
+2026-08-04 15:50:56,886 | INFO |__main__ | 226 | Orders generation successfull, total no. of orders = 31987
+2026-08-04 15:50:57,006 | INFO |__main__ | 230 | Generated 31987 suppliers
+2026-08-04 15:50:57,007 | INFO |__main__ | 231 | orders data set generated succesfully
+2026-08-04 15:50:57,007 | INFO |__main__ | 232 | Returning Orders Data set....
+2026-08-04 15:50:57,022 | INFO |__main__ | 340 | Loading orders Dataset to File.csv........
+2026-08-04 15:50:57,264 | INFO |__main__ | 342 | Successfully loaded orders Dataset to File
+2026-08-04 15:50:57,264 | INFO |__main__ | 249 | Generating Web Logs...
+2026-08-04 15:50:57,324 | INFO |__main__ | 312 | Loading Marketing Dataset to File.csv........
+2026-08-04 15:50:57,741 | INFO |__main__ | 314 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 15:50:57,741 | INFO |__main__ | 320 | Loading Web Logs Dataset to File.csv........
+2026-08-04 15:50:57,744 | INFO |__main__ | 322 | Successfully loaded Web logs Dataset to File
+2026-08-04 17:07:03,211 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 17:07:15,260 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 17:07:15,308 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 17:07:15,311 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 17:07:16,052 | INFO |__main__ | 181 | Generating Orders...
+2026-08-04 17:07:16,230 | ERROR |__main__ | 303 | Error generating orders: 'country'
+2026-08-04 17:25:03,617 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 17:25:15,782 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 17:25:15,840 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 17:25:15,842 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 17:25:16,370 | INFO |__main__ | 181 | Generating Orders...
+2026-08-04 17:25:16,564 | ERROR |__main__ | 306 | Error generating orders: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.
+2026-08-04 17:27:04,874 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 17:27:17,775 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 17:27:17,818 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 17:27:17,820 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 17:27:18,300 | INFO |__main__ | 181 | Generating Orders...
+2026-08-04 17:27:18,526 | ERROR |__main__ | 306 | Error generating orders: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.
+2026-08-04 17:43:57,994 | INFO |__main__ | 96 | Generating Marketing Leads...
+2026-08-04 17:44:11,203 | INFO |__main__ | 144 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-04 17:44:11,259 | INFO |__main__ | 162 | Generated 50000 marketing leads records successfully!
+2026-08-04 17:44:11,268 | INFO |__main__ | 163 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-04 17:44:11,772 | INFO |__main__ | 181 | Generating Orders...
+2026-08-04 17:44:14,352 | INFO |__main__ | 287 | Orders generation successfull, total no. of orders = 31987
+2026-08-04 17:44:14,483 | INFO |__main__ | 297 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-04 17:44:14,485 | INFO |__main__ | 298 | orders data set generated succesfully
+2026-08-04 17:44:14,486 | INFO |__main__ | 300 | Orders with Lead Attribution: 1987
+2026-08-04 17:44:14,488 | INFO |__main__ | 302 | Legacy Customer Orders: 30000
+2026-08-04 17:44:14,488 | INFO |__main__ | 304 | Returning Orders Data set....
+2026-08-04 17:44:14,505 | INFO |__main__ | 423 | Loading orders Dataset to File.csv........
+2026-08-04 17:44:14,827 | INFO |__main__ | 425 | Successfully loaded orders Dataset to File
+2026-08-04 17:44:14,827 | INFO |__main__ | 324 | Generating Web Logs...
+2026-08-04 17:44:14,901 | INFO |__main__ | 387 | Loading Marketing Dataset to File.csv........
+2026-08-04 17:44:15,328 | INFO |__main__ | 389 | Successfully loaded Marketing Leads Dataset to File
+2026-08-04 17:44:15,328 | INFO |__main__ | 395 | Loading Web Logs Dataset to File.csv........
+2026-08-04 17:44:15,331 | INFO |__main__ | 397 | Successfully loaded Web logs Dataset to File
+2026-08-05 03:28:38,043 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 03:28:53,528 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 03:28:53,591 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 03:28:53,594 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 03:28:54,370 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 03:28:57,727 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 03:28:57,893 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 03:28:57,893 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 03:28:57,894 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 03:28:57,894 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 03:28:57,894 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 03:35:04,076 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 03:35:19,240 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 03:35:19,289 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 03:35:19,289 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 03:35:19,953 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 03:35:23,298 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 03:35:23,424 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 03:35:23,424 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 03:35:23,425 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 03:35:23,427 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 03:35:23,427 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 03:35:23,437 | INFO |__main__ | 312 | Generating Marketing Leads...
+2026-08-05 03:35:23,444 | ERROR |__main__ | 354 | Error generating Order Items dataset 12418
+2026-08-05 03:47:48,995 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 03:48:04,914 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 03:48:04,972 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 03:48:04,978 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 03:48:05,661 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 03:48:09,087 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 03:48:09,261 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 03:48:09,261 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 03:48:09,262 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 03:48:09,264 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 03:48:09,264 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 03:48:09,280 | INFO |__main__ | 312 | Generating Marketing Leads...
+2026-08-05 03:48:09,632 | ERROR |__main__ | 356 | Error generating Order Items dataset 'function' object has no attribute 'to_dict'
+2026-08-05 03:53:58,627 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 03:54:15,143 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 03:54:15,205 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 03:54:15,210 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 03:54:15,782 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 03:54:19,429 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 03:54:19,563 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 03:54:19,563 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 03:54:19,565 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 03:54:19,565 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 03:54:19,565 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 03:54:19,582 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 03:54:19,902 | ERROR |__main__ | 356 | Error generating Order Items dataset 'function' object has no attribute 'to_dict'
+2026-08-05 03:55:36,762 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 03:56:01,311 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 03:56:01,398 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 03:56:01,400 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 03:56:02,217 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 03:56:07,930 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 03:56:08,159 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 03:56:08,159 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 03:56:08,159 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 03:56:08,167 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 03:56:08,169 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 03:56:08,186 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 03:56:08,794 | ERROR |__main__ | 356 | Error generating Order Items dataset 'supplier_price'
+2026-08-05 04:07:29,028 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 04:07:44,239 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 04:07:44,312 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 04:07:44,318 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 04:07:44,973 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 04:07:48,437 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 04:07:48,587 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 04:07:48,587 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 04:07:48,587 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 04:07:48,591 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 04:07:48,591 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 04:07:48,613 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 04:07:49,783 | INFO |__main__ | 345 | Generated 31987 order_items_dataset
+2026-08-05 04:07:49,783 | INFO |__main__ | 346 | order items dataset generated succesfully
+2026-08-05 04:07:49,783 | INFO |__main__ | 347 | Returning Order Items Dataset....
+2026-08-05 04:07:49,794 | INFO |__main__ | 506 | Loading orders Dataset to File.csv........
+2026-08-05 04:07:50,173 | INFO |__main__ | 508 | Successfully loaded orders Dataset to File
+2026-08-05 04:07:50,173 | INFO |__main__ | 515 | Loading order items Dataset to File.csv........
+2026-08-05 04:07:50,497 | INFO |__main__ | 517 | Successfully loaded order items Dataset to File
+2026-08-05 04:07:50,497 | INFO |__main__ | 397 | Generating Web Logs...
+2026-08-05 04:07:50,638 | INFO |__main__ | 463 | Loading Marketing Dataset to File.csv........
+2026-08-05 04:07:51,227 | INFO |__main__ | 465 | Successfully loaded Marketing Leads Dataset to File
+2026-08-05 04:07:51,227 | INFO |__main__ | 471 | Loading Web Logs Dataset to File.csv........
+2026-08-05 04:07:51,230 | INFO |__main__ | 473 | Successfully loaded Web logs Dataset to File
+2026-08-05 04:42:25,409 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 04:42:40,567 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 04:42:40,612 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 04:42:40,622 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 04:42:41,414 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 04:42:44,635 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 04:42:44,754 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 04:42:44,754 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 04:42:44,754 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 04:42:44,754 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 04:42:44,754 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 04:42:44,769 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 04:42:45,048 | ERROR |__main__ | 371 | Error generating Order Items dataset Random.sample() missing 1 required positional argument: 'k'
+2026-08-05 04:49:09,646 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 04:49:24,552 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 04:49:24,614 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 04:49:24,618 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 04:49:25,242 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 04:49:28,561 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 04:49:28,718 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 04:49:28,718 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 04:49:28,721 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 04:49:28,721 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 04:49:28,721 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 04:49:28,737 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 04:49:31,893 | INFO |__main__ | 359 | Generated 96234 order_items_dataset
+2026-08-05 04:49:31,895 | INFO |__main__ | 360 | order items dataset generated succesfully
+2026-08-05 04:49:31,895 | INFO |__main__ | 361 | Returning Order Items Dataset....
+2026-08-05 04:49:31,920 | INFO |__main__ | 520 | Loading orders Dataset to File.csv........
+2026-08-05 04:49:32,276 | INFO |__main__ | 522 | Successfully loaded orders Dataset to File
+2026-08-05 04:49:32,282 | INFO |__main__ | 529 | Loading order items Dataset to File.csv........
+2026-08-05 04:49:33,271 | INFO |__main__ | 531 | Successfully loaded order items Dataset to File
+2026-08-05 04:49:33,271 | INFO |__main__ | 411 | Generating Web Logs...
+2026-08-05 04:49:33,410 | INFO |__main__ | 477 | Loading Marketing Dataset to File.csv........
+2026-08-05 04:49:33,947 | INFO |__main__ | 479 | Successfully loaded Marketing Leads Dataset to File
+2026-08-05 04:49:33,947 | INFO |__main__ | 485 | Loading Web Logs Dataset to File.csv........
+2026-08-05 04:49:33,951 | INFO |__main__ | 487 | Successfully loaded Web logs Dataset to File
+2026-08-05 05:13:17,799 | INFO |__main__ | 94 | Generating Marketing Leads...
+2026-08-05 05:13:33,677 | INFO |__main__ | 142 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 05:13:33,782 | INFO |__main__ | 160 | Generated 50000 marketing leads records successfully!
+2026-08-05 05:13:33,782 | INFO |__main__ | 161 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 05:13:34,537 | INFO |__main__ | 176 | Generating Orders...
+2026-08-05 05:13:37,963 | INFO |__main__ | 282 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 05:13:38,174 | INFO |__main__ | 292 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 05:13:38,176 | INFO |__main__ | 293 | orders data set generated succesfully
+2026-08-05 05:13:38,178 | INFO |__main__ | 295 | Orders with Lead Attribution: 1987
+2026-08-05 05:13:38,180 | INFO |__main__ | 297 | Legacy Customer Orders: 30000
+2026-08-05 05:13:38,181 | INFO |__main__ | 299 | Returning Orders Data set....
+2026-08-05 05:13:38,200 | INFO |__main__ | 312 | Generating Order Items Leads...
+2026-08-05 05:13:41,290 | INFO |__main__ | 359 | Generated 96234 order_items_dataset
+2026-08-05 05:13:41,290 | INFO |__main__ | 360 | order items dataset generated succesfully
+2026-08-05 05:13:41,290 | INFO |__main__ | 361 | Returning Order Items Dataset....
+2026-08-05 05:13:41,313 | INFO |__main__ | 379 | Populating order total in orders table by summing up line totals of order items
+2026-08-05 05:13:41,465 | INFO |__main__ | 394 | Order totals populated successfully
+2026-08-05 05:13:41,469 | INFO |__main__ | 545 | Loading orders Dataset to File.csv........
+2026-08-05 05:13:41,893 | INFO |__main__ | 547 | Successfully loaded orders Dataset to File
+2026-08-05 05:13:41,896 | INFO |__main__ | 554 | Loading order items Dataset to File.csv........
+2026-08-05 05:13:42,849 | INFO |__main__ | 556 | Successfully loaded order items Dataset to File
+2026-08-05 05:13:42,850 | INFO |__main__ | 436 | Generating Web Logs...
+2026-08-05 05:13:42,915 | INFO |__main__ | 502 | Loading Marketing Dataset to File.csv........
+2026-08-05 05:13:43,477 | INFO |__main__ | 504 | Successfully loaded Marketing Leads Dataset to File
+2026-08-05 05:13:43,477 | INFO |__main__ | 510 | Loading Web Logs Dataset to File.csv........
+2026-08-05 05:13:43,482 | INFO |__main__ | 512 | Successfully loaded Web logs Dataset to File
+2026-08-05 05:55:52,149 | INFO |__main__ | 102 | Generating Marketing Leads...
+2026-08-05 05:56:03,705 | INFO |__main__ | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 05:56:03,758 | INFO |__main__ | 168 | Generated 50000 marketing leads records successfully!
+2026-08-05 05:56:03,761 | INFO |__main__ | 169 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 05:56:03,777 | INFO |__main__ | 184 | Generating Orders...
+2026-08-05 05:56:06,243 | INFO |__main__ | 297 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 05:56:06,346 | INFO |__main__ | 307 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 05:56:06,346 | INFO |__main__ | 308 | orders data set generated succesfully
+2026-08-05 05:56:06,347 | INFO |__main__ | 310 | Orders with Lead Attribution: 1987
+2026-08-05 05:56:06,349 | INFO |__main__ | 312 | Legacy Customer Orders: 30000
+2026-08-05 05:56:06,349 | INFO |__main__ | 314 | Returning Orders Data set....
+2026-08-05 05:56:06,361 | INFO |__main__ | 327 | Generating Order Items Leads...
+2026-08-05 05:56:08,838 | INFO |__main__ | 380 | Generated 96234 order_items_dataset
+2026-08-05 05:56:08,838 | INFO |__main__ | 381 | order items dataset generated succesfully
+2026-08-05 05:56:08,839 | INFO |__main__ | 382 | Returning Order Items Dataset....
+2026-08-05 05:56:08,860 | INFO |__main__ | 401 | Populating order total in orders table by summing up line totals of order items
+2026-08-05 05:56:08,951 | INFO |__main__ | 416 | Order totals populated successfully
+2026-08-05 05:56:08,952 | INFO |__main__ | 448 | Generating Web Logs...
+2026-08-05 06:07:13,011 | INFO |__main__ | 102 | Generating Marketing Leads...
+2026-08-05 06:07:26,210 | INFO |__main__ | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 06:07:26,253 | INFO |__main__ | 168 | Generated 50000 marketing leads records successfully!
+2026-08-05 06:07:26,256 | INFO |__main__ | 169 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 06:07:26,272 | INFO |__main__ | 448 | Generating Web Logs...
+2026-08-05 06:07:26,326 | INFO |__main__ | 580 | Fetching required datasets to generate orders and order_items
+2026-08-05 06:07:26,838 | INFO |__main__ | 184 | Generating Orders...
+2026-08-05 06:07:29,267 | INFO |__main__ | 297 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 06:07:29,368 | INFO |__main__ | 307 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 06:07:29,368 | INFO |__main__ | 308 | orders data set generated succesfully
+2026-08-05 06:07:29,369 | INFO |__main__ | 310 | Orders with Lead Attribution: 1987
+2026-08-05 06:07:29,370 | INFO |__main__ | 312 | Legacy Customer Orders: 30000
+2026-08-05 06:07:29,370 | INFO |__main__ | 314 | Returning Orders Data set....
+2026-08-05 06:07:29,381 | INFO |__main__ | 327 | Generating Order Items Leads...
+2026-08-05 06:07:31,857 | INFO |__main__ | 380 | Generated 96253 order_items_dataset
+2026-08-05 06:07:31,858 | INFO |__main__ | 381 | order items dataset generated succesfully
+2026-08-05 06:07:31,858 | INFO |__main__ | 382 | Returning Order Items Dataset....
+2026-08-05 06:07:31,877 | INFO |__main__ | 401 | Populating order total in orders table by summing up line totals of order items
+2026-08-05 06:07:31,936 | INFO |__main__ | 416 | Order totals populated successfully
+2026-08-05 06:07:31,937 | INFO |__main__ | 589 | Returning all Datasets....
+2026-08-05 06:07:31,939 | INFO |python.generators.load_to_sqlserver | 13 | Generating datasets...
+2026-08-05 06:07:31,940 | INFO |python.generators.load_to_sqlserver | 17 | Loading data into SQL Server...
+2026-08-05 06:07:31,940 | ERROR |python.generators.load_to_sqlserver | 88 | Error loading datasets: 'companies'
+2026-08-05 06:20:05,065 | INFO |__main__ | 102 | Generating Marketing Leads...
+2026-08-05 06:20:20,378 | INFO |__main__ | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 06:20:20,422 | INFO |__main__ | 168 | Generated 50000 marketing leads records successfully!
+2026-08-05 06:20:20,422 | INFO |__main__ | 169 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 06:20:20,449 | INFO |__main__ | 448 | Generating Web Logs...
+2026-08-05 06:20:20,508 | INFO |__main__ | 580 | Fetching required datasets to generate orders and order_items
+2026-08-05 06:20:21,855 | INFO |__main__ | 184 | Generating Orders...
+2026-08-05 06:20:25,513 | INFO |__main__ | 297 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 06:20:25,661 | INFO |__main__ | 307 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 06:20:25,661 | INFO |__main__ | 308 | orders data set generated succesfully
+2026-08-05 06:20:25,661 | INFO |__main__ | 310 | Orders with Lead Attribution: 1987
+2026-08-05 06:20:25,661 | INFO |__main__ | 312 | Legacy Customer Orders: 30000
+2026-08-05 06:20:25,661 | INFO |__main__ | 314 | Returning Orders Data set....
+2026-08-05 06:20:25,683 | INFO |__main__ | 327 | Generating Order Items Leads...
+2026-08-05 06:20:28,933 | INFO |__main__ | 380 | Generated 96253 order_items_dataset
+2026-08-05 06:20:28,933 | INFO |__main__ | 381 | order items dataset generated succesfully
+2026-08-05 06:20:28,933 | INFO |__main__ | 382 | Returning Order Items Dataset....
+2026-08-05 06:20:28,962 | INFO |__main__ | 401 | Populating order total in orders table by summing up line totals of order items
+2026-08-05 06:20:29,054 | INFO |__main__ | 416 | Order totals populated successfully
+2026-08-05 06:20:29,054 | INFO |__main__ | 589 | Returning all Datasets....
+2026-08-05 06:20:29,060 | INFO |python.generators.load_to_sqlserver | 10 | Loading datasets into SQL Server...
+2026-08-05 06:20:29,060 | INFO |python.generators.load_to_sqlserver | 29 | Loading orders into Orders
+2026-08-05 06:20:31,627 | INFO |python.generators.load_to_sqlserver | 29 | Loading order_items into Orders_Items
+2026-08-05 06:20:35,571 | INFO |python.generators.load_to_sqlserver | 43 | All available datasets loaded successfully
+2026-08-05 07:24:34,776 | INFO |__main__ | 441 | Generating all Datasets....
+2026-08-05 07:24:34,776 | INFO |__main__ | 148 | Generating Categories.....
+2026-08-05 07:24:34,814 | INFO |__main__ | 173 | Generated 10 categories
+2026-08-05 07:24:34,814 | INFO |__main__ | 174 | Categories data set generated succesfully
+2026-08-05 07:24:34,814 | INFO |__main__ | 175 | Returning Categories Data set....
+2026-08-05 07:24:34,814 | INFO |__main__ | 79 | Generating Companies...
+2026-08-05 07:24:35,033 | INFO |__main__ | 124 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-05 07:24:35,035 | INFO |__main__ | 134 | Generated 500 company records successfully!
+2026-08-05 07:24:35,035 | INFO |__main__ | 190 | Generating Customers.....
+2026-08-05 07:24:38,561 | DEBUG |__main__ | 235 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-05 07:24:38,589 | INFO |__main__ | 253 | Generated 15789 customers
+2026-08-05 07:24:38,589 | INFO |__main__ | 254 | Customers data set generated succesfully
+2026-08-05 07:24:38,589 | INFO |__main__ | 255 | Returning Customers Data set....
+2026-08-05 07:24:38,589 | INFO |__main__ | 266 | Generating Products......
+2026-08-05 07:24:38,605 | INFO |__main__ | 301 | Starting data validation
+2026-08-05 07:24:38,605 | INFO |__main__ | 308 | Generated 96 products
+2026-08-05 07:24:38,605 | INFO |__main__ | 309 | Products data set generated succesfully
+2026-08-05 07:24:38,613 | INFO |__main__ | 310 | Returning Products Data set....
+2026-08-05 07:24:38,615 | INFO |__main__ | 326 | Generating Suppliers.....
+2026-08-05 07:24:38,754 | INFO |__main__ | 367 | Generated 150 suppliers
+2026-08-05 07:24:38,754 | INFO |__main__ | 368 | Suppliers data set generated succesfully
+2026-08-05 07:24:38,754 | INFO |__main__ | 369 | Returning Suppliers Data set....
+2026-08-05 07:24:38,754 | INFO |__main__ | 383 | Generating Supplier Product Mapping.....
+2026-08-05 07:24:38,778 | INFO |__main__ | 428 | Generated 325 suppliers_product_mappings
+2026-08-05 07:24:38,778 | INFO |__main__ | 429 | suppliers_product_mapping data set generated succesfully
+2026-08-05 07:24:38,780 | INFO |__main__ | 430 | Returning suppliers_product_mapping Data set....
+2026-08-05 07:24:38,780 | INFO |__main__ | 449 | Returning all Datasets....
+2026-08-05 07:24:52,179 | INFO |__main__ | 102 | Generating Marketing Leads...
+2026-08-05 07:25:11,058 | INFO |__main__ | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 07:25:11,117 | INFO |__main__ | 168 | Generated 50000 marketing leads records successfully!
+2026-08-05 07:25:11,127 | INFO |__main__ | 169 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 07:25:11,152 | INFO |__main__ | 448 | Generating Web Logs...
+2026-08-05 07:25:31,169 | INFO |__main__ | 580 | Fetching required datasets to generate orders and order_items
+2026-08-05 07:25:31,516 | INFO |__main__ | 184 | Generating Orders...
+2026-08-05 07:25:31,550 | ERROR |__main__ | 320 | Error generating orders: list index out of range
+2026-08-05 07:25:31,550 | ERROR |__main__ | 595 | Error generating datasets
+2026-08-05 07:27:25,346 | INFO |__main__ | 441 | Generating all Datasets....
+2026-08-05 07:27:25,350 | INFO |__main__ | 148 | Generating Categories.....
+2026-08-05 07:27:25,354 | INFO |__main__ | 173 | Generated 10 categories
+2026-08-05 07:27:25,357 | INFO |__main__ | 174 | Categories data set generated succesfully
+2026-08-05 07:27:25,357 | INFO |__main__ | 175 | Returning Categories Data set....
+2026-08-05 07:27:25,357 | INFO |__main__ | 79 | Generating Companies...
+2026-08-05 07:27:25,608 | INFO |__main__ | 124 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-05 07:27:25,614 | INFO |__main__ | 134 | Generated 500 company records successfully!
+2026-08-05 07:27:25,614 | INFO |__main__ | 190 | Generating Customers.....
+2026-08-05 07:27:29,168 | DEBUG |__main__ | 235 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-05 07:27:29,229 | INFO |__main__ | 253 | Generated 15789 customers
+2026-08-05 07:27:29,230 | INFO |__main__ | 254 | Customers data set generated succesfully
+2026-08-05 07:27:29,230 | INFO |__main__ | 255 | Returning Customers Data set....
+2026-08-05 07:27:29,236 | INFO |__main__ | 266 | Generating Products......
+2026-08-05 07:27:29,249 | INFO |__main__ | 301 | Starting data validation
+2026-08-05 07:27:29,253 | INFO |__main__ | 308 | Generated 96 products
+2026-08-05 07:27:29,253 | INFO |__main__ | 309 | Products data set generated succesfully
+2026-08-05 07:27:29,253 | INFO |__main__ | 310 | Returning Products Data set....
+2026-08-05 07:27:29,253 | INFO |__main__ | 326 | Generating Suppliers.....
+2026-08-05 07:27:29,398 | INFO |__main__ | 367 | Generated 150 suppliers
+2026-08-05 07:27:29,398 | INFO |__main__ | 368 | Suppliers data set generated succesfully
+2026-08-05 07:27:29,398 | INFO |__main__ | 369 | Returning Suppliers Data set....
+2026-08-05 07:27:29,398 | INFO |__main__ | 383 | Generating Supplier Product Mapping.....
+2026-08-05 07:27:29,427 | INFO |__main__ | 428 | Generated 325 suppliers_product_mappings
+2026-08-05 07:27:29,429 | INFO |__main__ | 429 | suppliers_product_mapping data set generated succesfully
+2026-08-05 07:27:29,429 | INFO |__main__ | 430 | Returning suppliers_product_mapping Data set....
+2026-08-05 07:27:29,431 | INFO |__main__ | 449 | Returning all Datasets....
+2026-08-05 07:28:31,856 | INFO |__main__ | 441 | Generating all Datasets....
+2026-08-05 07:28:31,856 | INFO |__main__ | 148 | Generating Categories.....
+2026-08-05 07:28:31,865 | INFO |__main__ | 173 | Generated 10 categories
+2026-08-05 07:28:31,865 | INFO |__main__ | 174 | Categories data set generated succesfully
+2026-08-05 07:28:31,865 | INFO |__main__ | 175 | Returning Categories Data set....
+2026-08-05 07:28:31,865 | INFO |__main__ | 79 | Generating Companies...
+2026-08-05 07:28:32,076 | INFO |__main__ | 124 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-05 07:28:32,076 | INFO |__main__ | 134 | Generated 500 company records successfully!
+2026-08-05 07:28:32,076 | INFO |__main__ | 190 | Generating Customers.....
+2026-08-05 07:28:34,889 | DEBUG |__main__ | 235 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-05 07:28:34,904 | INFO |__main__ | 253 | Generated 15789 customers
+2026-08-05 07:28:34,904 | INFO |__main__ | 254 | Customers data set generated succesfully
+2026-08-05 07:28:34,904 | INFO |__main__ | 255 | Returning Customers Data set....
+2026-08-05 07:28:34,912 | INFO |__main__ | 266 | Generating Products......
+2026-08-05 07:28:34,938 | INFO |__main__ | 301 | Starting data validation
+2026-08-05 07:28:34,940 | INFO |__main__ | 308 | Generated 96 products
+2026-08-05 07:28:34,940 | INFO |__main__ | 309 | Products data set generated succesfully
+2026-08-05 07:28:34,942 | INFO |__main__ | 310 | Returning Products Data set....
+2026-08-05 07:28:34,942 | INFO |__main__ | 326 | Generating Suppliers.....
+2026-08-05 07:28:35,121 | INFO |__main__ | 367 | Generated 150 suppliers
+2026-08-05 07:28:35,121 | INFO |__main__ | 368 | Suppliers data set generated succesfully
+2026-08-05 07:28:35,121 | INFO |__main__ | 369 | Returning Suppliers Data set....
+2026-08-05 07:28:35,121 | INFO |__main__ | 383 | Generating Supplier Product Mapping.....
+2026-08-05 07:28:35,155 | INFO |__main__ | 428 | Generated 325 suppliers_product_mappings
+2026-08-05 07:28:35,155 | INFO |__main__ | 429 | suppliers_product_mapping data set generated succesfully
+2026-08-05 07:28:35,155 | INFO |__main__ | 430 | Returning suppliers_product_mapping Data set....
+2026-08-05 07:28:35,155 | INFO |__main__ | 449 | Returning all Datasets....
+2026-08-05 07:30:24,612 | INFO |__main__ | 441 | Generating all Datasets....
+2026-08-05 07:30:24,612 | INFO |__main__ | 148 | Generating Categories.....
+2026-08-05 07:30:24,612 | INFO |__main__ | 173 | Generated 10 categories
+2026-08-05 07:30:24,612 | INFO |__main__ | 174 | Categories data set generated succesfully
+2026-08-05 07:30:24,612 | INFO |__main__ | 175 | Returning Categories Data set....
+2026-08-05 07:30:24,612 | INFO |__main__ | 79 | Generating Companies...
+2026-08-05 07:30:24,820 | INFO |__main__ | 124 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-05 07:30:24,820 | INFO |__main__ | 134 | Generated 500 company records successfully!
+2026-08-05 07:30:24,820 | INFO |__main__ | 190 | Generating Customers.....
+2026-08-05 07:30:27,617 | DEBUG |__main__ | 235 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-05 07:30:27,642 | INFO |__main__ | 253 | Generated 15789 customers
+2026-08-05 07:30:27,644 | INFO |__main__ | 254 | Customers data set generated succesfully
+2026-08-05 07:30:27,645 | INFO |__main__ | 255 | Returning Customers Data set....
+2026-08-05 07:30:27,651 | INFO |__main__ | 266 | Generating Products......
+2026-08-05 07:30:27,673 | INFO |__main__ | 301 | Starting data validation
+2026-08-05 07:30:27,675 | INFO |__main__ | 308 | Generated 96 products
+2026-08-05 07:30:27,675 | INFO |__main__ | 309 | Products data set generated succesfully
+2026-08-05 07:30:27,675 | INFO |__main__ | 310 | Returning Products Data set....
+2026-08-05 07:30:27,676 | INFO |__main__ | 326 | Generating Suppliers.....
+2026-08-05 07:30:27,810 | INFO |__main__ | 367 | Generated 150 suppliers
+2026-08-05 07:30:27,810 | INFO |__main__ | 368 | Suppliers data set generated succesfully
+2026-08-05 07:30:27,810 | INFO |__main__ | 369 | Returning Suppliers Data set....
+2026-08-05 07:30:27,810 | INFO |__main__ | 383 | Generating Supplier Product Mapping.....
+2026-08-05 07:30:27,828 | INFO |__main__ | 428 | Generated 325 suppliers_product_mappings
+2026-08-05 07:30:27,830 | INFO |__main__ | 429 | suppliers_product_mapping data set generated succesfully
+2026-08-05 07:30:27,830 | INFO |__main__ | 430 | Returning suppliers_product_mapping Data set....
+2026-08-05 07:30:27,830 | INFO |__main__ | 449 | Returning all Datasets....
+2026-08-05 07:32:51,802 | INFO |__main__ | 442 | Generating all Datasets....
+2026-08-05 07:32:51,802 | INFO |__main__ | 149 | Generating Categories.....
+2026-08-05 07:32:51,811 | INFO |__main__ | 174 | Generated 10 categories
+2026-08-05 07:32:51,817 | INFO |__main__ | 175 | Categories data set generated succesfully
+2026-08-05 07:32:51,820 | INFO |__main__ | 176 | Returning Categories Data set....
+2026-08-05 07:32:51,820 | INFO |__main__ | 80 | Generating Companies...
+2026-08-05 07:32:52,042 | INFO |__main__ | 125 | 
+Company Type Distribution:
+company_type
+Buyer       350
+Supplier    150
+Name: count, dtype: int64
+2026-08-05 07:32:52,042 | INFO |__main__ | 135 | Generated 500 company records successfully!
+2026-08-05 07:32:52,051 | INFO |__main__ | 191 | Generating Customers.....
+2026-08-05 07:32:54,869 | DEBUG |__main__ | 236 | 
+Customers per company:
+count    350.000000
+mean      45.111429
+std       20.752095
+min       10.000000
+25%       26.000000
+50%       45.500000
+75%       62.000000
+max       80.000000
+dtype: float64
+2026-08-05 07:32:54,886 | INFO |__main__ | 254 | Generated 15789 customers
+2026-08-05 07:32:54,886 | INFO |__main__ | 255 | Customers data set generated succesfully
+2026-08-05 07:32:54,886 | INFO |__main__ | 256 | Returning Customers Data set....
+2026-08-05 07:32:54,893 | INFO |__main__ | 267 | Generating Products......
+2026-08-05 07:32:54,927 | INFO |__main__ | 302 | Starting data validation
+2026-08-05 07:32:54,927 | INFO |__main__ | 309 | Generated 96 products
+2026-08-05 07:32:54,927 | INFO |__main__ | 310 | Products data set generated succesfully
+2026-08-05 07:32:54,927 | INFO |__main__ | 311 | Returning Products Data set....
+2026-08-05 07:32:54,927 | INFO |__main__ | 327 | Generating Suppliers.....
+2026-08-05 07:32:55,091 | INFO |__main__ | 368 | Generated 150 suppliers
+2026-08-05 07:32:55,091 | INFO |__main__ | 369 | Suppliers data set generated succesfully
+2026-08-05 07:32:55,091 | INFO |__main__ | 370 | Returning Suppliers Data set....
+2026-08-05 07:32:55,091 | INFO |__main__ | 384 | Generating Supplier Product Mapping.....
+2026-08-05 07:32:55,108 | INFO |__main__ | 429 | Generated 325 suppliers_product_mappings
+2026-08-05 07:32:55,108 | INFO |__main__ | 430 | suppliers_product_mapping data set generated succesfully
+2026-08-05 07:32:55,108 | INFO |__main__ | 431 | Returning suppliers_product_mapping Data set....
+2026-08-05 07:32:55,108 | INFO |__main__ | 450 | Returning all Datasets....
+2026-08-05 07:32:55,108 | INFO |python.generators.load_to_sqlserver | 10 | Loading datasets into SQL Server...
+2026-08-05 07:32:55,108 | INFO |python.generators.load_to_sqlserver | 29 | Loading companies into Companies
+2026-08-05 07:32:55,463 | INFO |python.generators.load_to_sqlserver | 29 | Loading categories into Categories
+2026-08-05 07:32:55,482 | INFO |python.generators.load_to_sqlserver | 29 | Loading customers into Customers
+2026-08-05 07:32:56,921 | INFO |python.generators.load_to_sqlserver | 29 | Loading products into Products
+2026-08-05 07:32:56,959 | INFO |python.generators.load_to_sqlserver | 29 | Loading suppliers into Suppliers
+2026-08-05 07:32:56,992 | INFO |python.generators.load_to_sqlserver | 29 | Loading supplier_product_mapping into Supplier_Product_Mapping
+2026-08-05 07:32:57,035 | INFO |python.generators.load_to_sqlserver | 43 | All available datasets loaded successfully
+2026-08-05 07:33:09,209 | INFO |__main__ | 102 | Generating Marketing Leads...
+2026-08-05 07:33:23,469 | INFO |__main__ | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            17450
+Contacted      12569
+Qualified       7569
+Proposal        4980
+Negotiation     3964
+Won             1987
+Lost            1481
+Name: count, dtype: int64
+2026-08-05 07:33:23,526 | INFO |__main__ | 168 | Generated 50000 marketing leads records successfully!
+2026-08-05 07:33:23,526 | INFO |__main__ | 169 | 
+Industry Distribution:
+industry
+Technology       5085
+Retail           5081
+Hospitality      5057
+Manufacturing    4993
+Finance          4979
+Education        4978
+Logistics        4974
+Healthcare       4968
+Construction     4959
+Energy           4926
+Name: count, dtype: int64
+2026-08-05 07:33:23,551 | INFO |__main__ | 448 | Generating Web Logs...
+2026-08-05 07:33:44,668 | INFO |__main__ | 580 | Fetching required datasets to generate orders and order_items
+2026-08-05 07:33:45,134 | INFO |__main__ | 184 | Generating Orders...
+2026-08-05 07:33:48,397 | INFO |__main__ | 297 | Orders generation successfull, total no. of orders = 31987
+2026-08-05 07:33:48,544 | INFO |__main__ | 307 | Generated 30000 legacy customer orders and 1987 lead-originated orders.
+2026-08-05 07:33:48,544 | INFO |__main__ | 308 | orders data set generated succesfully
+2026-08-05 07:33:48,544 | INFO |__main__ | 310 | Orders with Lead Attribution: 1987
+2026-08-05 07:33:48,544 | INFO |__main__ | 312 | Legacy Customer Orders: 30000
+2026-08-05 07:33:48,544 | INFO |__main__ | 314 | Returning Orders Data set....
+2026-08-05 07:33:48,560 | INFO |__main__ | 327 | Generating Order Items Leads...
+2026-08-05 07:33:51,469 | INFO |__main__ | 380 | Generated 95808 order_items_dataset
+2026-08-05 07:33:51,469 | INFO |__main__ | 381 | order items dataset generated succesfully
+2026-08-05 07:33:51,469 | INFO |__main__ | 382 | Returning Order Items Dataset....
+2026-08-05 07:33:51,496 | INFO |__main__ | 401 | Populating order total in orders table by summing up line totals of order items
+2026-08-05 07:33:51,582 | INFO |__main__ | 416 | Order totals populated successfully
+2026-08-05 07:33:51,582 | INFO |__main__ | 589 | Returning all Datasets....
+2026-08-05 07:33:51,587 | INFO |python.generators.load_to_sqlserver | 10 | Loading datasets into SQL Server...
+2026-08-05 07:33:51,587 | INFO |python.generators.load_to_sqlserver | 29 | Loading orders into Orders
+2026-08-05 07:33:54,174 | INFO |python.generators.load_to_sqlserver | 29 | Loading order_items into Orders_Items
+2026-08-05 07:33:58,585 | INFO |python.generators.load_to_sqlserver | 43 | All available datasets loaded successfully

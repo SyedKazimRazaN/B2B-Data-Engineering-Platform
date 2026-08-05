@@ -1,8 +1,9 @@
-
 import os
 from pathlib import Path
 from datetime import date
+from dotenv import load_dotenv
 
+load_dotenv()
 
 
 # ============================================================================
@@ -18,17 +19,20 @@ AUTHOR = "Syed Kazim Raza"
 # Dataset Volume: 
 # ============================================================================
 NUM_COMPANIES = 500
-NUM_CUSTOMERS = 10000 # Customers are generated only for Buyer companies
-NUM_SUPPLIERS = 250
+# Customers are generated only for Buyer companies
+MIN_CUSTOMERS_PER_COMPANY = 10
+MAX_CUSTOMERS_PER_COMPANY = 80
+NUM_SUPPLIERS = 150
+MIN_SUPPLIERS_PER_PRODUCT = 2
+MAX_SUPPLIERS_PER_PRODUCT = 5
 NUM_CATEGORIES = 10
 NUM_PRODUCTS = 1200
-NUM_SUPPLIER_PRODUCT_MAPPING = 4000   #3-4 suppliers per /product
 NUM_ORDERS = 30000
 NUM_ORDER_ITEMS = 120000
 NUM_MARKETING_LEADS = 50000
-NUM_WEB_LOGS = 1000000
-
-
+NUM_WEB_LOGS = 75000
+#not defining no. of NUM_SUPPLIER_PRODUCT_MAPPING  2-5 products per supplier × 250 suppliers ≈ not bounding for Rule 5
+# not defining NUM_Customers (10-80) per company
 # ============================================================================
 #Time Window:
 # ============================================================================
@@ -53,7 +57,7 @@ FAKER_LOCALE = "en_US"
 #Database Configuration:
 # ============================================================================
 SQL_SERVER_DATABASE = os.getenv("SQL_SERVER_DATABASE", "b2b_source_db")
-POSTGRESQL_DATABASE = os.getenv("POSTGRES_DATABASE", "b2b_warehouse_db")
+POSTGRESQL_DATABASE = os.getenv("POSTGRESQL_DATABASE", "b2b_warehouse_db")
 SOURCE_SCHEMA = "source"
 STAGING_SCHEMA = "staging"
 INTERMEDIATE_SCHEMA = "intermediate"
@@ -69,7 +73,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 LOGS_DIR = BASE_DIR / "logs"
 
-WEB_LOGS_OUTPUT_PATH = DATA_DIR /"web_logs"/"web_logs.log"  # exists in folder(data)->folder(weblogs)->.log file
+WEB_LOGS_OUTPUT_PATH = DATA_DIR /"web_logs"/"web_logs.csv"  # exists in folder(data)->folder(weblogs)->.log file
 MARKETING_LEADS_OUTPUT_PATH = DATA_DIR /"marketing_leads"/"marketing_leads.csv" # exists in folder(data)->folder(marketing_leads)->.csv file
 PIPELINE_LOGS_PATH = LOGS_DIR / "pipeline.log" # exists in folder(logs)->.log file
 
@@ -90,9 +94,9 @@ CHUNK_SIZE = 2500
 # ==================================================================
 #Logging Configuration
 # ==================================================================
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "DEBUG"
 
-LOG_FORMAT = "%(asctime)s | %(levelname)s | %(message)s"
+LOG_FORMAT = "%(asctime)s | %(levelname)s |%(name)s | %(lineno)d | %(message)s"
 
 
 

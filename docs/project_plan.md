@@ -9,7 +9,7 @@
     Loaded in PostgreSQL staging
 
 # Source 2
-    Web Logs (Generated as .log files by python)
+    Web Logs (Generated as .csv files by python)
     Loaded directly into PostgreSQL Staging
     
 # Source 3
@@ -25,11 +25,11 @@
         
         • Customers
             "Stores end customers affiliated with buyer companies"
-            (customer_id, company_id, first_name, last_name, email, phone, gender, date_of_birth, job_title, created_at, updated_at)
+            (customer_id, company_id, first_name, last_name, email, phone_number, gender, date_of_birth, job_title, created_at, updated_at)
         
         • Suppliers
             "Stores supplier information"
-            (supplier_id, company_id, supplier_name, contact_name, email, phone, created_at, updated_at)
+            (supplier_id, company_id, supplier_name, contact_name, email, phone_number, created_at, updated_at)
         
         • Categories
             "Required because KPIs include Revenue by Product/Category"
@@ -37,7 +37,7 @@
         
         • Products
             "Stores product catalog"
-            (product_id, sku, product_name, category_id, catalog_price, cost_price, is_active, created_at, updated_at)
+            (product_id, sku, product_name, category_id, brand, variant, cost_price, catalog_price, is_active, created_at, updated_at)
         
         • Supplier_Product_Mapping
             "Required because products may have multiple suppliers with different prices"
@@ -52,16 +52,20 @@
             (order_item_id, order_id, supplier_product_id, quantity, unit_price, discount_amount, line_total, created_at, updated_at)
 
         • Web Logs
-            "Raw HTTP request records; session_id assigned at generation time, no sessionization logic needed in ETL""
-            (log_id, timestamp, client_ip, auth_user, session_id, http_method, request_path, status_code, bytes_sent, referer, user_agent)
+            "Raw HTTP request records; session_id and device_type/browser assigned directly at generation time (no raw user_agent parsing needed downstream), no sessionization logic needed in ETL"
+            (log_id, country, city, timestamp, client_ip, auth_user, session_id, http_method, request_path, status_code, bytes_sent, referer, device_type, browser, is_bot)
 
         • Marketing Leads
-            "Raw inbound leads; no company_id,customer_id FKs because leads exist before a company/customer record is created" - Rule 13 conversion_status(will be added later not in staging table) 
-            (lead_id, source, campaign_name, utm_source, utm_medium, utm_campaign, company_name, company_size, industry, country, city, lead_score, estimated_order_value, funnel_stage, created_at updated_at)        
+            "Raw inbound leads; no company_id/customer_id FKs because leads exist before a company/customer record is created" - Rule 8 (conversion_status computed later in Intermediate, not stored in staging table)
+            (lead_id, source, campaign_name, utm_source, utm_medium, utm_campaign, company_name, company_size, industry, country, city, lead_score, estimated_order_value, funnel_stage, created_at, updated_at)        
+
+        • Pipeline_Watermarks
+            "Persists the last successful extraction watermark per pipeline, so Rule 11's incremental CDC extract knows where to resume from"
+            (pipeline_name, last_extracted_at)
 
         • Pipeline_Run_Log
-            "Tracks each pipeline run to track Execution Metrics KPI"
-            (run_id, pipeline_name, timestamps, rows counts, watermark_used, status, error_message)
+            "Tracks each pipeline run to support the Pipeline Execution Metrics KPI"
+            (run_id, pipeline_name, run_started_at, run_ended_at, rows_extracted, rows_loaded, watermark_used, status, error_message)
 
 ## ELT Architecture
 
@@ -110,12 +114,12 @@
         Generate synthetic business data
         Outputs:
         • SQL Server
-        • Web Logs (.log)
+        • Web Logs (.csv)
         • Marketing Leads (.csv)
 
 #   Component 2 — ELT Pipelines
         • SQL Server Pipeline — CDC extract (updated_at) → PostgreSQL staging
-        • Web Logs Pipeline — parse .log files → PostgreSQL staging
+        • Web Logs Pipeline — parse .csv files → PostgreSQL staging
         • Marketing Leads Pipeline — parse .csv files → PostgreSQL staging
 
 #   Component 3 — SQL Warehouse
@@ -132,6 +136,14 @@ B2B-Data-Platform/
 
 ├── docs/
 │   
+
+├── config/
+│   ├── config.py
+│   ├── database.py
+│   └── constants.py
+
+├── logs/
+│   └── pipeline.log
 
 ├── sql_server/
 │   ├── ddl/
@@ -183,6 +195,7 @@ B2B-Data-Platform/
                 -> Transaction Generator -> Marketing Leads -> Pipeline(CSV FIle -> python -> PostgreSQL Staging)
             • Orders + Order Items:
                 -> Transaction Generator -> Orders/Order Items -> SQL Server -> Pipeline(SQL Server -> Python -> PostgreSQL) -> PostgreSQL Staging
+                -> Reads Customers and Supplier_Product_Mapping back from SQL Server (already-persisted master data) rather than regenerating them, so Orders/Order_Items always reference real, existing rows instead of a fresh in-memory dataset that could drift from what's actually in the database
             • Web Logs:
                 -> Transaction Generator -> Web Logs -> Pipeline(Logs File -> python -> PostgreSQL Staging)
     
@@ -199,14 +212,12 @@ B2B-Data-Platform/
     Define Configurable Parameters (config.py - will include following)
 
 #       Data Volume: 
-            • COMPANIES
-            • CUSTOMERS
-            • SUPPLIERS
-            • PRODUCTS
-            • ORDERS
-            • ORDER_ITEMS
-            • MARKETING_LEADS
-            • WEB_LOGS
+            • COMPANIES, SUPPLIERS — exact targets
+            • MIN/MAX_CUSTOMERS_PER_COMPANY (Rule 1), MIN/MAX_SUPPLIERS_PER_PRODUCT (Rule 4) — ranges, not fixed counts; total Customers and Supplier_Product_Mapping rows are derived, not set directly
+            • CATEGORIES, PRODUCTS — exact targets
+            • ORDERS — repeat-customer portion only; actual total = ORDERS + count(Won leads) (Rule 8)
+            • ORDER_ITEMS — expected order of magnitude (1-5 items/order applied at generation time), not an exact target
+            • MARKETING_LEADS, WEB_LOGS — exact targets
 
 
 #       Time Window:
@@ -238,20 +249,24 @@ B2B-Data-Platform/
 #   Rule 4
     • Product can have multiple Suppliers.
         -> No. of products per Supplier: MIN(2) - MAX(5)
+        -> Supplier_Product_Mapping row count is a derived output of this rule and not a fixed target set in config.
+        -> MIN/MAX_SUPPLIERS_PER_PRODUCT (2-5 suppliers per product, driven by the 1200 Products)
 #   Rule 5
     • Order belongs to one Customer.
-        -> No. of orders per customer per month: Min(2) - MAX (10)
+        -> Orders are randomly distributed across customers and across the time window, bounded below by that customer's own created_at (an order can never predate the customer who placed it).
+        -> NUM_ORDERS in config covers only this repeat-customer portion — see Rule 8 for the additional lead-originated orders generated on top.
 #   Rule 6
     • Order has one or more Order Items.
 #   Rule 7
     • Order Total = Sum(Order Items)
         -> Enforced at data-generation time: generator computes each Order_Item's line_total first, then sums them into Orders.order_total.
 #   Rule 8
-    • Lead conversion percentage:
-        -> A Marketing Lead only counts as "converted" if it maps to a Customer/Order within a bounded window.
-        -> Leads with no conversion (not found in Orders) are marked (converted/not converted) after staging layer as conversion_status.
+    • Lead conversion is not a percentage target — it's a direct 1:1 outcome of funnel_stage.
+        -> Every Won lead generates exactly one order at generation time (never reused across multiple orders). No time window — a lead is either linked to its one order or it isn't.
+        -> Total Orders = NUM_ORDERS (repeat-customer orders, no lead attribution) + count(Won leads) (lead-originated orders).
+        -> conversion_status (Converted / Not Converted) is computed in the Intermediate layer via a straight join on Orders.lead_id — leads with no matching order are Not Converted. No staging-layer column, no bounded window.
 #   Rule 9
-    • updated_at will be greater then equal to  created_at time.
+    • updated_at will be greater than or equal to created_at time.
 #   Rule 10
     • Order can be Cancelled.
         -> When Cancelled, orders are excluded from revenue KPIs, but kept in Order_Items for auditability.
@@ -279,18 +294,18 @@ Business Entity Dependency
 #   Level 2 — Depend on Level 1
     • Supplier_Product_Mapping → depends on Suppliers + Products (many-to-many) - Rule 4
 
-#   Level 3 — Depend on Level 1
-    • Orders → depends on Customers - Rule 5
+#   Level 3 — Depend on Level 0 and Level 1
+    • Orders → depends on Customers (Level 1, via customer_id) AND Companies (Level 0, via a direct denormalized company_id — kept for query convenience, not derived through Customers) - Rule 5
 
-#   Level 4 — Depend on Level 3
-    • Order_Items → depends on Orders + Products - Rules 6 & 7
+#   Level 4 — Depend on Level 2 and Level 3
+    • Order_Items → depends on Orders (Level 3) + Supplier_Product_Mapping (Level 2, via supplier_product_id) - Rules 6 & 7. Products is only reached indirectly through Supplier_Product_Mapping — Order_Items has no direct FK to Products.
 
 #   Independent streams (loosely coupled, joined later at analytics layer)
-    • Marketing_Leads → generated independently, later associated with Customers/Orders through conversion logic - Rule 8, Rule 13
+    • Marketing Leads -> generated independently at the data-source level, but the Transaction Generator must still create Leads before Orders each day. Orders.lead_id is drawn from Won leads at generation time, so this is a required ordering dependency at generation time (not an FK) - Rule 8
     • Web_Logs → generated independently, associated with sessions/IPs, not FK-linked to core OLTP entities
 
 #   Load order summary:
-    • Level 0 -> Level 1 -> Level 2 -> Level 3 -> Level 4, with Marketing_Leads and Web_Logs loaded on their own daily
+    • Level 0 -> Level 1 -> Level 2 -> Level 3 -> Level 4, with Marketing_Leads generated before Orders each day (ordering dependency, not FK), and Web_Logs loaded independently on its own daily cadence.
 
 ##  Project Phases
 #   Phase 1
@@ -298,9 +313,11 @@ Business Entity Dependency
             Completed at(30/07/2026)
 #   Phase 2
         • Synthetic Data Generation
+            Completed at (05/08/2026) — Master Generator (Companies, Categories, Customers, Suppliers, Products, Supplier_Product_Mapping) and Transaction Generator (Marketing Leads, Web Logs, Orders, Order_Items) both done and validated
 
 #   Phase 3
         • SQL Server Population
+            In Progress — full historical bulk load to SQL Server done (all 8 tables); CDC Generator (daily inserts/updates/soft-deletes simulation) remaining
 
 #   Phase 4
         • Data Ingestion
