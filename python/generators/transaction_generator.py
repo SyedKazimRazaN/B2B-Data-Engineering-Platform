@@ -97,13 +97,13 @@ faker_instances = initialize_faker_instances()
 # Data Generators
 # -----------------------------
 
-def generate_marketing_leads ():
+def generate_marketing_leads (num_marketing_leads=NUM_MARKETING_LEADS):
     try:
         logger.info("Generating Marketing Leads...")
 
         marketing_leads_dataset =[]
 
-        for _ in range(NUM_MARKETING_LEADS):
+        for _ in range(num_marketing_leads):
             #choosing country for faker:
             selected_country = select_random_country()
 
@@ -150,16 +150,9 @@ def generate_marketing_leads ():
         logger.info(f"\nmarketing_leads Type Distribution:\n{marketing_leads['funnel_stage'].value_counts()}")
  
         #validation checks:
-        """
-        logger.info(f"Rows: {len(marketing_leads)}")
-        logger.info(f"Expected: {NUM_MARKETING_LEADS}")
-        logger.info(f"Lead IDs unique: {marketing_leads['lead_id'].is_unique}")
-        logger.info(f"Company names unique: {marketing_leads['company_name'].is_unique}")
-        logger.info(f"No nulls: {marketing_leads.notna().all().all()}")
-        """
 
         if (
-            len(marketing_leads) == NUM_MARKETING_LEADS 
+            len(marketing_leads) == num_marketing_leads
             and marketing_leads["lead_id"].is_unique
             and marketing_leads["company_name"].is_unique
             and marketing_leads["lead_score"].between(1, 100).all()
@@ -179,7 +172,7 @@ def generate_marketing_leads ():
 
 
 
-def generate_orders(companies,customers, marketing_leads):
+def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS):
     try:
         logger.info("Generating Orders...")
         """
@@ -280,7 +273,7 @@ def generate_orders(companies,customers, marketing_leads):
         # Generating legacy customer orders
         # ----------------------------------
 
-        for _ in range(NUM_ORDERS):
+        for _ in range(num_orders):
             selected_customer = random.choice(customers_list)
             orders_dataset.append(build_order(selected_customer))
 
@@ -294,17 +287,17 @@ def generate_orders(companies,customers, marketing_leads):
 
 
 
-        logger.info(f"Orders generation successfull, total no. of orders = {NUM_ORDERS + len(won_leads)}")
         orders = pd.DataFrame(orders_dataset)
+        logger.info(f"Orders generation successfull, total no. of orders = {len(orders)}")
 
         # ----------------------------------
         # Validation
         # ----------------------------------
-        if (len(orders) == NUM_ORDERS + len(won_leads)
+        if (len(orders) == num_orders + len(won_leads)
             and orders["order_id"].is_unique
             and orders.drop(columns=["lead_id"]).notna().all().all()):
              
-            logger.info(f"Generated {NUM_ORDERS} legacy customer orders and {len(won_leads)} lead-originated orders.")
+            logger.info(f"Generated {num_orders} legacy customer orders and {len(won_leads)} lead-originated orders.")
             logger.info("orders data set generated succesfully")
 
             logger.info(f"Orders with Lead Attribution: {orders['lead_id'].notna().sum()}")
@@ -422,33 +415,14 @@ def populate_order_totals(orders, order_items):
 
 
 
-"""
-mileston1 remaining steps:
 
-one final evaluation of all files through ai AND create seeding logic to dynamic for creating and tracking bulk and incremental generators
-create raw stage in postgresql and load all data from sources on append mode....
-write queries for data validation and row counts
-
-evalaute and edit if required for milestone1 to run freely through github clone
-one final check through ai before commiting mileston 1
-
-
-milestone2
-create cdc generator
-create data for daily incremental loads
-"""
-
-
-
-
-
-def generate_web_logs ():
+def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
     try:
 
         logger.info("Generating Web Logs...")
         web_logs_dataset = []
 
-        for _ in range(NUM_WEB_LOGS):
+        for _ in range(num_web_logs):
             #choosing country for faker:
             selected_country = select_random_country()
 
@@ -494,8 +468,9 @@ def generate_web_logs ():
  
         web_logs = pd.DataFrame(web_logs_dataset)
 
-        if (len(web_logs)==NUM_WEB_LOGS
+        if (len(web_logs)==num_web_logs
             and web_logs["log_id"].is_unique):
+            logger.info(f"Succefully generated weblogs : {len(web_logs)}")
             return web_logs
         else:
             raise ValueError("Web Logs dataset validation failed")
@@ -552,25 +527,6 @@ def fetching_supplier_product_mapping_dataset():
     return supplier_product_mapping
 
 
-def loading_orders_into_csv_test(orders):
-    try:
-        logger.info("Loading orders Dataset to File.csv........")
-        orders.to_csv("orders", index = False)
-        logger.info("Successfully loaded orders Dataset to File")
-    except Exception as e:
-        raise ValueError("Error loading orders to file")
-
-
-def loading_order_items_into_csv_test(order_items):
-    try:
-        logger.info("Loading order items Dataset to File.csv........")
-        order_items.to_csv("orders items", index = False)
-        logger.info("Successfully loaded order items Dataset to File")
-    except Exception as e:
-        raise ValueError("Error loading order items to file")
-
-
-
 
 def generating_orders_and_orderitems_datasets(marketing_leads):
     try:
@@ -599,18 +555,16 @@ def generating_orders_and_orderitems_datasets(marketing_leads):
 if __name__ == "__main__":
 
 
-# -----------------------------------------------
-#       Generating Datasets
-# ----------------------------------------------
+# Generating Datasets
     marketing_leads = generate_marketing_leads()
     web_logs = generate_web_logs()
 
     datasets = generating_orders_and_orderitems_datasets(marketing_leads)
     
-# ----------------------------------------------
-#           Loading Datasets to SQL SERVER
-# ---------------------------------------------
+# Loading Datasets to SQL SERVER
     load_to_sqlserver(datasets)
+    load_source2(marketing_leads)
+    load_source3(web_logs)
 
 
 

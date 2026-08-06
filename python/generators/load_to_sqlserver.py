@@ -4,6 +4,7 @@ from config.database import SQL_SERVER_ENGINE
 
 logger = get_logger(__name__)
 
+
 def load_to_sqlserver(datasets):
     try:
 
@@ -18,7 +19,7 @@ def load_to_sqlserver(datasets):
             "suppliers": "Suppliers",
             "supplier_product_mapping": "Supplier_Product_Mapping",
             "orders": "Orders",
-            "order_items": "Orders_Items"
+            "order_items": "Order_Items"
         }
 
 
