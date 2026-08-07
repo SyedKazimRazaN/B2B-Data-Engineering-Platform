@@ -2432,7 +2432,7 @@ f6f3156af4a041159b2f4b7278d7f9f4,Referral,Enterprise Growth,bing,email,enterpris
 87eb0ed32f05423ab1e35ded7ca3f993,Referral,Product Launch,bing,email,product_launch,"Lowery, Mckay and Gamble",51-200,Energy,United States,Dallas,62,138143.36,Proposal,2024-10-05 06:14:08,2026-04-17 08:52:08
 87386db8856f470891094a7288500497,Trade Show,Product Launch,newsletter,organic,product_launch,"Kelly, Gilbert and Mullins",500+,Construction,Australia,Sydney,51,698982.05,Proposal,2025-04-20 23:02:07,2025-07-27 05:56:14
 2e2cc50f0f2449b4ae1a1107f4c2c6cf,Website,Enterprise Growth,newsletter,referral,enterprise_growth,"Schwartz, Campbell and Lewis",1-10,Energy,United Kingdom,London,45,8507.53,Qualified,2024-08-30 02:12:00,2024-10-12 03:37:33
-bc2b118a73fc4205b555b94b354d0b4c,Website,Holiday Promotion,linkedin,organic,holiday_promotion,Mason-Taylor,1-10,Logistics,Australia,Brisbane,36,8056.73,Qualified,2024-09-09 06:17:15,2026-02-26 13:59:20
+bc2b118a73fc4205b555b94b354d0b4c,Website,Holiday Promotion,linkedin,organic,holiday_promotion,Mason-Taylor,1-10,Logistics,Australia,Brisbane,97,8056.73,Won,2024-09-09 06:17:15,2026-08-07 22:10:56.520269
 d5c9f97a4176443bbc01c127c040f526,Cold Call,Referral Drive,newsletter,cpc,referral_drive,Roberts-Higgins,51-200,Manufacturing,United Kingdom,London,14,55359.41,New,2025-02-28 09:39:48,2026-02-26 16:31:00
 8a9f33e8382a4bd7b430928e69365744,Website,Product Launch,bing,social,product_launch,Baker-Reese,500+,Finance,Australia,Melbourne,26,1469503.81,Contacted,2024-09-27 07:54:37,2025-04-12 18:47:32
 8688c4e8dc4a4da58003c0eeb59a9626,Website,Referral Drive,google,cpc,referral_drive,"Williams, Garrett and Rodriguez",11-50,Construction,United States,Seattle,27,24831.56,Contacted,2025-11-12 03:58:57,2026-02-22 08:43:47
@@ -6983,7 +6983,7 @@ be5b3dece6874b65bf0cbea2e7415ed6,Trade Show,Referral Drive,newsletter,email,refe
 193364d350334deaa056239312c49e45,Website,Free Trial Campaign,linkedin,social,free_trial_campaign,Steele Ltd,500+,Construction,United States,Seattle,31,876643.52,Contacted,2025-05-29 08:22:17,2025-08-19 22:51:44
 f608e3f585864a6ab06f7b9851523801,Referral,Free Trial Campaign,newsletter,email,free_trial_campaign,Moore-Olson,500+,Hospitality,United States,Austin,24,536923.14,Contacted,2026-01-28 23:15:53,2026-06-26 07:38:28
 8a367e18449a4cbcb0132656eb589e9b,Referral,Free Trial Campaign,linkedin,cpc,free_trial_campaign,Liu-Blevins,51-200,Hospitality,United States,Austin,7,144959.08,New,2026-03-10 07:27:10,2026-04-18 15:59:51
-4f9f3fb8634f4ecfa2c2f57be325d94a,Partner,Summer Sale,facebook,email,summer_sale,"Watson, Mccarthy and Campbell",201-500,Manufacturing,United States,Seattle,29,297168.61,Contacted,2025-09-01 08:37:37,2026-02-14 02:32:50
+4f9f3fb8634f4ecfa2c2f57be325d94a,Partner,Summer Sale,facebook,email,summer_sale,"Watson, Mccarthy and Campbell",201-500,Manufacturing,United States,Seattle,74,297168.61,Negotiation,2025-09-01 08:37:37,2026-08-07 22:10:56.512225
 27a5495c06104617bc68be5c6b9b81cf,Website,Holiday Promotion,bing,cpc,holiday_promotion,Russell-Wright,1-10,Energy,United States,Seattle,59,7106.29,Proposal,2026-01-24 20:17:27,2026-04-21 07:49:46
 7a0fdfe70f564c33b316f71d08069693,Trade Show,Summer Sale,newsletter,email,summer_sale,Hahn-Davis,500+,Education,Australia,Sydney,21,1803880.42,Contacted,2026-03-09 06:06:11,2026-04-28 00:56:38
 5a6fd40e81014446931d74227e185c23,Website,Referral Drive,bing,email,referral_drive,"Mcfarland, Hill and Russell",201-500,Energy,United States,New York,44,319471.97,Qualified,2025-12-31 19:23:10,2026-01-17 08:20:29
@@ -16241,7 +16241,7 @@ da23d6b09f354276854a5384dc65a693,Referral,Referral Drive,bing,cpc,referral_drive
 5d8d010d211c48f6aab33b6b05de4089,Referral,Free Trial Campaign,newsletter,cpc,free_trial_campaign,Schmitt LLC,11-50,Logistics,United Kingdom,Manchester,27,12058.54,Contacted,2025-04-03 05:22:16,2025-07-03 23:10:15
 5327545cc7eb4346be038ce5a5e1515e,Referral,Free Trial Campaign,linkedin,social,free_trial_campaign,"Daugherty, Black and Graham",201-500,Education,United Kingdom,Manchester,18,450584.38,Contacted,2025-08-31 20:22:32,2026-05-18 22:49:46
 6e2e2dd68c8a4bacbbf7ff669f0fd58c,Cold Call,Summer Sale,newsletter,organic,summer_sale,Conrad Ltd,1-10,Finance,United Kingdom,London,13,6752.53,New,2026-07-04 13:12:16,2026-07-19 10:24:38
-7a2d44bf982f47faaaf74e4dab0ccbb2,Trade Show,Industry Expo,linkedin,referral,industry_expo,"Ortiz, Johnson and Williams",201-500,Technology,United States,Dallas,82,448938.74,Won,2026-07-22 05:51:57,2026-07-27 04:12:32
+7a2d44bf982f47faaaf74e4dab0ccbb2,Trade Show,Industry Expo,linkedin,referral,industry_expo,"Ortiz, Johnson and Williams",201-500,Technology,United States,Dallas,30,448938.74,Lost,2026-07-22 05:51:57,2026-08-07 22:10:56.520269
 cd070ada9e4e4410afee0056a0c8199b,Trade Show,Holiday Promotion,google,social,holiday_promotion,Oneal LLC,51-200,Manufacturing,United States,Seattle,31,92662.18,Contacted,2025-07-05 12:14:26,2026-04-03 05:30:45
 1c890e04e3084e43887405fb00ab32f8,Website,Summer Sale,google,cpc,summer_sale,Cooper-Frost,500+,Finance,United Kingdom,Birmingham,65,1671295.2,Lost,2026-07-04 17:03:59,2026-07-28 06:07:47
 c7ff15a948bd4585abefbb370a12d012,Partner,Holiday Promotion,google,email,holiday_promotion,"Hodges, Liu and Mason",1-10,Hospitality,Australia,Brisbane,97,7560.43,Won,2026-07-30 11:53:37,2026-07-30 20:58:19
@@ -19071,7 +19071,7 @@ d9ed20352deb4f06a1d2ead432a739dd,Website,Enterprise Growth,google,organic,enterp
 b84c6b310c954add962591ae24a0ab75,Referral,Referral Drive,newsletter,social,referral_drive,Noble-Freeman,500+,Manufacturing,United Kingdom,Birmingham,38,1988846.71,Qualified,2025-01-08 04:53:13,2025-08-12 17:32:55
 59af9da19e4e408894b601d138b9b50f,Referral,Industry Expo,bing,email,industry_expo,"Ward, Ward and Baldwin",11-50,Healthcare,United Kingdom,London,13,43574.1,New,2026-07-06 18:46:21,2026-07-29 00:49:25
 00b8c3d9115d4ea4bc17a696113f52e0,Website,Free Trial Campaign,bing,social,free_trial_campaign,Hays Group,51-200,Energy,United States,Seattle,23,121604.07,Contacted,2026-05-04 05:42:06,2026-06-28 08:02:19
-ad59deddbd204b3aa5d1eebf00f1047e,Trade Show,Summer Sale,facebook,email,summer_sale,"Johnson, Salinas and Gray",11-50,Education,United States,Chicago,39,44022.27,Qualified,2024-09-06 14:50:02,2024-10-01 13:59:43
+ad59deddbd204b3aa5d1eebf00f1047e,Trade Show,Summer Sale,facebook,email,summer_sale,"Johnson, Salinas and Gray",11-50,Education,United States,Chicago,69,44022.27,Negotiation,2024-09-06 14:50:02,2026-08-07 22:10:56.520269
 928c2204112640bf9829ad40a60e5f09,Website,Product Launch,facebook,social,product_launch,Ortega and Sons,51-200,Construction,United States,New York,2,121961.32,New,2026-01-07 23:11:42,2026-04-09 23:17:20
 255787653193404082a7d5b4766f47e4,Website,Free Trial Campaign,bing,email,free_trial_campaign,"Carr, Johnson and James",500+,Construction,United States,New York,17,1924023.44,Contacted,2025-11-13 19:14:54,2026-02-05 16:20:08
 3e41a0025b654dcfaef7f79cd7a699b5,Referral,Summer Sale,linkedin,social,summer_sale,Dillon-Murphy,201-500,Retail,United States,Dallas,4,224361.02,New,2024-10-29 08:23:02,2025-12-23 09:47:16
@@ -25438,7 +25438,7 @@ fa81866c9b0b466f8069ef39390915d9,Cold Call,Product Launch,linkedin,social,produc
 6558fb5f7a4949d38791e0e74a00ef7e,Referral,Summer Sale,newsletter,organic,summer_sale,"Zimmerman, Scott and Jones",1-10,Education,United States,New York,99,6973.55,Won,2026-02-21 06:04:49,2026-02-22 05:06:38
 d275e13dbc6c48f6a6967aa7b4662641,Partner,Industry Expo,facebook,social,industry_expo,Huynh and Sons,1-10,Construction,United Kingdom,Birmingham,15,4301.61,New,2026-03-03 23:44:00,2026-07-03 01:31:14
 ca5dd2fe13b649428ef66a43c3bd27f3,Referral,Referral Drive,linkedin,email,referral_drive,"Webster, Gomez and Hernandez",11-50,Retail,United States,New York,67,31058.94,Negotiation,2025-05-26 13:25:05,2026-03-13 11:14:24
-d01113b30f6c42e9982b9bd6e0b415d9,Trade Show,Referral Drive,facebook,organic,referral_drive,Barr-Armstrong,1-10,Healthcare,United States,Dallas,1,8044.76,New,2024-11-06 01:42:00,2025-01-21 01:41:14
+d01113b30f6c42e9982b9bd6e0b415d9,Trade Show,Referral Drive,facebook,organic,referral_drive,Barr-Armstrong,1-10,Healthcare,United States,Dallas,18,8044.76,Contacted,2024-11-06 01:42:00,2026-08-07 22:10:56.520269
 6619f8c0af494e52b91ddf978e029ccb,Referral,Enterprise Growth,facebook,social,enterprise_growth,Clark-Stark,1-10,Finance,United States,Austin,60,6337.92,Proposal,2026-07-02 15:15:42,2026-07-09 07:54:14
 4feb85ad0b8e4c73aa0f169d88c20c00,Referral,Free Trial Campaign,linkedin,cpc,free_trial_campaign,Miller-Riley,51-200,Hospitality,United States,Austin,50,146513.96,Lost,2024-11-13 14:53:21,2025-08-03 00:54:49
 fd4a67b9c2e14b23bdfefad153b7e848,Cold Call,Referral Drive,linkedin,social,referral_drive,Tran-Lynn,201-500,Retail,United Kingdom,Birmingham,13,362754.76,New,2025-06-08 05:05:51,2026-04-14 13:46:10
@@ -28737,7 +28737,7 @@ a5544f52939c43f482fc0f3b54a71d33,Website,Holiday Promotion,newsletter,cpc,holida
 6e8b4ebf421445138c601ab5019220b7,Trade Show,Enterprise Growth,newsletter,cpc,enterprise_growth,Davis-White,201-500,Technology,United Kingdom,Manchester,30,247469.26,Contacted,2026-01-17 15:19:51,2026-08-03 08:40:59
 0eea93272b4f420ab719c0682da7bb8a,Partner,Referral Drive,facebook,email,referral_drive,"Mckinney, Luna and Thornton",51-200,Energy,United States,Dallas,94,95852.2,Won,2025-08-21 02:07:11,2026-06-12 08:34:37
 575f18cc5c9d472baed69d8ba588b621,Email Campaign,Referral Drive,linkedin,cpc,referral_drive,"Acosta, Pineda and Cook",11-50,Healthcare,United Kingdom,Manchester,16,12977.93,New,2025-01-03 14:26:35,2025-04-12 15:39:47
-4db41ad1fe8949b68aad82646d2adbb6,Website,Summer Sale,linkedin,social,summer_sale,Mullins-Perry,11-50,Technology,Australia,Brisbane,22,21472.91,Contacted,2025-01-12 03:02:16,2026-01-13 07:38:30
+4db41ad1fe8949b68aad82646d2adbb6,Website,Summer Sale,linkedin,social,summer_sale,Mullins-Perry,11-50,Technology,Australia,Brisbane,93,21472.91,Won,2025-01-12 03:02:16,2026-08-07 22:10:56.520269
 e15cbb34f63e42c2b50a0e9e36eab4ec,Email Campaign,Product Launch,facebook,email,product_launch,"Vargas, Coleman and Pineda",11-50,Retail,United States,New York,36,45168.04,Qualified,2026-03-01 16:47:14,2026-04-22 11:14:49
 21cf4497cf024cd8955caea4e907de44,Partner,Holiday Promotion,linkedin,email,holiday_promotion,"Cox, Cohen and Williams",51-200,Retail,United Kingdom,London,29,133797.19,Contacted,2024-08-13 02:24:17,2025-02-19 20:01:32
 81d2a5c563fc485fa0802c69c77f2eed,Cold Call,Industry Expo,bing,cpc,industry_expo,"Bird, Phillips and Mccullough",1-10,Hospitality,United Kingdom,Manchester,7,2886.15,New,2025-02-22 18:52:53,2025-11-06 05:17:58
@@ -29021,7 +29021,7 @@ adaad080217d44269cda73b80662451b,Email Campaign,Summer Sale,newsletter,cpc,summe
 741ecbe719b048019c248e75319b74b6,Trade Show,Free Trial Campaign,bing,cpc,free_trial_campaign,Jackson-Jackson,51-200,Retail,United States,Dallas,11,114868.69,New,2025-12-26 04:03:25,2026-06-06 04:45:36
 559cfb811d864a16b0471b9cdb778338,Website,Free Trial Campaign,newsletter,cpc,free_trial_campaign,Liu and Sons,51-200,Energy,United States,Chicago,8,109426.9,New,2024-12-31 12:52:39,2025-04-16 12:44:53
 45a641278c7040f7972d455ccd042efa,Referral,Referral Drive,facebook,social,referral_drive,Robinson-Gomez,1-10,Finance,United Kingdom,Manchester,30,7672.8,Contacted,2025-12-21 16:21:22,2026-02-06 11:55:40
-0e267f3043d44926a8bf59cc1000ade7,Email Campaign,Holiday Promotion,newsletter,organic,holiday_promotion,Smith-Lamb,1-10,Retail,Australia,Sydney,36,5552.24,Qualified,2024-11-15 18:15:19,2026-08-04 14:28:11
+0e267f3043d44926a8bf59cc1000ade7,Email Campaign,Holiday Promotion,newsletter,organic,holiday_promotion,Smith-Lamb,1-10,Retail,Australia,Sydney,36,5552.24,Lost,2024-11-15 18:15:19,2026-08-07 22:10:56.512225
 1a250240b01d47deac15800222c2b406,Email Campaign,Free Trial Campaign,facebook,referral,free_trial_campaign,"Rose, Patel and Acosta",51-200,Retail,United Kingdom,Manchester,34,112303.9,Qualified,2026-01-19 18:34:09,2026-02-07 12:04:50
 f690c3ee71524af6b2724a0e7a88fcc1,Email Campaign,Product Launch,linkedin,referral,product_launch,Brown-Chavez,1-10,Energy,United States,Dallas,29,4337.8,Contacted,2025-05-10 00:54:14,2026-05-04 03:18:19
 607e261ddb5d4192b69d0f2fe77667ac,Trade Show,Referral Drive,linkedin,social,referral_drive,"Griffith, Moore and Ayers",1-10,Hospitality,United States,New York,5,5204.47,New,2026-03-12 20:33:23,2026-03-17 12:07:48
@@ -50071,3 +50071,22 @@ c11794c98602441d81d4bb2604589c7a,Partner,Product Launch,google,organic,product_l
 9c6b4e9b82dc484bbd8ae4cde3a81ac4,Cold Call,Summer Sale,google,social,summer_sale,Romero-Hughes,201-500,Retail,United Kingdom,London,27,476482.38,Contacted,2025-09-15 05:37:04,2026-04-24 06:41:30
 5b9cfb362caf44b782046701f8b2a600,Email Campaign,Product Launch,newsletter,organic,product_launch,Orozco-Vargas,201-500,Energy,United States,Seattle,2,383009.32,New,2025-01-31 02:46:41,2025-04-18 11:23:02
 d085663281994e21b647b4c747004e75,Trade Show,Enterprise Growth,google,email,enterprise_growth,Kent Ltd,1-10,Energy,United States,Dallas,18,1010.92,Contacted,2024-09-25 19:32:51,2025-10-28 02:03:16
+a8930bcf549c4c96826ac14787c99189,Website,Industry Expo,facebook,referral,industry_expo,"Jones, Jackson and Guerrero",500+,Logistics,United States,New York,4,1596399.48,New,2025-08-03 07:40:26,2025-10-30 05:19:34
+66657e2606e144578b976b00fb92b1a3,Referral,Holiday Promotion,facebook,email,holiday_promotion,"Brown, Cross and Kelley",500+,Construction,United Kingdom,Birmingham,12,1922748.94,New,2026-02-23 06:22:06,2026-07-14 18:00:56
+c035ad3f53bb484f83417cdbb9e1e09b,Cold Call,Industry Expo,bing,email,industry_expo,Livingston PLC,11-50,Manufacturing,United Kingdom,Birmingham,3,20732.71,New,2024-09-12 12:21:39,2025-05-18 06:00:44
+0155e5c6592d4813b8e59e0ad5b7ca24,Partner,Enterprise Growth,newsletter,cpc,enterprise_growth,Perez LLC,201-500,Energy,Australia,Sydney,18,424864.98,Contacted,2026-01-14 13:28:39,2026-07-21 17:31:08
+bbd9cfdbbaf44b3ba70052f8ee341e79,Referral,Enterprise Growth,linkedin,referral,enterprise_growth,Rhodes-Bennett,500+,Education,United States,New York,28,1438618.68,Contacted,2026-01-30 09:21:05,2026-04-04 18:21:32
+4ab9a3793e594c7caf67b75d4e5531ca,Cold Call,Summer Sale,bing,cpc,summer_sale,"Snow, Mason and Castillo",1-10,Education,United States,Austin,7,5313.4,New,2025-07-02 13:14:47,2025-12-10 18:47:16
+80af968a52be45cd82fe6b4935d73176,Referral,Enterprise Growth,linkedin,cpc,enterprise_growth,Klein and Sons,51-200,Hospitality,United States,Austin,9,97403.21,New,2026-04-25 20:49:15,2026-06-05 14:02:29
+55d5e348781a4b0291d3210030b20861,Cold Call,Referral Drive,google,social,referral_drive,Hall-Houston,1-10,Technology,Australia,Sydney,90,8849.23,Won,2024-08-27 13:34:47,2026-01-26 09:32:49
+14b52c492ce04d62bdaa35111b44e462,Cold Call,Free Trial Campaign,google,organic,free_trial_campaign,Campos and Sons,51-200,Logistics,United States,Austin,12,99329.08,New,2025-11-28 11:09:47,2026-03-08 10:56:32
+bde61817355c4f3f87068bb7af1c74a5,Cold Call,Free Trial Campaign,newsletter,social,free_trial_campaign,Peters-Coffey,51-200,Healthcare,United States,Austin,8,112935.88,New,2025-04-14 18:26:35,2025-04-25 19:21:36
+9b9cbcbe38c94c0e8aab65b8df819226,Cold Call,Summer Sale,linkedin,social,summer_sale,"Booker, Young and Sanders",11-50,Healthcare,United States,Dallas,53,13812.27,Lost,2026-07-28 15:12:11,2026-08-05 07:23:56
+172285e1de8642b1980a93b95e07bffc,Trade Show,Referral Drive,google,referral,referral_drive,Friedman-Mcmahon,51-200,Construction,Australia,Brisbane,5,81307.64,New,2025-03-31 18:28:25,2026-01-13 12:15:05
+9f8e18c26da34d1184de76953404dde8,Trade Show,Industry Expo,newsletter,organic,industry_expo,Peterson-Smith,11-50,Logistics,United States,Seattle,53,49361.91,Proposal,2026-07-11 11:23:28,2026-08-05 15:00:12
+5a77ef22e8a1476cae2ecabb4eae3076,Trade Show,Referral Drive,newsletter,organic,referral_drive,Maldonado Inc,11-50,Technology,United States,Dallas,35,45281.72,Qualified,2026-03-07 22:50:26,2026-07-29 17:53:46
+388d039e613344cea2cddcb0752f30f3,Partner,Summer Sale,bing,cpc,summer_sale,Carr-Armstrong,1-10,Technology,United States,Austin,43,2478.7,Qualified,2024-12-02 23:18:51,2025-06-04 14:30:44
+e48a9e36782c4379b73d83cf12ca15ba,Cold Call,Referral Drive,bing,cpc,referral_drive,Allen-Snyder,201-500,Technology,United States,Austin,72,157879.3,Negotiation,2025-06-20 10:46:20,2025-10-11 17:14:27
+7dfaf0f8840546b69f4cdfd1355629e9,Partner,Referral Drive,facebook,referral,referral_drive,Daniels-Mccoy,51-200,Education,United Kingdom,Manchester,9,119471.75,New,2025-08-21 10:09:57,2025-09-12 18:24:41
+af2272ee380c41cdbe2d38f23ef0e26a,Partner,Holiday Promotion,newsletter,email,holiday_promotion,"Woods, Pearson and Kelly",1-10,Energy,United Kingdom,Birmingham,15,1861.99,New,2025-10-12 17:19:22,2026-04-18 20:06:53
+d41261a437084184bb90231c7e5cb84f,Referral,Summer Sale,newsletter,cpc,summer_sale,Stewart-Klein,11-50,Logistics,United States,New York,1,34411.88,New,2026-03-23 15:09:08,2026-04-18 16:06:24

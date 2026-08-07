@@ -5790,3 +5790,510 @@ Updated Companies: 1
 Updated Customers: 3
 Updated Orders: 10
 Updated Leads: 5
+2026-08-06 18:56:38,730 | ERROR |__main__ | 37 | Error extracting companies data from Source 1 (SQL Server) (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT
+                    company_id,
+                    company_name,
+                    company_type,
+                    cuit_tax_id,
+                    rating,
+                    country,
+                    city,
+                    address,
+                    created_at,
+                    updated_at,
+                FROM source.Companies]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-08-06 18:56:38,731 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 18:58:31,221 | ERROR |__main__ | 37 | Error extracting companies data from Source 1 (SQL Server) (pyodbc.ProgrammingError) ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near the keyword 'FROM'. (156) (SQLExecDirectW)")
+[SQL: SELECT
+                    company_id,
+                    company_name,
+                    company_type,
+                    cuit_tax_id,
+                    rating,
+                    country,
+                    city,
+                    address,
+                    created_at,
+                    updated_at,
+                FROM source.Companies]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-08-06 18:58:31,222 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 18:58:42,222 | ERROR |__main__ | 37 | Error extracting companies data from Source 1 (SQL Server) The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-08-06 18:58:42,223 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 19:01:34,063 | ERROR |__main__ | 37 | Error extracting companies data from Source 1 (SQL Server) The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-08-06 19:01:34,063 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 19:01:47,205 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:01:47,431 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:01:47,440 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:01:47,449 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:01:47,459 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:01:47,470 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:01:47,887 | ERROR |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) orders data validation failed after extracting
+2026-08-06 19:01:47,888 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 19:03:00,417 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:03:00,628 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:03:00,636 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:03:00,646 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:03:00,656 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:03:00,667 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:03:01,027 | ERROR |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) orders data validation failed after extracting
+2026-08-06 19:03:01,028 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 19:03:42,943 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:03:43,158 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:03:43,174 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:03:43,189 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:03:43,204 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:03:43,220 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:03:43,634 | DEBUG |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) orders data validation failed after extracting
+2026-08-06 19:03:43,634 | ERROR |__main__ | 221 | Error extracting all datasets from Source 1
+2026-08-06 19:11:52,874 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:11:53,066 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:11:53,099 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:11:53,112 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:11:53,121 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:11:53,134 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:11:53,493 | DEBUG |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) orders data validation failed after extracting
+2026-08-06 19:11:53,493 | ERROR |__main__ | 222 | Error extracting all datasets from Source 1
+2026-08-06 19:13:13,991 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:13:14,153 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:13:14,185 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:13:14,192 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:13:14,198 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:13:14,205 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:13:14,517 | DEBUG |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) orders data validation failed after extracting
+2026-08-06 19:13:14,517 | ERROR |__main__ | 222 | Error extracting all datasets from Source 1
+2026-08-06 19:13:22,054 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:13:22,232 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:13:22,262 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:13:22,270 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:13:22,278 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:13:22,290 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:13:22,604 | DEBUG |__main__ | 183 | Error extracting orders data from Source 1 (SQL Server) The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2026-08-06 19:13:22,604 | ERROR |__main__ | 222 | Error extracting all datasets from Source 1
+2026-08-06 19:14:33,071 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:14:33,234 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:14:33,267 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:14:33,275 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:14:33,282 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:14:33,291 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:14:33,614 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:14:35,057 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:14:35,057 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:14:35,057 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:15:05,316 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:15:05,498 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:15:05,503 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:15:05,512 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:15:05,520 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:15:05,528 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:15:05,862 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:15:07,138 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:15:07,138 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:15:07,139 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:15:14,135 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:15:14,318 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:15:14,323 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:15:14,335 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:15:14,346 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:15:14,354 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:15:14,681 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:15:15,829 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:15:15,829 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:15:15,829 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:15:38,100 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:15:38,283 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:15:38,288 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:15:38,295 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:15:38,303 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:15:38,313 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:15:38,648 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:15:39,911 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:15:39,911 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:15:39,911 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:15:58,311 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:15:58,521 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:15:58,525 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:15:58,532 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:15:58,537 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:15:58,547 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:15:59,002 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:16:00,524 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:16:00,524 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:16:00,524 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:16:32,704 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:16:32,876 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:16:32,883 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:16:32,892 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:16:32,900 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:16:32,910 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:16:33,221 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:16:34,504 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:16:34,566 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:16:34,566 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:21:01,750 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:21:01,968 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:21:01,973 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:21:01,984 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:21:01,996 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:21:02,007 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:21:02,324 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:21:03,634 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:21:03,634 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:21:03,634 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:21:18,900 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:21:19,050 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:21:19,054 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:21:19,060 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:21:19,070 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:21:19,080 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:21:19,398 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:21:20,671 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:21:20,671 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:21:20,672 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:26:43,159 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:26:43,315 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:26:43,321 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:26:43,328 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:26:43,335 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:26:43,347 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:26:43,713 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:26:44,984 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:26:44,984 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:26:44,985 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:41:27,560 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:41:27,744 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:41:27,744 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:41:27,763 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:41:27,771 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:41:27,783 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:41:28,121 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:41:29,402 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:41:29,402 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:41:29,402 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:47:26,618 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:47:26,797 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:47:26,802 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:47:26,811 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:47:26,819 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:47:26,831 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:47:27,166 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:47:28,522 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:47:28,522 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:47:28,522 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:47:28,736 | INFO |__main__ | 250 | Succesfully extracted Marketing leads dataset
+2026-08-06 19:53:27,274 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:53:27,445 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:53:27,445 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:53:27,462 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:53:27,470 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:53:27,479 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:53:27,794 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:53:29,100 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:53:29,101 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:53:29,101 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:53:29,353 | INFO |__main__ | 250 | Succesfully extracted Marketing leads dataset
+2026-08-06 19:53:29,606 | INFO |__main__ | 250 | Succesfully extracted Marketing leads dataset
+2026-08-06 19:55:19,698 | INFO |__main__ | 32 | Succesfully extracted companies data
+2026-08-06 19:55:19,858 | INFO |__main__ | 58 | Succesfully extracted customers data
+2026-08-06 19:55:19,864 | INFO |__main__ | 77 | Succesfully extracted categories data
+2026-08-06 19:55:19,871 | INFO |__main__ | 100 | Succesfully extracted suppliers data
+2026-08-06 19:55:19,878 | INFO |__main__ | 127 | Succesfully extracted products data
+2026-08-06 19:55:19,892 | INFO |__main__ | 152 | Succesfully extracted supplier_product_mapping data
+2026-08-06 19:55:20,234 | INFO |__main__ | 178 | Succesfully extracted orders data
+2026-08-06 19:55:21,565 | INFO |__main__ | 203 | Succesfully extracted order items data
+2026-08-06 19:55:21,565 | INFO |__main__ | 211 | Succesfully extracted datasets from Source 1
+2026-08-06 19:55:21,565 | INFO |__main__ | 212 | Returning extracted datasets from Source 1
+2026-08-06 19:55:21,749 | INFO |__main__ | 250 | Succesfully extracted Marketing leads dataset
+2026-08-06 19:55:22,093 | INFO |__main__ | 285 | Succesfully extracted Web Logs dataset
+2026-08-07 16:41:38,018 | INFO |__main__ | 72 | [Test] run started, run_id = 6348e3ddc1ad4ed5b75ee6eda0a01e08
+2026-08-07 16:45:33,349 | INFO |__main__ | 106 | [Test] run 6348e3ddc1ad4ed5b75ee6eda0a01e08 -> completed (extracted=0, loaded=0)
+2026-08-07 18:26:01,982 | INFO |python.utils.pipeline_utils | 72 | [marketing_leads_pipeline] run started, run_id = ae3229c223d14c41b019aba3c9a50518
+2026-08-07 18:26:02,286 | INFO |__main__ | 21 | Succesfully extracted Marketing leads dataset
+2026-08-07 18:26:02,286 | INFO |__main__ | 22 | marketing_leads_pipeline extracted 50072 rows from Source 2
+2026-08-07 18:26:02,380 | ERROR |__main__ | 50 | Error loading marketing leeds data into staging table {e}
+2026-08-07 18:26:02,381 | ERROR |__main__ | 88 | marketing_leads_pipeline failed
+2026-08-07 18:26:02,387 | INFO |python.utils.pipeline_utils | 106 | [marketing_leads_pipeline] run ae3229c223d14c41b019aba3c9a50518 -> failed (extracted rows=0, loaded rows=0)
+2026-08-07 18:33:26,011 | INFO |python.utils.pipeline_utils | 72 | [marketing_leads_pipeline] run started, run_id = 733b278f5f29485f9eeb588d145915b6
+2026-08-07 18:33:26,013 | INFO |__main__ | 18 | Extraction started......
+2026-08-07 18:33:26,368 | INFO |__main__ | 22 | Succesfully extracted Marketing leads dataset
+2026-08-07 18:33:26,368 | INFO |__main__ | 23 | marketing_leads_pipeline extracted 50072 rows from Source 2
+2026-08-07 18:33:26,492 | ERROR |__main__ | 51 | Error loading marketing leeds data into staging table {e}
+2026-08-07 18:33:26,497 | ERROR |__main__ | 89 | marketing_leads_pipeline failed
+2026-08-07 18:33:26,500 | INFO |python.utils.pipeline_utils | 106 | [marketing_leads_pipeline] run 733b278f5f29485f9eeb588d145915b6 -> failed (extracted rows=0, loaded rows=0)
+2026-08-07 18:35:04,443 | INFO |python.utils.pipeline_utils | 72 | [marketing_leads_pipeline] run started, run_id = cecbd8cc7c664c90aec356ecc4e45718
+2026-08-07 18:35:04,443 | INFO |__main__ | 18 | Extraction started......
+2026-08-07 18:35:04,765 | INFO |__main__ | 22 | Succesfully extracted Marketing leads dataset
+2026-08-07 18:35:04,766 | INFO |__main__ | 23 | marketing_leads_pipeline extracted 50072 rows from Source 2
+2026-08-07 18:35:09,978 | INFO |__main__ | 48 | [marketing_leads_pipeline] loaded 50072 rows into staging.marketing_leads
+2026-08-07 18:35:09,984 | INFO |python.utils.pipeline_utils | 106 | [marketing_leads_pipeline] run cecbd8cc7c664c90aec356ecc4e45718 -> completed (extracted rows=50072, loaded rows=50072)
+2026-08-07 18:35:09,984 | INFO |__main__ | 86 | marketing_leads_pipeline completed
+2026-08-07 18:42:06,241 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = b09a5f1e39014325a4d71e6fd5018eb1
+2026-08-07 18:42:06,246 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 18:42:06,249 | ERROR |__main__ | 29 | Error extracting web logs dataMissing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:42:06,249 | ERROR |__main__ | 95 | web_logs_pipeline failed Missing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:42:06,255 | ERROR |python.utils.pipeline_utils | 109 | Error updating logs on pipeline run end
+2026-08-07 18:49:32,584 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = 75cc711ed1ae42f380cd6f915185fc1d
+2026-08-07 18:49:32,584 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 18:49:32,591 | ERROR |__main__ | 29 | Error extracting web logs dataMissing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:49:32,591 | ERROR |__main__ | 96 | web_logs_pipeline failed Missing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:49:32,594 | ERROR |python.utils.pipeline_utils | 109 | Error updating logs on pipeline run end
+2026-08-07 18:52:37,150 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = 0631c445905c41ee99e12ee45e3e7c7e
+2026-08-07 18:52:37,150 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 18:52:37,153 | ERROR |__main__ | 29 | Error extracting web logs dataMissing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:52:37,153 | ERROR |__main__ | 95 | web_logs_pipeline failed Missing column provided to 'parse_dates': 'updated_at'
+2026-08-07 18:52:37,153 | ERROR |python.utils.pipeline_utils | 109 | Error updating logs on pipeline run end
+2026-08-07 19:03:46,568 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = 7dd6ea6aefba4c2da1af64f7e18d40ca
+2026-08-07 19:03:46,568 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 19:03:47,370 | INFO |__main__ | 23 | Succesfully extracted Marketing leads dataset
+2026-08-07 19:03:47,370 | INFO |__main__ | 24 | web_logs_pipeline extracted 78242 rows from Source 2
+2026-08-07 19:03:47,514 | INFO |__main__ | 36 | Loading Started...........
+2026-08-07 19:03:47,527 | ERROR |__main__ | 52 | Error loading web logs data into staging table NDFrame.to_sql() got an unexpected keyword argument 'testforerror'
+Traceback (most recent call last):
+  File "D:\Courses\Data Engineer\Internship_DataRopes\DE-Internship-Project\B2B-Data-Engineering-Platform\python\pipelines\web_logs_pipeline.py", line 40, in load_to_stagging
+    web_logs_df.to_sql(
+  File "C:\Users\Kazim Raza\AppData\Roaming\Python\Python310\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+TypeError: NDFrame.to_sql() got an unexpected keyword argument 'testforerror'
+2026-08-07 19:03:47,527 | ERROR |__main__ | 97 | web_logs_pipeline failed NDFrame.to_sql() got an unexpected keyword argument 'testforerror'
+2026-08-07 19:03:47,534 | INFO |python.utils.pipeline_utils | 106 | [web_logs_pipeline] run 7dd6ea6aefba4c2da1af64f7e18d40ca -> failed (extracted rows=0, loaded rows=0)
+2026-08-07 19:04:29,628 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = afb06c45c22e40d18758a4a340bf57ee
+2026-08-07 19:04:29,628 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 19:04:30,142 | INFO |__main__ | 23 | Succesfully extracted Marketing leads dataset
+2026-08-07 19:04:30,142 | INFO |__main__ | 24 | web_logs_pipeline extracted 78242 rows from Source 2
+2026-08-07 19:04:30,239 | INFO |__main__ | 36 | Loading Started...........
+2026-08-07 19:04:37,754 | INFO |__main__ | 49 | [web_logs_pipeline] loaded 78242 rows into staging.web_logs
+2026-08-07 19:04:37,763 | INFO |python.utils.pipeline_utils | 106 | [web_logs_pipeline] run afb06c45c22e40d18758a4a340bf57ee -> completed (extracted rows=78242, loaded rows=78242)
+2026-08-07 19:04:37,763 | INFO |__main__ | 94 | web_logs_pipeline completed
+2026-08-07 19:05:45,689 | INFO |python.utils.pipeline_utils | 72 | [marketing_leads_pipeline] run started, run_id = b46f0f5fd83d45b8ae04e265f4b628af
+2026-08-07 19:05:45,689 | INFO |__main__ | 18 | Extraction started......
+2026-08-07 19:05:46,089 | INFO |__main__ | 22 | Succesfully extracted Marketing leads dataset
+2026-08-07 19:05:46,093 | INFO |__main__ | 23 | marketing_leads_pipeline extracted 50072 rows from Source 2
+2026-08-07 19:05:51,114 | INFO |__main__ | 48 | [marketing_leads_pipeline] loaded 50072 rows into staging.marketing_leads
+2026-08-07 19:05:51,118 | INFO |python.utils.pipeline_utils | 106 | [marketing_leads_pipeline] run b46f0f5fd83d45b8ae04e265f4b628af -> completed (extracted rows=50072, loaded rows=50072)
+2026-08-07 19:05:51,120 | INFO |__main__ | 89 | marketing_leads_pipeline completed
+2026-08-07 19:05:59,274 | INFO |python.utils.pipeline_utils | 72 | [web_logs_pipeline] run started, run_id = decc4de91ab34e8d97c59da585dc935d
+2026-08-07 19:05:59,274 | INFO |__main__ | 19 | Extraction Started................
+2026-08-07 19:05:59,854 | INFO |__main__ | 23 | Succesfully extracted Marketing leads dataset
+2026-08-07 19:05:59,854 | INFO |__main__ | 24 | web_logs_pipeline extracted 78242 rows from Source 2
+2026-08-07 19:05:59,948 | INFO |__main__ | 36 | Loading Started...........
+2026-08-07 19:06:06,137 | INFO |__main__ | 49 | [web_logs_pipeline] loaded 78242 rows into staging.web_logs
+2026-08-07 19:06:06,143 | INFO |python.utils.pipeline_utils | 106 | [web_logs_pipeline] run decc4de91ab34e8d97c59da585dc935d -> completed (extracted rows=78242, loaded rows=78242)
+2026-08-07 19:06:06,143 | INFO |__main__ | 94 | web_logs_pipeline completed
+2026-08-07 21:42:06,779 | INFO |python.utils.pipeline_utils | 72 | [sql_server_pipeline] run started, run_id = 6d66ba62a39e4d74960f0bdb23a0d6d2
+2026-08-07 21:42:06,783 | ERROR |python.utils.pipeline_utils | 27 | 
+2026-08-07 21:42:07,167 | INFO |__main__ | 36 | sql_server_pipeline extracted 500 rows from companies
+2026-08-07 21:42:07,376 | INFO |__main__ | 36 | sql_server_pipeline extracted 15789 rows from customers
+2026-08-07 21:42:07,386 | INFO |__main__ | 36 | sql_server_pipeline extracted 10 rows from categories
+2026-08-07 21:42:07,394 | INFO |__main__ | 36 | sql_server_pipeline extracted 150 rows from suppliers
+2026-08-07 21:42:07,403 | INFO |__main__ | 36 | sql_server_pipeline extracted 96 rows from products
+2026-08-07 21:42:07,411 | INFO |__main__ | 36 | sql_server_pipeline extracted 325 rows from supplier_product_mapping
+2026-08-07 21:42:07,828 | INFO |__main__ | 36 | sql_server_pipeline extracted 32146 rows from orders
+2026-08-07 21:42:09,195 | INFO |__main__ | 36 | sql_server_pipeline extracted 96290 rows from order_items
+2026-08-07 21:42:09,336 | INFO |__main__ | 65 | Loading companies into companies
+2026-08-07 21:42:09,392 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 500 rows into staging.companies
+2026-08-07 21:42:09,392 | INFO |__main__ | 65 | Loading categories into categories
+2026-08-07 21:42:09,398 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 10 rows into staging.categories
+2026-08-07 21:42:09,398 | INFO |__main__ | 65 | Loading customers into customers
+2026-08-07 21:42:10,466 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 15789 rows into staging.customers
+2026-08-07 21:42:10,466 | INFO |__main__ | 65 | Loading products into products
+2026-08-07 21:42:10,478 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96 rows into staging.products
+2026-08-07 21:42:10,478 | INFO |__main__ | 65 | Loading suppliers into suppliers
+2026-08-07 21:42:10,492 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 150 rows into staging.suppliers
+2026-08-07 21:42:10,492 | INFO |__main__ | 65 | Loading supplier_product_mapping into supplier_product_mapping
+2026-08-07 21:42:10,517 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 325 rows into staging.supplier_product_mapping
+2026-08-07 21:42:10,517 | INFO |__main__ | 65 | Loading orders into orders
+2026-08-07 21:42:12,430 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 32146 rows into staging.orders
+2026-08-07 21:42:12,431 | INFO |__main__ | 65 | Loading order_items into order_items
+2026-08-07 21:42:17,651 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96290 rows into staging.order_items
+2026-08-07 21:42:17,651 | INFO |__main__ | 77 | All available datasets loaded successfully
+2026-08-07 21:42:17,656 | INFO |python.utils.pipeline_utils | 48 | sql_server_pipeline watermark updated = 2026-08-06 16:31:27.101787
+2026-08-07 21:42:17,660 | INFO |python.utils.pipeline_utils | 106 | [sql_server_pipeline] run 6d66ba62a39e4d74960f0bdb23a0d6d2 -> completed (extracted rows=145306, loaded rows=145306)
+2026-08-07 21:45:30,822 | INFO |python.utils.pipeline_utils | 72 | [sql_server_pipeline] run started, run_id = aec10abf3a9344c3a82a11b3fb826c3e
+2026-08-07 21:45:30,828 | ERROR |python.utils.pipeline_utils | 27 | 
+2026-08-07 21:45:31,130 | INFO |__main__ | 36 | sql_server_pipeline extracted 500 rows from companies
+2026-08-07 21:45:31,307 | INFO |__main__ | 36 | sql_server_pipeline extracted 15789 rows from customers
+2026-08-07 21:45:31,317 | INFO |__main__ | 36 | sql_server_pipeline extracted 10 rows from categories
+2026-08-07 21:45:31,326 | INFO |__main__ | 36 | sql_server_pipeline extracted 150 rows from suppliers
+2026-08-07 21:45:31,335 | INFO |__main__ | 36 | sql_server_pipeline extracted 96 rows from products
+2026-08-07 21:45:31,346 | INFO |__main__ | 36 | sql_server_pipeline extracted 325 rows from supplier_product_mapping
+2026-08-07 21:45:31,720 | INFO |__main__ | 36 | sql_server_pipeline extracted 32146 rows from orders
+2026-08-07 21:45:33,129 | INFO |__main__ | 36 | sql_server_pipeline extracted 96290 rows from order_items
+2026-08-07 21:45:33,243 | INFO |__main__ | 65 | Loading companies into companies
+2026-08-07 21:45:33,295 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 500 rows into staging.companies
+2026-08-07 21:45:33,295 | INFO |__main__ | 65 | Loading categories into categories
+2026-08-07 21:45:33,302 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 10 rows into staging.categories
+2026-08-07 21:45:33,302 | INFO |__main__ | 65 | Loading customers into customers
+2026-08-07 21:45:34,350 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 15789 rows into staging.customers
+2026-08-07 21:45:34,350 | INFO |__main__ | 65 | Loading products into products
+2026-08-07 21:45:34,391 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96 rows into staging.products
+2026-08-07 21:45:34,391 | INFO |__main__ | 65 | Loading suppliers into suppliers
+2026-08-07 21:45:34,430 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 150 rows into staging.suppliers
+2026-08-07 21:45:34,430 | INFO |__main__ | 65 | Loading supplier_product_mapping into supplier_product_mapping
+2026-08-07 21:45:34,475 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 325 rows into staging.supplier_product_mapping
+2026-08-07 21:45:34,475 | INFO |__main__ | 65 | Loading orders into orders
+2026-08-07 21:45:36,473 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 32146 rows into staging.orders
+2026-08-07 21:45:36,474 | INFO |__main__ | 65 | Loading order_items into order_items
+2026-08-07 21:45:41,647 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96290 rows into staging.order_items
+2026-08-07 21:45:41,654 | INFO |__main__ | 77 | All available datasets loaded successfully
+2026-08-07 21:45:41,658 | INFO |python.utils.pipeline_utils | 48 | sql_server_pipeline watermark updated = 2026-08-06 16:31:27.101787
+2026-08-07 21:45:41,664 | INFO |python.utils.pipeline_utils | 106 | [sql_server_pipeline] run aec10abf3a9344c3a82a11b3fb826c3e -> completed (extracted rows=145306, loaded rows=145306)
+2026-08-07 22:09:59,721 | INFO |python.utils.pipeline_utils | 72 | [sql_server_pipeline] run started, run_id = 5e000505b99e48d5b5b28c75b85dc662
+2026-08-07 22:09:59,725 | ERROR |python.utils.pipeline_utils | 27 | 
+2026-08-07 22:10:00,098 | INFO |__main__ | 36 | sql_server_pipeline extracted 500 rows from companies
+2026-08-07 22:10:00,333 | INFO |__main__ | 36 | sql_server_pipeline extracted 15789 rows from customers
+2026-08-07 22:10:00,343 | INFO |__main__ | 36 | sql_server_pipeline extracted 10 rows from categories
+2026-08-07 22:10:00,352 | INFO |__main__ | 36 | sql_server_pipeline extracted 150 rows from suppliers
+2026-08-07 22:10:00,365 | INFO |__main__ | 36 | sql_server_pipeline extracted 96 rows from products
+2026-08-07 22:10:00,378 | INFO |__main__ | 36 | sql_server_pipeline extracted 325 rows from supplier_product_mapping
+2026-08-07 22:10:00,764 | INFO |__main__ | 36 | sql_server_pipeline extracted 32146 rows from orders
+2026-08-07 22:10:02,126 | INFO |__main__ | 36 | sql_server_pipeline extracted 96290 rows from order_items
+2026-08-07 22:10:02,244 | INFO |__main__ | 65 | Loading companies into companies
+2026-08-07 22:10:02,295 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 500 rows into staging.companies
+2026-08-07 22:10:02,295 | INFO |__main__ | 65 | Loading categories into categories
+2026-08-07 22:10:02,301 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 10 rows into staging.categories
+2026-08-07 22:10:02,302 | INFO |__main__ | 65 | Loading customers into customers
+2026-08-07 22:10:03,243 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 15789 rows into staging.customers
+2026-08-07 22:10:03,245 | INFO |__main__ | 65 | Loading products into products
+2026-08-07 22:10:03,256 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96 rows into staging.products
+2026-08-07 22:10:03,257 | INFO |__main__ | 65 | Loading suppliers into suppliers
+2026-08-07 22:10:03,273 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 150 rows into staging.suppliers
+2026-08-07 22:10:03,273 | INFO |__main__ | 65 | Loading supplier_product_mapping into supplier_product_mapping
+2026-08-07 22:10:03,299 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 325 rows into staging.supplier_product_mapping
+2026-08-07 22:10:03,299 | INFO |__main__ | 65 | Loading orders into orders
+2026-08-07 22:10:05,384 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 32146 rows into staging.orders
+2026-08-07 22:10:05,385 | INFO |__main__ | 65 | Loading order_items into order_items
+2026-08-07 22:10:10,384 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 96290 rows into staging.order_items
+2026-08-07 22:10:10,385 | INFO |__main__ | 77 | All available datasets loaded successfully
+2026-08-07 22:10:10,392 | INFO |python.utils.pipeline_utils | 48 | sql_server_pipeline watermark updated = 2026-08-06 16:31:27.101787
+2026-08-07 22:10:10,399 | INFO |python.utils.pipeline_utils | 106 | [sql_server_pipeline] run 5e000505b99e48d5b5b28c75b85dc662 -> completed (extracted rows=145306, loaded rows=145306)
+2026-08-07 22:10:54,830 | INFO |__main__ | 38 | Daily generator seeded with LIVE_SEED = 1786122654556687200 (logged in metadata.Generation_Seeds)
+2026-08-07 22:10:54,835 | INFO |__main__ | 57 | fetching required Datasets....
+2026-08-07 22:10:55,130 | INFO |__main__ | 67 | Returning all Datasets....
+2026-08-07 22:10:55,131 | INFO |__main__ | 84 | Generating Daily Datasets......
+2026-08-07 22:10:55,131 | INFO |python.generators.transaction_generator | 422 | Generating Web Logs...
+2026-08-07 22:10:55,365 | INFO |python.generators.transaction_generator | 473 | Succefully generated weblogs : 957
+2026-08-07 22:10:55,365 | INFO |python.generators.transaction_generator | 102 | Generating Marketing Leads...
+2026-08-07 22:10:55,373 | INFO |python.generators.transaction_generator | 150 | 
+marketing_leads Type Distribution:
+funnel_stage
+New            11
+Contacted       2
+Qualified       2
+Won             1
+Lost            1
+Proposal        1
+Negotiation     1
+Name: count, dtype: int64
+2026-08-07 22:10:55,375 | INFO |python.generators.transaction_generator | 161 | Generated 19 marketing leads records successfully!
+2026-08-07 22:10:55,376 | INFO |python.generators.transaction_generator | 162 | 
+Industry Distribution:
+industry
+Logistics        4
+Technology       4
+Education        3
+Construction     2
+Healthcare       2
+Energy           2
+Manufacturing    1
+Hospitality      1
+Name: count, dtype: int64
+2026-08-07 22:10:55,376 | INFO |python.generators.transaction_generator | 177 | Generating Orders...
+2026-08-07 22:10:55,545 | INFO |python.generators.transaction_generator | 291 | Orders generation successfull, total no. of orders = 33
+2026-08-07 22:10:55,547 | INFO |python.generators.transaction_generator | 300 | Generated 32 legacy customer orders and 1 lead-originated orders.
+2026-08-07 22:10:55,547 | INFO |python.generators.transaction_generator | 301 | orders data set generated succesfully
+2026-08-07 22:10:55,548 | INFO |python.generators.transaction_generator | 303 | Orders with Lead Attribution: 1
+2026-08-07 22:10:55,548 | INFO |python.generators.transaction_generator | 305 | Legacy Customer Orders: 32
+2026-08-07 22:10:55,549 | INFO |python.generators.transaction_generator | 307 | Returning Orders Data set....
+2026-08-07 22:10:55,556 | INFO |python.generators.transaction_generator | 320 | Generating Order Items Leads...
+2026-08-07 22:10:55,566 | INFO |python.generators.transaction_generator | 373 | Generated 109 order_items_dataset
+2026-08-07 22:10:55,567 | INFO |python.generators.transaction_generator | 374 | order items dataset generated succesfully
+2026-08-07 22:10:55,567 | INFO |python.generators.transaction_generator | 375 | Returning Order Items Dataset....
+2026-08-07 22:10:55,568 | INFO |python.generators.transaction_generator | 394 | Populating order total in orders table by summing up line totals of order items
+2026-08-07 22:10:55,575 | INFO |python.generators.transaction_generator | 409 | Order totals populated successfully
+2026-08-07 22:10:55,575 | INFO |__main__ | 103 | Daily Datasets Generated Succesfully!
+2026-08-07 22:10:55,575 | INFO |__main__ | 104 | Generated 33 Orders
+2026-08-07 22:10:55,576 | INFO |__main__ | 106 | Generated 109 Order Items
+2026-08-07 22:10:55,576 | INFO |__main__ | 108 | Generated 19 Leads
+2026-08-07 22:10:55,576 | INFO |__main__ | 110 | Generated 957 Web Logs
+2026-08-07 22:10:55,577 | INFO |__main__ | 165 | Loading Daily Datasets into Sources
+2026-08-07 22:10:55,586 | INFO |__main__ | 170 | Succesfully loaded daily leads in Source 2
+2026-08-07 22:10:55,600 | INFO |__main__ | 175 | Succesfully loaded daily web logs in Source 3
+2026-08-07 22:10:55,602 | INFO |python.generators.load_to_sqlserver | 11 | Loading datasets into SQL Server...
+2026-08-07 22:10:55,603 | INFO |python.generators.load_to_sqlserver | 30 | Loading orders into Orders
+2026-08-07 22:10:55,711 | INFO |python.generators.load_to_sqlserver | 30 | Loading order_items into Order_Items
+2026-08-07 22:10:55,828 | INFO |python.generators.load_to_sqlserver | 44 | All available datasets loaded successfully
+2026-08-07 22:10:55,829 | INFO |__main__ | 179 | Succesfully loaded new daily orders and its order items in Source 1
+2026-08-07 22:10:55,829 | INFO |__main__ | 127 | Generating daily updates....
+2026-08-07 22:10:55,829 | INFO |__main__ | 191 | Generating company updates
+2026-08-07 22:10:55,906 | INFO |__main__ | 245 | Successfully updated 3 companies
+2026-08-07 22:10:55,907 | INFO |__main__ | 255 | Generating customer updates
+2026-08-07 22:10:56,009 | INFO |__main__ | 286 | Updating Customers....
+2026-08-07 22:10:56,041 | INFO |__main__ | 286 | Updating Customers....
+2026-08-07 22:10:56,059 | INFO |__main__ | 286 | Updating Customers....
+2026-08-07 22:10:56,074 | INFO |__main__ | 286 | Updating Customers....
+2026-08-07 22:10:56,091 | INFO |__main__ | 286 | Updating Customers....
+2026-08-07 22:10:56,099 | INFO |__main__ | 306 | Successfully updated customers
+2026-08-07 22:10:56,099 | INFO |__main__ | 316 | Generating orders updates
+2026-08-07 22:10:56,235 | INFO |__main__ | 331 | Updating Orders....
+2026-08-07 22:10:56,319 | INFO |__main__ | 342 | Successfully updated Orders
+2026-08-07 22:10:56,319 | INFO |__main__ | 352 | Generating leads updates
+2026-08-07 22:10:56,799 | INFO |__main__ | 380 | Successfully updated 8 marketing leads
+2026-08-07 22:10:56,802 | INFO |__main__ | 398 | Daily ingestion and CDC simulation completed successfully.
+2026-08-07 22:10:56,802 | INFO |__main__ | 400 | Daily CDC Summary
+----------------------------
+New Orders: 33
+New Order Items: 109
+New Leads: 19
+New Web Logs: 957
+
+Updated Companies: 3
+Updated Customers: 5
+Updated Orders: 6
+Updated Leads: 8
+2026-08-07 22:11:04,193 | INFO |python.utils.pipeline_utils | 72 | [sql_server_pipeline] run started, run_id = d1d07d0e31cb4498878b8385cfe2e8c9
+2026-08-07 22:11:04,196 | INFO |python.utils.pipeline_utils | 24 | sql_server_pipeline last watermark = 2026-08-06 16:31:27.101787
+2026-08-07 22:11:04,394 | INFO |__main__ | 36 | sql_server_pipeline extracted 3 rows from companies
+2026-08-07 22:11:04,446 | INFO |__main__ | 36 | sql_server_pipeline extracted 5 rows from customers
+2026-08-07 22:11:04,456 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from categories
+2026-08-07 22:11:04,468 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from suppliers
+2026-08-07 22:11:04,478 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from products
+2026-08-07 22:11:04,489 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from supplier_product_mapping
+2026-08-07 22:11:04,590 | INFO |__main__ | 36 | sql_server_pipeline extracted 3 rows from orders
+2026-08-07 22:11:04,965 | INFO |__main__ | 36 | sql_server_pipeline extracted 2 rows from order_items
+2026-08-07 22:11:05,004 | INFO |__main__ | 65 | Loading companies into companies
+2026-08-07 22:11:05,030 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 3 rows into staging.companies
+2026-08-07 22:11:05,030 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:11:05,030 | INFO |__main__ | 65 | Loading customers into customers
+2026-08-07 22:11:05,038 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 5 rows into staging.customers
+2026-08-07 22:11:05,038 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:11:05,039 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:11:05,039 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:11:05,039 | INFO |__main__ | 65 | Loading orders into orders
+2026-08-07 22:11:05,046 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 3 rows into staging.orders
+2026-08-07 22:11:05,046 | INFO |__main__ | 65 | Loading order_items into order_items
+2026-08-07 22:11:05,052 | INFO |__main__ | 75 | [sql_server_pipeline] loaded 2 rows into staging.order_items
+2026-08-07 22:11:05,052 | INFO |__main__ | 77 | All available datasets loaded successfully
+2026-08-07 22:11:05,055 | INFO |python.utils.pipeline_utils | 48 | sql_server_pipeline watermark updated = 2026-08-07 22:10:56.236975
+2026-08-07 22:11:05,056 | INFO |python.utils.pipeline_utils | 106 | [sql_server_pipeline] run d1d07d0e31cb4498878b8385cfe2e8c9 -> completed (extracted rows=13, loaded rows=13)
+2026-08-07 22:12:41,269 | INFO |python.utils.pipeline_utils | 72 | [sql_server_pipeline] run started, run_id = 60152440a732497eacfb3b0328e26f88
+2026-08-07 22:12:41,271 | INFO |python.utils.pipeline_utils | 24 | sql_server_pipeline last watermark = 2026-08-07 22:10:56.236975
+2026-08-07 22:12:41,544 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from companies
+2026-08-07 22:13:07,391 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from customers
+2026-08-07 22:13:07,423 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from categories
+2026-08-07 22:13:07,431 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from suppliers
+2026-08-07 22:13:07,439 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from products
+2026-08-07 22:13:07,446 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from supplier_product_mapping
+2026-08-07 22:13:56,898 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from orders
+2026-08-07 22:13:57,071 | INFO |__main__ | 36 | sql_server_pipeline extracted 0 rows from order_items
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,127 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,128 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,128 | INFO |__main__ | 62 | No rows were extracted
+2026-08-07 22:13:57,128 | INFO |__main__ | 77 | All available datasets loaded successfully
+2026-08-07 22:13:57,132 | INFO |python.utils.pipeline_utils | 106 | [sql_server_pipeline] run 60152440a732497eacfb3b0328e26f88 -> completed (extracted rows=0, loaded rows=0)

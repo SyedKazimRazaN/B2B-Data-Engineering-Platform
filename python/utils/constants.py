@@ -180,6 +180,124 @@ BUSINESS_HOURS = {"start": 8,  "end": 18}
 
 
 
+# ------------------------------------------------
+#           SQL SERVER EXTRACTION QUERIES
+# ------------------------------------------------
+
+SOURCE1_QUERIES = {
+
+    "companies": """
+        SELECT
+            company_id,
+            company_name,
+            company_type,
+            cuit_tax_id,
+            rating,
+            country,
+            city,
+            address,
+            created_at,
+            updated_at
+        FROM source.Companies
+    """,
+
+    "customers": """
+        SELECT
+            customer_id,
+            company_id,
+            first_name,
+            last_name,
+            email,
+            phone_number,
+            gender,
+            date_of_birth,
+            job_title,
+            created_at,
+            updated_at
+        FROM source.Customers
+    """,
+
+    "categories": """
+        SELECT
+            category_id,
+            category_name,
+            created_at,
+            updated_at
+        FROM source.Categories
+    """,
+
+    "suppliers": """
+        SELECT
+            supplier_id,
+            company_id,
+            supplier_name,
+            contact_name,
+            email,
+            phone_number,
+            created_at,
+            updated_at
+        FROM source.Suppliers
+    """,
+
+    "products": """
+        SELECT
+            product_id,
+            sku,
+            product_name,
+            category_id,
+            brand,
+            variant,
+            cost_price,
+            catalog_price,
+            is_active,
+            created_at,
+            updated_at
+        FROM source.Products
+    """,
+
+    "supplier_product_mapping": """
+        SELECT
+            supplier_product_id,
+            supplier_id,
+            product_id,
+            supplier_price,
+            lead_time_days,
+            is_preferred_supplier,
+            created_at,
+            updated_at
+        FROM source.Supplier_Product_Mapping
+    """,
+
+    "orders": """
+        SELECT
+            order_id,
+            customer_id,
+            company_id,
+            lead_id,
+            order_date,
+            order_status,
+            payment_status,
+            order_total,
+            created_at,
+            updated_at
+        FROM source.Orders
+    """,
+
+    "order_items": """
+        SELECT
+            order_item_id,
+            order_id,
+            supplier_product_id,
+            quantity,
+            unit_price,
+            discount_amount,
+            line_total,
+            created_at,
+            updated_at
+        FROM source.Order_Items
+    """
+}
+
 
 
 

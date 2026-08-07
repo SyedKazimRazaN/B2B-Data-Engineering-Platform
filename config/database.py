@@ -28,7 +28,7 @@ POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
 POSTGRESQL_DATABASE = os.getenv("POSTGRESQL_DATABASE")
 
 postgresql_connection_url = (f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRESQL_DATABASE}")
-postgresql_engine = create_engine(postgresql_connection_url)
+POSTGRESQL_ENGINE= create_engine(postgresql_connection_url)
 
 
 # ============================================================================

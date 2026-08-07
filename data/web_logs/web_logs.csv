@@ -78241,3 +78241,960 @@ b51fa5675c0e46d4af269f052d466d39,United Kingdom,Birmingham,2024-11-04 01:00:59,6
 25c6159f0b77477fb7856ea706241bf2,United States,Dallas,2024-08-19 08:18:19,128.92.43.98,,833c912a6b7440749f583392a05359cf,POST,/search?q=laptop,404,2789,https://twitter.com,Mobile,Chrome,True
 b437d2a6d6b44e5abb524029df46de6d,United Kingdom,London,2026-02-09 13:59:45,1.43.16.96,melissabriggs,09834a7d510147c8a1d5f3b8b4dbdd80,POST,/,200,122747,https://bing.com,Mobile,Chrome,False
 7486acb4498c46c685990b53ceeb8ca5,United Kingdom,London,2026-01-09 19:23:15,210.207.52.144,terence29,8e7852f8185c4c089e748ac9eded789b,GET,/,404,307,https://bing.com,Desktop,Firefox,False
+addb48ed92a7449e8076d3341030f4cb,United States,Dallas,2024-12-02 01:28:41,10.19.246.214,joshua70,a0b294224863479990a5e47b80f443ff,DELETE,/products/123,200,16874,https://bing.com,Mobile,Chrome,False
+a533e93e10d744fe944556025ab41b30,United Kingdom,London,2026-07-05 14:08:18,10.19.246.214,martyn70,428d9c6830af4dd5b99ef19907c056c3,DELETE,/api/orders,200,97831,https://google.com,Desktop,Chrome,False
+606c98ca13fa4e5fbbb3a46fc7251d06,United States,Seattle,2026-05-04 07:34:04,101.221.232.233,steven29,3ad94812d4ae4dfa8d4f60e7f4760a4c,POST,/login,500,820,https://google.com,Mobile,Safari,False
+5eebc98204d3434c9d9cf7d867bf575c,United States,Austin,2024-12-28 10:53:27,110.40.114.106,chadjohnson,e8d522b669d54698bd39fd13a4834298,POST,/checkout,200,361197,https://google.com,Desktop,Chrome,False
+d56bf319f61042daba0be8aac3bcd339,United States,New York,2025-04-13 01:15:39,200.42.216.22,owenkatherine,4173754d52fb4a33b3ced07f18dfa069,POST,/api/customers,403,3207,https://google.com,Mobile,Firefox,False
+93398ac09f8145ec9fb80b02c6e69896,United States,Austin,2024-10-18 09:58:10,171.108.1.47,brendajohnson,16823be1eb2c44c0bb1cfd1fee06d661,DELETE,/products/123,404,4539,https://google.com,Mobile,Firefox,False
+a3baec573d8e480e9ccf00b137c9087c,United States,Dallas,2025-04-21 12:59:04,27.113.139.219,harrisvictoria,796d8c6e30b3420d8b8f0200f062d6b5,PUT,/search?q=laptop,404,963,https://google.com,Desktop,Edge,False
+9e3b05d42f4f48d6a077f2f672c0e501,United States,New York,2026-03-09 07:29:34,222.22.6.30,cruzchristopher,9fd075f93ee344168bb0a076afe0bcbc,PUT,/login,200,342645,https://google.com,Desktop,Chrome,False
+1baa99c7f44d42f0a2f490d69670a4c6,United Kingdom,London,2025-07-10 03:53:27,101.221.232.233,bethany29,25e0b3594c2d4826ab739d0ca69aaea3,DELETE,/checkout,200,113920,https://bing.com,Mobile,Chrome,False
+f16ae47a17694613a05f05a338d8654c,Australia,Brisbane,2025-06-20 06:32:43,10.19.246.214,joshua70,611b890dd7834fe8a80c327de4b7534e,DELETE,/api/customers,200,376194,https://twitter.com,Mobile,Chrome,False
+f290cd424dcf4ef9a86e456389af157a,United States,New York,2024-09-20 20:37:03,4.236.116.216,ashleymartinez,a0cfe5f3c9f04404b3b60cb39cfdef7d,POST,/login,401,4262,https://bing.com,Desktop,Firefox,False
+765871cb614944fe98c520a928a8669f,United States,New York,2025-03-09 09:43:43,81.26.16.200,danielmaldonado,8abc159df6e047e98d1dce50f86ad731,GET,/checkout,200,198712,https://twitter.com,Desktop,Chrome,False
+08bee234332540fd8361d0c072935925,United States,Chicago,2026-05-22 22:21:10,21.182.15.239,billolsen,84f4d599a6ed4765b2a223d3a4bb1aaa,GET,/login,200,409984,https://bing.com,Tablet,Chrome,False
+b7b299286038454395b4c5056f770f68,United States,New York,2026-07-28 08:49:06,131.248.79.199,,4a0b3f498fd94dc29affba87f843bdad,GET,/checkout,200,222226,https://google.com,Mobile,Chrome,True
+a5b87c13831a43f3a16018837431c26b,Australia,Melbourne,2026-05-09 08:33:37,101.221.232.233,steven29,1d166c2cc00c4f70bf09aa71fd1ced5e,PUT,/products/123,200,82897,https://bing.com,Mobile,Chrome,False
+a35ca98b9ec64d218e902b82b98b4ed0,United States,New York,2025-12-26 03:24:05,180.80.164.100,chaseangela,c9bd547db8c84cf09acb4cbd450c617f,DELETE,/checkout,200,470138,https://bing.com,Desktop,Chrome,False
+bcf99779424b41c593cbb46e13ce268c,United Kingdom,Birmingham,2025-12-21 21:45:42,166.40.114.106,brianhayward,35de03f2a61d4f45bf3f66a8cff1afcb,PUT,/checkout,400,4112,https://twitter.com,Desktop,Firefox,False
+510c4edf226842cda4cacb4e3d8c2467,United Kingdom,Birmingham,2025-01-21 06:58:03,200.42.216.22,robertstracey,663da6fce1ad4c62aca5985661024fa6,GET,/api/orders,200,342019,https://bing.com,Tablet,Chrome,False
+68311491b8734cf0bacb294c7129a636,United States,Seattle,2025-11-23 18:24:59,115.248.157.186,,ca1e4149fca74283bd6df4e2ebe4a2aa,GET,/api/customers,500,3476,https://google.com,Desktop,Edge,True
+d00383ba893c4be58d37878ad56f5f85,United States,Seattle,2025-08-26 05:44:18,95.219.65.171,obaker,6060a79ab73347769a9eef7d54323788,PUT,/login,200,46719,https://google.com,Mobile,Chrome,False
+cc82ac1c9bb64ff49761ffe943cbd087,United States,Chicago,2024-08-15 22:31:12,65.14.88.178,gsimmons,0b46b286760c465a87c203a902819455,POST,/search?q=laptop,200,9279,https://twitter.com,Mobile,Firefox,False
+4c92a368dcdf4f87a82f752b11ec3e94,United States,Austin,2026-03-22 18:59:51,154.36.105.99,bvalencia,1ce057df307145a7ba55746f8217023c,PUT,/search?q=laptop,200,95547,https://bing.com,Mobile,Firefox,False
+b9a7dcec5cd14e56b0b730367d37548d,United States,Chicago,2024-08-27 01:19:54,212.159.153.202,mthompson,cf4658330f3746e2b57c2f0c57e050e1,PUT,/api/orders,200,377214,https://google.com,Desktop,Firefox,False
+608a11c0dd0a4eebb0cd474b16e817ef,United Kingdom,Manchester,2024-09-22 20:48:03,86.192.18.254,katepearce,2ac8cddb5c4341d0a9a124e66e80a8e9,DELETE,/products,200,405836,https://bing.com,Desktop,Chrome,False
+f28c95c55230470c98d96b301a5c3a60,United States,Dallas,2025-01-28 09:26:49,217.38.226.246,goodwintroy,5037aecc4aa142a69e27eaf350b70b85,GET,/api/orders,200,484992,https://google.com,Mobile,Firefox,False
+a2098134b7474649b1e4dd85c7b31355,United Kingdom,Manchester,2026-03-17 15:16:48,27.113.139.219,martinmaurice,cbb5d23015d741a6931715f982f82292,DELETE,/products,200,299837,https://bing.com,Desktop,Edge,False
+c08bb7faa23a442698c3fd508fbc0b37,Australia,Brisbane,2024-11-04 13:00:58,110.40.114.106,chadjohnson,529d7f6bfb704ab0a4837a0fe42425f2,POST,/login,200,106100,https://twitter.com,Desktop,Chrome,False
+6004f59c11f048fcbebea9571addd9f4,United States,New York,2024-10-24 22:51:05,202.31.175.45,hpeters,a22c0ac9fd5f4e81aad2a4e809856606,DELETE,/login,200,479828,https://twitter.com,Mobile,Chrome,False
+9c8b61c64996449fa4497188d4176d01,United Kingdom,Birmingham,2025-12-19 12:29:49,71.108.5.151,,1ae4760369974f5c9795b3da6c055f86,POST,/,401,4024,https://bing.com,Desktop,Chrome,True
+bc8f8ad323894d3e8da08330b76e8df8,United Kingdom,Birmingham,2026-08-03 07:25:25,27.63.154.159,lyndaburns,8e48115c570b4cb69c64912668b6cddb,DELETE,/api/customers,403,2307,https://twitter.com,Desktop,Chrome,False
+27fd2202bb38402a8b12fd1b97c13f24,United States,Chicago,2025-04-29 22:41:18,184.91.42.62,john47,fc93cced8f3c4b3c94552b7930fa0c30,GET,/search?q=laptop,200,233752,https://bing.com,Desktop,Chrome,False
+f5799baa6f3e4236840a66f6510d445a,Australia,Sydney,2026-05-08 15:24:02,200.42.216.22,owenkatherine,d668938f84044708916f9cb2c2a2295f,POST,/login,200,261003,https://bing.com,Desktop,Chrome,False
+7c98cc77e5124f6c9aea58995bf2d491,United States,New York,2025-12-25 09:02:11,153.239.83.249,gmiller,5f82089269f843cfb900e585936add06,GET,/login,200,155779,https://twitter.com,Mobile,Chrome,False
+b065bcd701f148858d8e88943da26fab,Australia,Brisbane,2026-05-03 15:06:11,171.108.1.47,brendajohnson,752b5c431b28471e97567ae3911f3888,DELETE,/search?q=laptop,200,139145,https://google.com,Desktop,Firefox,False
+9216ae5e7d6742a9a8ac8ea3d24e74d3,Australia,Melbourne,2026-01-11 01:18:26,27.113.139.219,harrisvictoria,6be50fb4e0b144dc9d8203a8d1a250f2,PUT,/api/orders,200,181378,https://google.com,Mobile,Edge,False
+a75d6d4b2c7b45a894dac75d8775f9c2,United States,Chicago,2025-11-15 21:23:53,131.230.192.143,pmeyer,626fec3199334a40a9733ddbc0df5d70,PUT,/api/orders,200,119152,https://twitter.com,Desktop,Chrome,False
+a683786dc0844a77bc074a87518813ee,United States,New York,2025-10-23 01:47:46,58.163.240.192,clarkdebra,e94fc1d38fc2474abadb82ef19e7f4e5,POST,/search?q=laptop,403,2728,https://google.com,Desktop,Chrome,False
+fa4470a96eea4b3786baeb1a5a2766c8,United States,Austin,2025-11-26 02:41:12,166.101.6.107,lwise,8500361d8c33486eb4e67dc259e0e70b,POST,/checkout,301,94117,https://twitter.com,Desktop,Safari,False
+713bb62761ac406f87be6f4e8f4fc735,United States,Seattle,2024-12-25 13:58:51,206.168.53.44,pmoore,201dbc12428a4d059a6e3d966985707a,GET,/checkout,200,291012,https://bing.com,Desktop,Chrome,False
+c2cb5d89e3f64baa891c965c3da81d64,United States,Chicago,2026-01-14 02:53:09,110.65.27.68,jennifer04,966520af51ec4b488c5af68ffbdaf898,DELETE,/search?q=laptop,404,2217,https://google.com,Desktop,Chrome,False
+4afd053116524741ac9d5384662a53a0,United States,Austin,2025-11-14 18:00:43,216.205.194.55,vanessa52,fc774cddb75d4da6af64928d1ce17879,GET,/login,200,170395,https://google.com,Mobile,Chrome,False
+d7f2360e25e546aba53331224790f43c,United Kingdom,London,2025-01-07 04:27:02,147.86.215.139,howellharriet,b688c5aa27a34a1892aad24be7b53c64,GET,/products/123,200,335597,https://google.com,Desktop,Firefox,False
+7c8b38c2ef2a48ebba255433040afe91,Australia,Sydney,2025-11-20 23:45:26,222.22.6.30,cruzchristopher,2823c689b40a420f92357d85b3d2d3fa,GET,/,404,283,https://twitter.com,Desktop,Edge,False
+c61f54d4cc174d86aa74ef969cd573ca,United States,Austin,2026-08-01 13:20:52,16.35.217.34,jimmy31,57c93837740d4c6abfa0379967b38d7f,POST,/,404,1401,https://google.com,Mobile,Chrome,False
+722745b55c7544adae2a63d1f32d7c9b,Australia,Melbourne,2025-08-10 13:13:29,4.236.116.216,ashleymartinez,dd58f505b18148eea0abf426ecae8ca8,POST,/api/customers,200,184336,https://google.com,Mobile,Chrome,False
+f86d1db23bba40dcbe287d89361dbccb,United Kingdom,Birmingham,2025-03-09 02:01:51,214.179.111.24,sandra75,563d7cdcb7b2406393a5589a08fc807d,GET,/search?q=laptop,200,480288,https://bing.com,Desktop,Chrome,False
+3898e2ee00fb433c9d68e2d7a1352cf0,Australia,Brisbane,2025-10-08 17:41:18,81.26.16.200,danielmaldonado,3050eb33e22741c79f98c183be984cde,GET,/products/123,200,99462,https://bing.com,Desktop,Firefox,False
+7fdb077f3d204b11b4aeabf569eac82e,United States,Austin,2025-11-04 23:24:08,56.96.132.25,mackjacob,ac25fd89680e4e3680682fa1c5ac96c4,GET,/products/123,200,311114,https://bing.com,Mobile,Edge,False
+e1042684546b45d69189a87f2c7731e3,United States,Dallas,2025-02-26 11:41:39,9.198.76.187,,4885c524285a4aa792c9eed4ceac34c2,DELETE,/products,200,324646,https://twitter.com,Desktop,Chrome,True
+981ed8c98f1c41d9ba2fdf828680d14f,United States,Dallas,2026-07-25 00:37:44,174.136.111.147,lori95,5bc44b1005d84b78ac57d506ad5d44c8,GET,/api/customers,200,341393,https://twitter.com,Desktop,Chrome,False
+c304e200b9db49bbac70381d00e05015,United States,Dallas,2026-01-07 13:06:14,93.177.173.219,smithdouglas,797958e3fae5471b8d5da387c909fcef,DELETE,/checkout,200,97887,https://twitter.com,Desktop,Firefox,False
+5e17a69461154d2488afc0a3737ab980,United States,Austin,2025-10-23 17:19:38,209.220.188.180,,25aa1d93477f46e7ae56bc767bae9ce5,POST,/login,404,802,https://bing.com,Desktop,Firefox,True
+f8fc3d99058742279e66a419990c2b1d,United States,Seattle,2026-01-27 13:34:36,160.116.18.186,vanessabrown,51001f48d5ee4fbabf4c7f6ee9584272,PUT,/login,200,255845,https://bing.com,Desktop,Chrome,False
+8a00eb073351400f823c841e234d4d83,United States,Dallas,2026-01-27 10:34:58,164.90.109.50,billy48,93f6a57c8e0c4202bf6d6299b03add31,POST,/api/customers,200,2246,https://bing.com,Desktop,Firefox,False
+05cfc0ff80164f7f8628133410a2c54a,United States,Dallas,2026-04-26 02:51:44,133.3.191.157,bensonchristine,24a490d74e9148b7ac2ce2a19eaf108a,PUT,/api/orders,200,452641,https://twitter.com,Desktop,Chrome,False
+459899dd1c044ded957e5a90fe4e17d4,Australia,Brisbane,2026-02-08 08:07:03,21.182.15.239,billolsen,7a7fee7be9cd44c3865a92402057e6c3,GET,/,400,799,https://twitter.com,Desktop,Chrome,False
+1b03c799cab0461592f67963a204a760,United States,New York,2025-10-13 09:45:21,183.120.59.235,jamescunningham,b7500e9b1aa34124b07eee9dd132ac4c,PUT,/products,400,4669,https://twitter.com,Desktop,Firefox,False
+00c4a0059b3a48489305a454ce5e6280,United States,Seattle,2025-11-04 20:37:43,182.52.207.148,gerald92,e013324058db4a369d42bdf031e61dc9,GET,/checkout,401,4610,https://twitter.com,Desktop,Chrome,False
+7aa0e32daab24e02a6064d86a0b42757,United States,Austin,2026-07-06 10:58:57,21.57.0.192,stokesbrian,982bba60fcd64fcfba2a6ed9fccd426b,PUT,/search?q=laptop,201,274095,https://google.com,Mobile,Chrome,False
+d211d0e888c74200a7f009ab07631785,United States,New York,2024-09-17 19:20:43,159.241.169.172,nglenn,970557d7f83a4b5985e78c0bdbe7ef6a,POST,/,200,259288,https://bing.com,Desktop,Chrome,False
+3f7c4cc8e2164884991b808a20cb1787,United States,New York,2025-03-04 06:27:36,215.54.57.238,sarah27,972130d24b1a448c90f85c2a692aec72,DELETE,/checkout,200,390454,https://bing.com,Mobile,Chrome,False
+2dba351c878349e19f3de585894b7146,United States,Austin,2024-09-09 07:43:07,139.68.173.123,owilson,baa0fa12e7264b1cbf9b219b789c6a8f,POST,/products/123,200,497865,https://bing.com,Mobile,Safari,False
+0828cc8771a64e8ead8b419a5e335927,United States,Seattle,2025-08-19 03:20:59,53.155.65.166,abigail30,16a56c0270794750999baa35e04cfec9,POST,/checkout,200,415004,https://google.com,Mobile,Chrome,False
+2479a761f34e4a5c84cf48a218acb93e,United States,Austin,2024-10-10 16:01:44,222.192.87.54,martinjessica,9f77d4537c78466fb977848962dc1c26,DELETE,/api/customers,200,127683,https://twitter.com,Desktop,Edge,False
+e88273cd24464f89bef476cdfa825b97,United Kingdom,Birmingham,2024-09-30 15:26:18,21.182.15.239,taylorgarry,86290bec080f43e3b7b9d7a04cb13f55,POST,/login,200,206808,https://bing.com,Desktop,Chrome,False
+c0bbc43ff988486f94c93305762dab01,United States,Dallas,2024-11-04 16:48:38,174.144.13.117,richard27,d9267a5c518144daa15ac58ed2d440d9,DELETE,/products,200,417575,https://twitter.com,Mobile,Chrome,False
+a1c3a94216ea40d28171851d4b937480,United States,Chicago,2026-02-24 11:21:06,29.142.149.203,qbrown,f2ca3ebc607e4e7998e28103bd16b5e6,PUT,/,200,432517,https://bing.com,Tablet,Chrome,False
+780cb17ffda44864a121d6bcd410502b,United States,Seattle,2024-11-11 04:03:13,50.65.162.196,omay,77a1c6e467e1444683743a285d18002b,DELETE,/products,500,2349,https://google.com,Mobile,Chrome,False
+b740846d0d5347e7adaa01ee1d11ac32,United Kingdom,Manchester,2025-09-29 07:27:42,84.157.216.35,rwade,20885f866ecc4d80ab877dc0ef106338,DELETE,/checkout,200,241219,https://google.com,Desktop,Chrome,False
+581346cd1fbe466b9d886304bb3a33cb,United States,Seattle,2025-03-19 11:07:50,91.142.201.208,bettywalker,96adce6e91884f488c622258581ab755,DELETE,/checkout,201,246664,https://google.com,Desktop,Edge,False
+962c0a64377349d9bdb26bf8d1ac0a2b,United States,Austin,2026-05-12 04:16:21,8.115.141.157,richard27,7321e2ab879045a193fcacc227233cc3,GET,/search?q=laptop,200,18225,https://google.com,Desktop,Chrome,False
+8356c2b6450f49deb9b102191e5b3c2b,United States,Dallas,2025-04-14 09:29:15,185.38.187.108,stacey60,2f6298c443ce43f7a9928dc6c75d3288,DELETE,/login,200,284602,https://bing.com,Mobile,Chrome,False
+96e3c2fd45e44fd2a7798e157fe6860e,United Kingdom,London,2024-11-07 01:03:37,207.249.149.215,alexanderwilliams,5a0e2e37e19940eb988a90aa2f13716d,PUT,/products/123,200,5887,https://bing.com,Mobile,Chrome,False
+743e1e2220614b6386c2e85a5221132a,United States,Chicago,2026-05-18 18:56:44,61.209.248.180,matthew68,6667bfe0b537412dbc579273250c36a2,GET,/products/123,200,251051,https://bing.com,Mobile,Chrome,False
+f27ced4f32e645b6b367db406a9a25bd,United States,New York,2026-07-12 15:49:07,166.220.120.143,soliver,c90bc72c808b41f482489fa87dda3c8a,GET,/products/123,200,46087,https://twitter.com,Desktop,Chrome,False
+2b9a6337a6994d18ad77b831a7599770,United States,Chicago,2025-06-15 23:24:57,171.253.98.71,william58,576e38234aae4d2bb72673d5c84a352f,POST,/login,200,484911,https://twitter.com,Desktop,Chrome,False
+6bccfa3f269143ee90936ccfff0749e4,United States,Austin,2025-09-19 12:20:18,35.12.2.83,idalton,6f69ce474b964d9bbd7bf1a335bd37e5,PUT,/checkout,200,380822,https://twitter.com,Desktop,Chrome,False
+ca6c32296ae94f2a9e3a633f8d9b8784,United States,Chicago,2025-08-27 01:48:45,202.156.10.185,ybennett,6f3a79fb60bb42f6a079d4751475c2d1,GET,/api/orders,200,466051,https://twitter.com,Desktop,Edge,False
+3b0f0eafcc564bde802fb07767427213,United States,Chicago,2025-04-24 15:17:21,116.135.62.175,jasonsanders,422abb8ae9e646d4a8994f29f9ec13b2,GET,/login,200,240696,https://google.com,Mobile,Firefox,False
+0698ad0c278842a2b38a55506f0ba11c,United States,Seattle,2026-04-26 04:09:54,134.86.127.222,jamesmclaughlin,815857fb9ae34e02bb570d0a2bb92060,PUT,/api/customers,200,305033,https://bing.com,Desktop,Chrome,False
+48d74bad19b04aa79d5e5a877018930d,Australia,Melbourne,2025-12-02 19:42:33,84.157.216.35,rmartin,a3863a85c1df49de8c9314d352b67930,GET,/api/orders,200,314943,https://bing.com,Mobile,Chrome,False
+d79bbd0fe8944f18abec0176901782a1,United States,Chicago,2024-11-09 01:08:39,163.145.152.158,rodriguezwilliam,39d97f6a05d045aa88d8e71224b5ea50,POST,/login,201,124308,https://bing.com,Mobile,Chrome,False
+29929f6628e54a9483229fbbfcbc1e0c,United States,Dallas,2025-07-21 11:08:07,175.58.75.223,kbrown,a360b4ef35ab420691b934d4a53feae3,POST,/api/orders,200,446616,https://google.com,Mobile,Chrome,False
+0ad4c0e73bfc48e6a5b18cf807f7c763,United States,New York,2024-12-30 15:48:23,173.62.103.197,theresapope,f09de9dd41df4d79a66a1ab0d90dd502,PUT,/api/customers,200,55782,https://bing.com,Desktop,Chrome,False
+33f0c7b51fdb472094b2d17af5ffe3f8,United Kingdom,Manchester,2026-02-02 04:41:05,151.111.34.196,adrian87,083f5ce605b843b09df3b3efe6d6a1a8,GET,/products,301,293258,https://bing.com,Desktop,Firefox,False
+f1f9425b93864c4a8eeb581de2b3da57,United Kingdom,London,2024-09-21 05:46:48,215.67.68.237,olivia91,d973a28d975e459fae3955328e7e08d4,POST,/search?q=laptop,200,125854,https://bing.com,Desktop,Chrome,False
+eb20342f282a4a45a5c93e9a2a0cf0e0,Australia,Sydney,2025-06-18 16:29:41,169.191.153.93,brianblack,b88cefeef44e4cbfbdea0e0a76241817,DELETE,/products/123,200,128275,https://google.com,Mobile,Chrome,False
+0c0a506ea90e4fe3bc23b58628abbafe,United States,Seattle,2024-12-28 17:21:02,145.70.69.83,bryantkaren,936a18d74f0045a086023b86a9ec453d,PUT,/login,200,12132,https://bing.com,Mobile,Chrome,False
+b42bdaf55a04421aab134700e9f64ecb,United States,Dallas,2025-11-15 10:35:28,106.63.231.17,lopezmark,343f23fb59854518ac0010090e5d076b,DELETE,/products,200,206790,https://google.com,Mobile,Chrome,False
+9d9e85161e3f46c084a13894c8834306,United States,Seattle,2025-09-27 14:38:21,148.186.184.14,andrew09,49b43cbcdc514b1f8f260d625ccc1e26,PUT,/,403,4971,https://google.com,Desktop,Chrome,False
+35fb3d799860493396bf2e89ae37afde,United States,Seattle,2024-08-19 21:26:35,204.70.147.10,thomasangela,4b178b307d174b05970c1806ea070a59,PUT,/checkout,500,606,https://twitter.com,Mobile,Firefox,False
+775c12b105a84c0094534c643816daac,United States,Chicago,2025-10-27 11:29:59,160.131.22.230,morganpaul,db8169c9a360444ba3ab068e8fa0cdb6,PUT,/checkout,500,3294,https://bing.com,Desktop,Chrome,False
+59bba7c4355d467b963dfb373013c778,United States,Dallas,2025-06-18 05:31:13,77.158.148.217,kelsey57,0a15bc88322e40febee0f70f1fa511a3,PUT,/products,201,379721,https://bing.com,Mobile,Edge,False
+a3621f50d03f4a079fa453d0aae1e671,United Kingdom,London,2026-05-05 02:17:15,161.75.137.35,jknight,5b0a662177c54d0a9efdcd076ec225ea,GET,/api/customers,301,445351,https://bing.com,Desktop,Chrome,False
+dd1c4b8ae311466f976c407731e5e4a6,United States,Chicago,2026-07-23 16:34:41,16.52.255.9,cynthiawallace,682d00cb307f47ef804dcbbab2479295,POST,/api/customers,200,323435,https://bing.com,Desktop,Chrome,False
+24eb15a7e6344cf2ac4dd65c903522ad,United Kingdom,London,2025-07-10 00:57:38,65.14.88.178,isinclair,6726897d0475454b9803386d99996abd,DELETE,/login,200,463756,https://bing.com,Desktop,Chrome,False
+3b415a9f6e4a474bac8abe929c3bcdbc,United States,Seattle,2025-11-29 11:25:26,29.221.127.242,sorr,bf46549291b74af585c12a3f7fc4b9f2,POST,/products,200,372234,https://google.com,Mobile,Chrome,False
+2576170da5984da0973c39469b0ade32,United States,New York,2025-10-11 18:45:29,46.99.244.104,robertsrichard,404f351639fa4ae6a3deb8ab0f9cb1b2,DELETE,/checkout,200,296719,https://twitter.com,Mobile,Chrome,False
+a4669979513744528e396032118ea638,United States,New York,2025-05-11 19:42:15,7.188.15.64,svilla,a63538e4f5ae44748977631e3e02ba01,POST,/products,200,278282,https://google.com,Desktop,Chrome,False
+93160400435f45c9a537137507b60eca,United States,Seattle,2025-04-02 08:04:06,54.40.145.115,lopezkevin,43e70baa9b3c4812849ea9f41f990178,PUT,/api/orders,301,109121,https://google.com,Desktop,Firefox,False
+e012a7b34fb34e4fbf16e6b355de4861,Australia,Brisbane,2026-06-20 04:35:48,61.159.146.230,david73,941e60362f4e44b3acfe1cc90027285f,DELETE,/checkout,200,393250,https://twitter.com,Desktop,Chrome,False
+b27d21646a6946f19f8ecec66e649bd3,United States,Austin,2025-09-09 07:06:45,48.112.132.48,,6d970ec48101424ca75ae78a0b2dbe31,GET,/api/customers,301,19067,https://bing.com,Mobile,Chrome,True
+a7104b6d05124e3abb2524285bf04bf9,United States,New York,2024-12-06 08:40:14,160.246.14.88,icummings,cb18dde1d5b040e8986adbcff8511716,GET,/checkout,200,325220,https://google.com,Mobile,Chrome,False
+aa99edc7b4e1427995f42e32bc13dae0,Australia,Brisbane,2025-01-05 19:07:22,40.29.94.214,phillipsshawn,ac8016b0655f4dc58c6b7e4210db6dbf,DELETE,/login,200,357593,https://bing.com,Desktop,Chrome,False
+be3882c5025743759bbb5f84c9f07185,United Kingdom,Manchester,2025-08-31 07:06:09,154.36.105.99,btaylor,cce045958df241339b96b855da3d82df,DELETE,/search?q=laptop,404,4166,https://bing.com,Mobile,Chrome,False
+5d175400199340d989c6d2f47c6fb17b,United States,Dallas,2024-11-12 05:37:56,167.106.238.51,owhitehead,a823a7b0e3ed46d0a705a032c89778fb,POST,/login,403,2130,https://bing.com,Mobile,Chrome,False
+45b34b45c78340fda208a9c63fb65ba9,United Kingdom,Manchester,2025-12-01 15:19:01,212.159.153.202,mthompson,36c475ee009b4c71b1b3ed3b3422238f,DELETE,/api/customers,200,159090,https://google.com,Mobile,Safari,False
+191677b378e24eea8216144a8fa8d87c,United States,Chicago,2026-02-04 11:30:38,181.144.102.154,travisduncan,d48d9fa39be14c0db50d12f0ae369c66,DELETE,/,404,1269,https://twitter.com,Desktop,Chrome,False
+b132611dbf2749ff80575db95e6102ca,United States,Dallas,2025-12-13 01:27:35,12.188.7.216,fcox,51bd1a7e96d44a51963ea1addc8732f3,GET,/login,200,182757,https://bing.com,Mobile,Chrome,False
+345441709cc94a2da415c8e59d35650e,United States,Seattle,2024-10-07 22:02:09,43.215.62.120,blackburnlarry,8dee35a5fa90427f86f237abffe3be83,DELETE,/,200,99245,https://bing.com,Mobile,Chrome,False
+1d8c0c99cd2441deb60b9123fdbf0e5a,United States,Chicago,2024-10-12 06:52:26,116.246.227.29,tamaraallen,95ab2c3bd7ae4311830715cd041aff0e,POST,/checkout,200,386534,https://bing.com,Mobile,Chrome,False
+988a2d7a069b47229c3a07ee6bc19785,United States,Chicago,2025-11-08 02:56:30,194.192.194.160,leonardsimon,147facb1fce54d258dd6f0fd5ece94e9,DELETE,/api/customers,400,4555,https://bing.com,Mobile,Firefox,False
+494500aad5904949ab1fa722cd806413,United States,Dallas,2025-10-14 06:40:56,14.124.171.146,martha27,5f087ed1e4f0485294b109ccef82b9a8,GET,/api/customers,200,404341,https://bing.com,Desktop,Chrome,False
+f75b17a4cd1e4b7fbbb4d2132ab03667,United States,Seattle,2025-10-14 02:49:25,87.1.23.110,baileysally,aa280febb03f43f9a7fce38366aa9375,PUT,/,200,371717,https://twitter.com,Mobile,Chrome,False
+9359c78d9ad34154bc17299c2ea4d74f,United States,Seattle,2026-05-01 14:12:59,22.255.231.77,mike11,8cf15e7ebe0d4f98a08ee83ddce6042c,DELETE,/,200,492680,https://bing.com,Desktop,Chrome,False
+8a481a246d4d47bd99a36bd305ea25ca,United States,Seattle,2024-11-16 00:54:23,73.108.195.191,rachelstanley,6b1ccfb31305434dbb022493bdc01253,PUT,/search?q=laptop,200,326881,https://twitter.com,Desktop,Chrome,False
+b9d1232d76124e68a9c30f01fe677e09,United States,Austin,2026-03-02 10:18:08,222.58.81.48,manndavid,4bbf86ad90d441c08558e47c64fb82d6,POST,/api/customers,200,245202,https://bing.com,Desktop,Chrome,False
+2bb55a16714a4bcda7e479fcdcc84b8d,United States,New York,2025-10-12 01:13:26,26.138.39.74,zdavidson,87d1d11e27d5490f8fc08eca5db46090,GET,/products/123,200,303531,https://twitter.com,Desktop,Firefox,False
+25f5527216654d11b47dbb296443025f,United States,Austin,2025-08-31 18:29:52,27.110.193.196,charles71,f59034a77e1e4893beddbccfabb315e0,PUT,/products/123,401,3687,https://google.com,Desktop,Chrome,False
+e8bb1ffbc2ab42698d645daa304464d2,United States,Chicago,2025-08-27 06:46:49,183.117.245.187,pamelaaguilar,d00d4742096a4613b40dd2a740887c40,PUT,/products,200,237273,https://twitter.com,Desktop,Safari,False
+074f179baa4049979773a814170b55c1,United Kingdom,Birmingham,2025-05-26 11:11:17,82.77.197.237,mitchellolivia,be29d76d2d77472894a0028546c7db0c,PUT,/api/customers,301,495015,https://bing.com,Desktop,Firefox,False
+cf2c12a4db4e4a5d973db56dbcee3b23,United States,Austin,2025-06-18 18:16:51,34.190.28.162,brettpeterson,6582926986514da1bbdb7bb1f9e1bb9a,DELETE,/,200,367859,https://bing.com,Desktop,Safari,False
+874857029c7c45f88c5bdf89e4ac40e6,United Kingdom,Manchester,2024-10-28 04:50:16,202.31.175.45,hhumphreys,7421b9cba88048cca1207182f93db42b,GET,/api/orders,301,116951,https://twitter.com,Mobile,Chrome,False
+724825bb6a6b46d09061413d40f77af4,United States,Seattle,2024-12-22 18:45:13,209.35.33.211,bobbybeasley,c1866c04682046b5b0a7194090333368,POST,/products,200,175089,https://twitter.com,Mobile,Chrome,False
+a0336772d3714a08aeaf02de99440bcb,United States,Dallas,2025-09-29 18:49:31,171.181.161.82,kevin65,35fa13058b554823ab404a11ec9d15d2,POST,/,401,4032,https://twitter.com,Desktop,Chrome,False
+ca2683de244d492b844c8d71aeb26b93,United States,Chicago,2025-09-01 16:47:16,132.167.114.191,singhricky,bf59ff59b7c64093a518a0e5b271de60,POST,/products,200,322802,https://twitter.com,Desktop,Edge,False
+005320cbc5ba4a95bdcd8b0164c194cd,United States,Dallas,2024-09-14 11:21:42,156.10.184.37,nancyross,7718daf1454b4e38af0e6f51570f1d15,GET,/checkout,200,447066,https://twitter.com,Desktop,Chrome,False
+499c51e75baf40bfb254924ba65df9da,United States,Seattle,2025-02-10 16:17:17,206.236.183.209,vowen,8d94e11e6b814452879d586a97f43114,GET,/api/customers,201,106076,https://bing.com,Mobile,Chrome,False
+b84655fbc28e4dc081e9b90ca53e74a2,United Kingdom,Manchester,2025-09-10 21:29:53,30.120.99.39,norman54,b8e9fd705fac4732965fcdc63d5841f0,GET,/search?q=laptop,200,482960,https://google.com,Desktop,Chrome,False
+94ec467daa1242c19cd05754a0d91cd3,United States,Austin,2025-05-15 19:28:26,70.141.178.161,howellrebecca,d361be8c647e4da08bf5600d0fd34601,DELETE,/checkout,200,290425,https://twitter.com,Mobile,Chrome,False
+f994eeb4e1b54afa949c6fdc309e655a,United States,New York,2025-08-04 09:14:48,166.127.117.232,patrick01,722a50881b7d4bbb8037b14d54fcc69d,DELETE,/checkout,404,3239,https://twitter.com,Desktop,Chrome,False
+1f0c74b64dd4464f893359e197d4265c,United States,Seattle,2025-10-29 13:10:51,24.82.12.115,ashleypaige,6424a7e0cb674c38a5ebe0336c6fe544,PUT,/products,200,72116,https://twitter.com,Desktop,Chrome,False
+8d90abf1a593401aaf1bc573bc11841a,United States,Dallas,2026-06-23 18:27:25,144.95.113.250,cochranmeagan,2e8f6dce55604214b689ed056b7168dd,POST,/api/customers,301,82469,https://bing.com,Desktop,Chrome,False
+07ef5e37d5474d44855115e832c30c4c,United States,Austin,2024-12-21 06:56:35,84.222.61.53,patrick37,a0b9bda7d6504ab78bddc82ad2b3a30f,PUT,/,401,1441,https://twitter.com,Desktop,Chrome,False
+22dd46e2fd2e4f3f8b8997040259f8f8,United States,Chicago,2025-02-26 10:28:42,112.9.254.13,annettemorris,9940619c9868495db1a96aeca8e8c5a9,PUT,/products/123,404,2358,https://twitter.com,Desktop,Edge,False
+dd1fa01efb724587a63a2fe6bd38a948,United Kingdom,Birmingham,2025-03-08 07:46:56,220.247.169.252,markmatthews,2aa1a4467ccf4a49a6b9f355aa6e3b1c,GET,/search?q=laptop,200,50645,https://bing.com,Desktop,Chrome,False
+8dfa7554f5e74232b52a23bc0e5486da,United States,Dallas,2025-10-28 19:30:18,71.168.146.113,kristinowens,29d8b2a6791240ffba79f488e41ce98d,GET,/api/orders,404,1634,https://google.com,Desktop,Chrome,False
+754b606b596a4dec832582f5b15465bf,United States,Chicago,2025-11-12 03:18:24,171.220.232.145,fernandezjohn,6d6e8368a0b84dbab7009904ff6b2119,GET,/checkout,200,49636,https://twitter.com,Desktop,Chrome,False
+a518d95d1ecc4e60bbb5424f229ea185,United States,Dallas,2025-09-30 02:58:33,184.180.53.120,ramirezchristopher,98299e23f6a34e92a31e69c5359a14fb,GET,/products/123,200,61007,https://google.com,Desktop,Firefox,False
+bfa30b42b7854c2a9c49bd9c2c72f8f6,United Kingdom,Manchester,2025-08-05 22:43:26,131.230.192.143,preynolds,6f28d9f8b84e47f9ab11c69d8921aa27,DELETE,/search?q=laptop,200,411950,https://bing.com,Mobile,Chrome,False
+d2cbd5c319a44f4c892da1e81e11d75b,United States,Austin,2026-02-05 11:24:30,61.184.6.231,colleen23,fc53504a7cd54a5b9eb2426a55ab7625,GET,/,200,243902,https://bing.com,Mobile,Chrome,False
+08693e19345a46b5a4819a5c5bc3373d,United Kingdom,London,2024-11-04 02:21:45,219.178.150.28,kellynaomi,1c63ac8c74c5455bb82c265c85cf7ba7,DELETE,/,200,2697,https://google.com,Desktop,Chrome,False
+c8328d8b9dcc43958124d77f86f3cffa,United States,New York,2025-04-23 12:56:32,219.130.196.22,sherrymeyer,a00a1751a1e7446b89e70f4d68041f39,PUT,/,201,194572,https://google.com,Tablet,Chrome,False
+f281c4988a7a4234ab37a7e67d1368f5,United States,Dallas,2026-06-23 23:18:36,91.255.45.188,anna14,58662f92f0f24ec99e4ba67c7736773e,POST,/api/customers,200,220184,https://bing.com,Mobile,Chrome,False
+9a25bce9095e4754bdff9ecba3f42ee0,United States,New York,2026-06-24 20:30:17,192.14.197.98,smithashley,218789282e854e8e979882ae7cac1ab5,DELETE,/login,200,481392,https://bing.com,Mobile,Chrome,False
+bdd4a64b026249a190df043a66402005,United States,Austin,2025-05-20 06:38:56,183.187.109.23,courtneykennedy,5c6bc324323f4e3291091df7ae4dde96,POST,/products,400,3639,https://twitter.com,Desktop,Safari,False
+7fdfbff499874153a10e3a07b8c9aacc,United States,Chicago,2025-08-17 01:25:56,63.108.88.160,santiagoadam,b4843f1e31a044f89161ac21ffb2df2f,GET,/login,201,34950,https://bing.com,Desktop,Chrome,False
+7a187f402be64610978fafd8aad39db5,United States,Dallas,2026-08-02 21:26:23,50.192.28.155,trancindy,6b37c0dbfec14db5bb0b2f51186f6490,POST,/products,200,424688,https://twitter.com,Desktop,Chrome,False
+87782d6367ba44c29fc6e6139c94f76e,United States,New York,2025-08-04 20:11:13,160.220.185.47,ejohnson,077290e45c8249a59ea59f6cb31f4ea9,PUT,/api/customers,200,417713,https://bing.com,Mobile,Firefox,False
+0c04b94116034acea13f831270a13281,United States,Dallas,2025-01-25 08:18:13,206.200.147.104,brandon16,028d532805a84b3c96485fe1e303dbbc,POST,/search?q=laptop,200,303392,https://bing.com,Mobile,Firefox,False
+3de0b8af3c8e459ab652241c770996d1,United Kingdom,London,2026-04-03 15:24:17,3.140.81.208,pclarke,81efe71813c4490db216c5002d54c350,DELETE,/search?q=laptop,200,383006,https://bing.com,Desktop,Safari,False
+c35bb8d296fa4058ac48eb700a9dae8f,United Kingdom,Manchester,2025-01-23 22:49:05,180.203.97.87,matthewsrachael,31ca53f830f447e385554b001d90f325,PUT,/api/orders,200,416285,https://google.com,Tablet,Chrome,False
+d6b38cff2436438f836c943f36d1bdf3,United States,Austin,2025-06-03 09:16:17,83.163.167.170,,24cc472c5eb543cbab587994d7f7b751,PUT,/login,200,164504,https://google.com,Mobile,Chrome,True
+b1a8d8afb54b4fe4b975cfb7fb900ecc,Australia,Sydney,2025-03-30 02:15:07,162.8.56.48,iwagner,96cca6716cd142b9a3de8a42b340d5d8,GET,/search?q=laptop,200,397409,https://bing.com,Mobile,Chrome,False
+07aa74c26deb4144aea39f616b6bcdca,Australia,Brisbane,2025-03-20 10:50:18,113.145.144.89,tarias,301ad3433c9e4179ba0f8882db85b288,DELETE,/products/123,400,450,https://bing.com,Desktop,Chrome,False
+e31373850e724096876edaa0b7e80103,United States,Austin,2024-09-11 18:59:26,163.183.49.20,williamssamantha,62e94568898f44ba943e3a6acb275522,GET,/products/123,500,3099,https://bing.com,Mobile,Firefox,False
+2a54fc9fbb664cbea5715cd63e303ce4,United Kingdom,Manchester,2025-01-26 04:31:43,34.197.35.56,normanbegum,84f7aa6630a744f79285fb6532452d2c,PUT,/products,200,37782,https://twitter.com,Mobile,Safari,False
+053823a11fda463d9301b7b1750a0922,Australia,Brisbane,2026-02-24 04:48:17,163.9.57.5,zacharychristian,48acba8a668c46deb3c0f079b51ea698,POST,/api/customers,200,483259,https://twitter.com,Mobile,Chrome,False
+4f8c9a4e9b8a457babb7c48d562da1f4,United Kingdom,Manchester,2024-09-08 04:20:27,217.147.187.50,elliott32,c33b01ed947443fd8d286b8badb8bd97,GET,/checkout,200,239374,https://twitter.com,Desktop,Chrome,False
+434e1a758c0d495782b31fa19d79a615,United States,Austin,2025-05-24 03:04:46,28.1.184.126,davidmartinez,82c38e0d5f854695bdb8c294295f157c,GET,/,200,111505,https://google.com,Desktop,Chrome,False
+55d6d157d44249ad8d12b8fef524bc6a,United Kingdom,London,2026-07-07 21:17:15,12.151.1.42,maureen97,994af7bea0a9418db04770611f8dedbc,DELETE,/products,301,496241,https://twitter.com,Desktop,Chrome,False
+b9c810a2b0b8497da234e501033bcb3c,United States,Seattle,2025-09-30 23:07:43,157.38.14.184,jessicajohnson,e6102d7277304ccfad761df359a1fe55,POST,/products/123,404,4087,https://google.com,Tablet,Chrome,False
+7f852842608241b181543f6c93d1e7e0,United States,New York,2025-08-25 08:40:45,83.43.240.13,maldonadokaren,65f54635809f4f35b0cef35fb32dca6d,PUT,/login,404,1028,https://twitter.com,Desktop,Safari,False
+2ff04fbb3c354dad87c7b983b8444c4d,United States,Seattle,2026-01-02 07:29:31,32.148.118.134,jacquelinejohnston,c143715cc8c4411d902f638fa20f2100,PUT,/search?q=laptop,200,336319,https://bing.com,Desktop,Firefox,False
+1917b9f8a26c45f19f50a1cd4cf3201b,United States,Austin,2024-09-01 08:30:09,157.224.100.153,flopez,4de5b0bfbb57411d8cfa5288296da414,PUT,/login,500,4060,https://google.com,Desktop,Chrome,False
+3b88eee92bbf4a8db33ac342f9c967a7,United States,Chicago,2026-05-29 04:08:49,112.183.114.107,kristiegeorge,9ee7547d1c9141af99a8355d33878264,PUT,/products,200,426195,https://twitter.com,Mobile,Chrome,False
+278fa2271ee54de6962c1491b66e59ed,United States,Chicago,2024-09-22 04:13:58,216.168.95.233,whitematthew,f02cd4e7008a49e2b363c6a8c2eb6a4c,DELETE,/api/customers,200,172492,https://twitter.com,Desktop,Chrome,False
+1abfca28a4ad449d877f2290656f27b6,Australia,Melbourne,2025-09-21 02:35:40,145.207.54.19,steve23,4a123cd06e6d42fa8d0c7828541785eb,GET,/checkout,200,388426,https://twitter.com,Desktop,Firefox,False
+e264cdd3cf114d69a3e97c043828307b,United States,Austin,2026-04-02 00:18:35,60.213.63.129,melissakramer,c26ef93625a84cf6bb063f3945a4d6c5,POST,/,200,302738,https://twitter.com,Mobile,Firefox,False
+fed40ccd01b4453b8eb454616537f794,United States,Dallas,2024-12-22 02:39:54,78.147.95.211,phyllisclark,b7748b4ea4f443a7ad698b286575ec20,DELETE,/products,200,317398,https://bing.com,Mobile,Chrome,False
+1d709c4b001742f59a4e52dc13d75f81,United States,Dallas,2024-12-01 14:12:50,207.24.194.101,alexandra50,3cf6daf6822e49479a2949045d316253,GET,/api/orders,200,324406,https://google.com,Desktop,Chrome,False
+dce5a40abf5944f2b2b14025c4d3dc1e,Australia,Brisbane,2026-04-07 07:17:58,217.38.226.246,goodwintroy,709ed599d5764b9fa35df64783f3119d,POST,/products,200,431115,https://twitter.com,Desktop,Safari,False
+d9316e2160f24599bd28e6f2f1497cc4,United Kingdom,Birmingham,2025-02-07 04:08:17,13.183.5.32,evansclifford,33593faf9c504e72b7112587984cc4e6,DELETE,/search?q=laptop,400,4012,https://bing.com,Desktop,Chrome,False
+09881166a69045e2a1f2ce524d846087,United States,Chicago,2025-02-11 13:20:33,74.23.146.101,velliott,d7675f1734384afbb6c188817c86ea74,PUT,/api/orders,200,153267,https://google.com,Desktop,Firefox,False
+39af71ca58344ada993c0d4d86060ea7,United States,New York,2025-07-22 23:03:43,68.118.17.109,cooktina,7a858555d20245d1878c6843a06a45ca,POST,/api/orders,200,114499,https://twitter.com,Mobile,Chrome,False
+d7a1a0b3056f483e855a3f11225e539b,United States,Seattle,2025-03-02 21:33:08,24.116.97.153,amberbaxter,7b57cb62d6ac4088b0f627d317e3cc4a,PUT,/,200,64280,https://google.com,Desktop,Firefox,False
+6745a86279b94e3eba10be45b805fac5,United States,Austin,2024-11-13 16:59:56,8.202.198.182,jacobknox,d91756fbb50942578b7f16a464748900,GET,/,200,205446,https://twitter.com,Desktop,Chrome,False
+ab669dae647b4f12ac8725fd54d54020,United States,Dallas,2025-08-10 23:11:12,100.137.184.30,annanixon,b3f0cc32839040ee94212c1f87f673d8,POST,/products/123,301,137130,https://bing.com,Desktop,Firefox,False
+a8a61faf13cb4f23ab242ce781592bf0,United States,Dallas,2025-08-20 16:36:17,126.188.227.30,,ecd4bbae8104495fafdc87ad64d97fda,PUT,/checkout,200,93442,https://google.com,Desktop,Firefox,True
+e38ae787d01945809f13ea708a84d13a,Australia,Sydney,2024-12-10 07:20:07,202.31.175.45,hpeters,322026f40ed64358994c40ba983958d3,PUT,/api/orders,200,95439,https://twitter.com,Desktop,Edge,False
+4e0f98a659914032993249d2108b4fd0,United States,Chicago,2025-11-28 06:07:27,15.23.149.161,justinjohnson,97723af5af9c4f0e8945752adbe74855,GET,/login,200,417600,https://bing.com,Mobile,Safari,False
+503db321fc9c4fdbb120293658c3520e,United States,Chicago,2024-09-24 01:29:23,157.23.222.61,walkerkaren,8c3a102f6f284fe2a08759d5494eb3e6,PUT,/search?q=laptop,200,31093,https://twitter.com,Desktop,Safari,False
+4ed76798b9d4473d99698b839949385c,United States,New York,2025-07-24 20:58:32,107.239.139.85,sarah55,622ba0fb68d1414eba853ac70e459b1d,GET,/search?q=laptop,200,259654,https://google.com,Mobile,Edge,False
+c86c4d4863d5443dbeed1ea9ff4d0c82,United Kingdom,Manchester,2025-03-23 04:58:35,18.108.94.33,robin61,20c43985016146c1889a6afe677e7826,PUT,/login,200,172240,https://google.com,Mobile,Firefox,False
+d120dd043360459eafbd6e365a697d07,United Kingdom,Manchester,2025-05-04 07:57:40,75.61.142.126,tlewis,55f0e2f0b527447ba1e400e816bbae62,DELETE,/api/orders,200,418699,https://bing.com,Desktop,Firefox,False
+f232a08cf0ee4517ad4d8dd5b8ec2d39,United Kingdom,Birmingham,2025-03-15 05:18:29,64.155.197.108,qmoore,b4523df146544e7ab7ba0d102d646ec7,POST,/api/customers,200,400765,https://twitter.com,Desktop,Safari,False
+bc57dcf8c9dc483d9895496aaa85480b,United States,Chicago,2026-04-12 19:23:05,204.227.179.236,nshea,c6fc336e1f1b48468b090a0a19f4e7d0,POST,/products/123,200,431299,https://twitter.com,Desktop,Firefox,False
+a54f8b0d07904f5698f7ec27dc874ada,United States,Chicago,2025-03-14 09:46:29,116.204.11.250,colemartin,185beabd389645e88a18654866d86bf1,PUT,/,200,439083,https://bing.com,Mobile,Chrome,False
+33b475b55ade47febcb4badb1e40c979,United States,Dallas,2025-07-30 23:53:03,73.104.13.210,fryepatrick,9d7067ddf5fd4773819e154df023dac6,POST,/,403,3870,https://bing.com,Mobile,Chrome,False
+5498005246504129ad4b7618a4320843,United States,New York,2024-11-25 10:44:00,188.158.186.64,bturner,bf062d91ba9644568bbdbc5a3ec06fcb,DELETE,/products,200,432851,https://twitter.com,Mobile,Chrome,False
+fd1745567b12473d8099e5cdc93e4307,United States,Seattle,2024-12-20 10:41:37,119.32.1.83,adrianaroberts,ee636e9c705a47cea1f4933cb33e78e1,GET,/login,200,145181,https://google.com,Mobile,Chrome,False
+14c70615923a4aaea7e642e7ab07c4ff,United States,New York,2025-08-04 10:51:53,59.155.154.42,tiffanykennedy,04b3db3e02a24ffca8b3827b30f69b4d,GET,/products,201,53062,https://twitter.com,Mobile,Chrome,False
+1351133788bf4c5f9cc6984149e30431,United States,Dallas,2025-03-17 21:29:16,104.240.101.42,gregory37,99dae9d8372643acb54451488e9f2d1e,GET,/products,200,386964,https://bing.com,Mobile,Edge,False
+389aa41f94f14462b1b047e42038515c,United States,Austin,2025-12-04 12:20:07,190.81.182.15,kristineburgess,1422821419a34b6283baf7a2e4f6bb23,POST,/products/123,301,177976,https://bing.com,Mobile,Firefox,False
+f4e9ca3c2bdb486eb4cda2dd87bae662,United States,Dallas,2025-10-19 02:28:13,109.225.22.238,williamsaaron,634ba7d288614f7bba933f80d90b8afe,DELETE,/products/123,201,388379,https://twitter.com,Tablet,Chrome,False
+4691a31caa08407ea02e377563152c6c,United States,Chicago,2024-10-23 03:58:09,147.36.89.229,braylee,e081432038144c68992196e2ed5f8fcb,DELETE,/login,200,397982,https://twitter.com,Desktop,Firefox,False
+7e1fa4e125a84d2493e8a5400fc0fbf0,United States,Austin,2026-07-10 04:09:49,177.66.235.119,sarahcisneros,32dc2a50a30d484692c5588c876457fd,GET,/search?q=laptop,200,105015,https://bing.com,Mobile,Firefox,False
+eba5a4a2286149ef9eaec85d2e7e621b,United Kingdom,Manchester,2025-08-29 00:24:04,150.220.98.131,bakerlauren,9b363849a5be476fb482c23d3c827b0f,GET,/products/123,201,314531,https://twitter.com,Desktop,Chrome,False
+e6fbc323c84b4be5bbe4f673f64a7ed6,United States,Chicago,2025-01-14 04:18:50,63.101.184.34,scott21,37a98e4720c84e089ff009f7405e450c,POST,/login,200,191942,https://google.com,Mobile,Chrome,False
+f6ec522b209946d6a7397fb4e8ea6d10,United States,Seattle,2025-05-18 17:24:36,21.103.135.79,yvette20,5057ac4d8a3840a5815feddb93dc9e9f,POST,/,200,421534,https://bing.com,Desktop,Chrome,False
+604525a1dcee4dc6bf874ec541468fa5,United States,Dallas,2026-07-20 08:49:20,145.7.80.255,danielsandrew,6aacaa19d1d24e9098546670e979b3cd,PUT,/checkout,200,142840,https://google.com,Desktop,Chrome,False
+3f9d6d459cfd4fcca8b8de8c914820d0,United Kingdom,Birmingham,2026-04-16 06:33:24,13.6.172.20,francisfield,de76068bd08a43c2a5d53b1eb22e77cf,POST,/,200,339504,https://bing.com,Desktop,Chrome,False
+0762638576ff49d9b92cc9a0a8441f62,United States,Chicago,2025-07-10 09:28:15,43.114.125.151,thomas50,f663630490fa4aca84c7048c357d9ecc,GET,/api/customers,200,266429,https://twitter.com,Mobile,Chrome,False
+53870bd3418446ee9db7bf1e08d26339,United Kingdom,Birmingham,2026-07-09 10:43:02,61.54.40.13,whitepatrick,413414f23991444eb321c2111550315e,POST,/checkout,200,292464,https://bing.com,Desktop,Chrome,False
+adc3685f5cdc40b488afc46d34209436,United States,Chicago,2025-06-27 02:17:59,14.253.166.59,marycampbell,f7422d57f18d4fe99e4f9f8d7215492c,PUT,/api/customers,200,473541,https://google.com,Mobile,Chrome,False
+c2d6261ca7964d07a28091e2ff2d7e15,Australia,Sydney,2025-09-23 07:00:55,184.91.42.62,john47,dec5f48632cb4167a020e2521b078eb9,DELETE,/login,200,124529,https://bing.com,Mobile,Chrome,False
+e66a0115b2d14a839d94058ee116d169,United States,Dallas,2024-10-15 07:53:22,116.182.245.43,meyeranthony,b18a9992a8124774bc51fb708da8085c,PUT,/products,201,383524,https://google.com,Desktop,Edge,False
+d82adee06c0540f8ae1e3fda267137bb,United Kingdom,London,2024-11-04 22:59:34,106.217.252.237,dalesamantha,52cb954dcb2048c7b8abde1850f001ad,POST,/login,200,186697,https://google.com,Mobile,Chrome,False
+46879305c52047ae845b6f981ae7edcd,United States,New York,2024-12-02 02:22:55,119.109.141.91,yward,7f12bf61473c4af9a97a2f1f3004b4c4,GET,/login,401,2970,https://google.com,Mobile,Chrome,False
+72a3e0cad6e64ba0a47cf03ea4904f6b,United States,Austin,2026-04-06 13:21:01,148.107.160.72,theodore67,a09d5b15c3f04d21b91ad4f8e627c43b,PUT,/checkout,200,338610,https://bing.com,Desktop,Safari,False
+10edd518406f40ad8abcefa10f2b5dd9,United States,Dallas,2025-04-26 07:29:22,202.165.87.195,alexander57,e912631de1b5469380dea97b288b5f5f,POST,/products/123,200,298081,https://twitter.com,Mobile,Chrome,False
+183af1592c514665bf721eb6fdd88b73,United States,New York,2025-04-12 03:32:13,107.105.240.146,vincent47,c452543a349541a18b26fad1bcda6c97,POST,/api/orders,200,13274,https://bing.com,Tablet,Chrome,False
+e2acfe8a60b546839f106db0c11ecf08,United States,Chicago,2026-06-19 18:19:56,45.63.121.128,ubell,7f279b614d31423dbf71c25f89c919b9,DELETE,/api/orders,200,308206,https://twitter.com,Desktop,Chrome,False
+1119dd77c7084a9c875abba0471bb449,United States,Seattle,2026-07-28 20:55:10,48.38.244.191,dianasmith,373ae114a58e40a4aff2487a0372705b,DELETE,/checkout,401,869,https://bing.com,Desktop,Chrome,False
+6b52eb2cea974413be23507bc6c645e4,United States,New York,2026-07-16 02:40:24,165.94.254.33,mgarner,f029a25be60043f2a9a75f659ae28adb,POST,/,400,255,https://bing.com,Desktop,Firefox,False
+e4b52f7082164a378e135c41248e1c09,United States,Dallas,2026-06-25 23:33:39,36.129.21.7,april61,7d76bf57a65a454f9b8316f8c3746a0a,PUT,/,200,498993,https://bing.com,Desktop,Chrome,False
+521c2f2f7c9f48cfa32069f6021cefb3,United States,New York,2024-10-23 13:11:01,98.202.70.76,barrerajoshua,f21ad81074904f47a81fe8ff7740b845,PUT,/login,200,168134,https://google.com,Desktop,Chrome,False
+51e90224de0748d5b437186dd95da239,United Kingdom,Manchester,2024-11-06 17:25:42,95.212.216.11,jclark,58bfaaef4a064c0aada91d2e001ddf6b,GET,/api/orders,200,479996,https://google.com,Desktop,Chrome,False
+48676c9014c548d1859fb449de8ff698,United Kingdom,Birmingham,2026-07-31 23:04:49,6.149.12.87,alexandrasmith,71446f18baa74a2e9d40615541c87b69,POST,/products,200,100272,https://google.com,Desktop,Chrome,False
+91e62bb443c542628ee051d743980c08,United States,Dallas,2026-01-29 09:25:14,63.96.140.128,monica60,f7d59be57c504bc8aff8bc1ff97b6e63,GET,/products,200,104652,https://bing.com,Mobile,Chrome,False
+d43a4ad1c65141c38e3a1808d1454e53,United States,Austin,2025-04-28 06:52:57,43.131.116.69,rebecca56,b2f57b11358646b9a046656ecbf67adb,PUT,/api/orders,401,2209,https://google.com,Desktop,Chrome,False
+6ecbf3943a8a474e94e2b52bae2ef8e2,United States,New York,2025-11-05 15:16:37,17.65.33.157,jessicabass,b17d9801bc3f4b47b7a46bd90adb0f88,PUT,/api/orders,200,311612,https://bing.com,Mobile,Safari,False
+6e9c1903ad34483faeaf1b242e194643,Australia,Brisbane,2025-06-30 13:35:32,153.239.83.249,gmiller,d9bc00f09a534bad95140babdfb89056,PUT,/api/orders,200,45340,https://google.com,Desktop,Chrome,False
+a46b36e422894f15a131a392637374cc,United States,Seattle,2025-11-22 21:28:14,52.68.192.170,qwilson,b4965f538b3e48f0998c5944d5650c38,DELETE,/products/123,400,4434,https://google.com,Desktop,Chrome,False
+ee1d2b85605a45598feac9ab7baa48a7,United States,New York,2026-06-19 05:49:22,223.40.163.60,christinekemp,4072cac44a8f4d6aa9cce1afa9528716,DELETE,/checkout,201,191914,https://bing.com,Mobile,Chrome,False
+577697f7ec084d4aace5f1b9f1922af0,United States,Dallas,2025-12-08 12:56:44,217.91.62.30,joshuabentley,c4f1ab69ac514941aa6bc72db77e9ab2,PUT,/checkout,200,138675,https://bing.com,Desktop,Edge,False
+452afcdf910e4d1382b50c98ee06765f,United Kingdom,Manchester,2025-07-14 00:54:26,138.171.30.90,kevingill,e974d7c474294dd7b4e5cf245f2b22c6,POST,/checkout,404,502,https://bing.com,Desktop,Safari,False
+bd274c13997b49828416fca9a61f5d1d,United States,New York,2026-03-01 11:50:08,210.75.164.195,harperaaron,95384d7cb503489884af97a0ae31a0c1,DELETE,/checkout,404,235,https://google.com,Tablet,Edge,False
+9866128a03174f1e93118c53d6e50e46,United States,Chicago,2026-04-09 02:23:56,126.120.61.49,brooksdale,85ce7a04945c46d698bee83ba1ff41b3,POST,/,301,30834,https://twitter.com,Desktop,Chrome,False
+467dc6f382d24804a3a40e0fb58a5ac3,United States,Seattle,2025-08-04 11:52:43,5.76.255.68,marcusbarber,bff5d45a639444a9b0141d6205394511,PUT,/login,200,140781,https://bing.com,Mobile,Safari,False
+3a9422db536149648a2bd960de608867,United States,New York,2025-12-07 16:29:40,189.173.218.164,craig14,af952d1337e046b8b162b7c10ce569f3,DELETE,/search?q=laptop,400,825,https://google.com,Desktop,Chrome,False
+19b618549c914e89a61a144be3bc02d2,United Kingdom,Birmingham,2026-06-14 14:18:43,119.17.85.43,albert25,421f996e9f1f420e9cf9023d5048c080,POST,/search?q=laptop,201,458064,https://twitter.com,Mobile,Chrome,False
+810bcf23b17746eca95358dcb9c803b6,United States,Dallas,2025-08-28 07:22:11,217.221.38.62,robertsbarbara,2487aeebf1b4492ea60329e1af570a8b,POST,/products,200,251896,https://bing.com,Mobile,Chrome,False
+741fdaf838724b54b57135bf5774b97e,Australia,Melbourne,2024-11-18 10:04:01,131.230.192.143,pmeyer,773d45db52224178aea9e741b3a7344f,DELETE,/api/customers,400,2878,https://bing.com,Mobile,Chrome,False
+4ebd46df2131451ebabd3e999cabc4e9,United States,Dallas,2025-05-04 16:16:02,54.181.239.92,steve04,4a2f041f22aa497a99670e151ef532ed,PUT,/login,201,55959,https://bing.com,Mobile,Chrome,False
+0ce23b23026a459eb0ee349bae77d16c,United States,Austin,2024-08-22 14:10:36,48.200.141.44,kellymatthews,d7a4884c93b845c5999fe52caf61e785,GET,/search?q=laptop,200,63636,https://twitter.com,Desktop,Chrome,False
+7b95eee1b3374919bacff5d218096d91,United States,Chicago,2025-02-03 17:46:08,146.83.103.192,xweaver,619197bfadbf4c88a5d079adc9d89e31,PUT,/search?q=laptop,403,3078,https://twitter.com,Mobile,Chrome,False
+df15c0de25544cbeb403d169698f8021,United States,Seattle,2025-06-29 22:46:17,12.38.211.65,tyler68,389e707da09d4a0b82531d3a701fdaa5,GET,/login,200,207751,https://twitter.com,Mobile,Edge,False
+3547cfff13cd497b9b0058ee08d61668,United States,Seattle,2024-08-31 06:01:51,1.43.16.96,juliechandler,36621c40dc9e4ed1801c5066a40ea93e,PUT,/products/123,200,316945,https://bing.com,Mobile,Chrome,False
+cde6876749e04a899761602d877b745e,United States,New York,2025-07-23 00:50:07,78.184.180.99,david90,e92f0143989740c5825a06d7967137ea,POST,/api/customers,404,4398,https://bing.com,Desktop,Chrome,False
+6c538fe133294879bf7ab0eb27b29952,United States,Chicago,2024-12-17 14:53:11,62.156.47.163,melissataylor,f7ad4bea8ded4607b7a8a6a1cd110380,PUT,/,200,50096,https://bing.com,Desktop,Chrome,False
+f137e683a75f4f4c8c45e818868cd9ee,United States,Dallas,2025-03-20 23:49:28,5.135.10.77,james33,6176668152d748a18614390cab884fc4,DELETE,/search?q=laptop,200,62030,https://bing.com,Mobile,Safari,False
+1af4352d23c84816b55b3cda8146cf92,United Kingdom,Birmingham,2026-05-09 23:25:55,185.246.231.182,alison32,0b9a7845904d4a0a90dcd45e71e2aa74,PUT,/api/customers,200,110647,https://google.com,Desktop,Chrome,False
+a9c1e55ea5754675b3216df8da93142b,United States,Seattle,2026-01-27 09:47:27,211.180.189.37,nortondesiree,8348763bc97f4a32be3c53b39aa98305,GET,/search?q=laptop,200,152810,https://bing.com,Mobile,Firefox,False
+42fad0d3657f498aacd228990a482ded,United Kingdom,Birmingham,2025-04-21 14:29:00,101.27.76.158,williamsdenise,e23f6b55d5ac422b9c9007d0e8f0d5fd,POST,/api/customers,200,356961,https://bing.com,Desktop,Chrome,False
+89ea4d72ed894e77bd3a21e4ec354dc5,United States,Chicago,2026-03-26 09:43:55,118.26.12.54,luis32,1b1d245794b344fbb89dfab007baf6ff,GET,/products,200,196200,https://bing.com,Mobile,Chrome,False
+9a951797b87b4ebdb1cdacd4569095e5,United States,New York,2025-04-11 12:05:21,73.109.112.60,williamssteven,90e9e1a3e4484346907c01ffec7f47b8,PUT,/api/orders,400,552,https://google.com,Mobile,Chrome,False
+6cbcc4a42014480c8e794a9aa4c04311,United States,Chicago,2025-04-21 21:50:04,5.221.90.149,ooconnell,2d1571a7e96e48ce9a55a876fc020ce3,GET,/,200,130443,https://bing.com,Mobile,Edge,False
+e4a9f82ee86a4399923dac5f22004f87,United States,Seattle,2025-01-20 15:49:58,120.85.52.21,glenn33,b81ed498c02b4cd7834880a2fa27b8d7,PUT,/checkout,400,3188,https://twitter.com,Desktop,Safari,False
+e1419ad826fb46c1ae95c5f54d66b591,United States,Austin,2026-07-14 17:27:51,18.139.17.117,david23,b1eda0f806a64346b35a4c207ae79fb3,PUT,/api/orders,404,1065,https://bing.com,Mobile,Chrome,False
+95988c209a0744189dbd19f414cc00b6,United States,New York,2025-12-09 18:26:54,15.51.203.167,valenciajames,81ecfef3f90140b1aeebc343b68c4e93,GET,/products/123,200,159432,https://google.com,Desktop,Firefox,False
+38699b819d21496eafa0aab75dea7b2e,United Kingdom,Birmingham,2024-12-16 23:49:18,22.162.19.132,briantucker,def0dd067723437cae84023cb85f11e2,POST,/products/123,200,3411,https://bing.com,Desktop,Safari,False
+d348dda31fcc4cc5a2ef0e9201e0460c,United States,New York,2025-04-11 01:47:23,170.48.172.66,smithgary,b4d1e624adf3466d86e942ce91a4626c,PUT,/api/orders,400,926,https://twitter.com,Desktop,Safari,False
+c3df28e882ba4435bad10589d9ce4a83,United States,Austin,2026-02-04 05:00:40,68.164.111.122,joseph90,b5aec183c2124e658dabf2688d175919,DELETE,/search?q=laptop,200,147966,https://bing.com,Mobile,Chrome,False
+6f2784e916ca4268aa05b57e9a3e151f,United States,Austin,2025-11-21 14:11:02,149.216.37.104,hjohnston,6bd094ac400849ebab1dd5c7608410e2,GET,/api/customers,400,1058,https://google.com,Mobile,Safari,False
+82a3eb1680d749ed825737a0457970ce,United States,Austin,2026-03-11 20:55:37,45.132.9.129,ronaldkelley,e4cb6124134843c2b34e944a58e7742d,PUT,/api/orders,404,2777,https://bing.com,Desktop,Firefox,False
+ca002b74d4f142ea84630f9bd53f1061,United Kingdom,Manchester,2025-03-05 17:03:39,75.120.215.224,samuelking,1729c804544c411f90d8211b6969d56b,POST,/api/customers,301,71533,https://google.com,Desktop,Firefox,False
+db45749766f64ada9370cc78aa144fa3,United States,Dallas,2025-06-12 13:50:43,70.33.222.221,gallowaymelissa,29afb49d62ce48c3a1067555507cca5b,DELETE,/search?q=laptop,301,5904,https://google.com,Mobile,Safari,False
+7219054dcb0549ce933456d6eb550ecb,United States,Chicago,2024-11-23 04:32:35,4.19.50.199,kathryn57,eef199cb95704481a99202618bbd6431,PUT,/api/orders,401,4087,https://twitter.com,Mobile,Edge,False
+f20164ab669940739b6e6b20b1fb0fdf,United Kingdom,Manchester,2025-12-30 01:58:26,49.1.45.125,dennisthompson,efdf7e968d52481b8092cbad47435193,POST,/search?q=laptop,200,289820,https://bing.com,Desktop,Firefox,False
+681b50b388b34dd4bbcc821cadaed13a,United States,Chicago,2025-10-30 03:23:52,167.210.5.152,karendunn,2189c1ab48f349e1b5c66a2be95afaa5,POST,/products/123,200,486919,https://bing.com,Mobile,Chrome,False
+34a9bdb616ae4aaa99415dd18e441c43,United States,New York,2025-10-03 23:37:58,178.125.85.166,robert62,bf74ccc3621b473b95451772f405f0b8,PUT,/login,200,259049,https://google.com,Desktop,Chrome,False
+ff6e3031cd7146e1bb5d3afada334f37,United States,Dallas,2025-11-16 06:00:57,44.25.245.16,isanders,a44c520464cf4225ad37125fdc98ed07,PUT,/products/123,200,91475,https://bing.com,Mobile,Chrome,False
+6362b4ff855d40a7b6c4249f01891541,United States,Chicago,2024-09-06 18:13:02,205.96.201.84,grahamjon,315135f29fd94976adbed91a6c0104bd,DELETE,/checkout,301,180121,https://bing.com,Mobile,Chrome,False
+22b9992cf5d24acba7b9c8c7c1b045f9,United States,Dallas,2025-02-28 14:15:23,75.12.21.200,mmartin,e2aa3805723f46328e8049e127b43352,GET,/products,200,309602,https://google.com,Tablet,Chrome,False
+72a1c64a4315432da75da2f700c1c1f4,United Kingdom,Birmingham,2026-07-23 22:40:59,61.44.6.175,francesca05,cb0f4ecd523045bc9e1297cb492512af,DELETE,/,201,48079,https://google.com,Mobile,Firefox,False
+29b12639f55240c3a7c7ae90cd05baa5,United States,Chicago,2025-03-24 21:30:17,163.241.140.242,annagreen,131d69e836334c8980a3e0e5515c0aba,DELETE,/api/orders,200,226855,https://bing.com,Desktop,Firefox,False
+a4fdb357f7b0422d8f5cfa5c8c9ca5f5,United States,Chicago,2025-06-10 17:14:08,118.6.111.124,bennettbrett,452f0c2ada1c415398d82666f99fe2c7,PUT,/api/customers,200,176524,https://google.com,Mobile,Firefox,False
+cace971429ed4e7f9d070936f655c1b7,United States,Chicago,2025-11-14 21:42:15,83.115.18.161,wbates,ac876b729a6e4335aa0a789e48f1dd8d,DELETE,/search?q=laptop,201,394951,https://google.com,Desktop,Chrome,False
+a25c8130f9284dee8840c7e7a7cb588a,United States,Austin,2025-09-20 16:31:30,162.38.179.2,lbenton,9dbc4896121b4beaa224d5894672ee1a,POST,/login,404,2005,https://google.com,Mobile,Firefox,False
+8d335fac22294fcb8cf5c3c5ca062dc3,United States,Seattle,2025-01-04 20:35:35,47.47.46.219,howellsarah,46923689c0534fb6a4c4a859ecf03492,DELETE,/api/orders,200,156857,https://bing.com,Mobile,Chrome,False
+ce2ab1fe32a8444d9023b45edf291134,United States,Dallas,2026-06-29 11:48:43,20.118.194.64,alexis98,94eb3de95c51420d85970c04c09a5b05,DELETE,/api/customers,500,2596,https://google.com,Desktop,Chrome,False
+cd05452de10e4e8b953d28d5e573ea95,United States,New York,2025-10-20 02:32:45,63.8.110.191,gpatterson,9cffdbe241fb4c3ebaeac90f25f6309e,GET,/products,200,460836,https://google.com,Desktop,Chrome,False
+78aa3e268f07498596c02514183db4ba,United States,Seattle,2025-04-14 19:01:58,147.208.163.186,rickyreyes,f88f454629fd4b67934392a8713a2492,PUT,/api/customers,400,1864,https://bing.com,Desktop,Chrome,False
+b8025d9b542f462e9e193952a3420412,United States,New York,2026-06-04 02:44:15,11.32.123.85,walkerjennifer,87bb9dda2ff042bf8b404b05e6e1aa3c,DELETE,/search?q=laptop,200,156331,https://twitter.com,Desktop,Firefox,False
+1081b8c20eb940679605619d0e3b928a,United States,Seattle,2024-08-21 07:41:50,124.156.242.54,linda74,0092a2208de641a78678313477aafdaf,GET,/products,404,2986,https://google.com,Desktop,Edge,False
+77809f5f5d634dc6b81a9a7329339831,United States,Dallas,2024-11-04 15:14:32,128.101.160.35,waltersjason,eb4553df66d54ba6959b922917bf98ed,POST,/products/123,200,342820,https://bing.com,Desktop,Chrome,False
+53e1052e12794adc93e5682ad4b5e28c,United States,New York,2025-05-25 19:39:28,16.134.17.222,andrewsmark,e5a1da7c22624275ac329aa7b06e8b9e,PUT,/api/orders,200,29754,https://bing.com,Mobile,Chrome,False
+fcf8537a670c40a79f624cdae2e5c051,United States,Seattle,2025-03-01 07:41:30,131.151.144.172,campbellfrancisco,a9d0d94e851142089d4cf6c69914a056,DELETE,/api/customers,404,1050,https://twitter.com,Desktop,Chrome,False
+0595240833474b7b98e6e4ea9ab84a17,United States,New York,2024-10-21 14:38:42,162.83.234.218,ray40,d8ee4aae8dc84730ac8b7b0df8c3c7bb,POST,/,200,242822,https://twitter.com,Desktop,Chrome,False
+d095c12481a043cf851eabf57059e5ff,Australia,Brisbane,2024-11-24 10:23:59,58.163.240.192,clarkdebra,9b4e533989834e1388a8c1cab620af9b,PUT,/checkout,200,60475,https://google.com,Mobile,Chrome,False
+e4e5ca9f6246406cba22d88762798959,United States,New York,2025-10-30 08:49:55,118.147.30.226,robert47,469a44307525417f96ee810028031245,POST,/api/orders,401,1097,https://google.com,Desktop,Chrome,False
+b2af38c5b3d440f2aa8357b6b128fd20,United States,Austin,2025-09-29 09:27:33,51.160.86.134,qwilson,01765339769a4c88bd5be8cb51c6a65d,GET,/products,200,94777,https://twitter.com,Mobile,Chrome,False
+7728f469acd04d11af82a1ea075a1b7d,United Kingdom,Manchester,2024-11-15 23:23:15,98.198.204.66,woodgeorgina,33b70f03ff3a4b059482be4a74c0c00b,POST,/search?q=laptop,200,210569,https://twitter.com,Tablet,Chrome,False
+e2a35df80fc84fe0ae21c2d8c28dd0a7,Australia,Brisbane,2024-08-09 12:21:11,166.101.6.107,lwise,205fae8106e54e29b0daa37c63a20aef,GET,/products/123,200,258688,https://bing.com,Desktop,Chrome,False
+14f65b11773841cfb9eb3ecf69220fba,Australia,Brisbane,2026-01-12 22:38:43,206.168.53.44,pmoore,4e5db67d210a4e4f9b5ff36cb6aceba6,GET,/api/customers,200,446317,https://bing.com,Mobile,Firefox,False
+5ce31f465e8444eca8a7b806b9c8ca4c,United States,New York,2024-08-08 08:54:44,48.177.67.99,dereklindsey,3d6bae6e57394163b7aca4d22ac748e1,POST,/checkout,200,354791,https://google.com,Desktop,Safari,False
+496892730f52408580fd7c257cd4eb31,United States,Seattle,2026-03-24 02:53:16,3.122.89.207,cruzsusan,6b0613246327451f8301a908bbd4b29c,PUT,/search?q=laptop,200,313151,https://bing.com,Tablet,Chrome,False
+8ffcaf8f6bee4e4e851c3cf632f6cf6b,United Kingdom,Manchester,2024-09-19 03:03:46,223.109.214.141,irene35,1f5899e00ef94182907a7f775a5fddde,PUT,/products/123,200,151507,https://twitter.com,Mobile,Chrome,False
+8099dc9c695f4cc4832c860ba684a2ca,United States,Austin,2025-10-19 21:50:14,35.69.38.51,athomas,720d120bf49c4325aa911644d3fcb491,DELETE,/login,200,51464,https://bing.com,Mobile,Firefox,False
+d0ff74004ce24fd69c3cfa33cbd1e5bf,United States,Austin,2024-08-12 13:03:46,159.14.171.226,timothy83,73ac3d234b8d40ee9bbbf8333a0e3645,GET,/products/123,200,213582,https://google.com,Desktop,Chrome,False
+cd987e92b4d0493f93ef95ee77de99fe,United Kingdom,London,2025-12-07 11:29:49,35.12.2.83,itaylor,2a6c7a39af734739b97e78576e990866,POST,/,200,220917,https://bing.com,Desktop,Chrome,False
+eb6be2e816ab444c93485ecb8b2a25d4,United States,New York,2025-10-09 10:26:51,55.230.107.126,amberflores,4e149ff4235c4b58acf58ec27485c796,GET,/checkout,200,373529,https://bing.com,Mobile,Firefox,False
+fc4c0745740c4936b361b938e05595ef,United States,New York,2024-09-26 07:08:38,32.219.157.96,davidingram,10ed5e2e1a1242369b1ac151aabc8de5,POST,/search?q=laptop,401,187,https://twitter.com,Mobile,Edge,False
+6546fe502bb04ff4ab43c65f7152d2de,United States,Dallas,2026-05-23 17:18:45,132.147.88.46,kylefisher,e3615e825e9e4b4e82df54c27c712ad1,PUT,/products,200,277471,https://bing.com,Desktop,Safari,False
+cee118c68a51474ca821a33248a558a4,United States,Austin,2026-06-06 21:35:44,124.4.236.76,ryananderson,2d4c85edcf8c47c9be1cb4ba280aebcc,DELETE,/search?q=laptop,404,4604,https://bing.com,Desktop,Firefox,False
+6b000e700b3645e0aed5e9b5d2e69cbc,United Kingdom,London,2025-06-19 04:43:17,202.156.10.185,ypatel,07c730528c87483d88bd71fe51a8f5bb,POST,/,200,414275,https://twitter.com,Desktop,Chrome,False
+8cf61e08aaaa4604afa3c8fb1e838cdd,United Kingdom,Manchester,2026-04-16 08:27:57,25.14.125.94,phillipwarren,c2d628ba55834f13840623645c9cfda2,DELETE,/,201,425522,https://twitter.com,Mobile,Safari,False
+2398534ccc6744e7ab6fb1f9a983d331,United States,Dallas,2024-12-25 08:08:45,11.94.143.204,justinpark,9a3ca2c81693496b96d632d25d668b6f,DELETE,/products/123,200,378379,https://bing.com,Desktop,Chrome,False
+a36b109685d0434093a7111b022ad4e7,United Kingdom,Birmingham,2026-02-21 07:13:59,134.86.127.222,reeceturnbull,f3896569d6c14d86bb596a5422357a9a,GET,/,200,289312,https://google.com,Desktop,Chrome,False
+d8dac9da45764305896fc6b0d4c9ee9e,United States,New York,2026-02-06 17:11:28,25.65.19.115,rhonda09,0338b2cfd5b04cd4b397a8f6c6a5770a,DELETE,/api/customers,200,182258,https://bing.com,Mobile,Chrome,False
+7842b0221c1c4a8a96a756b502e7bb23,United States,Chicago,2025-02-25 01:49:29,67.5.200.22,,706bd5c48fbb48c0aaaf3cdfba86d927,DELETE,/checkout,200,174639,https://bing.com,Mobile,Chrome,True
+e693be8f44674887a473c7ff7d0fd9e1,United Kingdom,London,2025-12-03 11:21:21,213.117.173.238,griffithskathleen,84b711a76770421a8134c7dfbe7805b4,DELETE,/search?q=laptop,200,346876,https://twitter.com,Desktop,Chrome,False
+cac6b78abca74179acc89f465c71306a,United Kingdom,Manchester,2025-12-29 12:09:17,143.194.175.250,psmith,5ce907975529485a896ef04bc3c0d192,POST,/search?q=laptop,301,454293,https://google.com,Desktop,Chrome,False
+726dad7bfe884e9fb8e35bc9e943e805,Australia,Melbourne,2025-04-19 19:21:54,110.65.27.68,jennifer04,736e68b495854e319ee800202b256388,POST,/api/orders,200,122746,https://twitter.com,Mobile,Firefox,False
+2700a4cc56aa45418e5f45a10c9ac7dd,United States,New York,2025-03-27 14:02:48,136.36.21.82,jamesguzman,8e12d88c863145fb913fa0874fd61791,PUT,/api/orders,200,379395,https://bing.com,Desktop,Chrome,False
+5f2ad2168f0048039f3b8558cf2089cf,United States,Seattle,2025-12-08 20:20:08,16.141.156.107,theresa57,ca109951d90540e09c44f6d01da8ced2,PUT,/products,301,458170,https://twitter.com,Mobile,Safari,False
+b86f1c97f94247ed9cd9592d1669aa72,United States,Seattle,2024-10-10 06:59:16,63.215.11.202,olopez,8fde88861b4645868277fe80188aaa5b,DELETE,/,200,278988,https://google.com,Tablet,Chrome,False
+6b032a0c7c9c45b48464688ec18f2b8d,United States,New York,2026-01-04 14:26:30,20.188.28.41,barberalex,f300bf67d3844fe398faadd798ca8e63,POST,/products,200,468160,https://bing.com,Tablet,Safari,False
+2c12c027cb754440a72addb7c5a18535,United States,Dallas,2026-05-07 07:09:13,46.42.239.1,katherine22,7cb69290f80c41618af2534ef8d924a1,DELETE,/api/customers,400,2380,https://bing.com,Desktop,Chrome,False
+5c3f657ed6bd48d0b232e77c9aacc732,Australia,Sydney,2025-02-18 09:58:27,216.205.194.55,vanessa52,6c933d95b6134ac48532fd92c53eabbd,POST,/api/customers,200,292520,https://bing.com,Desktop,Safari,False
+a962a105c6dc4c4fbe249d423a81178a,United States,Chicago,2026-04-08 22:52:19,47.77.164.248,emilybenjamin,e3994c93922b43b682890a865dbc2d03,DELETE,/api/orders,200,69392,https://bing.com,Mobile,Chrome,False
+79c983343b75455391502cc889cb13c1,United States,Dallas,2026-04-10 01:59:34,35.94.52.243,shawjoel,c3243b6246ba4859ad4a496c37c54119,POST,/checkout,200,7946,https://bing.com,Desktop,Firefox,False
+c7325c0fcab9477c9fa961e362e2ae6b,United States,Dallas,2025-06-10 11:41:50,122.76.144.183,andersendebbie,ef9d91ff09944aac90bd2f558b54e27c,PUT,/api/orders,400,2211,https://google.com,Desktop,Chrome,False
+473030dbfd52431786e38d0611f5c466,United States,Seattle,2024-11-22 05:32:31,121.166.154.194,flopez,dab1a8af803541c680e74fdcd347dfd9,POST,/products,400,1709,https://google.com,Desktop,Chrome,False
+eaec024c3e5e4f73a8e1f1a96beab15b,United States,New York,2025-01-14 01:06:00,70.115.180.90,richard69,087253d4f2984a51930076f6e9174126,PUT,/api/customers,301,498217,https://bing.com,Tablet,Firefox,False
+d943f817eb7a46c6bdf176f79051cdc5,United Kingdom,Manchester,2026-06-30 02:58:19,1.204.228.69,catherinehughes,bd930670aae34df38ff1d78d2e4a69c3,PUT,/checkout,200,458268,https://twitter.com,Desktop,Chrome,False
+d2c694d5dea741b19a22e1fe31b2ebc4,United Kingdom,Birmingham,2025-09-11 11:54:16,61.253.249.156,tony41,ca1b8ccf6ef84826b7924622fecbf08f,POST,/products/123,200,336728,https://twitter.com,Desktop,Firefox,False
+0db4061c746447cfb9b69df66c37f418,United States,Chicago,2025-06-05 23:40:26,153.2.220.93,gomezamy,80a6d21a56b84a8ea9fcb0cea397a40a,GET,/search?q=laptop,200,413218,https://twitter.com,Desktop,Chrome,False
+78886b5072cc4d30927d94d1873ded11,United States,Dallas,2025-11-25 18:05:07,134.228.159.168,pherrera,35f53b9987d643f1b592c095739049c3,DELETE,/search?q=laptop,200,376377,https://twitter.com,Desktop,Chrome,False
+cbb60c710375423da4978b8e0c0b4672,United States,Dallas,2024-11-15 10:58:26,166.225.136.64,fmyers,c625f9379a124fe390f8593720fe918a,DELETE,/login,200,207723,https://google.com,Mobile,Firefox,False
+3f23a554cf6c49c0b5011611db365300,Australia,Melbourne,2026-05-28 15:08:17,16.35.217.34,jimmy31,f1d136e0835544858a56eab78f73f7b5,PUT,/products,301,186951,https://twitter.com,Mobile,Firefox,False
+a20d78abf712485aa76b97308119c6d4,United States,Dallas,2025-07-01 05:13:32,131.111.86.99,amanda23,0ade06b010224c1488b968aa26f26550,PUT,/login,400,2893,https://twitter.com,Mobile,Chrome,False
+e1c1cd5701f64c329b5980f14ae2a236,United States,Austin,2025-09-19 15:39:22,39.209.117.0,christopher21,395dd1b4ee5f4d0dac45c5eebcfec635,GET,/products,400,895,https://bing.com,Desktop,Safari,False
+2046727a92f544eabc9c3d90c0ac60a4,United States,Dallas,2025-02-09 02:54:31,123.235.161.250,courtneycurtis,13f6660a617844d0bf442c852b33bf53,POST,/api/orders,400,1866,https://google.com,Desktop,Chrome,False
+1f433be3e4bc42459697051e823bd08e,United States,Seattle,2026-03-21 10:16:26,20.243.123.181,denise37,1d0060b7a8e24dfdafa823d8472c25d1,POST,/api/customers,200,185704,https://bing.com,Desktop,Chrome,False
+caae6f55588b4525acbcfba6a2ef0ddd,Australia,Sydney,2025-12-11 23:32:29,56.96.132.25,mackjacob,05f75b221a2c463c9a8baf0619b22a2c,GET,/api/customers,200,328258,https://bing.com,Desktop,Chrome,False
+14aea8f2433a46a9aa7786f9f063173d,United States,Seattle,2025-11-15 11:27:28,70.183.28.255,cummingsjoseph,2c4230313a6e444b8d545ad956d506a5,GET,/api/orders,200,318823,https://twitter.com,Mobile,Edge,False
+467b432d7c89496b92bb3f01a3baf49f,United States,Dallas,2024-12-04 21:26:56,150.13.194.64,xstone,91cc784dd32a4617aca95aa9a311b682,DELETE,/search?q=laptop,200,446117,https://bing.com,Desktop,Chrome,False
+844713d08a4640d7ad3a8073c28efafe,United States,Dallas,2024-11-05 10:55:13,168.208.5.196,blakemiller,f72f2849957b46a0984093ee7bc3de41,PUT,/checkout,201,494562,https://bing.com,Desktop,Chrome,False
+18de833cf56742729bc5a547d5514f8f,United Kingdom,Birmingham,2024-12-12 15:05:53,53.242.117.166,oward,45420b1e2d3c48ef86c504a86e556024,DELETE,/products/123,200,410952,https://twitter.com,Desktop,Chrome,False
+33f8631e203a411ab28c0563765882c5,Australia,Sydney,2025-05-27 17:16:03,174.136.111.147,lori95,4a628a6888e644ee8f9d754d3286e820,PUT,/products,200,220393,https://bing.com,Desktop,Chrome,False
+dc2c9a9028b2423a9ad8dbf3b0f81f32,United Kingdom,Birmingham,2025-12-12 02:51:56,26.217.12.183,bruce93,896a463e80924b4fb71fc499bf9240ca,POST,/api/customers,404,3010,https://twitter.com,Desktop,Chrome,False
+c1f98504349840e29127e58c7a07228b,United States,New York,2025-07-09 09:48:08,34.115.50.171,,79c83bcd53bc4edf818bce374ab89c27,GET,/search?q=laptop,200,270212,https://bing.com,Desktop,Chrome,True
+2b7786ce9c0849d0b4680f3a40a669c4,United States,New York,2025-01-25 16:25:49,91.252.19.224,dianajohnson,d669759a06354de6ba75d9ee39302db6,POST,/checkout,200,46392,https://twitter.com,Desktop,Chrome,False
+a2b3a4687df14a198ff0d2e74df31508,United States,Dallas,2025-03-16 10:00:31,200.172.233.154,nwright,e6d88f781f044c4b9856cff3bd2c4480,GET,/search?q=laptop,200,432472,https://google.com,Desktop,Safari,False
+b345102d04494b7ca43e776668a1bd39,United Kingdom,Birmingham,2026-02-01 23:57:19,101.187.115.149,terry71,61978b2dd0c146d49e2e76473a358f0a,POST,/api/orders,301,17177,https://twitter.com,Desktop,Chrome,False
+1806be779eb243b38d4c06876c3855d9,United States,Dallas,2025-10-28 00:28:32,180.183.150.146,lynntownsend,a00874a30fc249aeb5aaa53d8aac73c2,POST,/checkout,400,1121,https://google.com,Desktop,Chrome,False
+c33ddd3ec6f9401fb7dc1536efb3987e,United States,Austin,2025-01-02 10:10:05,118.251.41.246,cynthia11,258b0d05decb47c29aebc0868b844264,GET,/login,500,4092,https://twitter.com,Desktop,Firefox,False
+8dcb0b699a7d4a59be6175ab4150c243,United Kingdom,London,2025-06-05 02:32:56,186.161.13.38,wbegum,41167e4f9ccf4286b67a73ca2f932619,PUT,/products,200,418839,https://google.com,Mobile,Chrome,False
+e938b43230b54ed393e6882740717b77,United States,Austin,2026-04-09 18:44:47,71.155.111.210,davidgilbert,27b912727fcc42d6b30b629c5a04c27b,DELETE,/products,200,194113,https://bing.com,Desktop,Chrome,False
+520c9b7809fd471a9de9d954e379ff78,United States,New York,2024-12-08 05:46:09,160.121.165.151,rachel47,37a58bf474eb43c0a888e72c330b70a7,DELETE,/login,301,182505,https://google.com,Mobile,Chrome,False
+b051e95cadd548ebad2f60e2e97b5d40,United States,New York,2024-11-12 19:19:25,120.118.68.67,chandavid,c59196bfd69743a5920479fee4d774d4,DELETE,/login,200,462337,https://bing.com,Desktop,Chrome,False
+29d131ed91004905b2bdc614e73415e4,United States,Austin,2025-12-24 18:28:19,56.215.23.19,georgelong,abdedd85ec2142e2b02a7fda271a7277,DELETE,/,200,254582,https://twitter.com,Mobile,Chrome,False
+719cf57995dc48858f2e341bc73cbb6f,Australia,Brisbane,2026-04-27 16:40:39,93.177.173.219,smithdouglas,6df0b5037a4649bca62ceec8d04e23c0,POST,/,200,34683,https://google.com,Desktop,Firefox,False
+24def1f77d5549ceb4b65aa1b6ce3e81,United States,Dallas,2026-04-02 12:57:27,187.197.12.243,,8ae165c86357442588b2e5480d676877,PUT,/api/customers,200,179669,https://google.com,Mobile,Chrome,True
+1dec936f28a24e5490499de2bc7b6a1a,United States,Dallas,2024-09-11 13:34:00,111.125.36.254,rebeccaschultz,ca75d0214a5944878972a9cfaf363064,POST,/search?q=laptop,301,462151,https://bing.com,Desktop,Edge,False
+6d30996e29d64e5a9d44e1e15da4f390,United States,Dallas,2025-11-02 11:16:04,180.93.102.179,stephanie95,9fbae51e2c22467aafd21b9ab72bc698,POST,/api/customers,200,144102,https://bing.com,Mobile,Chrome,False
+8c56520247e54c6d8403861516f8c913,United States,Austin,2025-05-15 00:43:22,188.156.44.32,doylejoseph,bf00501e9e154d21befd2ee9376b768d,GET,/checkout,200,353885,https://twitter.com,Desktop,Firefox,False
+ae4bb23fd7f844d89aa4508df732e81a,United States,Dallas,2026-06-12 07:32:53,9.218.56.193,james77,2b87f1d8fe0b46079454729bf0141298,DELETE,/,200,424427,https://bing.com,Desktop,Chrome,False
+3dfa619e5608424c99771529822e38da,United Kingdom,Birmingham,2024-10-06 04:14:28,140.33.70.5,rogerskerry,4b157275c98248639ee6149d3ae4597b,PUT,/search?q=laptop,200,156570,https://twitter.com,Desktop,Safari,False
+1637ad3e2a1d4d00acf345bb0b4bd2f7,United States,Austin,2026-04-10 13:38:36,138.99.222.188,kristin60,6b63e5e76026463fb3dfbf1e04b05ee6,GET,/products/123,201,143988,https://google.com,Desktop,Chrome,False
+2929716328e94156bff376af7012bc90,United States,New York,2025-06-05 21:13:32,33.160.238.235,,ff441f30061940a0b10b85d2163dcfac,DELETE,/checkout,200,116050,https://twitter.com,Desktop,Firefox,True
+7f5a08d4a7964886aa13e6e0a1373852,United Kingdom,Birmingham,2024-09-08 21:50:18,113.253.81.186,uhall,45ae353b4b84479cac41911e653ee641,DELETE,/products,200,367347,https://google.com,Desktop,Safari,False
+42784720523444c188a069942a91a2c3,United States,Seattle,2026-06-15 08:02:41,96.20.234.146,michael63,2d7b215768bd455bbb1a26da38751735,DELETE,/checkout,400,543,https://bing.com,Desktop,Chrome,False
+96c09d17f0f84203bcb6ca47cdaefe11,United States,Austin,2024-10-31 17:48:27,53.210.171.63,richard91,03087156456543e28262805be2f02557,PUT,/products,200,97803,https://twitter.com,Desktop,Chrome,False
+779a126501e84bed8db7ffb004184b64,United States,Austin,2025-02-26 23:08:34,78.47.195.198,lgreen,ed28527eccaf4988aad183b22d235989,PUT,/api/orders,201,172761,https://twitter.com,Desktop,Chrome,False
+44f4a3c4e6044ca794a0fd93dbfc0d37,United States,Dallas,2025-06-10 11:58:11,95.201.249.21,ganderson,b605c35610a64a8da48334620f27c7e2,POST,/api/customers,404,431,https://bing.com,Desktop,Chrome,False
+3243cbdfe78342eabb98ffdc625b29d7,United States,Dallas,2024-11-13 18:01:43,9.212.101.160,andreajenkins,2e1cffb573ed43fa9a024a678f0346f0,POST,/checkout,200,174064,https://twitter.com,Mobile,Chrome,False
+2ce5181b9eaa44de95fc264e539829f7,United Kingdom,London,2025-03-19 04:38:02,93.61.117.215,watsontony,9f823c1a830d466da2374a34d46774a7,DELETE,/products/123,200,79088,https://google.com,Mobile,Chrome,False
+b2816f5693494ffabe1bf234fd26f08d,United States,Chicago,2025-09-19 14:33:22,60.79.80.61,christophersolomon,d29362f3123f433f8b6b1f399d740a99,PUT,/api/orders,201,361147,https://bing.com,Mobile,Chrome,False
+7815bfb7c4e94122a6bc52141a4549c9,United Kingdom,London,2026-06-07 00:14:17,88.53.239.230,adrian14,89f6b89e497d42a8af86d8dd11d6fac6,POST,/checkout,200,175897,https://bing.com,Mobile,Chrome,False
+356456bfbfea4deeba7a086f7f342042,United States,Dallas,2026-07-10 23:50:08,52.156.115.150,sarahroberts,fb0371a1353e419d96d042641c50c4f1,DELETE,/api/orders,200,38476,https://google.com,Desktop,Chrome,False
+83675655821b465d945a23380eb1b9a1,United States,Austin,2025-10-31 11:47:31,108.241.114.102,dakota60,b23f679676b441f5a8cfccaf9002af68,PUT,/api/customers,200,332765,https://google.com,Desktop,Chrome,False
+88fcb35cfa554c1ba44ce50b773a93d3,United States,Seattle,2024-11-14 12:20:39,121.194.193.151,tina90,dbaa84b0983d4b149f4265fa1eb75db0,GET,/,200,458018,https://google.com,Desktop,Safari,False
+19d296bf7e4b442993df6ba19b2ebebd,Australia,Melbourne,2026-04-13 21:17:07,79.158.242.226,barajasbryce,83237fad99324ca6a1cab57d726a1e68,PUT,/products,201,200497,https://bing.com,Desktop,Firefox,False
+89f9c8c7bb124fc8a1032e42d4f87560,United States,New York,2025-04-19 21:25:05,2.166.110.174,dawn85,112f20ce1d6048fd874dba7cea6669e8,POST,/,301,76984,https://google.com,Desktop,Edge,False
+1dcceb4f8ca140ca80c8c142539d1d3d,United States,Seattle,2024-11-13 15:51:13,174.30.223.29,brandonfarmer,3351e28db14b4bd69732c5959695c917,DELETE,/login,200,115130,https://google.com,Desktop,Chrome,False
+4f2979ccf621498192aa2f8ac6f88756,United States,Austin,2024-12-14 09:32:00,145.224.46.245,millerrobert,cbf46e1e177f42b59053a47b6f92f830,POST,/checkout,400,549,https://bing.com,Desktop,Chrome,False
+e3aebdf1e2ef494099e80976859c9047,United States,Seattle,2025-08-21 04:12:54,219.239.90.124,jacob64,a5ed480e4fb545bc83ebac2051f49961,GET,/products/123,200,247180,https://twitter.com,Mobile,Chrome,False
+e506df19c7384373b1073293c414ac0d,United States,New York,2025-10-14 23:17:20,194.227.16.7,carol98,0997588085d54c0da69480ddea2c55a3,DELETE,/login,404,2799,https://bing.com,Mobile,Chrome,False
+f90eb1254e964a55a22d6851c332afc8,United States,New York,2026-02-02 09:47:37,102.29.28.235,torresangelica,f7722218ea3941d498e5a3f705745c95,DELETE,/products,200,454259,https://twitter.com,Mobile,Chrome,False
+11345a053e144ff5b27985ef06305534,United States,New York,2024-09-04 16:05:59,36.155.114.237,santosluis,3e2a099ad21b4d3bb5f48de351cd07b6,GET,/checkout,404,364,https://google.com,Mobile,Chrome,False
+c5cf3ed97c9341479450aee03cf0a4dc,United Kingdom,Manchester,2025-12-26 15:03:27,33.101.165.167,nchapman,39fdbfdafbd748debfc9ec6b05d66297,GET,/checkout,200,187524,https://bing.com,Desktop,Chrome,False
+c6a8d4c454dc4cdcbf4653471fa2f513,United States,New York,2026-05-18 00:17:12,114.152.88.102,jacobhernandez,4355e330cf924d5aacd39e1da659ef63,POST,/api/customers,200,391153,https://bing.com,Desktop,Chrome,False
+e84b2e4fba904c89baedd6df058be4da,United States,Chicago,2024-12-22 18:25:36,77.218.74.46,stephanie01,45e61bb58d7342fc8e60b8fa64ea0f66,PUT,/api/orders,200,145718,https://google.com,Mobile,Firefox,False
+49034e84e5db424090ad46c7f940e172,United States,Dallas,2025-07-30 12:03:48,31.216.173.178,phillipscott,4c2759170c4b4294af78d4189c07bc0b,GET,/api/customers,200,139669,https://bing.com,Desktop,Chrome,False
+b4536c1a63204bb790dc9d2cd4e58819,United States,New York,2025-11-21 18:09:16,169.171.76.242,ronaldleon,4447b97b304045d194e8b1fb1325adad,DELETE,/products,201,285498,https://google.com,Mobile,Chrome,False
+de181408d2dd4b038ac07cac9ea263ce,United States,New York,2025-07-19 17:39:17,91.254.102.26,browncarlos,bfef7a52afc9477ca945d06eb52f093a,DELETE,/products,200,413438,https://google.com,Desktop,Chrome,False
+05ed47993cd94062bf2197d48ecfc83b,United States,Austin,2025-01-25 04:35:12,54.97.128.161,jmontgomery,87f45fa20a4b43e4ab8be7598aba9433,GET,/api/orders,404,4993,https://bing.com,Desktop,Chrome,False
+c99ed8f3d64045338666ada89ee43bbc,United Kingdom,Manchester,2024-09-08 22:53:44,114.164.150.171,jonesrebecca,ccc532d204ea4ca29c0cf6ceb0f0cdd0,DELETE,/login,200,89323,https://twitter.com,Mobile,Chrome,False
+1bf591223ff54818ae502e9fbe4f2ecc,United Kingdom,London,2025-03-13 18:48:50,208.165.124.203,duncan21,e2778b5db45344df836692ffad602794,POST,/checkout,200,421894,https://google.com,Mobile,Edge,False
+008bb69e196b42118527c586b6d1ab21,United Kingdom,London,2024-12-29 23:17:30,86.64.170.226,teresawatson,50175210a3fc4659ab578c3f9c1ec5ba,GET,/products/123,401,764,https://bing.com,Desktop,Chrome,False
+58613e96cbc149dfaf503c5c62429c55,United States,Seattle,2025-08-08 23:18:01,43.162.186.127,blairanne,bc758eb042f44e0794ac30be8865e6a1,PUT,/checkout,200,308006,https://bing.com,Mobile,Safari,False
+d37c7f1925b344a38e21142297d1dd94,United States,Austin,2025-08-02 14:45:43,21.100.73.79,allisonhughes,c2c6be2edcd0423091144cf0b0e59182,GET,/products/123,200,385889,https://bing.com,Mobile,Chrome,False
+3d5848637dc84f3f95c736bbae87e10d,United States,New York,2024-09-22 18:37:53,1.86.75.134,suzannebutler,39754c3b566a4e51b8ac8cc4c6983a59,POST,/api/orders,201,401022,https://google.com,Desktop,Safari,False
+d9aa78bc56894076b29e3b7ffd102f8b,United Kingdom,Birmingham,2024-09-26 22:51:10,31.75.213.225,dedwards,7a1c8918182c4d4db76c5345b9c1ddce,GET,/checkout,200,216997,https://twitter.com,Mobile,Chrome,False
+144cde65591b468ba6824e49cba30799,Australia,Sydney,2025-06-22 18:01:21,106.241.101.113,simpsonnicole,63be17fabd2645a2b041c688b398e3ed,DELETE,/api/customers,200,445172,https://twitter.com,Desktop,Chrome,False
+98acf2d5fafe4d2f9d92febb39a7227e,United States,Austin,2025-08-30 11:24:44,7.195.115.124,carlahawkins,3a01fdbad4ab49f882b852b67af9dee1,GET,/checkout,200,490487,https://bing.com,Desktop,Safari,False
+dc00fc515e8e46c8add30ee486c76b32,United States,Austin,2026-03-18 02:55:06,195.72.48.2,stephaniehunter,8450729b9a4c44f79ce8f1a37552614a,PUT,/products/123,200,275094,https://bing.com,Desktop,Safari,False
+3b03b078abf646cabaf7d25a55bb7540,United States,Seattle,2025-06-29 07:45:38,161.160.245.64,gwest,c4c02227b57c4fb9a87aee46f00a6aba,PUT,/checkout,201,127277,https://google.com,Desktop,Safari,False
+f7bd082e32c940ab845cca30267f094a,United Kingdom,Manchester,2024-10-11 22:05:42,71.2.104.102,martin49,d18c2b0df2e74c9ba9d179ae7e2407e3,DELETE,/search?q=laptop,201,423106,https://bing.com,Mobile,Chrome,False
+a63c4fceb476430ab052da2ea8e5e199,United States,Chicago,2025-06-20 05:31:45,136.208.79.174,lopezlori,d018260db9e34276bcabc69bbcefdf9c,POST,/login,401,2554,https://google.com,Desktop,Chrome,False
+303bcedc00a84c4c8b61556299177ece,United States,Austin,2026-01-09 11:40:11,6.169.38.143,nicolekeller,a54a4bb6457245189336623e548ef3b8,POST,/products,403,3892,https://bing.com,Desktop,Chrome,False
+f71d6cf0dde349b383f9b9cd3aadb74c,United States,Austin,2025-02-07 11:52:34,97.174.80.200,stanleymichael,397ea3695d4c493092cb8730d3e8d1e4,POST,/checkout,200,237019,https://twitter.com,Mobile,Safari,False
+84ac425fda4f46009d3bdbe9f8791b26,United Kingdom,London,2025-02-11 04:17:22,215.213.136.144,lindseyharris,8f4529032b6a42179adb82ddee9e02cd,DELETE,/products/123,200,65078,https://bing.com,Desktop,Firefox,False
+7701dd8374144620ac89c148e5242cf0,United Kingdom,London,2026-04-02 11:18:00,201.60.130.151,zbooth,8fc92a0288224f10a89d6ea39627a3b1,PUT,/login,401,4686,https://google.com,Desktop,Safari,False
+3fc8b51cb80046968d56d490ca4d4223,United States,Seattle,2026-03-21 14:31:30,77.122.39.160,,9f02edc76ed14418ab06c492031e7e51,PUT,/login,403,1794,https://twitter.com,Mobile,Chrome,True
+fb3011475385487eadc014311968cf22,United States,Chicago,2025-03-14 15:12:13,174.109.99.49,kathleen51,4156d189a8304bf2a4450b08bf1989c1,DELETE,/checkout,200,491091,https://bing.com,Desktop,Chrome,False
+a857821a44dc4d00b4e16d0545420502,United Kingdom,London,2025-07-02 22:31:21,185.61.126.166,dawnjones,3e923034617c4a6990942fbc3c6d0455,DELETE,/login,200,164219,https://bing.com,Mobile,Chrome,False
+a3dcbe0fd55042ec803768d53cca07bc,United Kingdom,Birmingham,2026-03-23 11:08:52,26.138.39.74,zhart,a5491ef27232407bb28aa22e3873bf70,DELETE,/,404,157,https://bing.com,Desktop,Chrome,False
+e64a271822cd4ccfac2c1590e0b4bec9,United Kingdom,Birmingham,2024-09-10 12:28:02,198.17.224.126,keith47,1a1f8ea3f50d47ebbd8a00e973b0be53,GET,/search?q=laptop,200,64250,https://twitter.com,Desktop,Safari,False
+27be7a9e5d2c4826822c1d96674c0b21,Australia,Sydney,2025-01-06 15:26:06,174.19.236.165,kristinedunn,819aaf4ec98e4f5ea003fd26594ddd0b,POST,/products,200,123802,https://google.com,Desktop,Chrome,False
+9db3f1444b4840539a0bc9f70d920d25,United Kingdom,London,2025-10-13 09:39:25,164.170.92.173,terry30,cfd9e584b5cc4271a1fcb0d8c040856b,POST,/api/customers,200,427661,https://twitter.com,Tablet,Chrome,False
+fc5a07667c9b431bb32d8e00ad00743c,Australia,Sydney,2025-11-19 07:28:39,149.254.30.241,vgreen,a21ef248ee494f8e8e51075df53d46e8,DELETE,/search?q=laptop,200,465365,https://google.com,Desktop,Chrome,False
+2a3d37bd917d41d5a3f630959c040ac0,United States,Dallas,2025-10-03 23:43:55,69.25.173.105,courtney37,3f9f99c0710c4a4d90b7d1136be7081f,POST,/products,404,4463,https://twitter.com,Desktop,Firefox,False
+6f99bb501f194e23bcb68a3ca6c1d6ae,United States,Dallas,2025-06-09 01:22:04,146.170.70.48,garciawilliam,feaaa9ac5ef24b70a5b20cafc8d3ad44,POST,/products/123,200,349649,https://bing.com,Mobile,Edge,False
+49dce7bae6bb4bc29f68dbeb9d88f370,Australia,Brisbane,2026-04-15 13:02:15,114.196.74.190,yhamilton,cdb6c11738db40408b4c951183fdcf32,DELETE,/api/customers,500,229,https://bing.com,Desktop,Chrome,False
+f2a105d7b8b3459ab4b32ebdc21e9c8b,United Kingdom,Manchester,2024-10-03 16:45:14,20.141.218.174,ldixon,7c64881582174bb6b488c1a6bb3df85e,GET,/api/customers,404,706,https://twitter.com,Desktop,Edge,False
+b4768f3497f841e0aa2d39ab3c5121ce,United States,Austin,2026-07-12 06:29:33,194.58.104.62,vmartinez,ef17fd33919b4a44b1102bac1731155b,POST,/api/customers,200,249287,https://google.com,Desktop,Safari,False
+33c64bce6a9b494da74f673e6a115a6f,United States,New York,2026-04-17 20:43:42,149.90.107.168,clayton18,53d037e25b5b477fa5e01180d74ef0d3,GET,/api/customers,200,461047,https://bing.com,Mobile,Chrome,False
+bac790503c3c485fb6975a87dbd2f8dd,United States,Dallas,2026-05-16 15:02:44,184.139.59.171,swilliams,24ac9c3926e84009813a08f0c08678e1,PUT,/,404,1283,https://google.com,Mobile,Edge,False
+1ccc42ceda4448f4b6000f135a83bdeb,United Kingdom,Birmingham,2026-05-02 17:53:50,193.212.191.183,wmoore,0ea224133ec54759bbfa0d80694464fa,PUT,/search?q=laptop,200,48809,https://twitter.com,Desktop,Chrome,False
+5aac2db8e2b44534b9b0a54b4702bc74,United Kingdom,Birmingham,2024-11-30 04:53:51,158.36.70.102,vkent,449f5da5dea84a04a37bca571ee06eac,DELETE,/,301,242657,https://twitter.com,Desktop,Chrome,False
+e2596fcd11a148d19ea657ee1e6c632e,United States,New York,2024-11-03 15:17:48,107.91.43.33,kelleybrenda,35fd2341dc7f43b08b1beeae60e06317,PUT,/search?q=laptop,200,371085,https://bing.com,Desktop,Chrome,False
+a3a5068cdff1426f99b370c8de5f2087,Australia,Sydney,2026-04-20 19:50:25,66.119.4.47,leealicia,316648161bba4a34914d2c559f2aee3a,GET,/,404,3019,https://google.com,Desktop,Chrome,False
+2341497180cc4547b0ac9e9da06d4319,United States,New York,2024-08-16 04:05:39,47.97.84.221,shannon35,a9a74e84698045549217df6efb64a9c3,PUT,/api/customers,404,1665,https://google.com,Mobile,Chrome,False
+a4d95255b4bf49f09fb49c9c99978346,United States,Austin,2026-02-28 19:32:36,91.144.77.152,nwhitney,6a5b228f542843268344a30fe5d66580,POST,/api/customers,200,20908,https://twitter.com,Desktop,Safari,False
+e9813ff514de4fa5becffd9f642dedda,United States,New York,2025-07-02 20:38:45,147.132.73.27,krandall,5c6759d020eb4b2d8ef3af90b95be979,GET,/login,200,471163,https://google.com,Desktop,Firefox,False
+38ab5470910f4e15a472b0f432315f86,United States,Dallas,2025-01-02 12:35:31,163.57.75.90,elizabethgibson,080ecd38fef444089e4838a384facbad,POST,/checkout,200,54877,https://bing.com,Desktop,Chrome,False
+d9fdf1a4289e46369f8e34d6b071ed6b,United States,Seattle,2026-02-25 03:42:56,93.25.151.171,nmelendez,1b6ba7d507ed4609b3613416ff12fcb9,PUT,/products/123,500,2545,https://twitter.com,Desktop,Chrome,False
+05fe523fec75468fba3c8fdd46171e3b,United Kingdom,London,2026-07-31 15:13:13,60.10.184.37,wfarrell,fcac46a648e14fb091ec2ff022f35d22,DELETE,/api/orders,200,118530,https://bing.com,Desktop,Chrome,False
+2066bc3820b74cb48e33522c838ecab7,United States,Dallas,2025-03-14 13:33:29,66.69.217.42,ryanroman,7d91667a68634246997d8c863ce2ad67,PUT,/api/customers,200,415404,https://twitter.com,Mobile,Chrome,False
+59f7f78963f64dd19600ce9f336f1a08,United Kingdom,Manchester,2025-10-26 23:29:30,206.236.183.209,vroberts,f6c2281e939647a0adfde0964b8e9c69,PUT,/products/123,200,110512,https://google.com,Desktop,Safari,False
+ba1c051df5d845d2b54dc3698288b7b9,United States,Seattle,2025-09-04 07:43:09,5.16.176.184,rebecca95,f68ff733dd594fd3ad4902a584bdcbe1,DELETE,/products,200,131722,https://google.com,Desktop,Safari,False
+6249d926ab924e28bffd3027180dee4f,United Kingdom,London,2025-02-22 02:07:04,70.141.178.161,johnsonjustin,72c5b25f38f743ca97d8878240616442,PUT,/api/customers,400,3386,https://twitter.com,Mobile,Chrome,False
+eb58be3be2744db689ae237d3f4ea035,United States,Seattle,2024-11-06 21:03:59,181.41.20.103,williamsamy,b6e482c3ccd0498a90a78010b4b8ff66,POST,/login,400,3996,https://google.com,Desktop,Edge,False
+a6168854c22a455e98ababc304debeb5,United States,Dallas,2024-12-26 00:12:16,32.24.216.145,sbrooks,07aefac6a66a43619270ce6ccf542420,DELETE,/api/customers,200,190416,https://bing.com,Mobile,Chrome,False
+b338d62bdf244a18876d3aac75841fd8,Australia,Brisbane,2025-04-21 04:24:19,4.19.72.161,paula61,389fa5de4abe4847b9125a6f27d47015,PUT,/search?q=laptop,200,204965,https://bing.com,Mobile,Chrome,False
+f32935fc1ef946e1ac4c91c85ed7355c,United States,Austin,2025-02-21 02:20:44,30.252.34.164,daltonmorris,583f777709db4ef280a946b1cc7514ad,GET,/api/orders,400,1312,https://bing.com,Desktop,Chrome,False
+3eab55be40174097b80040ab84ffc94f,United States,Dallas,2024-11-01 13:13:02,175.215.172.28,qsaunders,64f00d178d1e451a9a994af00f628e98,DELETE,/products,200,321625,https://bing.com,Desktop,Safari,False
+86ba9c37519b4580a53f540218699c4d,United Kingdom,Birmingham,2026-06-28 22:30:35,166.127.117.232,jacqueline01,0472576b115947e9b5d96cae5391846e,GET,/api/customers,200,380505,https://twitter.com,Mobile,Safari,False
+0f173a4697084a23aa11b72c86412777,United States,Chicago,2026-05-05 09:16:03,52.250.30.132,whull,0de0802e55064b41b69cad9350427baa,DELETE,/products/123,201,316325,https://bing.com,Mobile,Chrome,False
+e9e294f96fbf4aa4b207cbcc87b54a2a,United States,Dallas,2024-09-25 15:40:19,153.215.74.122,amber10,35a28aaf115c4170bdf020bd5ab18785,GET,/products/123,200,289988,https://twitter.com,Mobile,Chrome,False
+dfdfe353506f409da29eabbb579bbb2a,United Kingdom,London,2025-03-06 10:45:03,24.82.12.115,watsonleanne,1c58cc7cb2a94abaad8973b2b5434f4d,PUT,/search?q=laptop,400,2935,https://twitter.com,Mobile,Chrome,False
+d547cdd23f524951b07906e9c557263e,United Kingdom,Manchester,2026-05-19 04:24:15,105.25.32.36,,2c3060162915459d8368f3a1cc6d11b0,POST,/login,200,460259,https://twitter.com,Desktop,Edge,True
+2e2cc26e92774e22bad99efa79ed1235,United States,Seattle,2026-01-08 04:34:10,152.160.95.184,xhorton,60a735b7a2cb432084c0e75687f1de6a,PUT,/login,200,63185,https://twitter.com,Tablet,Chrome,False
+329c9bfbff3b41caba5a68a5581cd9a8,United States,Seattle,2026-03-07 01:40:26,113.20.205.62,charlene73,ce8ce9f053fd47cda3443ffa074d1f8a,GET,/login,200,445754,https://google.com,Mobile,Safari,False
+075457657a2d439b804da90d33873775,United States,New York,2026-07-21 07:49:29,4.139.206.168,lwillis,e0370c5430194b5abf2898856f5b2b82,POST,/,400,1186,https://bing.com,Desktop,Chrome,False
+51cd09f147fb4c6581e92289319ef7f2,United States,Dallas,2026-06-14 17:56:41,161.255.106.69,ocox,8f8a140a5a10491ea0d267503df4b26e,POST,/products/123,200,157230,https://google.com,Desktop,Chrome,False
+e4d10911e0a24de0a86973d47740b00e,United States,New York,2025-12-14 10:59:00,181.94.208.13,,645b062c0ff34202a5193689bfd0ac59,POST,/products,200,402082,https://twitter.com,Desktop,Chrome,True
+97aa94101c114b4ea2d37c5c5db36fb7,United States,Chicago,2025-10-12 14:45:53,65.200.130.124,sandrabyrd,a2246a5bb00f455daa7d7d124d86ff82,DELETE,/login,200,302664,https://google.com,Mobile,Edge,False
+e44d03d151da466483b5f2dae63698e0,United States,Seattle,2025-04-03 02:16:50,21.75.44.159,xroberts,2709e126f98840f99c2594988e24f48c,POST,/login,200,193446,https://google.com,Mobile,Chrome,False
+b01ee89d9e27496f972658a7e8e2f323,United States,New York,2024-08-24 06:38:47,54.204.117.165,andrewarmstrong,a6b9a27815a64b4c9925c1f05777a709,DELETE,/checkout,200,368681,https://google.com,Mobile,Safari,False
+e8f16d57c26041a9809ed8ae9989ca06,United States,Austin,2025-09-14 04:16:04,35.185.64.206,sean12,450c46638814448f839238c4512d1ff7,GET,/api/orders,200,286060,https://twitter.com,Mobile,Edge,False
+8d9d2f963be84aa7ae25235f5f5349c1,United States,Chicago,2025-10-12 07:55:29,42.167.206.70,castanedapatricia,ab094afbce62496ea53997103049baa9,GET,/login,200,185442,https://google.com,Tablet,Firefox,False
+351dc16e79534b3db321167f87701a2c,United Kingdom,Manchester,2026-03-19 20:16:12,159.14.85.7,khancarole,6b3f90d4ba9b4723b77b63f31b49539a,GET,/api/customers,500,4497,https://twitter.com,Desktop,Firefox,False
+0de55276e9a740f8bbf9be941246d812,Australia,Melbourne,2024-10-04 18:28:25,157.163.185.17,millermichael,5d3855ba9e55490bbe98cd745f8df845,DELETE,/products,200,258583,https://twitter.com,Desktop,Firefox,False
+6e7221e488d04725ae0223c4e207da6e,United States,Dallas,2025-02-19 06:33:10,191.214.4.7,corey24,80415e8d6aef4643a8787e9faad7a707,PUT,/products,200,447923,https://twitter.com,Mobile,Chrome,False
+5fcf36f15a3c4143a617511a9a826344,United States,Austin,2025-02-12 01:38:22,37.247.232.33,johnschneider,c92d0d3543394b7ca34f0772723fb2ed,PUT,/api/orders,200,267194,https://google.com,Desktop,Chrome,False
+855f8041dfe94a0d8d53c19ceda7ba9f,United States,Austin,2025-10-07 21:11:54,58.109.235.61,kathryn38,79aa1978dd9a46b5a79b7eff5735be72,PUT,/search?q=laptop,200,5454,https://bing.com,Tablet,Chrome,False
+350f639dcd344e45891b151c15828899,United States,Chicago,2026-04-25 04:21:39,162.152.215.42,pparker,6dd478d58e374470b38f48c01b517dbe,PUT,/products/123,200,127037,https://google.com,Mobile,Chrome,False
+d559d7080c954090ad322ba0e830f5f8,United States,Seattle,2025-01-19 19:06:19,100.196.77.185,harrisshelley,a0f748a81a8f4a4f8186e3a460ddc757,GET,/api/customers,200,81708,https://google.com,Desktop,Safari,False
+a10eb9c13459447cb6d8b22aeae440be,United States,Chicago,2024-09-24 01:14:39,112.232.197.164,eduardo04,ff7bc450f701488eb31c8971766796cc,PUT,/login,200,266016,https://bing.com,Desktop,Firefox,False
+f8e6afd18bf84553abef04c8043ee42c,United Kingdom,Manchester,2025-07-01 07:42:30,121.53.157.69,denise74,f9054dd2340d432491c5f84f6d942572,DELETE,/api/orders,301,450544,https://bing.com,Desktop,Chrome,False
+6e4190ee585141009fa5ed1d53e0edde,United States,Austin,2025-10-29 10:41:45,191.56.82.20,andresaustin,c2a114b8be3a48f588680df832b8b25f,GET,/search?q=laptop,200,38450,https://bing.com,Mobile,Chrome,False
+e94c6f3683224d2b8e9149acdfbf0b74,United Kingdom,London,2025-09-16 09:25:28,59.182.175.249,ann70,14fd440fbefe4b7e83925e932d50b6ea,DELETE,/,201,293908,https://bing.com,Desktop,Chrome,False
+77cb88482e8448cba348023f9e087fc5,United States,Seattle,2024-08-18 14:41:47,196.165.7.25,dfranklin,4e58c53a5cce458da826193586c9574e,DELETE,/checkout,200,294668,https://bing.com,Desktop,Chrome,False
+1f93c67645724aa68440ba1e8071ccde,United States,Chicago,2025-06-23 19:40:59,186.61.193.58,copelandandrew,50b2964cf6bd4934ace7b88cb450d566,POST,/products/123,200,256698,https://bing.com,Mobile,Firefox,False
+d38da23104304d5b9979a9bda1a85963,United Kingdom,London,2026-05-04 01:07:36,28.26.130.250,laurenbull,eff7ed7a16ae44619b7c2fcad35bad1c,GET,/api/orders,200,439911,https://twitter.com,Mobile,Chrome,False
+4eb1d1c51553400fbcdebcdf7cbed424,United States,Chicago,2025-04-02 14:30:45,26.150.85.230,victoriavaldez,00fc7757d7944c14a5237db14b2f8ab4,GET,/api/orders,200,309975,https://bing.com,Desktop,Chrome,False
+bdef1a12504541299f8de27e82dc0823,United States,Austin,2025-11-20 02:25:24,69.107.182.52,dean54,3a731546cc854813a1583ccadf2d1700,DELETE,/,404,2359,https://bing.com,Mobile,Safari,False
+7490820abfbc47809c3576877a87a683,United States,Austin,2025-07-11 20:52:42,42.60.212.247,nlewis,e279c54da7a94aca954785df2b58699f,POST,/api/customers,301,386081,https://google.com,Desktop,Chrome,False
+a10c65e8247e46b7a7f811a14991cbb6,United Kingdom,Manchester,2025-10-26 03:09:19,196.103.170.180,sarahnewman,25c16c73c5524ab2bb44805e7a82142e,PUT,/api/customers,200,459201,https://google.com,Desktop,Chrome,False
+26867083d6cd450e9174ec5b9b844c08,United States,Chicago,2025-05-12 07:35:35,34.181.250.230,kyliepena,af6d5cbe47674bebbccb2c84ab55b73a,PUT,/api/orders,200,461879,https://bing.com,Desktop,Firefox,False
+f69c203374a24f2585990ea3fcff5dfd,United States,New York,2024-11-08 22:20:09,70.39.128.56,lisa99,efdfb40becd34b74bc760919d27d40d9,POST,/checkout,301,498796,https://twitter.com,Mobile,Safari,False
+49c8e74b63cd4f268bbe0dee56d377a4,United States,New York,2026-07-26 08:38:57,221.37.62.51,riversjasmin,3dedf5dc0b6a49c8ae6f7ad056eb43f0,POST,/products,404,4684,https://google.com,Desktop,Chrome,False
+fa6b11b65a304ca8a98b4519c95cb4b0,United States,Austin,2026-04-24 16:11:41,20.104.12.203,katherinecabrera,b9f7dd3f0ec74da4968b48a155594f0d,GET,/login,500,2131,https://bing.com,Desktop,Chrome,False
+52e1abea874b46e69ad5ff1e099f1f5b,United Kingdom,London,2026-07-10 23:05:59,129.218.211.83,pbates,b03426fc485c4b4e9499d543bac20408,POST,/checkout,200,422868,https://twitter.com,Desktop,Edge,False
+146da1a04c314ccf8340be1f0a86ba3a,United States,Dallas,2025-04-10 09:48:29,112.11.246.107,lee41,1ec42b70c15c4c51a87e404866cadcca,DELETE,/login,200,156413,https://twitter.com,Desktop,Firefox,False
+beae3b011a5c479e9e95953f7fce1d79,United States,New York,2025-07-27 20:06:52,149.124.86.92,fjackson,93f5aad356a64feeaabcfa079a40ebe5,DELETE,/api/customers,200,226146,https://google.com,Desktop,Chrome,False
+efe52d0da6134733bdd98ed2c6e8bbe6,United Kingdom,Birmingham,2026-04-09 13:10:50,24.124.89.34,rburke,e3e74bc4e5fa43efa068aa7e21e3d7ca,GET,/api/orders,200,188605,https://google.com,Desktop,Chrome,False
+dce244c75d134ad4a144dda88112daba,United States,Dallas,2026-03-28 19:52:32,122.30.152.75,zaguilar,833be94471fe42d9925a7d1a94530b17,POST,/products,200,344456,https://bing.com,Desktop,Chrome,False
+4c31809a865e4ec1929d4b8ecc7df0aa,United States,Austin,2024-08-19 05:16:29,55.112.31.20,ismith,13debd6cad2840e290a69aedc4aea0ad,DELETE,/checkout,200,70207,https://google.com,Tablet,Chrome,False
+b96638c164f34c77b6b9ca2e6688ecb5,United Kingdom,London,2025-09-03 05:44:57,198.132.125.124,jburton,913c04ff943f462fbd671003974f7030,GET,/search?q=laptop,200,158680,https://google.com,Desktop,Chrome,False
+baebc52f1eac4873a76a9933b6683fd4,United States,Austin,2024-09-24 13:40:12,19.135.147.128,davidhernandez,e60d081f73f243c09b6781f6853815e0,GET,/api/orders,200,260573,https://google.com,Mobile,Chrome,False
+85282a2906b6461e83e534c2e36f1384,United Kingdom,Manchester,2024-11-07 02:01:46,66.217.137.50,pricekayleigh,9a4535ba913842cc88318674bba4800b,GET,/products/123,200,282717,https://bing.com,Desktop,Chrome,False
+f6ac7eac33da4001b7b0c20845201f9b,United States,Dallas,2026-03-25 01:55:50,193.177.77.42,mrobertson,647400dc7889480899980c33421cb943,GET,/checkout,200,88641,https://twitter.com,Mobile,Chrome,False
+14be867503764f0aad25395eaf445038,United States,New York,2026-04-27 03:22:57,92.112.142.35,kirk85,86559444e5944d1eb50026c0881711e5,GET,/api/orders,200,418924,https://twitter.com,Mobile,Firefox,False
+405cc42225a94bf29967efa3e92b205d,Australia,Brisbane,2025-05-24 15:56:26,180.214.216.25,kelleralyssa,a9eca36c78cf4da58b07efc77de287f4,GET,/products,400,2953,https://google.com,Desktop,Firefox,False
+b0736311efc740dabf09c2847dca781b,Australia,Brisbane,2026-06-15 23:16:26,21.162.86.189,hmorales,30fe61b3c9ee46a295dc960fda7e2d7a,DELETE,/products/123,200,198222,https://bing.com,Desktop,Chrome,False
+e5ed9da57c3e4471b26f079597aa77e9,United States,Seattle,2024-10-18 17:39:10,187.152.19.129,jonesjody,c49a16189bb34497943e021de8e7b91a,POST,/products/123,200,491402,https://bing.com,Desktop,Firefox,False
+a257352f66ba45a4b0922c9e00f20b7b,United Kingdom,London,2025-04-01 03:34:48,129.179.233.44,bruceturner,b646d1c0e280490983de1e661d5f78be,DELETE,/products/123,200,176791,https://google.com,Mobile,Chrome,False
+41e89809a6d54469a7b977f0ecac36ff,United States,Chicago,2025-05-04 06:14:37,188.119.102.198,bryanguzman,1dccdf86acbf4c468b81209f5a224d85,PUT,/,301,111012,https://twitter.com,Desktop,Firefox,False
+4b941885c1bb499fb2bc52a76174c2b4,United States,Seattle,2026-03-28 03:18:23,73.147.233.88,barnesheather,d2a0c74ee4c74169ab22edb747f794c8,POST,/products/123,200,416067,https://bing.com,Desktop,Chrome,False
+8890f9b0cfff42b081cffce70fa93ff9,United Kingdom,London,2026-06-08 02:18:33,160.220.185.47,ebrown,582dffc235894634aac3933797081c29,POST,/checkout,200,174818,https://twitter.com,Desktop,Edge,False
+65689e74167a4c6cae80100e492669e2,United States,Dallas,2024-12-20 21:49:01,65.238.233.139,steven00,8a60ce20dd5e474b966c280f6ff21664,GET,/products,200,358451,https://google.com,Desktop,Chrome,False
+c066cf6021714381a4fdb77cc74b84af,United States,Seattle,2025-03-19 21:42:31,58.134.207.56,ofischer,5d76b19f7b7b47ed8518ab0a1c398d52,GET,/search?q=laptop,404,1294,https://bing.com,Desktop,Chrome,False
+a4d3400dbc5b46c08b3f3ab2de65a6ae,United States,Chicago,2026-03-07 12:44:26,201.139.221.195,nsanders,9b83b74eaf8144fc8ad7b540e55ce177,POST,/products,200,220334,https://twitter.com,Desktop,Firefox,False
+3f91b7f7adcf4ac2b97b52a24bf4159a,United States,Austin,2025-03-31 19:21:59,168.248.115.131,carmentucker,6dbc565d6ab14533bda948dae9fe6c37,POST,/search?q=laptop,200,374050,https://bing.com,Desktop,Chrome,False
+1036e94f324947a09e13e75afe9de42b,United States,Dallas,2026-02-01 04:46:41,167.76.208.136,holly81,35f588a417914683bf8fe36a220812c3,GET,/products,200,247214,https://twitter.com,Tablet,Chrome,False
+2e4138aa1c614dad9f500794bd3006bc,United Kingdom,Birmingham,2025-03-26 22:04:12,221.180.137.53,jordan81,3e0d14de86a34a03aeeb71b6d80d4cdd,PUT,/checkout,200,47877,https://twitter.com,Mobile,Safari,False
+e82df7ea1d77416594223e159410617c,United Kingdom,Manchester,2026-05-29 02:20:03,158.244.88.156,helen95,f91f03cf0e24448e8bc93bfed8d2bf5f,DELETE,/products/123,404,4824,https://twitter.com,Desktop,Safari,False
+465e2244b1e840dca9e75608fcb73474,United States,Seattle,2025-10-09 07:20:20,222.223.123.241,kalvarado,ec03f4fc35334d468103dbb05e27fe8a,POST,/api/customers,200,31339,https://bing.com,Desktop,Edge,False
+57c201d7d5cd4a1a8da726280cdbf7e8,United States,Dallas,2026-03-10 02:42:16,172.60.241.92,canderson,e44ed01ea99d4b0aa664f75ff39a20e9,DELETE,/search?q=laptop,200,438243,https://bing.com,Mobile,Chrome,False
+1930ae613f34446ab9f492881d8601f5,United States,New York,2024-08-09 15:13:02,17.82.207.114,jneal,dcee0681be9e4507b054fa5d687b8d8a,POST,/,200,305883,https://twitter.com,Desktop,Chrome,False
+9403a844b53f4dbda267a66d3eea7b37,United Kingdom,Birmingham,2026-01-20 18:38:28,215.110.98.41,daniellebrown,6084d7820e8e4cdb9997fd01d0e0096e,PUT,/,404,1793,https://bing.com,Desktop,Chrome,False
+004ccc3a8f744300a10253c556d4d969,United Kingdom,Manchester,2025-03-29 05:58:20,188.1.184.126,adrianperkins,0e9eccac850e44b2850d53b5f59b414a,PUT,/api/customers,403,4917,https://bing.com,Desktop,Firefox,False
+0d5873d86c6d4e0eac39c4e9a12a74af,United States,Chicago,2026-07-09 04:02:31,215.131.197.25,briannamills,89cd9307506f42e79e2d7ab179c66615,GET,/products,200,415685,https://google.com,Mobile,Chrome,False
+dae0d553a233468b94dd9d635096843e,United States,Dallas,2025-10-29 18:52:02,211.133.152.245,jennifer22,192b928c90bb46d6b46f6a2de7d2e4c3,DELETE,/api/customers,200,12348,https://bing.com,Mobile,Chrome,False
+1aa324fc43d041c4b12ce1c02ba76663,United States,New York,2025-03-29 17:09:24,68.76.210.78,alanshields,223ca3ea30e84dd2acb9d3fb0dcc2126,POST,/api/customers,200,293098,https://google.com,Mobile,Chrome,False
+bb4360a9a8e6439eb6d3a01c20992a31,United States,Dallas,2026-06-14 11:50:27,47.49.130.13,elizabeth48,3dd539726805432c95078053b9a641e9,GET,/login,200,420457,https://twitter.com,Mobile,Firefox,False
+2376147a012d49219226b54a3c5356c7,United Kingdom,Birmingham,2025-12-29 03:20:40,157.38.14.184,johnpayne,c7ba9bec816b42fea4c6f502e00c83e4,PUT,/checkout,200,415495,https://google.com,Mobile,Edge,False
+6f5408e7525a4f0fbd7cb10d972a9d71,United States,Seattle,2026-06-12 16:50:36,25.192.13.252,smartinez,3bda5c6c72cf4073ab7bd22bea493447,GET,/api/customers,200,168502,https://bing.com,Mobile,Chrome,False
+d09dacce964648bcaae8f3421952e0c2,United States,Seattle,2026-02-01 10:36:03,33.120.61.10,jamesfuentes,573e90b75f7a43ef99d66f37da564df5,PUT,/,301,302929,https://google.com,Tablet,Edge,False
+f4533d1bc9784c02ba9b0b1bad06f4b7,United Kingdom,Manchester,2025-03-01 04:31:05,83.43.240.13,richardsonallan,a31f5a927a2c410c9a7856a95c7228f9,POST,/products/123,401,3401,https://twitter.com,Mobile,Chrome,False
+47c2db0b246a412c810435e11d0b560a,United States,Austin,2025-08-24 10:16:58,45.115.96.222,jennifermurphy,5bdba8c77ec74500ad1665bed6fad6cd,GET,/,301,272949,https://twitter.com,Mobile,Chrome,False
+fde87aa351bd4c31a0143fe7b56d19dd,United States,Seattle,2024-08-14 01:23:52,11.98.9.37,kevinwatson,2841a6b16a4f46f98dce56c73c66c65e,POST,/api/orders,200,211400,https://twitter.com,Desktop,Chrome,False
+1df3600f301f45d295b2507a6d979cbc,United States,Dallas,2025-10-08 10:35:46,155.130.210.89,justin74,2504c19acbd743ba8163949a1f440791,PUT,/login,200,448711,https://twitter.com,Desktop,Firefox,False
+8deaf4c5ed454d6a98c5d96b9e2a0ace,United Kingdom,Manchester,2025-04-22 21:23:14,64.148.118.134,ritarichards,70696588b47748a1a9c13e12e1fb5034,GET,/api/customers,200,442350,https://bing.com,Mobile,Chrome,False
+561e75ebecdc4ede81512df4236c5724,United Kingdom,London,2026-07-29 07:01:12,157.224.100.153,fbirch,dda1ddac85fe4447b3e9c5b153ac39d2,DELETE,/products,200,15562,https://bing.com,Mobile,Safari,False
+58d6104ccc514e6385ed2278549b342f,United States,New York,2025-05-20 14:28:04,61.241.65.191,dcabrera,1d814502ba644609b97ddeb562cee61b,PUT,/products,200,492641,https://bing.com,Mobile,Firefox,False
+8b57156246f14531a51f3fbed78077ab,United States,New York,2025-03-10 01:03:33,118.171.232.122,ronald82,2239c0f0227048abb63227bbc6401ca7,POST,/,400,2335,https://google.com,Desktop,Chrome,False
+27f298f4189f4f9d875d539598628c02,United States,Dallas,2025-04-25 00:31:51,126.14.187.251,melissa34,a2e4864e1e664f6fb0caa782c6a4ea14,PUT,/api/orders,200,349036,https://google.com,Tablet,Chrome,False
+c23833ebec8e41aba98352764372861c,Australia,Sydney,2026-02-28 09:03:00,53.155.65.166,abigail30,92d96efbe7b84aef99e9292702651b70,GET,/api/customers,200,49647,https://google.com,Mobile,Firefox,False
+a86afec520d044a6b53908967c9580e3,United States,Seattle,2026-03-05 07:56:20,31.9.7.156,kirstenyoung,459aaffd60764a159661ee14e7796984,GET,/login,200,498959,https://bing.com,Mobile,Chrome,False
+dfec931de2a94f349983e6d72117c9dd,United States,Austin,2025-04-06 05:40:17,30.69.103.82,nicholas62,88b6f1ed993144f7822b93677c9a04b5,DELETE,/login,200,355109,https://google.com,Mobile,Edge,False
+525d7dbf43214696b1af792f86510401,United Kingdom,London,2026-06-13 17:20:20,150.151.180.27,,624ff352d2b6431a80cd1356cdc9fedf,GET,/products,200,214841,https://twitter.com,Mobile,Chrome,True
+f28acafcd2274e7e92071a90ce97d182,United States,New York,2026-05-16 06:00:36,13.229.19.107,bradshawnancy,a21209ea34924ee6a169d62f47d0a6c4,POST,/checkout,200,92959,https://bing.com,Desktop,Chrome,False
+7d8f0d5c254a4a9b8d0697dd78a86aed,United States,New York,2025-06-03 14:39:53,13.221.49.26,amanda46,e4d45f75aabc4b9caf8b70e4370a4c23,GET,/search?q=laptop,200,116163,https://twitter.com,Desktop,Chrome,False
+d2ceba212e10490a82e6b4c287596316,United States,Chicago,2025-03-18 09:28:23,97.32.113.23,manderson,2f29e555ed4347e2a5b1c72829508355,DELETE,/,200,189382,https://google.com,Desktop,Edge,False
+2f6b6c98eeb342f3abac5f803b99d3c6,United States,Austin,2025-11-09 04:56:32,5.103.182.7,qgill,096252a71c3145e2a1b9557beb886751,DELETE,/api/customers,301,105601,https://twitter.com,Desktop,Chrome,False
+f46fe865233a44dc8914239146ca4224,United States,Dallas,2025-08-24 07:05:42,93.15.232.84,matthew55,f0b0674d40654df78c7a063cd3d51bb1,DELETE,/search?q=laptop,200,105585,https://google.com,Desktop,Chrome,False
+c9d2c26929174a22b1c9606314dc55e3,United States,Seattle,2025-01-23 05:05:34,216.216.63.0,savagejennifer,54e476d60fdb43c5b38bfa55ce84f425,GET,/login,200,42179,https://google.com,Desktop,Edge,False
+5950825a5f9a478daa349155ec105a0a,United Kingdom,London,2024-12-19 00:55:22,187.157.22.4,fowlersamuel,9a1d7bbb5b3b47f0bdb4386e883be84c,DELETE,/products/123,200,358852,https://bing.com,Desktop,Safari,False
+f8ae8f27aa8b44dbbd7b90ac30e6e8b2,United States,Dallas,2025-09-17 05:06:38,51.236.226.33,dsmith,3b4ccfd775b4405193520461394bdf3d,POST,/,200,407178,https://bing.com,Mobile,Chrome,False
+a8e221cdc1a34b4abbb3b9bf62a724a2,United States,Chicago,2025-04-29 08:45:55,60.114.48.152,albertanderson,6122ff0c971c4e9886697a756d0ad345,DELETE,/search?q=laptop,403,1173,https://google.com,Desktop,Chrome,False
+81bcd0ac408b45c5a79e0be747e07b7d,United Kingdom,Birmingham,2026-01-06 11:06:16,138.149.103.132,donaldsimmons,423f858cd52640238aafc0a17e206396,PUT,/login,200,134798,https://bing.com,Mobile,Firefox,False
+f571a9ae9045474184443c225620daa1,United States,Dallas,2025-11-07 04:32:31,123.40.46.149,starkwesley,35ceda4c217143a59569614d94b45f33,PUT,/login,400,4506,https://google.com,Mobile,Chrome,False
+a80fefc67c174ffea12d5325ff72a659,United States,Chicago,2026-02-23 13:49:04,154.74.83.146,brownandrea,452fcef4a91544d48c39451e7cf5762b,GET,/login,200,192775,https://bing.com,Desktop,Safari,False
+16fce2f6d58f4940b4ed1fcdecb4eb1f,United States,Austin,2025-08-06 05:41:10,66.112.70.75,katrinaherring,d120485ba8e9498f906c19d80da583c3,PUT,/checkout,301,37261,https://twitter.com,Desktop,Edge,False
+25b0cf9203864c5eb1f26325b11a4219,United States,Austin,2026-04-27 11:28:48,209.233.57.25,john10,ef74df0f391644a6b47995f4b56ea644,DELETE,/api/customers,200,161844,https://google.com,Desktop,Chrome,False
+6b7796636e474d8a8ee7792e33495e0a,Australia,Sydney,2026-05-25 08:55:27,222.192.87.54,martinjessica,736eab2ec38b409f92b2e8ae5452740a,POST,/api/customers,200,101700,https://google.com,Desktop,Chrome,False
+44bcd561ac734c92a088f1001a28729d,United States,New York,2025-11-25 10:56:39,76.39.132.253,mray,b5d46b4536214c5192799353e51ac902,GET,/api/orders,200,98651,https://twitter.com,Mobile,Chrome,False
+55b481fd13754c968c7cf02f6248d83c,Australia,Melbourne,2025-10-24 05:40:29,174.144.13.117,richard27,4b26691cb3a549ca867e2b009f128e91,GET,/api/customers,400,2376,https://google.com,Mobile,Chrome,False
+cc911858172841d6b924281b2f1d3e3a,United States,Seattle,2025-05-25 06:51:12,78.178.71.200,jdaniels,774c100b27df45c7b04cd9314e241d09,DELETE,/api/orders,301,68112,https://twitter.com,Tablet,Chrome,False
+c05bed83cc374b5fbba20f515286ce63,Australia,Melbourne,2025-06-24 05:48:21,29.142.149.203,qbrown,7ce1a3ba9d954eceaef9e75986ab6b77,GET,/,200,249781,https://twitter.com,Desktop,Chrome,False
+3d01a29002074119a9b9cc19e1b3f62b,United Kingdom,London,2025-06-06 22:10:55,84.249.7.132,ruth33,8c99d5603fd74f67a81246da6017c3a7,DELETE,/api/orders,200,359944,https://bing.com,Desktop,Safari,False
+79b857f8e59f4115a1d2beadc4620ceb,United States,New York,2024-11-30 22:05:51,77.83.166.16,russelllisa,3b8ab372bc614326b46850d841bc6a92,DELETE,/checkout,200,267873,https://bing.com,Desktop,Chrome,False
+1eb3b826ee7c459b8765a7aa2779e0ed,United States,New York,2024-10-28 08:49:43,169.93.18.210,ggarcia,4770c016bff548f7bc3c0de7d8a0fbfe,PUT,/,400,292,https://bing.com,Desktop,Edge,False
+cdfe90dd84ec412fa824e9969cebb415,United Kingdom,Manchester,2024-10-11 18:38:05,60.107.218.72,martynbutler,891f0d154c1a425487150ae331ca8ebd,PUT,/products,200,35161,https://google.com,Mobile,Chrome,False
+ba907f656a3041dc99bb5b006238ea79,United States,New York,2025-08-30 16:59:37,137.49.151.146,justinbowman,e1740ff53c214701a2c72ba43680cbce,POST,/login,200,158047,https://bing.com,Desktop,Chrome,False
+dd7d0b19f99149dab8fa322ab68dc6cb,United States,Dallas,2025-03-22 11:29:36,149.177.144.93,fischermark,e6e412d1fb774ea480764cd7bb44bbf3,DELETE,/login,404,1000,https://bing.com,Desktop,Safari,False
+4e0032dddb0e4e81ad8c862ba10055f5,United States,Seattle,2025-08-11 00:20:11,196.144.252.89,devon65,485c0573fc5741b5be2610e7bc42fe36,POST,/api/customers,404,4958,https://google.com,Desktop,Chrome,False
+29ec0e6d0cc84c1988b8b63dcc787d32,United States,Austin,2025-01-15 18:54:33,78.211.106.163,benjamin13,1c2f748a3a5445eab656b9609af5d21c,DELETE,/login,200,118859,https://google.com,Desktop,Chrome,False
+e928c3403bce4b2abb7afe43d04b3007,United Kingdom,Birmingham,2026-06-19 05:44:37,45.151.233.212,howejanice,9cc3082107234641a29c112e9946c732,POST,/search?q=laptop,200,98840,https://twitter.com,Desktop,Edge,False
+dd2ce72a299b4cfdb1fac413ee2a21d8,United States,Seattle,2026-04-14 15:33:48,101.61.90.81,garysmith,39a10fdd009c4e019e82922c38764cbd,DELETE,/products/123,200,187826,https://twitter.com,Desktop,Chrome,False
+ebaf1e1223964158a0323171baa149f2,United Kingdom,London,2025-11-18 21:33:56,207.134.157.46,katysharpe,50cb7af1d7d44105b3ba5f15fb4bdf15,PUT,/login,200,192199,https://google.com,Mobile,Firefox,False
+54c23e7bb79b45379d522901372718ec,United States,Austin,2025-10-24 17:51:41,150.186.20.21,trujillochristopher,6d9519d0df364402bc2207074b275adb,DELETE,/api/customers,200,302763,https://twitter.com,Desktop,Chrome,False
+ec1993514c8642338284112454b6deea,United States,Chicago,2025-03-28 03:13:52,10.146.219.56,ajones,a4ffbcb318df47108a709ff39ec4e70d,POST,/search?q=laptop,200,379899,https://twitter.com,Mobile,Chrome,False
+4bd87aebc9914399b0e98501beb91218,United Kingdom,Manchester,2025-08-16 15:00:54,161.31.56.74,bretthoward,9ada681c89d143af8c397afa7f250794,POST,/search?q=laptop,301,269571,https://bing.com,Mobile,Firefox,False
+73f99cb975b742aaa26e280bb68101b6,United Kingdom,London,2026-04-17 09:06:23,208.97.111.92,sophiehughes,e77bed10b3724c4f90371a3695ffc93e,GET,/checkout,201,112337,https://bing.com,Mobile,Firefox,False
+268b861219324a6e9a368e0f997d5eea,United States,Chicago,2026-04-01 07:11:59,180.188.170.217,thomasking,d85e9527f05046b7b28eada01a26ba8c,PUT,/products/123,200,371068,https://bing.com,Desktop,Chrome,False
+511be10c2bdc482f92ec43f5f88e4e7d,United States,Seattle,2026-07-09 12:33:15,178.229.58.146,thompsontroy,29f31b4ca6e74894b559f7646644a8c8,PUT,/products,401,3224,https://google.com,Mobile,Chrome,False
+53bcc150446242bca05c78f53f31cef0,Australia,Brisbane,2024-10-19 12:21:51,50.65.162.196,omay,1c86f85ddb154db7a05fd402f911f5ac,DELETE,/,200,185493,https://bing.com,Desktop,Edge,False
+6ccd784e788949e48b8f968672d16357,United States,Dallas,2024-09-18 14:23:03,77.14.142.213,jcannon,4b48ae72cae9473e9833202557dcc1f6,DELETE,/products,201,308411,https://bing.com,Desktop,Chrome,False
+fe8495ab9d5540a2a7817517c738ea23,Australia,Sydney,2025-09-12 05:42:01,91.142.201.208,bettywalker,56752c9f9e954a5f875e2ba7f387d645,PUT,/login,301,258258,https://twitter.com,Desktop,Chrome,False
+6a3ff1011db241d99541def6f7337c45,United Kingdom,Manchester,2025-03-08 05:34:07,104.148.226.53,jonesnaomi,850c65209be2453d842313e5ecc936cb,DELETE,/checkout,200,187623,https://twitter.com,Mobile,Edge,False
+7ac551f6ef5c4b24a0ad2a0ba9c5e7f7,United Kingdom,Birmingham,2025-10-21 21:41:30,120.17.239.66,,083e0c86efd94b7d8975c0881a445627,GET,/products,200,476821,https://bing.com,Mobile,Chrome,True
+d10b0f613c2e4d22b613c58caf91e112,United States,Chicago,2025-09-23 18:47:38,46.61.44.181,,bdcc09b5d55842f39bd8a4ee0e08093f,PUT,/search?q=laptop,200,361601,https://google.com,Desktop,Chrome,True
+45db653e383b4846a02ae09e60800b0d,United States,New York,2026-04-16 01:29:12,181.253.253.5,wendy99,a0501bf057c6412fbb68e3a491ca96f4,GET,/products,200,75858,https://google.com,Mobile,Chrome,False
+c697dc35eaa449029d0a74ae1e08bd8e,United States,Seattle,2025-02-22 22:03:21,73.143.133.163,david19,a92c6725d8a04147b0051fecff4ca888,POST,/api/customers,400,252,https://google.com,Mobile,Edge,False
+2f1ea963b85b47ee9699794b6f598aa0,United States,Austin,2025-01-11 05:28:09,29.183.166.208,morrisonbrandi,19393fe7a5514338ab739687a1107a1e,GET,/login,200,381886,https://google.com,Desktop,Chrome,False
+d2939bd6dea74c089ea9a3ce3fbe0db5,United States,Seattle,2024-11-09 13:33:45,103.171.109.238,jennifermorrison,1c63498b5f724b6db808277f3e52eec3,PUT,/search?q=laptop,200,441258,https://bing.com,Desktop,Safari,False
+b73bc05b28d749678c1b3c2f1784b7e8,United States,Seattle,2025-09-28 05:56:30,21.175.245.16,williamcross,bf2b104f79764d0ab3c9234a962d4e30,GET,/checkout,200,264946,https://google.com,Desktop,Firefox,False
+2dca2dbb99d9448985e0f3573bd0b2e8,United Kingdom,Manchester,2024-09-14 03:32:08,192.32.208.107,qpower,87e5888c2095432f996bc3899d25cc7d,DELETE,/api/customers,200,146061,https://google.com,Desktop,Chrome,False
+1e7838ae55ab4527a493fc2dc9957159,United States,Seattle,2026-06-02 00:56:10,64.9.140.163,cartermiguel,80c5f5e2cc844c6d95ec70d64ffc8423,POST,/login,200,294693,https://twitter.com,Mobile,Chrome,False
+a2a7a622665447eca1e9aba4155d8d45,United States,Chicago,2025-01-07 05:46:52,8.54.221.199,saramoody,b4c4bfddf42b4d80b0ecf68f779baf90,GET,/products/123,404,1219,https://bing.com,Desktop,Chrome,False
+b8b6fe84fbb94ad0b3666f521741a94f,Australia,Brisbane,2026-05-21 11:55:57,8.115.141.157,richard27,906da5bad68445ab95587a0d953fd73b,DELETE,/,401,3034,https://google.com,Desktop,Chrome,False
+097a34fd871c4ac6bdd30ab6ef238ea8,United States,Seattle,2025-01-21 08:57:32,8.58.144.12,melindamorris,290a55314310434f9d829ff64d0ec388,GET,/products,401,2368,https://bing.com,Desktop,Safari,False
+86989699075e411db4168605f2c55926,Australia,Brisbane,2025-07-26 02:14:38,185.38.187.108,stacey60,d970a38ece2a41d583f39f7cad3f9dec,DELETE,/search?q=laptop,500,3697,https://bing.com,Desktop,Chrome,False
+cc7ce4ede4c84ed5ad29c30609f5e006,United States,New York,2026-02-05 15:42:28,48.185.4.130,albert86,ef01babd5488435692982eba44a482f3,POST,/products/123,200,396898,https://twitter.com,Mobile,Chrome,False
+95d691dc223540bca8ea48ee5765f757,United States,Dallas,2025-06-06 19:21:19,124.192.157.56,,5aca75bc9cbe48f695908fa50748723f,GET,/,200,179065,https://google.com,Desktop,Chrome,True
+99110c722da44927acbff8cfe54b7abc,United States,New York,2025-06-07 13:46:34,71.8.129.123,ann44,e8ae26226c174e92941b592802962d07,PUT,/checkout,404,3203,https://bing.com,Desktop,Chrome,False
+87e128682e2d40b7a86cd400e8fae382,United States,Austin,2026-05-29 03:13:20,79.155.189.138,jacobferguson,986aeab5352d4f2683098876115e8259,POST,/search?q=laptop,200,7034,https://google.com,Desktop,Safari,False
+70e70d99d67b45f8bfc431534da4d67b,United States,Austin,2025-01-07 20:07:02,155.100.222.20,krystal88,e54eae86d0164cbea62c71482ddbbc76,POST,/search?q=laptop,200,434183,https://bing.com,Desktop,Chrome,False
+0b6537ec4ea6400ba2b1838d7d8389c8,United States,Austin,2025-05-18 08:27:24,130.159.221.71,qbartlett,913acb57385944c89bb778cb497d63be,DELETE,/search?q=laptop,404,2150,https://google.com,Tablet,Chrome,False
+3296f69b08b642e4991d6686ca32dd05,Australia,Brisbane,2025-07-31 08:17:23,61.209.248.180,matthew68,6a87f8147f1d4913bd7ac49a5aef5559,POST,/,200,211374,https://bing.com,Mobile,Chrome,False
+663e96e818a44035971a00c33ff0c39f,United States,New York,2024-10-09 21:53:47,176.198.55.215,griffindavid,c53252431f224be59dcf1a9f547be3bf,PUT,/login,200,330194,https://bing.com,Desktop,Chrome,False
+7f27f45cbffc456d82ada7b4483cf0aa,United States,Dallas,2025-05-22 01:54:58,22.86.38.117,austinhuynh,67ccc30274ce4223b8a341e89e18b542,PUT,/checkout,404,1197,https://bing.com,Mobile,Chrome,False
+3f9a95010c7e4ba5b87fbc4803779e7f,United States,Seattle,2024-10-26 07:38:03,109.57.218.30,kwhitaker,475f69dbda794aabaf98a0ce3722013c,PUT,/search?q=laptop,200,191448,https://twitter.com,Desktop,Chrome,False
+c6cfa68b098446c4bb6f6463e7136d15,United States,Dallas,2025-12-08 02:13:09,152.21.121.103,jaybishop,c4a259a76b614bd4881b4dad4349caad,GET,/api/customers,404,1324,https://google.com,Desktop,Chrome,False
+f901ccb7c37c4ba7aaf01947a15a0d37,United States,Chicago,2026-02-18 03:20:06,192.107.90.101,troth,6e25248a0ad74bcba940840fc3add983,PUT,/api/customers,200,303968,https://twitter.com,Desktop,Chrome,False
+c334fd305cc64a799b4819b6744ca457,United States,Austin,2025-01-27 19:35:16,111.151.179.146,fcarson,482fa2e11629442eb61e1bdbb638529f,DELETE,/products,301,304775,https://google.com,Desktop,Firefox,False
+b5e6257d49514a9b83821f68d4a6d47a,United States,Seattle,2025-10-01 04:07:11,111.44.33.62,kevinsims,f1544b1617c44c908bd42ca0e1a47b5b,POST,/api/customers,401,1720,https://twitter.com,Desktop,Chrome,False
+08ec433e969c481c9cbc94bd6494f793,United States,Austin,2026-03-23 06:20:50,165.236.61.250,dannyrodriguez,005496082e2c4a5c8e1e549c39f42635,PUT,/products,200,149047,https://google.com,Desktop,Chrome,False
+65d036c2dd364835b8dd12942316c883,Australia,Melbourne,2026-05-01 07:48:40,166.220.120.143,soliver,9e953d50b7b04ba1a9dabb36b69bf77f,PUT,/products,200,398085,https://google.com,Desktop,Chrome,False
+d01a471f78294c48b40ab18602b9ee88,United States,Dallas,2026-04-18 20:49:17,6.18.41.102,maria67,d97c779019bb4302b91698379cd6268a,POST,/login,400,2087,https://bing.com,Mobile,Safari,False
+40c25d095a2c4379ac34bdba3db89cc0,United Kingdom,London,2026-07-04 18:45:14,5.191.220.22,aimeethomas,86fefc6ef1e5436dbccf5f7407abd10e,GET,/products/123,200,352004,https://twitter.com,Mobile,Chrome,False
+9d8f23e25f354e64b7520a53a1e41817,United States,Seattle,2024-12-19 03:22:04,106.106.45.141,ubrown,ed1f2bc9d2954cdb89dd7e5c78f15c94,POST,/search?q=laptop,200,159977,https://bing.com,Tablet,Chrome,False
+762c34074e1a47c1aa7e37ec4c22a3b1,United States,New York,2026-03-24 11:37:41,178.58.248.173,andersoncharles,f115ab043cb84a0bb2dbba3c6b417c16,DELETE,/products,200,333659,https://google.com,Mobile,Firefox,False
+62fdb32f8cc6444ebf418b2ca8cd3be5,United States,Dallas,2025-09-22 10:09:37,169.230.188.197,jenniferhayden,59c7a45750b64470b402d8e278b6e551,POST,/api/customers,200,340681,https://twitter.com,Desktop,Firefox,False
+cb225d9accad4dbbb090c88cebb0a83e,United Kingdom,Manchester,2026-06-13 00:39:22,174.154.79.32,collinsangela,7b7abf5396784254a682470f279940e6,PUT,/login,200,132448,https://google.com,Mobile,Chrome,False
+fd5ca06d323841cb89cb7b5110c0bf30,United States,Chicago,2026-06-10 21:16:12,187.143.56.1,tomcruz,68b8cde897de4c7b83574fbe901bdcaa,DELETE,/api/orders,200,37743,https://bing.com,Mobile,Safari,False
+b4df65416d25470db4d043287b99f177,United States,Austin,2025-02-11 18:14:57,105.10.87.246,pvasquez,b999b328dd824b3da86c340762b9da1f,GET,/api/orders,200,185925,https://twitter.com,Mobile,Chrome,False
+91395add89c841c88f494e1d2ab82ffd,United States,New York,2025-12-29 14:47:08,100.21.6.167,kentcarter,f0e9ba6703db4dd48fe6e5356f2fb95f,POST,/products,200,145662,https://google.com,Mobile,Chrome,False
+f69ba75be8a74ac489617b10853fa59d,United States,Dallas,2025-10-22 23:32:05,16.120.82.60,anne53,4db26acca8e84f2e80f7c9d28127bdfa,POST,/products,301,350570,https://bing.com,Desktop,Chrome,False
+413c4dc01c06432c8cecb954e9e21c15,United Kingdom,London,2026-02-17 01:56:45,219.248.244.72,clynch,0084e27a6f9a4778b3fef6ae66d83ca2,DELETE,/products/123,301,267681,https://bing.com,Mobile,Chrome,False
+d92839075329448899b4f13e47984396,United States,Seattle,2024-09-04 00:40:05,95.235.252.235,ytorres,0d39224029c44109be8524429c6aef8b,PUT,/api/customers,201,439160,https://google.com,Desktop,Firefox,False
+039d8e5005324cb38cc70c5c73ada419,United States,Dallas,2024-12-12 07:00:09,13.28.74.13,,b967cedb32d74ec89790823979c6a20f,POST,/api/customers,200,495912,https://google.com,Desktop,Chrome,True
+aea769a7dece42a7bd0f1c871c8a5d28,United States,New York,2026-07-03 09:10:15,98.61.243.50,cookbriana,20a4dd864d2542a09c5af2ca100ee72c,POST,/,403,3152,https://bing.com,Desktop,Safari,False
+79a179fdb77045e2988156384792d1d4,United States,Dallas,2026-01-28 08:58:38,200.255.55.180,amber61,3671a938efd849e4837f4c834f599d2b,GET,/search?q=laptop,200,163074,https://twitter.com,Mobile,Firefox,False
+bc96f100b21d40a9acda5e6883f8d378,United States,Seattle,2024-12-13 23:21:49,21.228.23.73,cpena,191f94547b864752980fd3c30634ac5c,GET,/api/orders,200,128233,https://google.com,Desktop,Edge,False
+eab451067ea148ca94c8f62be688cfa7,United Kingdom,London,2026-02-05 20:44:27,198.183.129.37,george47,7a64e4cb6bc841b08d1da3d2cae6a551,POST,/products/123,301,147161,https://google.com,Desktop,Chrome,False
+822ee69574ec426991b3586dc8f499b9,United States,Austin,2026-04-08 10:13:19,117.233.100.22,stevenhudson,5f2a05eb321f49e6838321c754ee11f6,DELETE,/search?q=laptop,200,349905,https://bing.com,Desktop,Edge,False
+a8e2942494c54019bdaec07a50bb87a2,United Kingdom,London,2025-08-09 06:16:46,162.139.229.29,deborahwilson,82aa5d617c9f485b857f886197b548b9,PUT,/search?q=laptop,200,384400,https://twitter.com,Desktop,Chrome,False
+92fbae200a8d449a867f781640570f92,United States,Chicago,2026-05-28 05:11:58,14.191.7.104,sarahyoung,cdc40ee351744481a2f101221c2983dd,GET,/,200,302254,https://google.com,Desktop,Chrome,False
+dd55aa933ce14b12841c5c78ae9b18cf,United States,New York,2026-05-24 11:34:56,156.211.42.175,luis65,ab05c98e21fe4bdfb2ca709ccec8526d,GET,/products,500,457,https://bing.com,Tablet,Chrome,False
+e7f8915ec1cf46728d30424d76116303,United States,Austin,2024-11-11 15:11:35,10.175.167.234,kyle63,cf9ab5ed2ac84dc6aa64878b15853ca1,DELETE,/api/orders,200,263191,https://bing.com,Desktop,Firefox,False
+aaaa3ab85f814fe2b5fb0dd7ec6efeb0,United States,Seattle,2025-12-20 06:30:40,150.184.115.168,carrterri,ba9d54493b724b8e8cba8e7b00b80970,PUT,/,201,50015,https://google.com,Mobile,Chrome,False
+d1e4041693ec42ed95d5d6d7395ded48,United States,Seattle,2025-04-26 21:25:30,212.65.239.219,moniquehansen,def5385be57642c191aa5058e2128d4b,GET,/login,200,150914,https://google.com,Mobile,Chrome,False
+5ba3ef5f19eb499fbd768a56c3d60228,United States,Seattle,2024-09-10 13:15:23,30.152.34.61,rodriguezelizabeth,2cfa2cad32e34bd5b56f83218696cdbf,PUT,/api/orders,200,4591,https://twitter.com,Mobile,Chrome,False
+e78fb5f5b833408d9b57fdc8b8c37b90,United States,Chicago,2026-02-17 11:42:24,35.241.138.12,andersonapril,9f31bfa8796e481f98532478505df470,PUT,/products/123,200,165274,https://google.com,Mobile,Firefox,False
+2bbb5396829441c991d5dfa62d0455ad,United States,Chicago,2025-09-02 06:04:13,143.238.211.110,lreyes,815a7705c0774710a40c10672b5c5023,GET,/products/123,200,485422,https://twitter.com,Desktop,Chrome,False
+b47eacc720e74fd3939dcdc5df3a41fa,United States,New York,2026-01-03 05:40:12,14.70.187.178,racheljoyce,745cbd56cf91432fb39958cf8217cf1d,GET,/,200,494413,https://twitter.com,Desktop,Chrome,False
+c581ec77f66646a783031540b806d902,United States,Chicago,2025-11-06 09:22:50,36.125.186.106,tonymckee,6c3677d6dcd7469287bc8ab3234d3a90,PUT,/api/customers,200,444575,https://twitter.com,Mobile,Chrome,False
+fd2dfc5edcb14d5a8fbe9c05ade628ef,United Kingdom,Manchester,2025-01-14 07:04:14,121.123.61.253,edward40,1d17d83b309f4f5e87215d15f57f9ab5,POST,/products,200,247524,https://bing.com,Mobile,Chrome,False
+057fba0ffa6c49198f9c0119b323f38f,United States,New York,2026-03-12 06:19:33,20.155.166.78,aliciataylor,e41b174e9e954860807ee505131935e1,DELETE,/login,200,186388,https://twitter.com,Desktop,Chrome,False
+295f8a4c91064eeaa7b37307b6f5d839,United States,Chicago,2025-10-19 12:31:00,212.194.161.181,abigaildyer,654b05cae57c456fa6fd5ad5b060150a,PUT,/products/123,400,1611,https://bing.com,Mobile,Edge,False
+1fa8b2c0f17d48a1a8ed01adf55d372f,United States,Austin,2024-11-11 18:22:49,192.64.156.82,smithmatthew,8509795786f4496385a10945e705cf71,POST,/products,200,7635,https://twitter.com,Desktop,Chrome,False
+7b02ee53474349448935d6fdd706c3e5,United States,Dallas,2025-03-25 22:13:52,152.200.208.167,youngvictoria,5b357348381a4fe59b6f710d45536827,DELETE,/checkout,403,655,https://google.com,Desktop,Safari,False
+1cbb70dbab07456eadbfd05d65e43673,United States,Austin,2026-07-20 19:04:24,92.121.147.231,caitlinscott,8e58175abd504d2eae6dffdbe83b6f6c,DELETE,/search?q=laptop,200,359072,https://google.com,Mobile,Edge,False
+862a50e9fc804bd09fd16dd4b49fa16f,United States,Dallas,2026-07-22 21:16:56,116.168.24.40,perrykenneth,61caf2d84537404dab1ce147cd1aa784,POST,/search?q=laptop,200,116419,https://twitter.com,Desktop,Chrome,False
+cfaaa153f5ec4d089037e4415d0815e0,Australia,Brisbane,2024-12-22 01:16:41,171.253.98.71,william58,b5d83a4321de443ebde6c36da331ec2d,GET,/api/customers,200,2608,https://twitter.com,Mobile,Chrome,False
+6953dea3216544109cace4b89137c395,United States,Austin,2025-09-10 15:45:20,17.119.117.57,fmahoney,f1b89f6697ea4c82b947a02185c772f3,GET,/search?q=laptop,200,497032,https://google.com,Desktop,Firefox,False
+60124956f819439899ef8827e652c862,United States,Austin,2026-04-09 06:04:30,112.229.142.140,gmelton,8655f5ca89f64c57add09fc1530405ac,POST,/checkout,404,3090,https://google.com,Mobile,Chrome,False
+44ae7a3dc0754bcfa1e39551ad1dfe83,United States,New York,2025-06-12 22:22:33,209.236.36.208,pricenancy,036456add7954793892f27ff75eeed63,GET,/login,400,2431,https://bing.com,Desktop,Chrome,False
+4607b19c61b248e4a2d9f34829d51dae,Australia,Sydney,2025-01-15 08:11:23,35.12.2.83,idalton,979f33af9a804cb88a3b99d025016808,PUT,/,200,391705,https://google.com,Desktop,Firefox,False
+6ee4338af0c543828108a6bede2ce9ec,United Kingdom,Manchester,2026-05-01 15:13:29,102.206.51.241,nathanrahman,cc511078994146f081feb367000efede,GET,/products/123,200,380804,https://bing.com,Mobile,Chrome,False
+892d05b988e04729995e6cfff06a159a,Australia,Melbourne,2026-07-02 00:18:39,202.156.10.185,ybennett,aeaccdaf870047f3a29aa3c8c60e6410,GET,/products,200,86222,https://google.com,Mobile,Chrome,False
+1d96a28778d14c84afd555755908b1a2,United States,Seattle,2025-02-13 18:43:18,122.81.15.15,russellroman,84530d2837bf4017b7f42044ebcdb7f1,GET,/,200,61908,https://bing.com,Desktop,Chrome,False
+63f1a38fd491497d88a382f03a0455a3,United States,Chicago,2025-01-06 14:06:28,171.62.106.184,srobinson,2d5a26f02dee43209ed71f8a995d1756,DELETE,/products/123,200,457013,https://bing.com,Mobile,Edge,False
+5edb079721c64315ba039e110ed139ee,United Kingdom,Birmingham,2024-09-02 14:42:24,18.14.19.226,gail85,8430206d1a8e4ff090606b5a78316e25,GET,/api/customers,404,2470,https://bing.com,Desktop,Chrome,False
+f2c833e74526433e824278110d5a6394,Australia,Sydney,2026-02-07 09:21:20,116.135.62.175,jasonsanders,48c51b6e45ff4c038a5dcf92b2614027,PUT,/products,200,68276,https://google.com,Mobile,Chrome,False
+c64e4badacd04bc6bed7fd68f45b3379,United States,Chicago,2026-05-03 09:07:17,49.172.207.98,wrightbrandon,4c2ecc86e623451aae4a8de2b228056b,GET,/login,200,332214,https://twitter.com,Desktop,Chrome,False
+4e420880df464e33b6990adba5d6ecfb,United States,Chicago,2025-07-01 18:41:55,152.180.196.74,stevencook,65d5524b1c7f49ad843dee60a6df194b,DELETE,/search?q=laptop,403,2222,https://twitter.com,Mobile,Firefox,False
+b4705415f04b4089843a86fd63e545d0,United States,New York,2026-01-23 12:53:19,67.218.227.16,jenniferbrooks,a3ee0479091f4babad15df59e490de3f,POST,/api/orders,401,2067,https://google.com,Desktop,Chrome,False
+0a286cc9a34c4af1b3365fc020f836ab,United States,Seattle,2026-01-02 15:00:18,36.0.35.59,carolynhernandez,7069c2097d154bc88c0809d6aec7f02c,POST,/checkout,200,442763,https://twitter.com,Desktop,Chrome,False
+9bed987a1e864daf904999d236568a21,United States,Chicago,2026-04-09 16:38:57,28.159.111.227,estewart,07333bf8926d424aaf6cb441bcffea70,PUT,/api/orders,200,229941,https://twitter.com,Desktop,Chrome,False
+9c607126fd8840a7bd297d03cfa58392,United States,Seattle,2025-08-04 10:40:30,209.79.83.187,mpayne,5c7135e546a441d08a6c92b58b0f5ff5,DELETE,/,200,391928,https://twitter.com,Desktop,Firefox,False
+591c023e03b742a9a5183c75f27bc03b,Australia,Melbourne,2024-11-23 01:47:24,134.86.127.222,jamesmclaughlin,b74a35657ce244f6a8ee728aaf2c9aab,PUT,/login,400,4537,https://twitter.com,Desktop,Chrome,False
+64294805918142a4b7276b237fec8922,United States,Austin,2025-02-14 06:38:17,67.167.249.244,ricardoweaver,f0cc531f3b8849029a5f9d503bd305fa,POST,/search?q=laptop,200,319172,https://google.com,Mobile,Safari,False
+86e7f795dda14723bec6eab04b7e9f98,United States,Seattle,2025-06-09 06:10:17,59.206.82.157,stephanierush,10b5cf20f9e24112b873f64fcddc83bb,GET,/search?q=laptop,301,298879,https://twitter.com,Desktop,Firefox,False
+ba1312798048443f8e13afda098e15b6,United States,Seattle,2025-01-02 05:25:44,207.13.107.63,camerongrimes,61459c6f752e460db63e630dee4ccd93,GET,/products,200,414455,https://google.com,Mobile,Chrome,False
+5acbe34ba4fe4e678b3ee58aa7fbdf46,United States,New York,2026-07-03 16:14:33,63.97.35.199,keithparker,b9e43137ef09436aa16c53af54c77b39,POST,/api/customers,200,403880,https://bing.com,Mobile,Chrome,False
+2f9f1732c58341869de5f7ce9184fa07,United States,Dallas,2025-07-10 18:48:31,198.42.13.227,ifernandez,d59c7b83a90f456d9c8bc2874f0600ef,PUT,/products,200,105373,https://twitter.com,Mobile,Chrome,False
+f0170a44574f48dd8c2cad8fd806f951,United States,Dallas,2025-11-07 05:39:03,43.137.140.83,heatherclark,c435555ebac844f495d3973357554c17,DELETE,/api/orders,400,643,https://google.com,Mobile,Chrome,False
+8e30c018bc55455c8c18443c7a9c5198,United States,Seattle,2025-10-14 10:30:12,216.136.217.0,blackeric,fbac9b646e0745a3b27e9533a838531c,DELETE,/login,200,58958,https://bing.com,Mobile,Chrome,False
+fde8d81318d844e8a620261ad8fd8b5a,United States,Seattle,2025-10-24 05:49:26,140.208.78.228,schneiderkenneth,263d6be6fa5144d8ba1ac5581a20f859,PUT,/checkout,200,467821,https://twitter.com,Mobile,Chrome,False
+f41f44a8f79b472aab7de5525cbeae9e,United States,Dallas,2024-12-23 02:47:38,50.89.161.106,ewoodard,d8ecc7e6d2314ee6abc9d0977efaf214,POST,/api/customers,200,432469,https://bing.com,Desktop,Chrome,False
+d41428984c794cdc8eb3b84653d8e26b,United States,Dallas,2025-05-16 13:07:05,163.248.110.13,natasha59,3c883fc6556e4acda95b1e9737317651,DELETE,/search?q=laptop,200,112598,https://bing.com,Mobile,Chrome,False
+b82adc237c3543798b98f63204575349,United Kingdom,London,2025-08-28 12:59:57,63.104.47.66,twood,317eb4dcde644b4b95885e64fbebc340,PUT,/products,404,4815,https://bing.com,Desktop,Chrome,False
+dd8dd3e55a30402a82cba0847c83519d,United Kingdom,Birmingham,2025-01-28 07:55:29,27.9.48.202,gregory33,d9e72533267b4621bd40dbca4229a0e2,POST,/api/customers,403,2338,https://bing.com,Desktop,Safari,False
+31bbede4f7a74d798086cbc437a66230,United States,Seattle,2024-09-10 12:34:55,59.153.203.185,bradleyvaldez,2b26686701c64785a46b7a027a03ba86,DELETE,/checkout,200,321751,https://bing.com,Desktop,Chrome,False
+ed56518c8bb44df894ae7ba79fcb53c9,United States,Seattle,2026-01-25 00:20:02,146.61.99.55,lmueller,4ba45bff7aaa466cb49610da4a7c36af,PUT,/api/orders,200,420717,https://google.com,Desktop,Chrome,False
+35e00fb50c034459849143c14dfa4154,United States,Dallas,2025-10-21 06:23:56,151.96.36.12,kingmichael,ed4d9fea43eb44a3b0626ee3cd759585,PUT,/login,500,2364,https://google.com,Desktop,Safari,False
+98953ee08bfe491f9cba3fa09b2ff093,United States,New York,2025-05-19 12:18:33,96.165.33.189,rashley,d32286fbdb234da3b1885ac68e47e78e,GET,/api/customers,404,135,https://google.com,Mobile,Chrome,False
+4c16b1ae50684e9d89c096daad5ddf25,Australia,Sydney,2024-08-25 11:03:49,163.145.152.158,rodriguezwilliam,6451a791d9574534b889ceac3fb7cfe5,DELETE,/products/123,404,1859,https://twitter.com,Desktop,Chrome,False
+6dfb8e8966524237b0151deea91aeb93,United Kingdom,Birmingham,2025-03-25 13:03:37,59.155.154.42,suzannejones,0db754c74ce04fa1848432f7592b6c7f,GET,/,301,11334,https://google.com,Desktop,Firefox,False
+b830a5bc069c4502966dd6ac5b1e46f9,United States,New York,2025-03-17 02:25:31,121.25.77.6,loribriggs,495c4f906bd941fa96bd8f42f0ff4531,POST,/products,200,22480,https://bing.com,Desktop,Chrome,False
+e7c99bf598134533b910789e83ead270,United Kingdom,Manchester,2026-02-09 11:58:12,192.138.183.149,edward63,2942bbf949054f1fba2f6371adea6b08,POST,/search?q=laptop,404,2947,https://bing.com,Tablet,Firefox,False
+dc865018c82c4867bd66601c9e7ba1a4,United States,Chicago,2025-11-10 17:44:29,91.150.227.99,uphillips,cdb3459968264596af28d5c4d6add8af,POST,/login,200,420395,https://google.com,Desktop,Chrome,False
+4bc3d73344fb4ff2b3b224f231b88a35,United States,Chicago,2024-08-08 15:27:49,4.29.174.208,kirbyshane,e04f4c0460d94f9eb91bd8a0107f3cc5,DELETE,/search?q=laptop,200,59573,https://bing.com,Mobile,Chrome,False
+7d8c5efc63ab4505bfbfa7ef2309581a,United States,New York,2024-08-15 13:01:26,212.215.163.236,,864d5fd9eb1042d590cca6f46b2030a0,DELETE,/products,200,482698,https://bing.com,Mobile,Edge,True
+b9298e1a4b874b35a25b38b99f38b6b6,United States,New York,2026-05-08 03:53:25,134.157.185.137,oroberson,463fb7a55bf143f2a4b64035c3a5b97b,GET,/,200,444161,https://google.com,Mobile,Firefox,False
+d26f7432854141d79eb89faa3eb1a459,United States,Dallas,2025-09-14 12:25:06,200.58.83.65,richardbuckley,f8bca6a68398416698c3c89eaabe3271,POST,/,200,379290,https://bing.com,Desktop,Safari,False
+c890f38ffe934aaf92e1de730e12179e,United States,Dallas,2026-03-27 06:34:30,31.168.28.228,hernandezjorge,457d7ead3d0f4e45a19303025af2cf92,DELETE,/checkout,200,375508,https://twitter.com,Tablet,Chrome,False
+6f3a1ce5fc4d46e48b79f7a790d5c97a,United States,Dallas,2025-05-01 14:30:14,91.81.177.135,gonzalezbrett,0986a344156542d89f05617b6f974b08,GET,/products/123,200,262099,https://bing.com,Desktop,Chrome,False
+4533e5a045cd4953b9433f2bbfb1a75e,United States,Dallas,2026-05-30 15:56:58,217.207.228.151,charles83,f768780671bc426a8219344583738f4e,GET,/login,200,165647,https://twitter.com,Desktop,Chrome,False
+94f5117289b4459c9e53eec2eb3c73ef,United States,Austin,2024-12-11 15:44:14,19.233.167.207,andrewlittle,1cf2c7663389419c931033539e1500b4,DELETE,/checkout,404,1298,https://bing.com,Desktop,Chrome,False
+54aafe9e48fa4249bbac5ba31447c061,United States,Seattle,2024-10-13 05:56:20,208.32.13.118,maurice39,703b9a5c926b476dabf41b0d2c7bc562,POST,/api/customers,400,2881,https://bing.com,Desktop,Chrome,False
+66a3dc26b5be46bb8f16833c5e178e80,United States,Seattle,2025-12-11 04:57:40,208.250.22.60,petersonstephanie,eaeb0bce716446429855ace6d5fb38e8,DELETE,/login,301,83262,https://twitter.com,Desktop,Edge,False
+0511f2a4d2ae46b08b1fb0f249de45d0,United States,Chicago,2026-03-02 18:06:44,28.105.178.252,aaron52,029841a4279446c6b0304e379580c5ae,GET,/login,200,99193,https://bing.com,Desktop,Chrome,False
+cb42c417222840a1a772b0a3e1e55b99,United States,Dallas,2024-11-08 05:53:57,115.151.161.117,whitebrianna,c8cc1e9876c44c6196d5ecb9b86f90ff,DELETE,/products,200,333867,https://bing.com,Mobile,Chrome,False
+a8a30b88f7b74cde87e62957216f5cd1,United Kingdom,Manchester,2025-01-20 09:31:20,202.86.191.206,smithtoby,45be9eff18fc49dc9d0fc8fc5b006386,GET,/,200,323410,https://twitter.com,Desktop,Chrome,False
+3c727fde623c4e0bb040e68b8ebd05d9,United Kingdom,Birmingham,2025-05-08 02:07:58,9.43.44.107,lindseyrogers,e3a0d1b9d73d4b249c861360485e907b,POST,/search?q=laptop,400,3237,https://bing.com,Desktop,Chrome,False
+a749c0882ce74e3d9fe97231d406b583,United States,Chicago,2026-05-28 15:33:49,217.218.1.81,obrienjohnny,0d8e5700665d4fdd91f1f6638c947ddf,GET,/checkout,200,287783,https://bing.com,Desktop,Chrome,False
+21fd13a5009a400c8b2d190e57d74941,United States,Seattle,2024-11-02 03:01:53,195.253.41.253,millerryan,8b63b5f4ed1f4f61aad1d2a7040488a1,PUT,/products/123,200,139657,https://twitter.com,Desktop,Chrome,False
+c578449bad824f078b7c725afe446ba2,United States,Austin,2025-08-20 12:43:09,15.12.99.99,wesley35,69e673f08ab547df9cc875dd1e073845,GET,/,200,291159,https://twitter.com,Mobile,Edge,False
+b68f9e1df0224827a925c942cbc27052,United States,New York,2024-09-12 11:55:22,214.52.0.169,,e459f90526ab483da98ef4b13e816376,DELETE,/api/orders,200,137124,https://google.com,Mobile,Chrome,True
+2841d681e98844969929d657cc05e618,United States,New York,2025-01-29 13:34:33,90.230.76.101,,453baeab1c18442184027c4aebf36ce0,GET,/,404,2453,https://twitter.com,Desktop,Firefox,True
+b11c91ee62a64046873c2f7c37d2266f,United States,Chicago,2024-11-19 06:04:31,200.218.219.221,amorse,655205055e4b46d38234dcd208880d95,GET,/,200,22389,https://bing.com,Desktop,Chrome,False
+6336cd42c22c4a0fa277f55f9cf24f7d,United States,Dallas,2025-03-10 18:08:10,184.56.159.49,zlopez,37418318cadc4ffe8d5746db8e2ac7e8,POST,/search?q=laptop,404,1079,https://bing.com,Mobile,Firefox,False
+0a5a15bcb08f47dc8b4c3910c495f86b,Australia,Melbourne,2026-04-05 14:49:51,175.58.75.223,kbrown,c370b505c9414c1b98a030b9d723ad55,GET,/products,400,4233,https://twitter.com,Desktop,Edge,False
+b13ecfb0cd364cb689e60138f968d137,United Kingdom,Birmingham,2026-02-26 16:33:12,36.16.239.238,zedwards,f6daa15b1333427e9f3d3b9c6391d38a,PUT,/,200,61351,https://twitter.com,Desktop,Chrome,False
+5ae07752c1b34c0897f8b1bf236c2eb4,United States,Austin,2026-02-27 07:36:23,214.247.71.215,harrisandrea,042f7475b40848b1ba532a894a3ed6dd,GET,/products,200,226930,https://google.com,Desktop,Safari,False
+766687fe38fd42c4863c798e3eb03b02,United Kingdom,London,2026-06-21 11:05:58,95.153.164.4,chloe42,7609bfa5e8c544cd9e735b816f7b011d,GET,/login,201,366567,https://google.com,Mobile,Edge,False
+021498db6a6346678e77a2541d225d4e,United States,Chicago,2025-07-02 12:54:40,88.18.21.193,ybutler,c1c2c5fe62564e93b6a7a28eddafc398,PUT,/products,200,359467,https://google.com,Desktop,Safari,False
+7bd1c4d84fbe4062b228182f9d3d4be9,United States,Chicago,2025-07-05 12:43:00,141.240.127.13,brandon89,a0c0ac78e3cb436f8588cf1da591d72a,PUT,/,200,261337,https://twitter.com,Desktop,Firefox,False
+1d1929a33d8a4cb0b15265b1dc01f944,Australia,Melbourne,2026-07-07 04:15:11,173.62.103.197,theresapope,94219a65347c44db867e41eeb111cff0,GET,/api/customers,200,429793,https://twitter.com,Desktop,Chrome,False
+044cbcdd2f8c411390726fd32a0a0af1,United States,New York,2024-08-13 04:03:00,140.246.190.82,chavezbrenda,296df550cad049069bace7990cda878e,POST,/api/orders,200,214708,https://twitter.com,Mobile,Safari,False
+0a582a9e44b1411f9a287fbd3980fbeb,United States,Austin,2026-05-18 16:25:12,172.220.75.176,monroemegan,573da3bccb5545aaa61de16a0f5e97cd,GET,/checkout,400,3142,https://twitter.com,Mobile,Firefox,False
+089d67c3c8bb4b2c81c371815d9ffdbd,United States,Austin,2026-01-17 14:48:56,39.142.175.118,amber00,9039535eccc64014b67ba1f3038edd90,PUT,/search?q=laptop,400,1140,https://bing.com,Mobile,Chrome,False
+d0878a37a5684dd785363e99b0c69d50,United States,Dallas,2026-04-05 18:42:09,26.43.118.105,seanshields,f2f2510d23e14df1a12be6d9c6ec1590,POST,/api/orders,200,63493,https://twitter.com,Mobile,Chrome,False
+5152ec8a22bf4edbba8fb8bf72b0cfe2,United States,Austin,2026-05-18 07:05:22,37.249.82.50,cynthiacarlson,cbb9b21db0584c24ac21cf72a155e6b6,DELETE,/search?q=laptop,200,404734,https://bing.com,Mobile,Firefox,False
+1c4b2a1d66bd4982b317d5e2422ec9b9,United States,Seattle,2024-12-12 04:56:39,40.126.1.233,lyonsrachel,6ba158974d364a4fadc5702e45dfc7b6,DELETE,/products,400,2544,https://twitter.com,Mobile,Firefox,False
+12bc921d9e34428299ce869bd626bef9,United States,Dallas,2026-01-02 03:31:37,145.110.203.79,odunn,e5b3ffe2586d4c2cbcc7bd5cfa6ab7b6,POST,/,200,336189,https://bing.com,Desktop,Chrome,False
+fe3ec2beac4e495ca3d53bd0aba9b796,United States,Chicago,2024-11-03 11:21:55,1.201.147.129,,120e0a98a89043f4b4fc1af56e0e34bd,POST,/products/123,200,64641,https://twitter.com,Desktop,Firefox,True
+7400d1e6e3f0488aaa7b1d27e6d35f96,United States,Austin,2025-07-27 11:45:46,35.21.203.145,woodardhannah,4b94b54be6eb4208b6b8f45dc993c9bd,DELETE,/api/orders,400,3231,https://google.com,Desktop,Chrome,False
+c1aede338aa64ff9bc774c21b43b9a3c,United Kingdom,Manchester,2026-04-26 07:11:45,212.239.73.229,ndean,0ef5fbf2b2a44eefb9f0338071a6c2af,POST,/products/123,200,245844,https://bing.com,Mobile,Edge,False
+09972a1333d84072b4590142578a5ba6,United Kingdom,Manchester,2025-10-16 20:56:24,208.87.155.97,mayrobert,ae493d8badfb4bac95d8b095b8b894cd,PUT,/search?q=laptop,200,383002,https://twitter.com,Desktop,Chrome,False
+4bf65e68d7774c5782238ef3f360bcc1,United States,Seattle,2025-05-15 17:02:28,114.115.247.53,flemingmark,b9f07a3477624e18a79c961fa162de47,GET,/api/orders,200,203557,https://bing.com,Desktop,Safari,False
+3d15640ffea547cdbf08e5630e6283c2,United States,Austin,2024-10-20 00:36:32,55.148.213.221,perezamy,d67d222961934fd7bf0b571d13b8e59a,GET,/api/orders,200,355508,https://twitter.com,Desktop,Chrome,False
+45d182fd2bbf45e3bc9c793119d5ef09,Australia,Melbourne,2024-09-30 18:48:23,145.70.69.83,bryantkaren,7ef759c823764998bb492ed33f5beb9c,POST,/checkout,201,183025,https://twitter.com,Mobile,Firefox,False
+515ddd48675c4b0b84f98c108f5f198f,United States,Austin,2024-11-08 15:47:48,26.84.65.93,debrataylor,93ea26ed737f447aa72b5e950462a743,PUT,/api/orders,200,27077,https://google.com,Mobile,Chrome,False
+771adb5d881a4f7ab82d43e082b20abb,United States,Seattle,2025-07-01 15:18:34,44.207.87.73,nicholscharles,a7c73e9a00964e36925c6e3c958aafa6,GET,/search?q=laptop,200,100579,https://google.com,Mobile,Firefox,False
+8baab199236b4eb5a5b7e4d8cee9204b,United States,New York,2025-07-18 20:25:54,21.122.241.1,jessica10,b2e17dee2328457a83c003af74bf9356,DELETE,/api/customers,200,39501,https://bing.com,Mobile,Chrome,False
+11b794b12cb943cbac0838c4686ce13d,Australia,Brisbane,2024-10-19 06:13:39,106.63.231.17,lopezmark,86e91252392640d6ae1f8de27321b487,PUT,/api/orders,301,351316,https://bing.com,Mobile,Firefox,False
+9fd968a9a5564b9fa68c86be035aefca,United States,New York,2025-12-09 08:35:01,38.174.238.19,michaelsmith,be6f9377d74c48ad90fa828d936c1f56,GET,/api/orders,201,490000,https://bing.com,Mobile,Firefox,False
+6b74f8b96d0b4597a72712900ddeecaa,United Kingdom,Birmingham,2025-07-12 22:35:22,12.56.175.189,shaun52,3c167ea86af94002a5435228627d854d,DELETE,/search?q=laptop,301,468386,https://twitter.com,Desktop,Edge,False
+4b950d9916f84763b61c05e5ca4ed0fb,United States,Seattle,2024-10-26 09:37:34,45.246.17.181,angelaclark,f4963d3d4d5d41bbaf447a60b0f5eaaf,DELETE,/api/orders,200,283928,https://bing.com,Mobile,Firefox,False
+6c4dee417db54636a0cb29552b9e5f60,United States,Chicago,2024-10-31 13:17:44,81.245.73.227,jstanton,c338c49ef5f848d48f0a71399411616d,PUT,/,200,429181,https://twitter.com,Desktop,Chrome,False
+b8ef570fd596465b8efe3c3f6f6ef5c8,Australia,Melbourne,2025-04-18 11:05:01,148.186.184.14,andrew09,5ca4d751a3a44e92b43ac1ed540e458f,GET,/products/123,200,140414,https://google.com,Desktop,Chrome,False
+0e2073c4c27f4ee79db8a15091d1a7d5,United States,Austin,2025-04-05 20:44:41,109.161.1.131,timothy84,1b682b5a57374fe6a36cb7fc2eb8e503,GET,/api/orders,200,368544,https://twitter.com,Mobile,Edge,False
+d7f6ce4d54c2488bb156cc1576181474,United States,New York,2024-09-07 10:17:28,86.202.91.54,brandonbrown,2d21f9c1b1784bb38422ee7ee914afb3,DELETE,/search?q=laptop,404,3021,https://google.com,Desktop,Chrome,False
+4f85fd8f698b443184628234415d190c,United States,Chicago,2025-09-23 15:31:35,221.105.46.247,barnesgregory,ca7c8e1a59524c65a023f1579b8ac547,POST,/search?q=laptop,200,186857,https://bing.com,Desktop,Edge,False
+cdc7087e5ddf459cbc1b8eaea85572de,United Kingdom,London,2025-01-08 14:05:58,27.30.53.218,lucykhan,cd0a47ee548149aba70ce5c14530fe1f,GET,/,400,2722,https://bing.com,Mobile,Chrome,False
+311c359eb78848c69a094f1cef066f7a,United Kingdom,Manchester,2026-04-01 03:08:23,107.150.0.145,jackcox,fca9f41b67a54a92952565428b23413d,DELETE,/checkout,200,477817,https://twitter.com,Desktop,Chrome,False
+f4737bedaabd4edea56e07b4c9ee4806,United States,New York,2025-10-16 14:57:40,34.203.106.132,qlane,2893e7dcc65b4a5880c2a48bf96faf05,POST,/products/123,301,178369,https://twitter.com,Desktop,Firefox,False
+23b0040908584b609c1dde72bb88d06b,United States,Austin,2024-11-30 16:29:27,98.28.43.70,richard28,aab1954dc97a4671ae8be9abf6037140,GET,/login,400,3609,https://google.com,Desktop,Firefox,False
+c8364383b36e4356be1f6fea398a9044,United Kingdom,Manchester,2024-12-23 04:45:50,183.74.126.205,reidstephanie,2407ee26d62e4a03aa3b964b6cc8d521,POST,/products,200,21364,https://google.com,Desktop,Chrome,False
+3e10955abfd640e5b42afb2f701a5742,United Kingdom,Birmingham,2026-01-22 13:14:44,47.70.223.162,karnold,73f3167051e74b42bc2fd467482d7adc,POST,/login,200,453204,https://twitter.com,Desktop,Chrome,False
+9bd3165b0338447ba8eb11dada49786d,United States,Dallas,2026-06-14 14:44:26,183.132.170.193,barajasmichael,e235c21c0d854b9d971900c6e9fa0b06,DELETE,/products/123,200,18282,https://bing.com,Desktop,Chrome,False
+9d125fe0556640cc93408d1f667eb4ec,United States,Chicago,2024-12-28 19:09:22,75.139.126.200,cmccarthy,fedf4960cbad4c36b3a2dfbe6bea4111,GET,/,404,4053,https://bing.com,Mobile,Chrome,False
+8793c4e928ff4903832dbb031495557b,United Kingdom,Manchester,2025-05-06 17:33:14,110.110.49.137,nathan76,2b9e4e829e524db9a622bccd2308ebc3,PUT,/search?q=laptop,200,285450,https://twitter.com,Mobile,Chrome,False
+9465adff7e9b46579c23fc47124c8d18,United Kingdom,Manchester,2025-12-26 09:02:22,167.109.141.91,hbarnes,93b4313b15384c09a0bff14f5b08c6f4,DELETE,/login,200,442996,https://bing.com,Desktop,Chrome,False
+9ce5d25c90ed413f89407c2f672f5e79,United States,New York,2025-06-12 09:52:37,63.50.107.104,dunlapvalerie,9d5f316d35b14bbda5fe5eb2d972f5e9,GET,/search?q=laptop,301,189372,https://google.com,Desktop,Chrome,False
+c7536092fb054f878e12797fa1febcb4,United States,Seattle,2025-09-13 21:21:24,20.194.232.74,janet39,bb7b10b0a7cc4552b358d852aeeaef51,POST,/,200,316502,https://bing.com,Mobile,Chrome,False
+4c1e1c08a57d472ca930815d8413d7f4,United States,Austin,2026-07-02 17:07:54,175.124.53.236,bethanynorris,0aeb633cb132455fbe2829640a330211,POST,/checkout,403,4710,https://bing.com,Mobile,Edge,False
+8c368fb7b6084ad1a9e9f9d2bd323017,Australia,Melbourne,2025-04-15 13:55:45,204.70.147.10,thomasangela,df2755f9bea9498a84cd24c338907a64,POST,/login,200,125662,https://twitter.com,Mobile,Firefox,False
+fd7945640d5d4572a940628cc6d14a2e,United States,Seattle,2026-05-10 14:12:33,201.138.184.92,jonathan37,273870b51c3d4e8bb0036202036f6bc9,POST,/,200,161624,https://twitter.com,Mobile,Edge,False
+ee2f6630e3644ad6bbbf50babfb2e660,United States,Austin,2025-07-13 13:48:50,173.228.112.96,melissaparks,bd9bf7d9fe414eb19b55b9e555ca74af,DELETE,/products/123,400,2589,https://google.com,Mobile,Chrome,False
+d6271d2495b04340a1693b016d31968d,United States,New York,2025-04-30 06:39:38,179.104.132.25,ksanchez,619602d229734dd397dd246ffe9569d0,POST,/products/123,404,3695,https://twitter.com,Desktop,Firefox,False
+c778955ab9d644ad94d67a600c9ff43f,United States,Dallas,2024-12-31 04:30:27,163.50.178.243,freemanlee,50547436a08c4a5a8184aba77589e5a9,POST,/api/customers,200,302392,https://twitter.com,Desktop,Chrome,False
+2260abc4251a41818376e6efc58fbc01,United States,Dallas,2026-03-02 13:53:20,110.232.247.209,ian16,29e1c8d10f4547a59b574ea2b6c7b5a5,GET,/products/123,200,301674,https://twitter.com,Desktop,Chrome,False
+798e75bddd894e7a83c4d78e4ea10c90,United States,Austin,2025-06-12 00:37:52,41.15.27.34,john52,61870491a71d414d986d7675cde9b04d,DELETE,/checkout,200,48435,https://bing.com,Desktop,Chrome,False
+76809a3237ba4e1d90e4d08815f31c3e,United States,Dallas,2025-11-07 08:14:09,188.137.220.130,lpruitt,c00adf43ec7f488aa3f6de16116cbc4f,GET,/products/123,200,86174,https://google.com,Mobile,Chrome,False
+7a7e3045b56340249f9ab2c73b9e86f4,United States,New York,2026-04-11 09:36:57,138.237.239.25,kmoyer,b3666b5bec194c02b7e81ace9900acc4,GET,/products,201,421886,https://twitter.com,Mobile,Chrome,False
+f965d1c51c844f69a034c5a7c42ddbe2,United States,Dallas,2026-05-09 15:58:53,152.116.169.77,timothyphillips,f648053b22be4f528e08e8d440792f0e,GET,/login,200,282740,https://twitter.com,Desktop,Chrome,False
+643bf31caa314bbeaade4fbdc3e2e746,United States,Seattle,2025-05-07 23:51:31,2.201.37.212,evelyn98,92e08f7028254371976ce0c7775c854c,POST,/api/customers,200,356686,https://google.com,Desktop,Chrome,False
+56e4bb199b19496eaf31d32e58bcd2a4,United States,New York,2024-11-18 07:18:30,69.4.231.0,davisjames,11ec5a85783443eb809e130694ac2bf8,GET,/api/orders,200,413973,https://twitter.com,Desktop,Chrome,False
+eec3595a95b34b95b99e8638bb6a06f1,United States,New York,2025-09-30 01:20:01,3.11.245.168,michaelnelson,c007d879aaeb49529076f79b432aa1d8,GET,/api/customers,200,22646,https://twitter.com,Desktop,Chrome,False
+1a8ced1202774debab5fd3eaed397cd9,United States,Seattle,2025-01-03 13:37:01,50.127.4.45,thompsonmaria,545f34bac5534cc6a5bb5b8bf4eb2de2,GET,/api/customers,200,7491,https://twitter.com,Desktop,Chrome,False
+f8f4f9841942478e962120a36370b8ce,United States,Seattle,2025-07-14 01:24:33,87.94.207.126,moorechris,95fad220481b4e5cafff15aaa7e5da8b,GET,/products/123,201,117901,https://google.com,Mobile,Chrome,False
+8aa60b370a66491080cc1193ae8a4b25,United States,New York,2025-06-15 08:59:47,7.47.169.155,jennifernelson,98d7d62bdd514570bb5e04dca63a06b9,POST,/checkout,200,264669,https://google.com,Desktop,Firefox,False
+7a872fc0f38a4040b0a6a1f295abf654,United States,Chicago,2024-12-29 13:51:51,57.174.54.58,,13319760a79e4db7a3eaef02ae570945,POST,/products,200,356358,https://bing.com,Tablet,Edge,True
+1e887b21b8bb4d8b840a76966f50d70c,United States,Austin,2025-10-29 03:32:51,83.199.1.97,,08412d3fb9fd4faf88984ff0ee35bf11,GET,/products,200,301877,https://twitter.com,Desktop,Chrome,True
+169a418d692648c58f61fdc6a7f189e1,United Kingdom,Manchester,2026-07-24 01:05:34,157.46.151.150,pauline56,d92b417a54884cc89a6ebd057b976b91,PUT,/search?q=laptop,201,445627,https://bing.com,Desktop,Chrome,False
+ad131009cd41452e806781091e29e738,United States,Dallas,2025-10-14 17:37:59,172.109.99.110,rmcintosh,93246064cc834dfa9b138e175daa8848,PUT,/products,200,290375,https://google.com,Desktop,Chrome,False
+6fd74d94a20440fa9fcf1a67d5ab8f3c,Australia,Brisbane,2025-03-16 12:04:14,160.131.22.230,morganpaul,3d91cbff353d49b29725f1810c81b3da,GET,/search?q=laptop,200,491471,https://twitter.com,Desktop,Edge,False
+0810d10df7274b6aa2018e274b5f5881,United Kingdom,London,2026-03-04 09:25:58,44.134.210.127,beverleyhodgson,be812634085e407891db3c3f8ea01cbf,DELETE,/search?q=laptop,200,341198,https://bing.com,Desktop,Edge,False
+6aaf2c8947084e77a054c7dd346561ac,United States,Dallas,2025-09-26 20:53:27,192.66.218.36,qjones,127037d0d4754eed805027b73457ec8d,GET,/products,200,343538,https://google.com,Desktop,Safari,False
+312f4a05be8442a091aa2a4da98c28f4,United States,Austin,2026-05-26 05:15:14,122.201.175.96,melissa81,46a9d1b030a7496895503a6f5ac111be,PUT,/checkout,200,61634,https://twitter.com,Mobile,Chrome,False
+2fdeb6115059431b87a7dccfbe59f559,United States,Dallas,2025-11-14 19:27:25,210.169.191.197,courtney99,152636b4c4f64a4ebbc732e83bd5595e,DELETE,/api/customers,200,254790,https://bing.com,Mobile,Edge,False
+86822a544ae34342a1f84bc663224fe6,United States,Dallas,2025-10-12 21:55:15,40.163.208.123,josephgoodman,df86edc1120f440e83b5b28d787bcd70,POST,/api/orders,200,297717,https://bing.com,Desktop,Chrome,False
+18b419bb4858462bb30267444bc8758b,United States,Dallas,2025-10-13 12:20:36,113.90.63.147,taylorkristie,094847380cfe49fbab191eaf57deb23f,POST,/checkout,200,336938,https://twitter.com,Mobile,Chrome,False
+f425de7bb5874689886f06adbfda4771,Australia,Brisbane,2025-10-02 11:30:40,77.158.148.217,kelsey57,14ea6ced22ed4882b97c5c6c99a0368b,POST,/login,200,285514,https://twitter.com,Desktop,Chrome,False
+d0b9a3d98a8440f3ab94a72797f7a953,United Kingdom,London,2025-10-09 16:37:29,209.241.203.17,jay87,eda7970a2f28495d8e6909a75a71346f,DELETE,/products,301,468644,https://twitter.com,Mobile,Firefox,False
+70958497c9624f4f9ba5a8927004047c,United States,Seattle,2024-12-21 16:03:56,188.150.157.78,wfernandez,104fc00928964e2181c24bb92ba707d9,PUT,/api/customers,200,134292,https://twitter.com,Mobile,Chrome,False
+641d4617639945e6b0f6babc1a942ab9,United Kingdom,Manchester,2025-09-18 20:58:30,74.64.243.228,adrianadams,d83a48a677ba461cb8dd6046dc14057e,DELETE,/products,500,4849,https://google.com,Desktop,Chrome,False
+c15819651252448eb26132c698eaf541,Australia,Brisbane,2025-04-25 04:41:39,16.52.255.9,cynthiawallace,7eeb3fb04f4546d08c145a62481870d8,DELETE,/products,200,412176,https://twitter.com,Mobile,Edge,False
+4cb930d88fa94601a1d7e5c40b1cf8cd,United States,Seattle,2026-04-10 03:47:25,80.55.222.199,espinozakelly,2b2073c67c5b4e698a25c492ef646c65,PUT,/checkout,200,106541,https://twitter.com,Desktop,Chrome,False
+b7aa3df0ca4d453a905865eb65a59eb8,United States,New York,2026-07-09 12:45:48,116.168.71.0,woodsamber,f58494d999f34776b5c122631dc7f76d,PUT,/products/123,200,146956,https://google.com,Desktop,Chrome,False
+3a090fa3d27c43668fb44a9006d477fa,United States,Austin,2025-02-16 12:24:22,178.110.100.233,christopher01,75b801d8a9de40d9a57e3759fbe1dd51,POST,/login,200,419139,https://google.com,Mobile,Chrome,False
+6d01ec742fd944ada48069a9cd83c6d0,United States,Dallas,2024-12-08 08:39:48,114.121.105.121,,d924138fce5a4a9aaa46137ce15ee97a,POST,/checkout,200,297733,https://google.com,Desktop,Safari,True
+7a36585b1687479f98047daabe295991,United States,New York,2024-12-08 22:51:06,189.12.87.96,jacksonkimberly,1f3a21d714c7480587fa5428dd2b2e17,POST,/login,404,2553,https://bing.com,Mobile,Chrome,False
+32cd0d3c77e44c56a5d1713b38db34c5,United States,Dallas,2026-02-02 13:31:07,28.189.15.251,jaredgonzales,0f3d1345aced4a069350998a8ff3b123,PUT,/api/orders,200,489229,https://twitter.com,Desktop,Chrome,False
+30110ac578b74fbe8a06406f987a3e7a,United States,Chicago,2026-05-22 20:12:27,11.98.95.142,april68,5b0d888f6f6a479f9742c02c95e7dabf,DELETE,/products,200,185920,https://google.com,Desktop,Safari,False
+12a46da7ef5a44eb883a7116ac8e3d54,United States,Seattle,2025-01-06 23:36:17,201.228.247.165,donaldlopez,fb9a63b329304d3ca13ec571596bfd86,DELETE,/products,400,360,https://google.com,Mobile,Chrome,False
+f29dda41bbef458abd03091610193873,United States,New York,2026-01-25 21:40:22,175.201.125.144,thomaslopez,6029891836be4c7695d25b33e602b9fb,POST,/login,200,121826,https://twitter.com,Desktop,Safari,False
+1c5715886ede49daa613eadba6efd98f,Australia,Sydney,2025-06-14 08:49:29,29.221.127.242,sorr,98dfbde0ad9f4f6e85a057748320ed75,POST,/api/customers,404,2229,https://bing.com,Mobile,Firefox,False
+396d0e3ec3524ecbbcd24966be17d331,United States,New York,2025-05-19 04:46:44,150.16.37.9,jessica46,f73e4e2d71164e5a8583723d03e82dd8,GET,/api/orders,200,178410,https://google.com,Desktop,Firefox,False
+952ed1200be44799876f6220fb16d510,United States,Chicago,2025-02-23 06:37:11,73.201.121.43,james30,f488167c669f4f5a8a4720234d61f856,GET,/products/123,200,368219,https://twitter.com,Desktop,Chrome,False
+11dc2c1c988447b2a9306c5f6977aee9,United Kingdom,Birmingham,2025-06-30 02:50:14,208.46.121.254,fbaxter,9d01951ac7784478959d8d7fc0828bc9,POST,/search?q=laptop,201,265340,https://twitter.com,Mobile,Edge,False
+bb834514f35240cda237c90b2ff2d627,Australia,Sydney,2024-09-17 04:51:33,46.99.244.104,robertsrichard,31d532195fe645d7a2e2ec01e7ba7a61,DELETE,/api/orders,200,408515,https://twitter.com,Mobile,Edge,False
+72a5bbcf86c64c6ea356d347d8e19c5e,United States,Seattle,2026-05-05 16:59:45,65.49.228.199,mlopez,cd617ab77eb448e88f9e3fbd41120731,DELETE,/api/orders,200,115340,https://bing.com,Desktop,Chrome,False
+a48e283a3aeb44e8a47667f19abc623d,United Kingdom,London,2026-01-19 07:56:15,198.99.19.120,denise99,c60b6b2b6a0443bfad4a0e7fd4133568,GET,/api/customers,404,2062,https://twitter.com,Desktop,Chrome,False
+ef01ff5eda11470380b575dfb4b8289f,United States,Chicago,2024-09-19 23:12:56,212.147.190.202,upayne,51149b3c68a24e85a220351db8f21b0d,PUT,/products,400,3799,https://bing.com,Mobile,Chrome,False
+b5e16922f1ae4446a82e8821324d6b27,United States,Chicago,2024-09-02 21:46:32,105.57.112.128,abigail74,f9d8aceccb254842a0c7b8554d6f3566,GET,/,200,125377,https://google.com,Desktop,Chrome,False
+908b8e0785d547468e63dcec57784507,United States,Chicago,2025-05-19 13:06:28,46.102.206.232,brandongraham,5fbb170e6b0941d1884daa7e36959ad6,GET,/api/customers,200,113537,https://google.com,Desktop,Chrome,False
+4229010a589d429e9fa98cd5f0439d50,United Kingdom,Manchester,2025-09-15 04:47:46,216.228.168.75,,14e8abe1be434170921825cebd2d07eb,POST,/search?q=laptop,500,3152,https://google.com,Mobile,Safari,True
+61b63f8ab7f64415817393ab3da8bb9a,United States,New York,2025-01-22 06:21:41,192.181.87.185,jose25,0554d7f3e90344aaafce572c6dd3cb5a,POST,/products/123,400,1172,https://twitter.com,Mobile,Edge,False
+ef54e2d86ee045a087f68475be4bfd79,United States,Seattle,2025-09-17 07:42:14,89.242.172.120,,6ea43457ce1b41c28660a0e2b53b3183,DELETE,/checkout,200,225915,https://google.com,Desktop,Safari,True
+7c2a102f8f53423c9feeeb17a928d434,United States,Austin,2025-04-30 18:23:36,148.109.220.224,alan15,c599e0bda2a54644b227e8bdee09d41d,GET,/api/orders,400,3649,https://bing.com,Desktop,Chrome,False
+82c5d5233c51473c94ba12cc237c272c,Australia,Sydney,2025-03-16 03:41:05,7.188.15.64,svilla,4cb0fd43b7854f35b5296033dfd68fe0,PUT,/,404,302,https://google.com,Desktop,Safari,False
+c7acc2988a834b6cbb45f4a480aa127e,United Kingdom,Manchester,2024-09-25 06:00:59,35.146.199.0,clarkestuart,6a2eeec5b96b41a09babb22b10a32aac,GET,/products/123,200,80691,https://google.com,Desktop,Chrome,False
+6e8562f0849e41359e2b40659b16355d,Australia,Melbourne,2026-04-26 21:57:11,54.40.145.115,lopezkevin,ab07450995ca465ea616e7e1aa5f0bb6,GET,/products,200,68530,https://bing.com,Desktop,Chrome,False
+7680626fb7c149fbbdbfd2cfd3cd56cc,United States,Dallas,2024-12-14 03:27:33,188.60.192.61,sgomez,01d208845a8043fea90870a2dc5ec0d7,PUT,/,200,159883,https://google.com,Desktop,Safari,False
+60df99aeef6f4b02b2b0b09806e7e13a,United States,Chicago,2026-07-19 08:07:58,78.207.53.145,phillipsanna,98c750a084c74ceda12ca91bd29b9d1c,POST,/products,403,1212,https://twitter.com,Desktop,Chrome,False
+264c0048733e46e7bde666c71fbc7ddf,United States,New York,2026-03-03 13:04:40,102.236.192.37,ojimenez,f871500bd3474cd7b62bb3bdfa259e77,GET,/api/orders,200,376512,https://bing.com,Desktop,Chrome,False
+487114c0d4524a8db97620a9667917d0,United States,Dallas,2026-07-14 23:58:45,51.72.114.34,mooreryan,379f586af0a143419efe5fedd5580fe4,POST,/products,200,317502,https://google.com,Mobile,Chrome,False
+0c0ab3588787479082447ebcc4a3482b,United States,Dallas,2024-11-09 22:20:03,33.70.30.227,clarkrussell,e70675dbe806486f88608c86769e36ce,GET,/,200,280801,https://bing.com,Mobile,Chrome,False
+77b85948799c4d7d9f503ae232b496e4,United States,Seattle,2026-04-08 23:06:16,64.162.142.59,lisa27,cd48ecc997ee445a8155580647e295dc,POST,/products,200,362617,https://bing.com,Mobile,Safari,False
+dd9ba0c3fe69442e9b9470112c715be4,United States,Dallas,2025-04-28 19:04:48,128.90.44.253,gregory09,13fe7c5b59ca4d658f52faefabba0f09,POST,/login,200,108709,https://bing.com,Mobile,Safari,False
+eaefada4821e4e6db156f80d2ee71f76,United States,Austin,2024-09-09 18:45:28,48.64.155.230,peggynorman,afe1f421cece45dcbb3e5a98ac320155,DELETE,/products/123,200,277279,https://bing.com,Mobile,Safari,False
+2286add38c6d48a58152b7478db450ab,Australia,Sydney,2026-06-30 13:36:39,160.246.14.88,richard82,c4146bf134f745c0a308f13267dc869e,GET,/,200,457817,https://bing.com,Desktop,Chrome,False
+bcc07417b7604c3b8c517a8e8df0f3a2,Australia,Sydney,2026-03-10 19:30:23,167.106.238.51,owhitehead,07413d7fbe2d4d1eb9fa116d16893972,DELETE,/login,200,186845,https://twitter.com,Mobile,Chrome,False
+1916b49b15db4383b9428c5576ea081f,United Kingdom,Manchester,2025-01-07 01:13:06,155.250.187.44,joanschofield,b948328f69b3490abf269faafd9ebb78,DELETE,/products,200,442692,https://bing.com,Mobile,Safari,False
+5bd6219e676045ebb567ca45ef4d6a50,Australia,Sydney,2024-08-08 21:47:25,181.144.102.154,travisduncan,c8f7bdc9a58d455ca5139ea959df281f,DELETE,/search?q=laptop,200,201438,https://bing.com,Mobile,Firefox,False
+6616df540f56435aa36e0859efe3383f,United States,New York,2025-05-18 08:00:05,175.243.177.62,ashley54,6e35e9644fb2453f9ce84173ae4e1df6,DELETE,/search?q=laptop,200,307207,https://google.com,Desktop,Chrome,False
+9b42909742914bd19e6862e919ab0f52,United States,Dallas,2026-01-03 08:07:19,33.242.228.16,dfleming,3745c082ca7e4ba8b4175999715f5ca5,PUT,/api/customers,200,433757,https://google.com,Desktop,Chrome,False
+d539ebd0faae4374b9545c72c74e3063,United States,Dallas,2025-01-07 03:24:04,177.249.91.159,mitchell75,6ba6330201ce456897398740ace894da,GET,/api/customers,403,3044,https://google.com,Tablet,Chrome,False
+41e464d26e804e4480b47c330ae8a8a7,United States,New York,2024-12-09 18:32:28,166.183.237.216,mpatterson,c9966cfb99534a13baf891fb08407c59,PUT,/products/123,201,24785,https://twitter.com,Mobile,Chrome,False
+c9c90c5be055448aa3ea73dad19c8607,United Kingdom,London,2026-02-12 04:05:09,52.51.67.125,hillfrederick,a48bfd14a0f84acbbb70c192e9488449,GET,/api/customers,200,411371,https://bing.com,Desktop,Chrome,False
+70694ccf12574275b925bc841ee25497,United States,Chicago,2025-09-22 16:00:42,67.194.204.67,sarahsherman,4c2e3ba6e83848ee9c20292243b403d1,PUT,/products,200,94670,https://twitter.com,Mobile,Safari,False
+283d660f1b9d499b8a045f32f58eef7f,United States,Austin,2026-07-31 15:37:55,40.191.122.50,emorris,3bf64ca9f6d648d0a1a141114b29534b,PUT,/login,401,4192,https://bing.com,Desktop,Safari,False
+7168a65238d84a02aa65c73328423f72,United States,Chicago,2026-03-29 05:41:28,119.33.249.242,smithjamie,036995b6e4bb4ee5b85316ab725d4835,PUT,/search?q=laptop,200,488541,https://google.com,Mobile,Edge,False
+a63153df27b84581b5d288e420da3869,United States,Dallas,2025-02-17 19:26:27,182.60.174.32,kevinsmith,b854f4ab95d04e93a933e744d054b330,POST,/login,200,121625,https://twitter.com,Mobile,Safari,False
+904f16264b3e472db3b33589c5820f7c,United Kingdom,Manchester,2026-06-05 23:45:10,118.115.19.63,williamsonkevin,8f3c80fefc8b4ac8a63f2f805a7fb483,DELETE,/checkout,200,218806,https://twitter.com,Desktop,Chrome,False
+74d062974ea24aa4b98d776814fe4bf7,United States,Chicago,2025-10-02 04:29:13,152.142.58.206,david88,7a16004fa42b42abac70db06e2bdab94,GET,/search?q=laptop,200,115474,https://twitter.com,Desktop,Chrome,False
+1f81141178ee45349e56c4a581fad5bb,United States,Austin,2025-03-29 09:49:58,188.49.149.152,joseph34,43b43ec586d94eff87c21e85ddfc0412,POST,/search?q=laptop,200,136465,https://google.com,Desktop,Safari,False
+1646286f2f2c4ab190e9d559355f0129,United States,Seattle,2025-05-28 13:21:53,32.234.144.186,richardsonlauren,bdd81b0dcff94afba13ca0a5885b38b1,DELETE,/api/orders,200,139379,https://bing.com,Mobile,Chrome,False
+f4b4764e8fc14f56baeca291cd7733b1,United States,Austin,2025-01-29 13:59:11,23.35.205.145,carsonvalerie,97a54f6b8a664e12bc43bedc27630cac,PUT,/products,401,2972,https://google.com,Mobile,Safari,False
+1e0c12cc2c924a58ba5546e2ba3d479a,United States,Austin,2025-05-06 08:55:15,118.244.85.194,gbarr,27a9c6aa65d84653bdf870f738d00674,POST,/checkout,200,334041,https://bing.com,Mobile,Safari,False
+611a01543c334a6db17b8729aa3d34a8,United States,Austin,2026-07-10 07:02:33,67.103.254.98,david65,f40894ccf59345509ad8d330c0bdf6aa,DELETE,/,200,161742,https://bing.com,Desktop,Chrome,False
+1a1245c8b48a4378aa2e56c913e93021,United States,Seattle,2024-08-19 07:27:16,67.0.150.250,eturner,613e3e46465c4677b9e073d66656b824,DELETE,/api/customers,200,401020,https://twitter.com,Desktop,Chrome,False
+8c0e36d897c94e0c9c616e1e26a056b4,United States,Dallas,2026-02-22 00:53:51,70.7.190.145,mcmahonchristopher,3de53073841047fababc4a04ef4ada02,GET,/api/orders,200,97588,https://twitter.com,Mobile,Chrome,False
+0429de2812f0410d8c499c20ebae196d,United Kingdom,London,2025-03-04 18:50:00,97.150.76.80,,e2394d0f55ea4f7aa8b553389212e70c,DELETE,/api/customers,200,477614,https://bing.com,Tablet,Chrome,True
+de8b662666224018b22ecfe107c5ff39,United Kingdom,Birmingham,2026-01-22 05:04:35,36.129.21.7,dianebradley,ae0fcdb128194ea7b6d3f792a758e194,DELETE,/api/orders,200,300821,https://twitter.com,Desktop,Chrome,False
+9179809c793b41038045eb825bd46ee5,United States,Chicago,2026-05-11 23:59:47,177.4.135.131,tcollier,7a5925bc28c24542857087dc372bed9d,DELETE,/login,401,3011,https://twitter.com,Desktop,Firefox,False
+9ff989d026ab44d1a7723b5a4ae036f7,United States,Austin,2026-01-26 22:22:25,72.79.60.49,lsmith,90a9d119d5d643d8ad543c180fb66194,PUT,/search?q=laptop,200,5738,https://twitter.com,Tablet,Chrome,False
+159a1da9ba8d4d17a0a1e075381245a5,United States,New York,2025-02-18 02:10:01,148.48.111.131,kaguilar,6ffcd624c2d6401c814fdecef949d9cd,PUT,/,200,421060,https://twitter.com,Mobile,Chrome,False
+606beea03b664cad85a8e1cb54431502,United States,Austin,2026-03-05 21:07:11,59.115.7.172,josevega,f68d6fb6ddb84f22ad4788a951bb3d17,DELETE,/checkout,200,433929,https://twitter.com,Mobile,Firefox,False
+a7650a1a24fd4e8b8259cff8e25a0add,Australia,Sydney,2025-05-09 16:40:54,12.188.7.216,fcox,af61ceedb0af4aa99b4b7c1bd0da08af,DELETE,/login,200,305426,https://twitter.com,Desktop,Firefox,False
+8fac70bb0b8b4bd78c25b447b1b5ed66,United States,Dallas,2025-12-23 15:34:41,160.9.61.151,prattjohn,cffa9508e39d4f169106cc0be2eab476,GET,/login,200,229020,https://google.com,Desktop,Chrome,False
+7cc9dc9b4b954752b215802b927f4ef0,United States,New York,2025-07-15 08:27:40,83.29.61.158,ashley82,86f2a7d2a5204d52ad4ddf4f175829cf,GET,/api/orders,200,471532,https://bing.com,Desktop,Chrome,False
+64249af998c94723b7a808c15ee544f9,United States,Chicago,2024-12-04 12:03:08,3.70.32.4,gowen,21425265c0a94c04a0fc52fb1a6fe972,POST,/checkout,200,267981,https://twitter.com,Desktop,Chrome,False
+c622488abe04420cb8dd98759bb72fe2,United States,Seattle,2024-12-31 09:12:24,56.153.97.79,collinsbradley,729c308cec4e4f31af13b76575ff3028,POST,/,200,419438,https://google.com,Desktop,Chrome,False
+08d9a950d41142b8b1a2656bc33e48d7,United Kingdom,Manchester,2025-11-23 11:58:35,86.82.50.102,poolehenry,e6db6add8379495581e6795f5ab26d9d,GET,/,200,216660,https://twitter.com,Desktop,Chrome,False
+21d7b3851d8449ffaadbb8a3ac163896,United States,Dallas,2025-05-08 04:13:28,202.250.235.56,nicholascarson,4b933989b4b44afba298193994a445fc,DELETE,/api/orders,301,154478,https://google.com,Mobile,Chrome,False
+86f7f7947bd649fbb5d5bc0ab27c9167,United States,Dallas,2026-07-24 12:20:58,136.79.248.185,lwilson,92acc146ff974539a3e7562047476269,DELETE,/login,200,251647,https://twitter.com,Mobile,Chrome,False
+f37e629ac25c4b24b2e6f3fd2ff999ca,United States,Dallas,2024-12-20 04:27:53,91.61.81.113,jennifer12,cda5fa24bb904ecd80e2a8cd5b3ef3f1,PUT,/products/123,200,315501,https://bing.com,Mobile,Safari,False
+668edd172b9641e781b293a1a1cc0a9f,United States,Austin,2025-03-10 00:19:29,134.197.201.3,,f3be9cbb61b540de8f2fcb83b4e1411c,GET,/search?q=laptop,404,1526,https://bing.com,Mobile,Chrome,True
+e79033a426e6458c9e80beb81bd10947,United States,New York,2025-01-22 21:15:41,161.136.26.66,ethomas,a29536c554f4421bbe254e2230ea4a72,GET,/api/orders,200,66883,https://google.com,Desktop,Chrome,False
+a289fb37135241888c468eb7ea5e3001,United States,Dallas,2025-03-11 21:27:18,15.161.200.162,michellemcmillan,4199e079b151407784c32a7821bba781,POST,/api/orders,200,41252,https://google.com,Mobile,Firefox,False
+c689d7715af44145b2f072c1c89da4f6,United States,Chicago,2025-09-06 19:51:43,221.189.41.194,anthonydaniels,40c5c6ac33f04ba889b882c046f17dd5,GET,/products/123,200,227283,https://bing.com,Mobile,Edge,False
+fc946e9996504982887c348eaf8d90b2,United States,Dallas,2025-05-31 03:11:17,126.62.66.9,dmata,f688cb181b7d4703bbcba28a6fa2234c,POST,/products/123,200,198400,https://google.com,Desktop,Chrome,False
+e5927a41b9a74670898b752e4678c20c,United States,Seattle,2026-03-08 08:02:33,55.170.132.38,campbelltammy,c58093df13cf47c58ab074acfadbb0c0,GET,/api/customers,200,22737,https://google.com,Desktop,Chrome,False
+69b619f37a594b8abee202cdd58e49b8,United Kingdom,Birmingham,2026-04-09 02:46:01,95.96.140.128,michelle06,f9f80e5778b14fbba4488c5c09e914b4,DELETE,/,200,252803,https://bing.com,Desktop,Chrome,False
+0d52da317496476d9e935aeec5a3f512,United States,Austin,2024-09-28 18:25:25,151.122.241.173,christinerobertson,6f57711f329b44d29a4ea3ab5b7f4a2b,POST,/products/123,201,363917,https://google.com,Tablet,Chrome,False
+99e7d9bdf8f24948b2430b4c6bf56f18,United States,Austin,2024-10-23 10:08:36,203.179.188.116,ygriffin,8897c1c2a57c4b5f84be0722907b3feb,GET,/login,200,260659,https://twitter.com,Mobile,Chrome,False
+28e7a69dfcf5435d8d628a7a2de990aa,United States,Dallas,2026-05-07 01:54:55,3.214.173.100,brian28,ea447c9249ef4e218c690b76d4f0908a,GET,/search?q=laptop,200,343168,https://google.com,Desktop,Firefox,False
+bddf60ebc7ad4374be736f49c0920a6b,United Kingdom,Manchester,2024-09-19 18:19:14,43.131.116.69,pauline56,c1cefa74b6634b81ae7400ef5aa43eca,GET,/,200,238729,https://bing.com,Mobile,Firefox,False
+9d39826d7fcf4aaf8e407886d043eac4,United Kingdom,Manchester,2024-09-04 17:57:19,17.65.33.157,gracelee,5892a1366a3846f3b9634c298939fa54,DELETE,/products,404,3366,https://bing.com,Desktop,Chrome,False
+8f9e0f2a58864085b7208273d8991ff0,United States,Dallas,2025-09-12 23:51:55,217.90.31.238,jessica25,4d4a1516cdf34f45bf675e0b995e87f4,DELETE,/login,404,508,https://bing.com,Mobile,Chrome,False
+8edbb055385a4ccdb802e619f3657425,United States,Seattle,2026-04-12 22:23:58,165.137.64.116,amorse,b33b0cbb446c4cde81ec6084f035e93a,DELETE,/api/customers,200,266697,https://bing.com,Mobile,Chrome,False
+588e0b4d651d4ae689f24acbec0958f2,United Kingdom,Birmingham,2026-03-16 18:40:04,52.68.192.170,qclark,3ef4514a7b7c4ad89272b0e77d28dc75,DELETE,/checkout,403,2909,https://google.com,Desktop,Chrome,False
+3579164fbe1842ea881c3ad9b6a1fc08,United Kingdom,Birmingham,2025-02-19 21:33:04,175.202.40.207,marianthompson,57113fb80a584978904dd138364322e9,POST,/products,200,299835,https://bing.com,Desktop,Chrome,False
+52e346e50fa341bfa090f326fb075ceb,United Kingdom,Manchester,2025-12-20 00:55:06,50.182.124.61,martynmorris,f60be7508232412dbf692ecaeabf7f85,GET,/,200,222515,https://google.com,Desktop,Chrome,False
+3fd455f1821744669d91c456416db5ca,United States,Dallas,2025-08-22 02:25:25,196.159.105.240,lhardin,6e12a8ab18dc46b8a1d0ce8b2709bd4d,GET,/checkout,200,11363,https://twitter.com,Desktop,Chrome,False
+b1ff3d34e5fe4702be04e21be9e2bf21,United States,New York,2026-05-11 02:51:02,6.241.211.145,prusso,d9899817869643c6bd46dbc70fbbdbd0,PUT,/api/customers,404,4799,https://bing.com,Desktop,Chrome,False
+66b5ff4ab18d4337a971c13e86316e96,United States,Austin,2026-01-07 03:40:29,144.112.16.173,npark,e1659331c1bf400285e1a0435563234a,PUT,/checkout,200,176715,https://google.com,Mobile,Chrome,False
+cddc35c3b54d473cb541472043e4bdd6,United States,Chicago,2024-09-12 16:53:04,179.252.79.78,michael09,a58df142068743ff89d9a1687c3dc115,POST,/products,200,425627,https://bing.com,Mobile,Chrome,False
+d6c91e24c5994692a16e71609e06c156,United States,New York,2026-01-16 05:06:28,10.194.134.52,nataliesantos,169b8a6f963f4114b697a6a479c5c676,DELETE,/login,201,469046,https://google.com,Desktop,Chrome,False
+de2c81900b3d4b7dbada1b111d8e9628,United States,Dallas,2025-04-04 07:11:04,116.48.156.24,asimmons,d80b590446b4438f97e0bdc597f6f5c6,DELETE,/products/123,200,77518,https://twitter.com,Mobile,Chrome,False
+5c7d0ccec1fc46e4b5873546deb4bfbb,United States,New York,2025-10-19 22:14:11,85.148.234.125,,e4382832b16947ada4e3d1eeb28f7fe8,PUT,/api/orders,404,2542,https://twitter.com,Mobile,Edge,True
+666097e34526433ca5dcbc6cc50ad1df,United States,Dallas,2025-12-04 04:58:39,111.64.38.196,christinageorge,e80b7276435847b5b542a9abeb022ae4,GET,/,200,294106,https://bing.com,Desktop,Chrome,False
+46c1dee3aafa4332b2a778e29e1fe262,United States,Austin,2025-11-26 12:12:15,40.251.86.174,tswanson,58f7c6c363974ee7b895abcb64d90c67,DELETE,/api/orders,200,300400,https://bing.com,Mobile,Firefox,False
+b3f71342d6394dbf80f66dea7f57c5bd,United States,Austin,2024-09-01 18:09:08,207.1.93.15,andrepena,63689de152ef446e98a402d7bd0f4e8f,POST,/products/123,200,489875,https://twitter.com,Desktop,Safari,False
+91d56592d528445aaae7832d3f5d9858,United States,New York,2024-11-29 23:20:28,144.85.157.200,bowerslauren,5a16403909764df58295104c8451b0b0,POST,/products/123,404,3854,https://twitter.com,Desktop,Edge,False
+a0983b3f92574580ad43cbf867a14a4d,United States,Seattle,2025-08-30 16:25:23,14.76.11.96,hli,6d4e770855804db5835f3d318413bada,GET,/login,200,363422,https://twitter.com,Mobile,Firefox,False
+9c8e2abf27754f559cb6a410b837e702,United States,New York,2025-12-03 07:39:42,159.92.38.190,smithjason,b995ff66b7ee47cd8152d8f7c8e4b0b6,POST,/api/orders,200,211758,https://google.com,Desktop,Chrome,False
+e440ae47e3f5466dad5828f87e41357f,United States,Chicago,2025-05-08 23:52:33,121.75.17.164,kimjohnson,c3d07747fd594f6fbe7029ac471ae986,PUT,/login,404,1213,https://twitter.com,Desktop,Chrome,False
+5104a298b02842269f4d77cec748d388,United States,New York,2024-11-16 14:43:13,20.144.46.185,flandry,078c0952b94e46a492c8519255eb29ad,POST,/search?q=laptop,200,155045,https://bing.com,Desktop,Chrome,False
+b2be719f965748d1857a318f8afaf194,United Kingdom,London,2026-01-08 08:16:53,186.141.227.233,,dc738c201ac34b5e8e3beff5ef83e781,GET,/checkout,200,108616,https://google.com,Mobile,Chrome,True
+b980ae2b3dde4e98b2ebf8702ae138a4,United States,Austin,2025-05-24 10:24:25,3.13.119.183,swilson,7971278936b24fffb16bb05f99f7a9fb,PUT,/checkout,200,494540,https://twitter.com,Desktop,Chrome,False
+5be184f47bd14d17a4635f47a1d9a8f0,Australia,Melbourne,2025-09-13 15:21:36,43.215.62.120,blackburnlarry,3a5717840dc345b390241cc24c76c47e,PUT,/login,200,216863,https://twitter.com,Mobile,Chrome,False
+0c000c668d1b42d68d44c7e4768206ce,Australia,Melbourne,2025-12-11 22:14:21,116.246.227.29,tamaraallen,8f427e39a63346c7bdb948888198573b,PUT,/api/orders,200,74778,https://google.com,Mobile,Edge,False
+b94ab4703566442480b2c94fb6dd69dc,United Kingdom,London,2025-07-09 19:42:05,12.158.131.181,eric53,fe5b76f5d661476195364033de49c4c8,DELETE,/products/123,200,150784,https://twitter.com,Desktop,Chrome,False
+bc7bf785efde4633bcabe23fcd73a3d8,United States,New York,2025-05-02 20:42:25,99.72.228.71,michellewilcox,ea031cf0b185470db851f78f5a752a83,POST,/login,201,196377,https://twitter.com,Mobile,Chrome,False
+cc399d5a7b3f4bbd86bbe5539d7afafe,United States,Chicago,2026-03-27 13:55:54,148.9.134.231,lauren22,43f187dfd7c34e7c8bc249286d072da5,GET,/products/123,201,462479,https://google.com,Desktop,Safari,False
+e03f7a12fed947ed8b86d8b9734b33b7,United States,Austin,2025-08-30 22:50:13,129.153.207.45,andraderaymond,9213c2e2185d4ea7910a188837685184,GET,/checkout,200,282223,https://bing.com,Desktop,Chrome,False
+fdd7318ce2e4479d8b80892a10fcb485,United States,Chicago,2025-10-08 11:57:48,222.241.163.38,maldonadojessica,86c66fea92d04bebae5d2fc0b7c1d17a,DELETE,/api/customers,200,79937,https://twitter.com,Desktop,Edge,False
+1e5d3649f8d048809287aabd52c6973c,United States,Dallas,2025-09-21 01:49:18,119.247.216.245,ellisedward,ef1765225d544d2f88b4ddbf97c8bff0,POST,/login,200,36667,https://google.com,Mobile,Safari,False
+df47141fc2c145a19e577faeb6a9af42,United Kingdom,London,2026-06-08 09:44:32,35.39.21.101,ohoward,9d066bedfbee4168a731a4961325bfae,GET,/login,201,387517,https://google.com,Mobile,Chrome,False
+e4ca653783a447619f3451dc7c4a3299,United States,Chicago,2026-08-06 03:55:49,69.107.5.85,david19,6ec9c0d33bc64007941af984b5f57ac9,GET,/products,404,1715,https://bing.com,Desktop,Safari,False
+15c585ded92a43829c22ec1840c80bb8,United States,Seattle,2024-11-06 13:45:23,108.43.65.36,,f921684bed2948aabe1ee10f174776a0,PUT,/,200,260646,https://bing.com,Mobile,Chrome,True
+ba4c55a4f9f4444aabdde286900d4034,United Kingdom,London,2024-11-06 08:36:57,181.51.253.19,smithdenis,025577ced77f49e89a2d312030de65bf,PUT,/products/123,200,351641,https://bing.com,Tablet,Chrome,False
+0ad31b9bebf84252a697a69521f2b2ed,United Kingdom,London,2025-06-07 07:01:48,189.173.218.164,oliver14,cc9f78f737364b218b3a837e81c94b3d,PUT,/api/orders,200,478492,https://bing.com,Desktop,Chrome,False
+a6354cdce2cf481da77f73ae351c30d2,United States,Seattle,2026-07-23 14:51:31,19.165.34.105,schultzkelly,17fc35b3529e4f239b7cad4547f5fd4b,PUT,/api/customers,200,86075,https://google.com,Desktop,Firefox,False
+cc09853de9a241e58c48c222a57e7f40,United States,New York,2025-09-18 06:17:50,46.161.236.160,sdawson,08e17398393f4bf9b8f23e4e37b962ca,POST,/products/123,200,228646,https://twitter.com,Desktop,Chrome,False
+0ffa95a2c1124da89e344c2bf97ddb3d,United States,Austin,2025-10-19 13:54:58,50.177.156.45,ashley19,145b602728ba4fcb8b57fc4613d03369,POST,/products/123,400,1604,https://bing.com,Desktop,Chrome,False
+35f41523c3d74b3e97ef703186aa127b,United States,Chicago,2026-07-22 19:39:09,214.87.61.40,jennifer40,2fd028c9b2a84b12ac6de022ce079b56,POST,/api/orders,200,91615,https://bing.com,Mobile,Chrome,False
+5a6137cd128b438a80d1b773fe42e4a0,United States,Chicago,2026-02-08 13:43:57,134.238.213.28,wsmith,acab7430715848fd8d8c0c3624d225c8,POST,/search?q=laptop,200,156295,https://google.com,Desktop,Safari,False
+7e157f8bcbc545d8934c170c29b59150,Australia,Sydney,2024-10-07 20:30:04,194.192.194.160,leonardsimon,de9b54bf305547af81dc3fe51b7b1c3f,PUT,/api/orders,404,3788,https://google.com,Mobile,Firefox,False
+e457fc8b8cca459483cef9888de6eadc,United States,Dallas,2026-07-20 04:50:30,200.187.226.94,smithjane,249da777fb354786833a38c599ac3c6d,POST,/checkout,200,475619,https://google.com,Desktop,Firefox,False
+116d24b7217d4a499df7de2cf038fbde,United States,Seattle,2024-12-20 01:34:55,211.15.18.68,raymondestrada,3405a0a268b141698952feb3957532f2,POST,/search?q=laptop,200,448994,https://twitter.com,Desktop,Firefox,False
+31ef7f1d1fae443193e2cfd6aac26a06,United Kingdom,Birmingham,2025-11-06 19:05:02,147.186.76.125,barberbeverley,f8549a35b38848318674f3cb6c34fdc9,PUT,/login,404,2750,https://bing.com,Mobile,Chrome,False
+d37bda25f53c4e1ca22c673071aac3ca,United States,Austin,2025-02-01 09:37:13,63.32.107.169,adamsnicole,b94f484af5434ac7909aacb2e3b81ab2,PUT,/,200,59016,https://google.com,Mobile,Chrome,False
+eec1891c79b24d85b7ad06bd7a28d368,United States,Chicago,2025-02-22 14:16:46,55.115.150.99,colemankelsey,0ef618998b30444b86eb4e280b829583,PUT,/checkout,301,49936,https://twitter.com,Desktop,Edge,False
+323791d4c69e4ad5995f25b254649be7,United States,Dallas,2026-05-16 13:49:37,70.56.62.196,twilson,f4073c5928c747b9a4d70bdcb20b16f4,POST,/search?q=laptop,200,493533,https://google.com,Mobile,Firefox,False
+00faf712a71d4151bb0b66d73c129f7a,United Kingdom,London,2024-10-01 00:02:10,189.125.189.100,kelly60,1e74ef39d049468d8af70b695a0f54df,POST,/products/123,500,1341,https://twitter.com,Desktop,Edge,False
+7c07356ef5dd402e9eaa375edf1fa807,United States,Dallas,2026-03-28 19:59:14,148.138.144.185,wjordan,d4993448d0874e5884e94cc3be845195,POST,/,200,411789,https://google.com,Mobile,Chrome,False
+fed07f0d92a64ae59d670fbc5daed7fa,United States,Austin,2025-10-10 20:25:02,179.46.96.0,anthonyneal,1ff4dd3bdba74c5fae7ad138896b5261,DELETE,/checkout,200,429598,https://bing.com,Desktop,Chrome,False
+a60c138d4b224d9b8c3833d3f349e0d0,United Kingdom,Birmingham,2024-11-06 15:46:34,40.156.133.42,cliffordturner,f1bda3799e7149c5b1b0911517fab535,DELETE,/checkout,401,868,https://twitter.com,Desktop,Chrome,False
+6cd323017b61446490f63ea4538af070,United Kingdom,Birmingham,2025-10-13 19:32:09,80.200.141.44,katefoster,857a50587dc548beb8514a078f49cf75,DELETE,/,200,385074,https://twitter.com,Desktop,Chrome,False
+8f286b5d22da413babf158987a7a9001,United States,Austin,2024-10-20 09:31:08,19.221.85.38,srichards,5662ce8a29f44d7ab486f26db8e1e4a2,POST,/api/customers,200,345648,https://bing.com,Desktop,Safari,False
+662a99d7f9ef4a80928d1f802c491d77,United States,New York,2024-10-18 13:55:39,202.21.104.134,jessicaberg,478bd9b09fe14e619a396b4923f525fd,PUT,/checkout,201,419019,https://bing.com,Mobile,Firefox,False
+8b3a8e1dfb1e4900a5210a1a8a750cb7,United States,Austin,2026-02-04 19:50:20,136.189.217.109,rebeccasheppard,152c11fbb1e94b778a4f31d78fba2da0,POST,/products/123,200,180298,https://google.com,Mobile,Firefox,False
+69c28505383e4198ada0b23ade06310d,Australia,Brisbane,2024-08-22 11:38:04,155.18.28.16,,414d2567f960461381fa42b375026280,DELETE,/products,404,559,https://bing.com,Mobile,Edge,True
+d45c7a1f618a434ba04855ed56a1d18d,United Kingdom,Birmingham,2025-03-13 13:07:06,146.83.103.192,xhenderson,ea6d6304f403438ea3311a8b0a0f0266,PUT,/products/123,200,256573,https://bing.com,Mobile,Chrome,False
+dbbc5db77b904dc8ba16cd92e437421d,United States,Chicago,2025-04-29 09:15:20,2.150.69.98,vhensley,50acebce022c4ce8be8f3bac425b2fbf,POST,/products,200,95366,https://google.com,Mobile,Safari,False
+142c28bffc8b400c8153037d7d0a8972,United States,Dallas,2024-10-02 19:02:58,211.228.32.67,lisarichardson,eb47f56f99a4498ca1435db0fa1985d8,DELETE,/checkout,200,357358,https://google.com,Mobile,Chrome,False
+5af04b962eb544bea5821c423efbd4d3,United Kingdom,London,2024-11-22 02:03:54,6.19.105.160,jean96,9bd16ae09f4047e187efb0e93d8abac7,DELETE,/products,200,479111,https://twitter.com,Tablet,Firefox,False
+a097ad638a56402889a9613c5c63326c,United States,New York,2025-09-15 01:44:46,67.199.129.5,psmith,19ece61cf06e4b1f9818818d3e4c0865,PUT,/search?q=laptop,200,239311,https://google.com,Desktop,Chrome,False
+3fedcffd1bc54580948efad4d91c3d4c,United States,New York,2026-01-07 15:35:12,34.92.27.216,brittany46,04acb173b3b946a099db7c00806bc88a,PUT,/login,200,228727,https://google.com,Desktop,Chrome,False
+066f6c3b276848daac0df3288476d229,United States,Seattle,2025-02-27 18:55:30,79.194.222.253,jmooney,efde0259783f42b89417d096315ae170,GET,/products,401,2940,https://google.com,Desktop,Chrome,False
+cd4d9a0bfb614fd48f96f89c550cd976,United States,Chicago,2024-11-28 05:53:36,41.160.9.68,paulruiz,0c34106432954616bfb712ba838232d0,POST,/products,404,4409,https://google.com,Mobile,Chrome,False
+8bf4c3134fe544bca9dd9e5c816705d4,Australia,Brisbane,2026-06-07 01:42:13,87.1.23.110,heather56,707513ab1b2546118498d5a6ef55511a,PUT,/products,200,288110,https://twitter.com,Desktop,Firefox,False
+7efa241ba79e4d3d87d0ecc513e9a93c,United Kingdom,Birmingham,2026-04-25 01:30:19,1.43.16.96,melissabriggs,fd09f468c17c47ac9185d4fc3ee1c5e3,PUT,/api/customers,200,350866,https://twitter.com,Desktop,Chrome,False
+c420de8d7e824f36b695c8cf4e93b6a0,United States,Chicago,2024-10-07 22:55:44,77.31.216.187,,54f7b8ac802c43edbb0d93fedb8113bd,PUT,/products,404,613,https://twitter.com,Mobile,Firefox,True
+44ba26450ad6442caaeca389d2aadf9d,United Kingdom,London,2025-11-19 01:11:27,210.207.52.144,terence29,ec9e070efc044308a6268c577a7525c3,POST,/search?q=laptop,200,26124,https://bing.com,Desktop,Firefox,False
+2994161bb64b4cafb995ad40e5f376e9,United States,New York,2025-03-30 18:50:23,192.119.23.96,jennifer51,b8f995170c8b4c8f92494bbc8449fa12,POST,/api/customers,404,553,https://twitter.com,Mobile,Chrome,False
+7d8023f4be594bde95659cb6a89114ef,United States,Seattle,2025-07-15 09:22:52,197.156.98.91,roseandrea,fbfc9f8d2d8343e2b6cd794eb840c114,POST,/products,200,459410,https://bing.com,Desktop,Chrome,False
+79fbe8aa08f44930b90a6558e02ab9df,Australia,Melbourne,2026-06-07 03:42:23,22.255.231.77,mike11,6f6178cf8f0542e488ffbd5bbe62eae9,GET,/api/orders,200,460142,https://twitter.com,Desktop,Chrome,False
+0b2c1dec9d0045a284510b6abadbb8f9,United States,Austin,2025-06-15 18:33:10,192.65.227.235,cohenjeremiah,750a2ea18428474194124910856dc23b,DELETE,/login,200,319012,https://google.com,Desktop,Firefox,False
+93cfef5ea6a54bc0a8726be63dd5ca92,United Kingdom,Manchester,2025-04-06 05:22:42,221.133.146.3,dedwards,8f64960a5bb14d4da4b1a2ad0b277e20,PUT,/login,200,266668,https://bing.com,Desktop,Chrome,False
+d8fb803f846e45e08b0ffa7fb84c0846,United Kingdom,London,2025-08-15 05:35:39,207.250.118.241,oliverlong,6a8399f0a45a4191bb0edc2a95ce494b,DELETE,/login,400,4791,https://google.com,Tablet,Chrome,False
+23c509b5a3294471927d38626fd3ae08,United States,Seattle,2025-03-12 11:45:45,52.118.0.9,markperry,bc0cc5ed3b93413cb1279a311d505604,GET,/checkout,401,639,https://bing.com,Desktop,Chrome,False
+7cda5a90022b42e180e5e05dd27c2e0f,United States,New York,2025-01-30 19:46:50,157.211.159.155,adamallen,9c53f5c2da4643fdaa55a07436deef05,GET,/search?q=laptop,200,196019,https://bing.com,Mobile,Firefox,False
+c9bbbbc3d8d044b2ab276f96c53c9ee7,United States,Austin,2024-08-18 01:00:10,114.159.225.214,justin84,1a64621886ea4d08bd2cdcbb4bddfab9,DELETE,/api/orders,200,269076,https://google.com,Mobile,Chrome,False
+5060d35feafb4c739db05f5fd64fe6cf,United States,Austin,2026-08-02 09:56:14,53.194.228.62,tarias,649f69e9168e4ae1b262c7309590b36e,PUT,/,200,472168,https://google.com,Mobile,Edge,False
+2e22c7bc9eae42f49f89c8aa33638aef,United Kingdom,London,2024-12-06 02:48:17,4.192.11.67,ysmith,96dde6b108d3488b8c325c18e9c8d275,DELETE,/api/customers,200,283275,https://twitter.com,Mobile,Chrome,False
+7952b57250c7426698c6f9afc23aad86,United States,New York,2025-09-19 14:54:36,67.104.54.81,jason24,49a480277c6548e39bf3c060c71fbe94,PUT,/search?q=laptop,200,485309,https://google.com,Desktop,Chrome,False
+7d6e746b69d24ca9ba23d3db19b812ef,United States,New York,2026-07-18 04:33:41,136.223.129.146,riveraalan,7db9ae45925c443d869b91d612d362db,GET,/products/123,200,388998,https://twitter.com,Desktop,Chrome,False
+6da46b08018541ddb01bce1c80d25386,United States,Austin,2026-02-25 13:14:36,145.132.221.147,scastro,86a9e1087f684a36b1e7698660cbb981,PUT,/checkout,200,149132,https://bing.com,Mobile,Chrome,False
+e60e9bc029254731a8f1d19fe11a8cfd,United States,Dallas,2026-04-12 07:25:01,206.116.174.242,douglascole,4b1b71c2261a439cbc0738e3620362b1,PUT,/api/customers,200,73644,https://twitter.com,Desktop,Chrome,False
+155ff4396238472580912752d1d74c77,United States,Seattle,2025-01-25 19:29:11,30.241.40.8,leeking,7b8b9ac1ad874a829ff9c878cff39caa,DELETE,/products,200,360947,https://twitter.com,Desktop,Chrome,False
+b8d9179c53fc45afb815659e8af96b1f,United Kingdom,Manchester,2026-06-16 19:35:42,118.26.12.54,ruthkhan,4f8ad6040ee84cb98ede891b56851487,GET,/login,404,1077,https://twitter.com,Mobile,Chrome,False
+50e980906d584695acf83c494c809822,United States,Dallas,2026-03-12 09:20:21,87.99.124.2,khernandez,7414782539904ec491604fb0cd871ead,DELETE,/api/customers,200,430519,https://bing.com,Mobile,Chrome,False
+e109f4f1e43549b2911c60f40d65f1c5,Australia,Brisbane,2025-05-16 11:02:05,73.108.195.191,rachelstanley,7fa3948b3de74396a284bfe75ec31d5d,GET,/,200,126254,https://twitter.com,Mobile,Edge,False
+7985accf7ff34ce7a935a526ad56a57f,United Kingdom,London,2026-02-24 20:41:22,73.109.112.60,barnettbethany,c8759efd6470454fbf1c400410ea5540,POST,/products,200,16028,https://google.com,Mobile,Safari,False
+605f3ae431b844f9b3108891ed94140f,United States,Dallas,2026-05-23 17:20:25,52.226.213.250,makayladiaz,f0cfc61c14ba4726ae8f754c90c8d434,PUT,/,201,202151,https://bing.com,Desktop,Chrome,False
+0d7723d261974ffbacb16e7afa833d5a,United States,New York,2025-06-13 17:03:33,88.163.233.188,ianderson,8f406268d2c049e3a9cf33ecd40e411d,PUT,/products/123,200,222330,https://bing.com,Tablet,Edge,False
+d3c12f98284d42bca93bd78328ff62a2,Australia,Sydney,2026-05-29 21:33:38,222.58.81.48,manndavid,6584b81d04fd4cfa97c933c2081a2b31,POST,/api/customers,200,88869,https://twitter.com,Tablet,Chrome,False
+db8c8e138bf34e0886e869b872dbe493,United Kingdom,Manchester,2025-08-15 15:42:45,5.221.90.149,oarnold,d22cbe3dfddf48b5ad31d9d4e8278ab5,PUT,/checkout,200,61918,https://twitter.com,Desktop,Chrome,False
+16b223d289ec4eb7bf7a87fdbd381d06,Australia,Brisbane,2025-10-29 01:55:15,26.138.39.74,zdavidson,667882bc752d4513af227d34193dd525,GET,/search?q=laptop,200,33029,https://bing.com,Mobile,Chrome,False
+bbf819515b5b42ccb9e74609b6dadb02,United States,Austin,2026-05-20 23:34:19,14.18.219.75,kristinsuarez,176ae9ba1f034f23a8a3dcc7fe31799a,DELETE,/products/123,200,224412,https://twitter.com,Desktop,Chrome,False
+32a79b9ecdfd4464b197fd5a1d864603,United States,Austin,2026-07-15 02:47:14,108.112.7.139,kristabeck,6a697576dd3c4103ae23a093c348db17,GET,/,200,186749,https://bing.com,Mobile,Chrome,False
+5d5b432f245648fa90dd1329e4a64550,United States,Austin,2026-06-10 19:19:10,78.114.157.213,gregorybridget,a15693bec1834f12bdac95f5597f0a6a,DELETE,/login,201,436748,https://twitter.com,Desktop,Chrome,False
+7b611058dec7433995f41fe15e547cec,United Kingdom,Birmingham,2025-08-11 21:40:16,112.170.104.43,kyle53,e0bc8b5ac49847a0840203964be2a45f,PUT,/products,200,389392,https://bing.com,Desktop,Chrome,False
+e3ae3c776cf24b1d8d96e78a9b3ffc09,United Kingdom,Birmingham,2024-11-02 03:08:03,223.152.33.234,terence72,c8192a097b174c51acc4755f92836985,PUT,/,200,153006,https://google.com,Mobile,Chrome,False
+1db0851346754a1d8abb8ce2a2541d46,United States,Chicago,2025-04-09 06:50:14,190.246.138.255,robertmartinez,6def5ee37020491b87d5ff2110210bca,GET,/products/123,301,365883,https://twitter.com,Tablet,Firefox,False
+a0a46e098ac84a7a8133b379a0897db9,United Kingdom,London,2025-09-19 06:27:48,165.225.49.137,louisesmith,777141bf9f92423da1e0c80594707b1a,DELETE,/products,200,393181,https://twitter.com,Desktop,Firefox,False
+331d07a02ff44f4c824a325adf0df758,United States,Dallas,2026-04-23 23:22:11,34.223.168.156,estradakevin,69f15f07d57644f090dc26da100fa608,PUT,/,200,430169,https://bing.com,Desktop,Chrome,False
+513edaa6f0f74b4392fb1592b7089eb4,United States,New York,2026-06-22 16:01:46,162.195.177.166,ivasquez,5446bc02efb54a6e90f8bd5c5b9aa020,POST,/search?q=laptop,200,212322,https://twitter.com,Desktop,Chrome,False
+67160d97b3a14ba88c1bc0cc1db95120,United Kingdom,London,2025-06-27 06:51:13,157.42.102.181,carole33,f3ffc42e57fc446caf1db967b0fe7558,PUT,/checkout,200,86951,https://google.com,Desktop,Chrome,False
+a7b41c48869e45d6b60a89d27c4ea93a,United States,Austin,2026-05-13 08:23:26,189.0.77.117,scottcosta,27632309ad7545d39204e55627213027,DELETE,/products/123,200,244871,https://google.com,Desktop,Chrome,False
+492d456911e54cbca228e4545cbb9987,United States,New York,2025-03-29 09:29:24,188.109.23.199,tinaanderson,b56966dbc4ea47118f81ebb366774aa1,PUT,/search?q=laptop,201,107647,https://twitter.com,Mobile,Chrome,False
+0d44b991358a4064a68ea5f4c85e0500,United States,Seattle,2025-12-11 12:17:42,87.150.27.41,lpatton,ada3bdb5f32d4032a1caf77a6e83ad1f,GET,/,200,474818,https://bing.com,Desktop,Edge,False
+f4d9b6de1fd74d8eae265c50621de052,United Kingdom,Manchester,2024-10-06 03:35:22,137.85.43.26,harperleslie,d2b0112bc8774d9484162952046a7e71,DELETE,/api/orders,200,57722,https://twitter.com,Mobile,Chrome,False
+6181f6b666764007b53ee93a26afa4bf,United Kingdom,London,2024-08-09 10:06:05,98.120.181.130,griffithsliam,b3c6a461180b467ba4900f5e4cfe15d0,DELETE,/search?q=laptop,200,459211,https://twitter.com,Mobile,Firefox,False
+33869f650a794302b84395f6caf2af54,United States,Dallas,2025-07-12 11:25:35,35.249.222.177,ingramsally,304113e778db46b3ac14545d11ef9569,GET,/checkout,200,5433,https://twitter.com,Desktop,Chrome,False
+c2debf1d11e34018ba883a71edaac34c,United States,Chicago,2024-10-20 05:48:41,17.177.168.114,cathy30,c73686f8f6764faabebea891fed33e17,DELETE,/api/orders,201,88570,https://twitter.com,Desktop,Chrome,False
+55aead041f5a43df8a3f832d8c6e2f56,United States,Chicago,2024-11-15 08:34:02,177.196.183.196,linda78,1d601bba075244d5bfef96b2a57812f3,POST,/search?q=laptop,200,379783,https://google.com,Desktop,Safari,False
+307ba71e70714bfdaefd9c2dc5e26a92,United States,Austin,2025-08-09 04:47:35,151.73.118.132,youngvictor,f25ba85d898e49329f4720e707c7d6a8,GET,/checkout,200,177203,https://twitter.com,Desktop,Chrome,False
+8f23a931a4b9416e925a6238be1a919f,United States,Chicago,2025-02-05 14:03:24,80.251.65.111,,d93dfa3c5de34eef8fbd4545e34965b7,POST,/,404,4989,https://twitter.com,Desktop,Edge,True
