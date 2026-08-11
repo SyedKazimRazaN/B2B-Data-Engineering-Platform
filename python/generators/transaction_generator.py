@@ -3,6 +3,7 @@ from faker import Faker
 from python.utils.logger import get_logger
 import random
 from config.database import (SQL_SERVER_ENGINE)
+from datetime import datetime
 from python.generators.load_to_sqlserver import load_to_sqlserver
 from config.config import (
 NUM_WEB_LOGS,
@@ -257,8 +258,8 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
                 "order_status" : order_status,
                 "payment_status" : payment_status,
                 "order_total" : 0, #Will update later -> SUM(line_total) from order_items
-                "created_at" : order_date,
-                "updated_at" : fake.date_time_between(start_date=order_date, end_date=END_DATE)
+                "created_at" : datetime.now(), #order_date,
+                "updated_at" : datetime.now() #fake.date_time_between(start_date=order_date, end_date=END_DATE)
                             
             }
 
@@ -318,6 +319,7 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
 def generate_order_items(orders,supplier_product_mapping):
     try:
         logger.info("Generating Order Items Leads...")
+        #batch_timestamp = datetime.now()
         orders_list = orders.to_dict("records")
         supplier_product_list = supplier_product_mapping.to_dict("records")
         order_items_dataset = []
@@ -346,7 +348,7 @@ def generate_order_items(orders,supplier_product_mapping):
                 discount_amount = round(quantity * unit_price * random.uniform(0,0.20),2)
                 line_total = round((quantity * unit_price) - discount_amount,2)
                 created_at = selected_order["created_at"]
-                updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+                updated_at = datetime.now() #fake.date_time_between(start_date=created_at, end_date=END_DATE)
         
                 order_items_dataset.append({
                     "order_item_id" : fake.uuid4().replace("-",""), 
@@ -452,7 +454,7 @@ def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
                     "log_id" : fake.uuid4().replace("-",""),
                     "country": selected_country,
                     "city" : city,
-                    "timestamp" : fake.date_time_between(start_date=START_DATE, end_date=END_DATE),
+                    "log_timestamp" : fake.date_time_between(start_date=START_DATE, end_date=END_DATE),
                     "client_ip" : fake_local.ipv4(),
                     "auth_user" : auth_user,
                     "session_id" : fake.uuid4().replace("-",""),

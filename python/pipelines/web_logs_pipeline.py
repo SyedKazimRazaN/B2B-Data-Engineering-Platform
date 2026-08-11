@@ -17,7 +17,7 @@ def extract_source3():
     # Snapshot-based (no watermark) - full file re-read every run.
     try:
         logger.info("Extraction Started................")
-        web_logs_df = pd.read_csv(WEB_LOGS_OUTPUT_PATH, parse_dates=["timestamp"])
+        web_logs_df = pd.read_csv(WEB_LOGS_OUTPUT_PATH, parse_dates=["log_timestamp"])
 
         if not web_logs_df.empty:
             logger.info("Succesfully extracted Marketing leads dataset")

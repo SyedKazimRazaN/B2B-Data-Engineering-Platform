@@ -12,19 +12,19 @@ def get_last_watermark(pipeline_name):
             result = conn.execute(
                 text("""SELECT
                             last_extracted_at
-                        FROM staging.pipeline_watermarks
+                        FROM metadata.pipeline_watermarks
                         WHERE pipeline_name = :name"""),
             {"name": pipeline_name}).fetchone()
 
         if result:
             watermark = result[0]
         else: 
-            wwatermark = None
+            watermark = None
 
         logger.info(f"{pipeline_name} last watermark = {watermark}")
         return watermark
     except Exception as e:
-        logger.error("")
+        logger.error(f"Cannot update last watermark {e}")
 
 
 
@@ -33,7 +33,7 @@ def update_watermark(pipeline_name, new_watermark):
         with POSTGRESQL_ENGINE.begin() as conn:
             result = conn.execute(
                 text("""INSERT INTO
-                            staging.pipeline_watermarks 
+                            metadata.pipeline_watermarks 
                             (pipeline_name, last_extracted_at)
                         VALUES 
                             (:name, :wm)
@@ -61,7 +61,7 @@ def log_run_start(pipeline_name):
         with POSTGRESQL_ENGINE.begin() as conn:
             conn.execute(
                 text("""INSERT INTO
-                            staging.pipeline_run_log
+                            metadata.pipeline_run_log
                     (run_id, pipeline_name, run_started_at, status)
                 VALUES
                     (:run_id, :name, :started_at, :status)
@@ -72,7 +72,7 @@ def log_run_start(pipeline_name):
         logger.info(f"[{pipeline_name}] run started, run_id = {run_id}")
         return run_id
     except Exception as e:
-        logger.error("Error updating logs on pipeline run start")
+        logger.exception(f"Error updating logs on pipeline run start {e}")
         return run_id
 
 
@@ -84,7 +84,7 @@ def log_run_end(run_id, pipeline_name, rows_extracted,
         with POSTGRESQL_ENGINE.begin() as conn:
             conn.execute(
             text("""
-                UPDATE staging.pipeline_run_log
+                UPDATE metadata.pipeline_run_log
                 SET run_ended_at   = :ended_at,
                     rows_extracted = :rows_extracted,
                     rows_loaded    = :rows_loaded,
@@ -106,7 +106,7 @@ def log_run_end(run_id, pipeline_name, rows_extracted,
         logger.info(f"[{pipeline_name}] run {run_id} -> {status} (extracted rows={rows_extracted}, loaded rows={rows_loaded})")
 
     except Exception as e:
-        logger.error("Error updating logs on pipeline run end")
+        logger.exception(f"Error updating logs on pipeline run end {e}")
 
 
 
