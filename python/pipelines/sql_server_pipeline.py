@@ -20,12 +20,17 @@ TABLE_MAPPING = {
                     }
 
 
-def extracting_incremental_data(watermark):
+def extracting_incremental_data():
     try:
         extracted = {}
-        new_watermark = watermark
+        watermarks_used = {}
+        new_watermarks = {}
 
         for table_name, base_query in SOURCE1_QUERIES.items():
+            watermark_name = f"sql_server_{table_name}"
+            watermark = get_last_watermark(watermark_name)
+            watermarks_used[table_name] = watermark
+
             if watermark is not None:
                 query = text(f"{base_query} WHERE updated_at > :watermark")
                 df = pd.read_sql(query, SQL_SERVER_ENGINE, params = {"watermark": watermark})
@@ -33,17 +38,19 @@ def extracting_incremental_data(watermark):
             else:
                 df = pd.read_sql(base_query, SQL_SERVER_ENGINE)
 
-            logger.info(f"{PIPELINE_NAME} extracted {len(df)} rows from {table_name}")
+            logger.info(f"{PIPELINE_NAME} extracted {len(df)} rows from {table_name} (watermark={watermark})")
             extracted[table_name] = df
 
+            new_watermark = watermark
             if not df.empty:
                 latest_updated_at = df["updated_at"].max()
 
                 if new_watermark is None or latest_updated_at > new_watermark:
                     new_watermark = latest_updated_at
 
+            new_watermarks[table_name] = new_watermark
 
-        return extracted, new_watermark
+        return extracted, watermarks_used, new_watermarks
 
     except Exception as e:
         logger.error(f"Error extracting data from sql server{e}")
@@ -106,25 +113,27 @@ def run():
     rows_extracted = 0
     rows_loaded = 0
     try:
-        watermark = get_last_watermark(PIPELINE_NAME)
-
-        sql_server_df, new_watermark = extracting_incremental_data(watermark)
+        sql_server_df, watermarks_used, new_watermarks = extracting_incremental_data()
 
         rows_extracted = 0
         for df in sql_server_df.values():
             rows_extracted += len(df)
 
-
         for table_name, df in sql_server_df.items():
             profile_dataframe(table_name, df)
 
-
         rows_loaded = load_to_staging(sql_server_df)
 
-        if new_watermark is not None and new_watermark != watermark:
-            update_watermark(PIPELINE_NAME, new_watermark)
+        for table_name, new_watermark in new_watermarks.items():
+            if new_watermark is not None and new_watermark != watermarks_used[table_name]:
+                update_watermark(f"sql_server_{table_name}", new_watermark)
 
-        log_run_end(run_id, PIPELINE_NAME, rows_extracted, rows_loaded, new_watermark, status = "completed")
+        overall_watermark = max(
+            (wm for wm in new_watermarks.values() if wm is not None),
+            default=None,
+        )
+
+        log_run_end(run_id, PIPELINE_NAME, rows_extracted, rows_loaded, overall_watermark, status = "completed")
         
     except Exception as e:
         logger.error(f"{PIPELINE_NAME} failed {e}")

@@ -178,6 +178,41 @@ BROWSER_WEIGHTS = [65, 15, 10, 10]
 
 BUSINESS_HOURS = {"start": 8,  "end": 18}
 
+# Seasonal monthly weighting for order volume: Q4 peak, summer dip.
+# 100 = baseline; values are illustrative starting points, tune after review.
+MONTH_WEIGHTS = {
+    1: 90,  2: 90,  3: 95,  4: 100, 5: 100, 6: 70,
+    7: 65,  8: 70,  9: 100, 10: 130, 11: 150, 12: 160,
+}
+
+# Day-of-week weighting (Mon=0 ... Sun=6): orders skew weekday.
+DOW_WEIGHTS_ORDERS = {0: 110, 1: 115, 2: 115, 3: 110, 4: 100, 5: 40, 6: 30}
+
+# Web traffic skews weekday too, but less sharply than orders.
+DOW_WEIGHTS_TRAFFIC = {0: 105, 1: 110, 2: 110, 3: 105, 4: 100, 5: 70, 6: 60}
+
+# Hour-of-day weighting for web traffic: morning spike, using BUSINESS_HOURS
+# as the rough center of mass rather than a hard filter.
+HOUR_WEIGHTS_TRAFFIC = {
+    0: 20, 1: 15, 2: 10, 3: 10, 4: 10, 5: 20,
+    6: 40, 7: 70, 8: 130, 9: 160, 10: 150, 11: 120,
+    12: 90, 13: 100, 14: 110, 15: 100, 16: 90, 17: 70,
+    18: 50, 19: 40, 20: 35, 21: 30, 22: 25, 23: 20,
+}
+
+# Weighting for master/reference entity creation timestamps (company signups,
+# customer registrations, supplier onboarding, product catalog additions).
+# Kept separate from the transactional weights above: onboarding is a
+# business/admin process, not customer purchasing behavior.
+ONBOARDING_MONTH_WEIGHTS = {
+    1: 130, 2: 115, 3: 105, 4: 100, 5: 95,  6: 85,
+    7: 80,  8: 85,  9: 105, 10: 110, 11: 100, 12: 90,
+}
+
+# Near-zero weekend activity: nobody's onboarding a B2B company or adding a
+# SKU to the catalog on a Sunday.
+ONBOARDING_DOW_WEIGHTS = {0: 115, 1: 115, 2: 115, 3: 115, 4: 110, 5: 15, 6: 10}
+
 
 
 # ------------------------------------------------

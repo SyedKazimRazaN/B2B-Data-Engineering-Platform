@@ -39,8 +39,13 @@ BROWSER_WEIGHTS,
 DEVICE_TYPES,
 DEVICE_TYPE_WEIGHTS,
 ORDER_STATUS,
-ORDER_STATUS_WEIGHTS
+ORDER_STATUS_WEIGHTS,
+MONTH_WEIGHTS,
+DOW_WEIGHTS_ORDERS,
+DOW_WEIGHTS_TRAFFIC,
+HOUR_WEIGHTS_TRAFFIC
 )
+from python.utils.date_weighting import weighted_datetime_between
 
 # -----------------------------
 # Global configuration setup
@@ -231,13 +236,19 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
                 #new orders through leads
                 lead_created_at = pd.to_datetime(lead["created_at"])
                 earliest = max(lead_created_at, customer_created_at)
-                order_date = fake.date_time_between(start_date=earliest, end_date=END_DATE)
+                order_date = weighted_datetime_between(
+                    fake, earliest, END_DATE,
+                    month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
+                )
                 lead_id = lead["lead_id"]
 
             else:
                     #legacy orders
                     earliest = max(pd.to_datetime(START_DATE), customer_created_at)
-                    order_date = fake.date_time_between(start_date=earliest, end_date=END_DATE)
+                    order_date = weighted_datetime_between(
+                        fake, earliest, END_DATE,
+                        month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
+                    )
                     lead_id = None
 
             order_status = random.choices(ORDER_STATUS, weights=ORDER_STATUS_WEIGHTS, k=1)[0]
@@ -454,7 +465,10 @@ def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
                     "log_id" : fake.uuid4().replace("-",""),
                     "country": selected_country,
                     "city" : city,
-                    "log_timestamp" : fake.date_time_between(start_date=START_DATE, end_date=END_DATE),
+                    "log_timestamp" : weighted_datetime_between(
+                        fake, START_DATE, END_DATE,
+                        dow_weights=DOW_WEIGHTS_TRAFFIC, hour_weights=HOUR_WEIGHTS_TRAFFIC,
+                    ),
                     "client_ip" : fake_local.ipv4(),
                     "auth_user" : auth_user,
                     "session_id" : fake.uuid4().replace("-",""),

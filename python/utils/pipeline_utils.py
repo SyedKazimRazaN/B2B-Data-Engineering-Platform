@@ -24,31 +24,32 @@ def get_last_watermark(pipeline_name):
         logger.info(f"{pipeline_name} last watermark = {watermark}")
         return watermark
     except Exception as e:
-        logger.error(f"Cannot update last watermark {e}")
+        logger.exception(f"Error reading watermark for {pipeline_name}: {e}")
+        raise
 
 
 
 def update_watermark(pipeline_name, new_watermark):
     try:
         with POSTGRESQL_ENGINE.begin() as conn:
-            result = conn.execute(
+            conn.execute(
                 text("""INSERT INTO
-                            metadata.pipeline_watermarks 
+                            metadata.pipeline_watermarks
                             (pipeline_name, last_extracted_at)
-                        VALUES 
+                        VALUES
                             (:name, :wm)
                         ON CONFLICT (pipeline_name)
                         DO UPDATE
-                        SET 
+                        SET
                             last_extracted_at = EXCLUDED.last_extracted_at
                     """),
-            {"name": pipeline_name, "wm": new_watermark}),
-           
+            {"name": pipeline_name, "wm": new_watermark})
 
         logger.info(f"{pipeline_name} watermark updated = {new_watermark}")
-        return 
+        return
     except Exception as e:
-        logger.error("")
+        logger.exception(f"Error updating watermark for {pipeline_name}: {e}")
+        raise
 
 
 
@@ -72,8 +73,8 @@ def log_run_start(pipeline_name):
         logger.info(f"[{pipeline_name}] run started, run_id = {run_id}")
         return run_id
     except Exception as e:
-        logger.exception(f"Error updating logs on pipeline run start {e}")
-        return run_id
+        logger.exception(f"Error logging pipeline run start for {pipeline_name}: {e}")
+        raise
 
 
 def log_run_end(run_id, pipeline_name, rows_extracted,

@@ -25,7 +25,10 @@ from python.utils.constants import (
     PRODUCT_BRANDS,
     PRODUCT_VARIANTS,
     PRICE_RANGES,
+    ONBOARDING_MONTH_WEIGHTS,
+    ONBOARDING_DOW_WEIGHTS,
 )
+from python.utils.date_weighting import weighted_datetime_between
 
 
 Faker.seed(RANDOM_SEED)
@@ -103,8 +106,13 @@ def generate_companies():
             city = random.choice(OPERATING_LOCATIONS[selected_country]["cities_hq"])
 
 
-            created_at = fake_local.date_time_between(start_date=START_DATE, end_date=END_DATE)
-            updated_at = fake_local.date_time_between(start_date=created_at, end_date=END_DATE)
+            created_at = weighted_datetime_between(
+                fake_local, START_DATE, END_DATE,
+                month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
+            )
+            updated_at = weighted_datetime_between(
+                fake_local, created_at, END_DATE, dow_weights=ONBOARDING_DOW_WEIGHTS,
+            )
 
             companies_records.append({
                 "company_id" : fake.uuid4().replace("-",""),    #using global fake instead of fake_locale to maintain global uniqueness
@@ -201,8 +209,13 @@ def generate_customers(companies):
 
             for _ in range(num_customers_for_this_company):
 
-                created_at = fake.date_time_between(start_date=company["created_at"], end_date=END_DATE)
-                updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+                created_at = weighted_datetime_between(
+                    fake, company["created_at"], END_DATE,
+                    month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
+                updated_at = weighted_datetime_between(
+                    fake, created_at, END_DATE, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
 
 
                 selected_gender = random.choice(GENDERS)
@@ -280,8 +293,13 @@ def generate_products(categories):
                 selected_brand = random.choice(PRODUCT_BRANDS[category_name])
                 selected_variant = random.choice(PRODUCT_VARIANTS)
                 
-                created_at = fake.date_time_between(start_date=START_DATE, end_date=END_DATE)
-                updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+                created_at = weighted_datetime_between(
+                    fake, START_DATE, END_DATE,
+                    month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
+                updated_at = weighted_datetime_between(
+                    fake, created_at, END_DATE, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
 
                 products_records.append({
                     "product_id" : fake.uuid4().replace("-",""), 
@@ -346,8 +364,13 @@ def generate_suppliers(companies):
                 phone += str(random.randint(0, 9))
 
 
-            created_at = fake.date_time_between(start_date=selected_company["created_at"], end_date=END_DATE)
-            updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+            created_at = weighted_datetime_between(
+                fake, selected_company["created_at"], END_DATE,
+                month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
+            )
+            updated_at = weighted_datetime_between(
+                fake, created_at, END_DATE, dow_weights=ONBOARDING_DOW_WEIGHTS,
+            )
 
             suppliers_dataset.append({
                 "supplier_id" : fake.uuid4().replace("-",""), 
@@ -394,8 +417,13 @@ def generate_supplier_product_mapping(suppliers,products):
             
             for supplier in selected_supplier: #ensuring every product get min  suppliers according to Rule
 
-                created_at = fake.date_time_between(start_date=product["created_at"], end_date=END_DATE)
-                updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+                created_at = weighted_datetime_between(
+                    fake, product["created_at"], END_DATE,
+                    month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
+                updated_at = weighted_datetime_between(
+                    fake, created_at, END_DATE, dow_weights=ONBOARDING_DOW_WEIGHTS,
+                )
                 supplier_price = round(product["cost_price"] * random.uniform(0.95, 1.05),2)   
                 is_prefered = preferred_supplier["supplier_id"] == supplier["supplier_id"] 
                 

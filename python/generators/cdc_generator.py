@@ -151,6 +151,12 @@ def generate_daily_updates():
             logger.error(f"Lead updates failed: {e}")
             updates["leads_updates"] = 0
 
+        try:
+            updates["products_deactivated"] = generate_and_deactivate_products()
+        except Exception as e:
+            logger.error(f"Product deactivation failed: {e}")
+            updates["products_deactivated"] = 0
+
         return updates
 
     except Exception as e:
@@ -386,6 +392,55 @@ def generate_and_update_leads():
         raise
 
 
+def generate_and_deactivate_products():
+    """
+    Soft-delete simulation: occasionally discontinue a small number of
+    currently active products (is_active = False), per docs/project_plan.md's
+    "Daily Inserts -> Daily Updates -> Daily Soft Deletes" CDC step.
+
+    Scoped to Products because it's the only source table with an is_active
+    column end-to-end (source -> staging -> intermediate -> dim_products).
+    One-directional: deactivated products are never reactivated here.
+    """
+    try:
+        logger.info("Generating product deactivations")
+        num_deactivations = random.randint(0, 2)
+
+        if num_deactivations == 0:
+            logger.info("No products selected for deactivation today")
+            return 0
+
+        query = f"""
+        SELECT TOP {num_deactivations} product_id, product_name
+        FROM source.Products
+        WHERE is_active = 1
+        ORDER BY NEWID()
+        """
+        selected_products = pd.read_sql(query, con=SQL_SERVER_ENGINE).to_dict("records")
+
+        for product in selected_products:
+            with SQL_SERVER_ENGINE.begin() as conn:
+                conn.execute(
+                    text("""
+                        UPDATE source.Products
+                        SET
+                            is_active = 0,
+                            updated_at = :updated_at
+                        WHERE product_id = :product_id
+                    """),
+                    {
+                        "updated_at": datetime.now(),
+                        "product_id": product["product_id"]
+                    }
+                )
+            logger.info(f"Deactivated product: {product['product_name']}")
+
+        logger.info(f"Successfully deactivated {len(selected_products)} products")
+        return len(selected_products)
+
+    except Exception as e:
+        logger.error(f"Error deactivating products: {e}")
+        raise
 
 
 if __name__ == "__main__":
@@ -407,7 +462,8 @@ if __name__ == "__main__":
     f"Updated Companies: {updated_datasets['companies_updates']}\n"
     f"Updated Customers: {updated_datasets['customers_updates']}\n"
     f"Updated Orders: {updated_datasets['orders_updates']}\n"
-    f"Updated Leads: {updated_datasets['leads_updates']}"
+    f"Updated Leads: {updated_datasets['leads_updates']}\n"
+    f"Deactivated Products: {updated_datasets['products_deactivated']}"
 )
 
 
