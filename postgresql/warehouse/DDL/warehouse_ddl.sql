@@ -233,6 +233,57 @@ CREATE INDEX idx_dim_products_category
 
 
 
+-- ============================================================================
+-- dim_supplier_product  (SCD Type 1)
+-- ============================================================================
+-- Bridges suppliers and products with the price negotiated for that specific
+-- pairing. supplier_price is not an attribute of dim_suppliers (it varies by
+-- product) or of dim_products (it varies by supplier) — it belongs to the
+-- supplier-product relationship itself, so it lives in its own dimension
+-- rather than being added to fact_order_items.
+--
+-- Used for supplier-specific gross margin analysis: fact_order_items already
+-- carries supplier_key + product_key, so a KPI view joins on those same
+-- surrogate keys to pull in supplier_price alongside catalog_price/cost_price
+-- from dim_products.
+-- ============================================================================
+
+CREATE TABLE warehouse.dim_supplier_product (
+    supplier_product_key    SERIAL          PRIMARY KEY,
+    supplier_product_id     CHAR(32)        NOT NULL UNIQUE,
+    supplier_id              CHAR(32)        NOT NULL,
+    product_id                CHAR(32)        NOT NULL,
+    supplier_key              INT             NOT NULL,
+    product_key                INT             NOT NULL,
+    supplier_price             NUMERIC(10,2)   NOT NULL,
+    lead_time_days             INT             NOT NULL,
+    is_preferred_supplier      BOOLEAN         NOT NULL DEFAULT FALSE,
+    created_at                  TIMESTAMP       NOT NULL,
+    updated_at                  TIMESTAMP       NOT NULL,
+
+    CONSTRAINT fk_dsp_supplier
+        FOREIGN KEY (supplier_key) REFERENCES warehouse.dim_suppliers (supplier_key),
+
+    CONSTRAINT fk_dsp_product
+        FOREIGN KEY (product_key) REFERENCES warehouse.dim_products (product_key),
+
+    CONSTRAINT ck_dsp_price
+        CHECK (supplier_price >= 0),
+
+    CONSTRAINT ck_dsp_leadtime
+        CHECK (lead_time_days >= 0)
+);
+
+-- Gross Margin Analysis: join fact_order_items (supplier_key, product_key) to
+-- resolve the negotiated supplier_price for that specific pairing
+CREATE INDEX idx_dsp_supplier
+    ON warehouse.dim_supplier_product (supplier_key);
+
+CREATE INDEX idx_dsp_product
+    ON warehouse.dim_supplier_product (product_key);
+
+
+
 
 -- ============================================================================
 -- fact_orders
@@ -502,10 +553,11 @@ CREATE INDEX idx_fl_funnel  ON warehouse.fact_leads (funnel_stage);
 --   3. dim_customers     	(SCD1 upsert from intermediate.customers)
 --   4. dim_suppliers       (SCD1 upsert from intermediate.suppliers)
 --   5. dim_products        (SCD1 upsert from intermediate.products + categories)
---   6. fact_orders         (as-of join to dim_companies; direct lookup for the rest)
---   7. fact_order_items    (same as-of join, independent of #6)
---   8. fact_web_logs
---   9. fact_leads
+--   6. dim_supplier_product (SCD1 upsert from intermediate.supplier_product_mapping; requires dim_suppliers + dim_products loaded first)
+--   7. fact_orders         (as-of join to dim_companies; direct lookup for the rest)
+--   8. fact_order_items    (same as-of join, independent of #7)
+--   9. fact_web_logs
+--   10. fact_leads
 --
 -- Transformation/load logic (SCD2 merge, as-of joins, watermark-based
 -- incremental loads) is intentionally maintained separately from this

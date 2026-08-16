@@ -4,6 +4,7 @@ from pathlib import Path
 from python.utils.logger import get_logger
 from config.database import POSTGRESQL_ENGINE
 from sqlalchemy import text
+from python.utils.pipeline_utils import log_run_start, log_run_end
 
 logger = get_logger(__name__)
 
@@ -26,6 +27,7 @@ INITIAL
         ├── dim_customers
         ├── dim_suppliers
         ├── dim_products
+        ├── dim_supplier_product
         │
         ├── partitioning.sql
         │
@@ -56,6 +58,7 @@ INCREMENTAL
        ├── dim_customers       → SCD1
        ├── dim_suppliers       → SCD1
        ├── dim_products        → SCD1
+       ├── dim_supplier_product → SCD1
        │
        ├── partitioning.sql
        │
@@ -88,6 +91,10 @@ def run_transform():
         "...........................TRANSFORMING AND MERGING INTO INTERMEDIATE LAYER.............................."
     )
 
+    pipeline_name = "intermediate_transform"
+    run_id = log_run_start(pipeline_name)
+    rows_loaded = 0
+
     sql_files = [
         "Transform_companies.sql",
         "Transform_categories.sql",
@@ -115,7 +122,10 @@ def run_transform():
                 with open(file_path, "r", encoding="utf-8") as file:
                     sql_script = file.read()
 
-                connection.execute(text(sql_script))
+                result = connection.execute(text(sql_script))
+
+                if result.rowcount and result.rowcount > 0:
+                    rows_loaded += result.rowcount
 
                 logger.info("%s completed successfully", file_name)
 
@@ -123,12 +133,18 @@ def run_transform():
             "All Intermediate transformations committed successfully."
         )
 
-    except Exception:
+        log_run_end(run_id, pipeline_name, rows_extracted=None, rows_loaded=rows_loaded,
+                    watermark_used=None, status="completed")
+
+    except Exception as e:
 
         logger.exception(
             "Intermediate transformation failed. "
             "Transaction rolled back."
         )
+
+        log_run_end(run_id, pipeline_name, rows_extracted=None, rows_loaded=rows_loaded,
+                    watermark_used=None, status="failed", error_message=str(e))
 
         raise
 
@@ -140,6 +156,10 @@ def run_warehouse_load():
         "...........................LOADING WAREHOUSE LAYER.............................."
     )
 
+    pipeline_name = "warehouse_load"
+    run_id = log_run_start(pipeline_name)
+    rows_loaded = 0
+
     # ============================================================
     # 1. Warehouse dimension loads
     # ============================================================
@@ -149,6 +169,7 @@ def run_warehouse_load():
         "load_dim_customers.sql",
         "load_dim_suppliers.sql",
         "load_dim_products.sql",
+        "load_dim_supplier_product.sql",
         "load_fact_orders.sql",
         "load_fact_order_items.sql",
         "load_fact_web_logs.sql",
@@ -187,7 +208,10 @@ def run_warehouse_load():
                 with open(file_path, "r", encoding="utf-8") as file:
                     sql_script = file.read()
 
-                connection.execute(text(sql_script))
+                result = connection.execute(text(sql_script))
+
+                if result.rowcount and result.rowcount > 0:
+                    rows_loaded += result.rowcount
 
             logger.info("%s completed successfully.", file_name)
 
@@ -195,11 +219,17 @@ def run_warehouse_load():
             "All Warehouse loads completed successfully."
         )
 
-    except Exception:
+        log_run_end(run_id, pipeline_name, rows_extracted=None, rows_loaded=rows_loaded,
+                    watermark_used=None, status="completed")
+
+    except Exception as e:
 
         logger.exception(
             "Warehouse load failed."
         )
+
+        log_run_end(run_id, pipeline_name, rows_extracted=None, rows_loaded=rows_loaded,
+                    watermark_used=None, status="failed", error_message=str(e))
 
         raise
 
