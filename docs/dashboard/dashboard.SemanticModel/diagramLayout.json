@@ -1,0 +1,256 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 3460,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_customer_activity",
+          "nodeLineageTag": "f302a057-6fb0-4fa4-a15b-d352e6422c89",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_customer_lifetime_value",
+          "nodeLineageTag": "21ac1ed6-ce92-433b-b962-6fc7bd85a5cf",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_geographic_sales",
+          "nodeLineageTag": "ae771727-1cd7-4272-9d6a-3d3e4a27c249",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_geographic_web_traffic",
+          "nodeLineageTag": "a66a33f8-d7d7-492d-bbcc-fc8f18eaa83f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 24
+          },
+          "nodeIndex": "marts vw_gross_margin_analysis",
+          "nodeLineageTag": "e83cdf75-7caf-4b9e-aa3c-c35d69bd6a0a",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 0
+          },
+          "nodeIndex": "marts vw_lead_conversion_funnel",
+          "nodeLineageTag": "1975048d-f3af-4bb4-acea-96fd0e216f2f",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 84
+          },
+          "nodeIndex": "marts vw_lead_quality_vs_order_value",
+          "nodeLineageTag": "c08784cb-0d38-4dc8-98d1-9b0d86ae691f",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 36
+          },
+          "nodeIndex": "marts vw_monthly_revenue_trend",
+          "nodeLineageTag": "b3ee54df-e24f-4a6d-ba32-8a453f276832",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 36
+          },
+          "nodeIndex": "marts vw_pipeline_execution_metrics",
+          "nodeLineageTag": "f2714802-1dbd-4113-9237-7a70f148fa79",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_revenue_by_company",
+          "nodeLineageTag": "b822ca5a-4706-4dcd-9162-8da3cf437ffc",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 36
+          },
+          "nodeIndex": "marts vw_revenue_by_product",
+          "nodeLineageTag": "8913aa34-8e65-4262-8932-6118f2b0b450",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_supplier_product_performance",
+          "nodeLineageTag": "e43fb9fe-266b-4ee3-bec9-62e6c5c08506",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 36
+          },
+          "nodeIndex": "marts vw_supplier_revenue",
+          "nodeLineageTag": "c86b593a-9402-4903-82d2-437ad6a2ad4e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 60
+          },
+          "nodeIndex": "marts vw_traffic_by_device",
+          "nodeLineageTag": "cea2ed87-dc54-4701-9e1e-826c5c0e613a",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_web_activity_quality",
+          "nodeLineageTag": "bad2d336-e57b-4ab5-89f1-4c25f1969c9a",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260,
+            "y": 96
+          },
+          "nodeIndex": "Measure",
+          "nodeLineageTag": "61325b74-6874-435a-a4a0-11ed2003be11",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544,
+            "y": 48
+          },
+          "nodeIndex": "marts vw_pipeline_latest_run",
+          "nodeLineageTag": "6215a75f-7776-42c6-adc6-82b4aa4e329b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828,
+            "y": 12
+          },
+          "nodeIndex": "marts vw_pipeline_run_history",
+          "nodeLineageTag": "d89ce147-5f28-4d0c-a19b-6b0e7b2b2cfe",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

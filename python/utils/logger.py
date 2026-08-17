@@ -1,15 +1,13 @@
+"""
+Project-wide logging factory. get_logger(name) returns a configured,
+reusable logger that writes to both the console and logs/pipeline.log
+with a shared format, and registers its handlers only once per name to
+avoid duplicate log lines on repeated calls.
+"""
+
 from config.config import PIPELINE_LOGS_PATH, LOG_LEVEL, LOG_FORMAT
 import logging
 from pathlib import Path
-
-"""
-    Creates and returns a configured reusable logger.
-
-    Logs are written to:
-    - Console
-    - file (pipeline.log)
-    - common formatting across project ("%(asctime)s | %(levelname)s |%(name)s | %(lineno)d | %(message)s")
-"""
 
 
 def get_logger(name: str) -> logging.Logger:

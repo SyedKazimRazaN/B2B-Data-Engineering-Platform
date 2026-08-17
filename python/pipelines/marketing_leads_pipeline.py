@@ -1,3 +1,15 @@
+"""
+ELT pipeline for Source 2 (Marketing Leads CSV): snapshot-based, full
+re-read of the CSV every run (no watermark) - truncates and reloads
+staging.marketing_leads on every execution.
+
+Execution Flow (run()):
+    extract_source2()      # read full marketing_leads CSV
+        -> profile_dataframe()
+        -> load_to_stagging()   # TRUNCATE + append into staging.marketing_leads
+        -> log_run_start()/log_run_end() bracket the whole run
+"""
+
 import pandas as pd
 from sqlalchemy import text
 from config.config import (MARKETING_LEADS_OUTPUT_PATH, STAGING_SCHEMA, CHUNK_SIZE)

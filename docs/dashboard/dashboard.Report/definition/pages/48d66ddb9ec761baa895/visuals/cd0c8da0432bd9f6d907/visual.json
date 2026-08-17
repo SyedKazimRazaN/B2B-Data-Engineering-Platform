@@ -1,0 +1,264 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "cd0c8da0432bd9f6d907",
+  "position": {
+    "x": 11.627939986657392,
+    "y": 255.81467970646264,
+    "z": 1000,
+    "height": 217.44247775049325,
+    "width": 672.09493122879724,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "marts vw_pipeline_execution_metrics"
+                    }
+                  },
+                  "Property": "pipeline_name"
+                }
+              },
+              "queryRef": "marts vw_pipeline_execution_metrics.pipeline_name",
+              "nativeQueryRef": "pipeline_name"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "marts vw_pipeline_execution_metrics"
+                        }
+                      },
+                      "Property": "avg_load_time"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Average(marts vw_pipeline_execution_metrics.avg_load_time)",
+              "nativeQueryRef": "Avg Load Time (sec)",
+              "displayName": "Avg Load Time (sec)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "marts vw_pipeline_execution_metrics"
+                    }
+                  },
+                  "Property": "success_rate"
+                }
+              },
+              "queryRef": "Sum(marts vw_pipeline_execution_metrics.success_rate)",
+              "nativeQueryRef": "success_rate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "marts vw_pipeline_execution_metrics"
+                    }
+                  },
+                  "Property": "error_rate"
+                }
+              },
+              "queryRef": "Sum(marts vw_pipeline_execution_metrics.error_rate)",
+              "nativeQueryRef": "error_rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure"
+                    }
+                  },
+                  "Property": "Data Freshness (Formatted)"
+                }
+              },
+              "queryRef": "Measure.Data Freshness (Formatted)",
+              "nativeQueryRef": "Data Freshness",
+              "displayName": "Data Freshness"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure"
+                    }
+                  },
+                  "Property": "Watermark Lag (Formatted)"
+                }
+              },
+              "queryRef": "Measure.Watermark Lag (Formatted)",
+              "nativeQueryRef": "Watermark Lag",
+              "displayName": "Watermark Lag"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "marts vw_pipeline_execution_metrics"
+                  }
+                },
+                "Property": "pipeline_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pipeline Step Executions'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "spaceAbovePlotArea": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            },
+            "spaceAboveDivider": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            },
+            "spaceAboveSubtitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

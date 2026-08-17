@@ -1,0 +1,50 @@
+table 'marts vw_traffic_by_device'
+	lineageTag: cea2ed87-dc54-4701-9e1e-826c5c0e613a
+
+	column device_type
+		dataType: string
+		lineageTag: e6289478-f617-4b25-a744-50a4dee795db
+		summarizeBy: none
+		sourceColumn: device_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 28c8706b-5a99-4515-b512-9ca7bd3680c6
+		summarizeBy: sum
+		sourceColumn: total_sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column converted_sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d011df9-f507-4723-9105-02438b0b85bb
+		summarizeBy: sum
+		sourceColumn: converted_sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column conversion_rate_pct
+		dataType: double
+		lineageTag: 24901695-b7e8-45dc-8008-857725a9825d
+		summarizeBy: sum
+		sourceColumn: conversion_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_traffic_by_device' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_traffic_by_device = Source{[Schema="marts",Item="vw_traffic_by_device"]}[Data]
+				in
+				    marts_vw_traffic_by_device
+
+	annotation PBI_ResultType = Table
+

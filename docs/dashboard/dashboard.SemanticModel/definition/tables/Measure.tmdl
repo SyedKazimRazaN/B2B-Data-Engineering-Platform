@@ -1,0 +1,123 @@
+table Measure
+	lineageTag: 61325b74-6874-435a-a4a0-11ed2003be11
+
+	measure 'Total Gross Revenue' =
+			
+			SUM ('marts vw_monthly_revenue_trend'[gross_revenue])
+		lineageTag: 15eee17d-ac24-40c0-b4cf-b9487b8d88a4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Net Revenue' =
+			
+			SUM ('marts vw_monthly_revenue_trend'[net_revenue])
+		lineageTag: 78b31f4c-913e-4989-8ea9-9f627507b727
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Measure
+		lineageTag: e85ec9dc-e29e-4e11-8f3a-130a134d6cc6
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+	measure 'Latest Net MoM %' =
+			
+			VAR LatestYear = MAX('marts vw_monthly_revenue_trend'[year])
+			VAR LatestMonth =
+			    CALCULATE(MAX('marts vw_monthly_revenue_trend'[month_num]), 'marts vw_monthly_revenue_trend'[year] = LatestYear)
+			RETURN
+			    CALCULATE(
+			        MAX('marts vw_monthly_revenue_trend'[net_mom_pct]),
+			        'marts vw_monthly_revenue_trend'[year] = LatestYear,
+			        'marts vw_monthly_revenue_trend'[month_num] = LatestMonth
+			    )
+		lineageTag: 08798f98-2538-44b2-92d3-ad1c9478df9c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Repeat Rate' =
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('marts vw_customer_activity'), 'marts vw_customer_activity'[customer_status] = "Repeat Customer"),
+			    COUNTROWS('marts vw_customer_activity')
+			) * 100
+		lineageTag: e90a5d5b-fad2-4aa0-8c2c-2b5b7f6ef4b2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Customer AOV' =
+			
+			AVERAGE('marts vw_customer_activity'[average_order_value])
+		lineageTag: f3ca06ca-3086-45dd-a7de-f4c89f216ee2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Lead Conversion Rate' =
+			
+			DIVIDE(SUM('marts vw_lead_conversion_funnel'[converted_leads]), SUM('marts vw_lead_conversion_funnel'[total_leads]))
+		lineageTag: 7c2e4f91-3b6a-4d8e-9f1c-2a5b8e6d4c73
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Last Run Status' =
+			
+			VAR LatestRunTime = MAX('marts vw_pipeline_run_history'[run_timestamp])
+			RETURN
+			    CALCULATE(
+			        MAX('marts vw_pipeline_run_history'[status]),
+			        'marts vw_pipeline_run_history'[run_timestamp] = LatestRunTime
+			    )
+		lineageTag: 9f3d6b82-4c1a-4e7f-8b5d-6a2e9c0f7d4b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Data Freshness (Formatted)' =
+			
+			VAR TotalSeconds = MAX('marts vw_pipeline_execution_metrics'[data_freshness])
+			VAR D = INT(TotalSeconds / 86400)
+			VAR H = INT(MOD(TotalSeconds, 86400) / 3600)
+			VAR M = INT(MOD(TotalSeconds, 3600) / 60)
+			RETURN
+			    IF(
+			        ISBLANK(TotalSeconds), BLANK(),
+			        IF(D > 0, D & "d " & H & "h", IF(H > 0, H & "h " & M & "m", M & "m"))
+			    )
+		lineageTag: 3c7e4a19-8f2d-4b6e-a1c5-7d9e2f8b6a4c
+
+		annotation PBI_FormatHint = {"isGeneralText":true}
+
+	measure 'Watermark Lag (Formatted)' =
+			
+			VAR TotalSeconds = MAX('marts vw_pipeline_execution_metrics'[watermark_lag])
+			VAR D = INT(TotalSeconds / 86400)
+			VAR H = INT(MOD(TotalSeconds, 86400) / 3600)
+			VAR M = INT(MOD(TotalSeconds, 3600) / 60)
+			RETURN
+			    IF(
+			        ISBLANK(TotalSeconds), BLANK(),
+			        IF(D > 0, D & "d " & H & "h", IF(H > 0, H & "h " & M & "m", M & "m"))
+			    )
+		lineageTag: 8b1f6d2a-4e7c-4a95-b3d8-1f6a9c4e7b2d
+
+		annotation PBI_FormatHint = {"isGeneralText":true}
+
+	column Column1
+		dataType: int64
+		formatString: 0
+		lineageTag: 1054be80-d7b6-4c23-9d5a-aee38da0f1f3
+		summarizeBy: sum
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Measure = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

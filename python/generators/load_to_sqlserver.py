@@ -1,3 +1,11 @@
+"""
+Shared loader used by all generators to append pandas DataFrames into
+their matching SQL Server "source" schema tables (Companies, Categories,
+Customers, Products, Suppliers, Supplier_Product_Mapping, Orders,
+Order_Items). Any key present in `datasets` that isn't in the table
+mapping is silently skipped.
+"""
+
 from python.utils.logger import get_logger
 from config.database import SQL_SERVER_ENGINE
 

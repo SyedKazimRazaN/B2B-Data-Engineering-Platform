@@ -1,0 +1,33 @@
+table 'marts vw_lead_quality_vs_order_value'
+	lineageTag: c08784cb-0d38-4dc8-98d1-9b0d86ae691f
+
+	column converted_leads
+		dataType: int64
+		formatString: 0
+		lineageTag: fa776617-d9d9-4933-a811-859f08af30af
+		summarizeBy: sum
+		sourceColumn: converted_leads
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_score_order_value_correlation
+		dataType: double
+		lineageTag: a4b58c0d-1c32-4b87-b299-3f7f7f6987bb
+		summarizeBy: sum
+		sourceColumn: lead_score_order_value_correlation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_lead_quality_vs_order_value' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_lead_quality_vs_order_value = Source{[Schema="marts",Item="vw_lead_quality_vs_order_value"]}[Data]
+				in
+				    marts_vw_lead_quality_vs_order_value
+
+	annotation PBI_ResultType = Table
+

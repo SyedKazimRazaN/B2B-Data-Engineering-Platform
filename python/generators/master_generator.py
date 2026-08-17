@@ -1,3 +1,22 @@
+"""
+Master (Source 1) generator: builds the initial, one-time "seed" dataset
+for Source 1 - Companies, Categories, Customers, Products, Suppliers, and
+the Supplier_Product_Mapping - then loads it into SQL Server.
+
+Execution Flow (__main__):
+    generate_master_datasets()
+        ├── generate_categories()
+        ├── generate_companies()
+        ├── generate_customers(companies)
+        ├── generate_products(categories)
+        ├── generate_suppliers(companies)
+        └── generate_supplier_product_mapping(suppliers, products)
+    -> load_to_sqlserver(master_datasets)
+
+Run once to initialize Source 1; daily incremental changes afterwards are
+handled by cdc_generator.py.
+"""
+
 import pandas as pd
 from faker import Faker
 from python.utils.logger import get_logger

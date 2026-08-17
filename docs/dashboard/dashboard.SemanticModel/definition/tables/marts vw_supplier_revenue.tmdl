@@ -1,0 +1,68 @@
+table 'marts vw_supplier_revenue'
+	lineageTag: c86b593a-9402-4903-82d2-437ad6a2ad4e
+
+	column supplier_id
+		dataType: string
+		lineageTag: 37fc843a-1fe5-4db6-8877-949755fbfe49
+		summarizeBy: none
+		sourceColumn: supplier_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_name
+		dataType: string
+		lineageTag: e83c0e96-3409-451e-909d-d363c0cdba65
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: be7db8d7-13c8-49fb-bfaa-e6a5509a6344
+		summarizeBy: sum
+		sourceColumn: total_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_revenue
+		dataType: double
+		lineageTag: b3386136-bc19-45c6-8838-06a3fac37c26
+		summarizeBy: sum
+		sourceColumn: total_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue_share_pct
+		dataType: double
+		lineageTag: eefa64b2-198b-4e18-8fc8-f353556ae092
+		summarizeBy: sum
+		sourceColumn: revenue_share_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column supplier_rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 77e2ede7-1be8-4845-9448-5c349c45f62c
+		summarizeBy: sum
+		sourceColumn: supplier_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_supplier_revenue' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_supplier_revenue = Source{[Schema="marts",Item="vw_supplier_revenue"]}[Data]
+				in
+				    marts_vw_supplier_revenue
+
+	annotation PBI_ResultType = Table
+

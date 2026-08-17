@@ -1,0 +1,78 @@
+table 'marts vw_gross_margin_analysis'
+	lineageTag: e83cdf75-7caf-4b9e-aa3c-c35d69bd6a0a
+
+	column product_name
+		dataType: string
+		lineageTag: bfceb36b-ad4e-4689-aa0b-e20aa08534f7
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column supplier_name
+		dataType: string
+		lineageTag: dff44d1b-c8d7-4d7f-9737-61d35c796b35
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column catalog_price
+		dataType: double
+		lineageTag: cd3ea524-333e-418c-adcb-103b78878328
+		summarizeBy: sum
+		sourceColumn: catalog_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actual_selling_price
+		dataType: double
+		lineageTag: 925c016d-ef44-451c-9d39-3103af081ea6
+		summarizeBy: sum
+		sourceColumn: actual_selling_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column supplier_price
+		dataType: double
+		lineageTag: 852316e5-9c8f-4898-9295-3c44677f3ec7
+		summarizeBy: sum
+		sourceColumn: supplier_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gross_profit
+		dataType: double
+		lineageTag: 0756a967-85bb-4bbe-9bab-bd7316b309b5
+		summarizeBy: sum
+		sourceColumn: gross_profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gross_margin_pct
+		dataType: double
+		lineageTag: 98517612-fcbd-45a5-92d0-393bac58ddcf
+		summarizeBy: sum
+		sourceColumn: gross_margin_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_gross_margin_analysis' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_gross_margin_analysis = Source{[Schema="marts",Item="vw_gross_margin_analysis"]}[Data]
+				in
+				    marts_vw_gross_margin_analysis
+

@@ -5,6 +5,7 @@ from python.utils.logger import get_logger
 from config.database import POSTGRESQL_ENGINE
 from sqlalchemy import text
 from python.utils.pipeline_utils import log_run_start, log_run_end
+from python.utils.notifier import notify
 
 logger = get_logger(__name__)
 
@@ -108,6 +109,24 @@ def run_transform():
         "Transform_web_logs.sql"
     ]
 
+    # Table each script above writes into - ANALYZE'd right after loading so
+    # the planner has real row-count stats for later steps in this same
+    # transaction (otherwise every table looks empty to the optimizer until
+    # commit, which can turn later joins into very slow nested loops at
+    # higher data volumes).
+    file_to_table = {
+        "Transform_companies.sql": "companies",
+        "Transform_categories.sql": "categories",
+        "Transform_customers.sql": "customers",
+        "Transform_suppliers.sql": "suppliers",
+        "Transform_products.sql": "products",
+        "Transform_supplier_product_mapping.sql": "supplier_product_mapping",
+        "Transform_marketing_leads.sql": "marketing_leads",
+        "Transform_orders.sql": "orders",
+        "Transform_order_items.sql": "order_items",
+        "Transform_web_logs.sql": "web_logs",
+    }
+
     try:
 
         # One transaction for the complete Intermediate transformation
@@ -123,6 +142,8 @@ def run_transform():
                     sql_script = file.read()
 
                 result = connection.execute(text(sql_script))
+
+                connection.execute(text(f"ANALYZE intermediate.{file_to_table[file_name]}"))
 
                 if result.rowcount and result.rowcount > 0:
                     rows_loaded += result.rowcount
@@ -165,6 +186,7 @@ def run_warehouse_load():
     # ============================================================
 
     sql_files = [
+        "load_dim_date.sql",
         "load_dim_companies.sql",
         "load_dim_customers.sql",
         "load_dim_suppliers.sql",
@@ -197,6 +219,23 @@ def run_warehouse_load():
         # Execute warehouse loads in dependency order
         # --------------------------------------------------------
 
+        # Table each script above writes into - ANALYZE'd right after
+        # loading (autovacuum doesn't run synchronously on commit, so the
+        # next script in this loop could otherwise still see stale/zero
+        # stats and pick a slow join plan at higher data volumes).
+        file_to_table = {
+            "load_dim_date.sql": "dim_date",
+            "load_dim_companies.sql": "dim_companies",
+            "load_dim_customers.sql": "dim_customers",
+            "load_dim_suppliers.sql": "dim_suppliers",
+            "load_dim_products.sql": "dim_products",
+            "load_dim_supplier_product.sql": "dim_supplier_product",
+            "load_fact_orders.sql": "fact_orders",
+            "load_fact_order_items.sql": "fact_order_items",
+            "load_fact_web_logs.sql": "fact_web_logs",
+            "load_fact_leads.sql": "fact_leads",
+        }
+
         for file_name in sql_files:
 
             logger.info("Executing %s", file_name)
@@ -209,6 +248,8 @@ def run_warehouse_load():
                     sql_script = file.read()
 
                 result = connection.execute(text(sql_script))
+
+                connection.execute(text(f"ANALYZE warehouse.{file_to_table[file_name]}"))
 
                 if result.rowcount and result.rowcount > 0:
                     rows_loaded += result.rowcount
@@ -299,8 +340,11 @@ def main():
             print("Invalid mode. Use 'initial' or 'incremental'.")
             sys.exit(1)
 
+        notify("Pipeline Completed", f"{mode.capitalize()} pipeline run finished successfully.")
+
     except Exception as e:
         logger.exception(f"Pipeline execution failed. {e}")
+        notify("Pipeline Failed", f"{mode.capitalize()} pipeline run failed: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":

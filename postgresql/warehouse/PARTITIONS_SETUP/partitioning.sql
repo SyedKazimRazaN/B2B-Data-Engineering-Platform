@@ -9,12 +9,9 @@ Partition key:
     date_key = YYYYMMDD
 
 Coverage:
-    August 2024 through August 2026
-
-Why 2026-09-01?
-    The upper boundary is exclusive, so:
-        FROM 20260801 TO 20260901
-    covers the entire August 2026 partition.
+    Rolling window: 2 years back through 6 months ahead of CURRENT_DATE,
+    computed dynamically each run so partitions never age out of range
+    (matches the same rolling window config.py uses for data generation).
 
 ===============================================================================
 */
@@ -24,6 +21,9 @@ DECLARE
 
     -- First day of the current month being created
     month_start DATE;
+
+    -- First day of the month after the last month we want covered
+    range_end DATE;
 
     -- Name of the partition we are going to create
     table_name TEXT;
@@ -41,8 +41,11 @@ DECLARE
 
 BEGIN
 
-    -- Start with August 2024
-    month_start := DATE '2024-08-01';
+    -- First day of the month, 2 years back from today
+    month_start := date_trunc('month', CURRENT_DATE - INTERVAL '2 years')::DATE;
+
+    -- First day of the month after the month 6 months ahead of today
+    range_end := (date_trunc('month', CURRENT_DATE + INTERVAL '6 months') + INTERVAL '1 month')::DATE;
 
 
     /*
@@ -51,7 +54,7 @@ BEGIN
         Move through the months one at a time.
     ---------------------------------------------------------------------------
     */
-    WHILE month_start < DATE '2026-09-01' LOOP
+    WHILE month_start < range_end LOOP
         /*
         -----------------------------------------------------------------------
         Inner loop:

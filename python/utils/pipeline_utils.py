@@ -1,3 +1,12 @@
+"""
+Shared metadata helpers used by every ELT pipeline:
+- get_last_watermark() / update_watermark(): per-pipeline incremental
+  watermark tracking in metadata.pipeline_watermarks.
+- log_run_start() / log_run_end(): write a row per pipeline execution
+  (status, row counts, watermark used, error message) to
+  metadata.pipeline_run_log.
+"""
+
 import uuid
 from datetime import datetime
 from sqlalchemy import text

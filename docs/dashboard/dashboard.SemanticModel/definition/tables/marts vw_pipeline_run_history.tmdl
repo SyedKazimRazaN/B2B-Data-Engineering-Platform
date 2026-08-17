@@ -1,0 +1,85 @@
+table 'marts vw_pipeline_run_history'
+	lineageTag: d89ce147-5f28-4d0c-a19b-6b0e7b2b2cfe
+
+	column run_id
+		dataType: string
+		lineageTag: 0cce0eda-45f4-4b94-8eb4-87358927ea87
+		summarizeBy: none
+		sourceColumn: run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column pipeline_name
+		dataType: string
+		lineageTag: a903de81-cb34-465c-b494-f3b306333636
+		summarizeBy: none
+		sourceColumn: pipeline_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column run_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a607b1d2-b7e6-444f-b727-87489233e058
+		summarizeBy: none
+		sourceColumn: run_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 8de4a6b0-c5bb-4e46-a0fd-83af4e43324f
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column rows_extracted
+		dataType: int64
+		lineageTag: 234c627e-66a0-455e-89b4-2404737c4ffc
+		summarizeBy: sum
+		sourceColumn: rows_extracted
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rows_loaded
+		dataType: int64
+		lineageTag: 7a09ff80-c8f6-40cd-91a8-b8f6f6388051
+		summarizeBy: sum
+		sourceColumn: rows_loaded
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column duration_seconds
+		dataType: double
+		lineageTag: ed1136ba-d94b-4cea-8bb8-1cfd456daa14
+		summarizeBy: sum
+		sourceColumn: duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column error_message
+		dataType: string
+		lineageTag: 92ed3aa0-4fa1-4723-bd62-73e312576c74
+		summarizeBy: none
+		sourceColumn: error_message
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_pipeline_run_history' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_pipeline_run_history = Source{[Schema="marts",Item="vw_pipeline_run_history"]}[Data]
+				in
+				    marts_vw_pipeline_run_history
+
+	annotation PBI_ResultType = Table
+

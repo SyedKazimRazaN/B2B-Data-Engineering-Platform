@@ -1,0 +1,92 @@
+table 'marts vw_lead_conversion_funnel'
+	lineageTag: 1975048d-f3af-4bb4-acea-96fd0e216f2f
+
+	column source
+		dataType: string
+		lineageTag: 10b1b070-e6a4-4098-9dd9-55c91c8b87af
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column campaign_name
+		dataType: string
+		lineageTag: e53576ad-399e-4b02-a33c-1e991f2bb3b6
+		summarizeBy: none
+		sourceColumn: campaign_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column utm_source
+		dataType: string
+		lineageTag: a8781d1d-d199-4e21-be91-afe7912a3a32
+		summarizeBy: none
+		sourceColumn: utm_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column utm_medium
+		dataType: string
+		lineageTag: f02c5fe1-9ac1-4554-aa14-0b65e09c279e
+		summarizeBy: none
+		sourceColumn: utm_medium
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_leads
+		dataType: int64
+		formatString: 0
+		lineageTag: e05a6f8e-0dce-44a6-932e-cccbf91d545b
+		summarizeBy: sum
+		sourceColumn: total_leads
+
+		annotation SummarizationSetBy = Automatic
+
+	column qualified_leads
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bcca479-1e3e-4297-a72a-88c31428dd9e
+		summarizeBy: sum
+		sourceColumn: qualified_leads
+
+		annotation SummarizationSetBy = Automatic
+
+	column converted_leads
+		dataType: int64
+		formatString: 0
+		lineageTag: edb4a4fb-11e3-4a23-8921-3781fed3c00a
+		summarizeBy: sum
+		sourceColumn: converted_leads
+
+		annotation SummarizationSetBy = Automatic
+
+	column orders
+		dataType: int64
+		formatString: 0
+		lineageTag: e816e307-3b7b-43d7-a6e0-c71ef5fc25f9
+		summarizeBy: sum
+		sourceColumn: orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column lead_conversion_rate_pct
+		dataType: double
+		lineageTag: 169cd0b6-2a86-475d-9ffd-42ed35920b90
+		summarizeBy: sum
+		sourceColumn: lead_conversion_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_lead_conversion_funnel' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_lead_conversion_funnel = Source{[Schema="marts",Item="vw_lead_conversion_funnel"]}[Data]
+				in
+				    marts_vw_lead_conversion_funnel
+
+	annotation PBI_ResultType = Table
+

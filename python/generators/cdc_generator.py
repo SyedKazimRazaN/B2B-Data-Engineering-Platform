@@ -1,3 +1,24 @@
+"""
+CDC (Change Data Capture) generator: simulates a live day of business
+activity on top of the seed data produced by master_generator.py and
+transaction_generator.py - new daily transactions plus in-place updates
+to existing records (UPDATE statements, mimicking real CDC).
+
+Execution Flow (__main__):
+    fetch_required_datasets()                       # companies/customers/supplier-product mapping
+        -> generate_daily_datasets(fetched_datasets) # new orders, order_items, leads, web_logs
+        -> loading_to_sources(daily_datasets)         # append to Source 1/2/3
+        -> generate_daily_updates()
+                ├── generate_and_update_companies()
+                ├── generate_and_update_customers()
+                ├── generate_and_update_orders()
+                ├── generate_and_update_leads()
+                └── generate_and_deactivate_products()
+
+Intended to be run once per day (e.g. via a scheduler) after the sources
+have been initialized once by master_generator.py / transaction_generator.py.
+"""
+
 from python.generators.load_to_sqlserver import load_to_sqlserver
 from python.generators.transaction_generator import (
 generate_orders,

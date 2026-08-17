@@ -1,0 +1,85 @@
+table 'marts vw_monthly_revenue_trend'
+	lineageTag: b3ee54df-e24f-4a6d-ba32-8a453f276832
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 98c981a2-edaa-4b7a-b5b4-b7acb63c5e09
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_name
+		dataType: string
+		lineageTag: 5eea72f8-55d5-4fbb-913e-0e3a0f329baa
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month_num
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column gross_revenue
+		dataType: double
+		lineageTag: a3f20064-049a-4287-b41f-fce10e79e487
+		summarizeBy: sum
+		sourceColumn: gross_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_revenue
+		dataType: double
+		lineageTag: 5d0a2482-a931-4fb8-9fc3-6bd37cfccf8a
+		summarizeBy: sum
+		sourceColumn: net_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_mom_pct
+		dataType: double
+		lineageTag: f33600f5-0549-43f0-922f-b77ff998566c
+		summarizeBy: sum
+		sourceColumn: net_mom_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gross_mom_pct
+		dataType: double
+		lineageTag: 743adfc0-f29c-4eaf-8cc8-55b8077df14e
+		summarizeBy: sum
+		sourceColumn: gross_mom_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column month_num
+		dataType: string
+		lineageTag: f9f09710-06e9-4d74-8036-d903de125e9f
+		summarizeBy: none
+		sourceColumn: month_num
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_monthly_revenue_trend' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_monthly_revenue_trend = Source{[Schema="marts",Item="vw_monthly_revenue_trend"]}[Data],
+				    #"Added Conditional Column" = Table.AddColumn(marts_vw_monthly_revenue_trend, "month_num", each if [month_name] = "January" then 1 else if [month_name] = "February" then 2 else if [month_name] = "March" then 3 else if [month_name] = "April" then 4 else if [month_name] = "May" then 5 else if [month_name] = "June" then 6 else if [month_name] = "July" then 7 else if [month_name] = "August" then 8 else if [month_name] = "September" then 9 else if [month_name] = "October" then 10 else if [month_name] = "November" then 11 else if [month_name] = "December" then 12 else null)
+				in
+				    #"Added Conditional Column"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

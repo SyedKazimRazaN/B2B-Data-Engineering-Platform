@@ -1,0 +1,12 @@
+relationship 7e2f4a91-6c3d-4b8a-9f1e-2d5c8a4b7e6f
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'marts vw_customer_lifetime_value'.country
+	toColumn: 'marts vw_geographic_sales'.country
+
+relationship 3b8d6f2a-9e4c-4a7d-8b1f-6c9e2a5d8f4b
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'marts vw_customer_lifetime_value'.country
+	toColumn: 'marts vw_customer_activity'.country
+

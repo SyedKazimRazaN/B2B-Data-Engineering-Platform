@@ -1,0 +1,105 @@
+table 'marts vw_customer_activity'
+	lineageTag: f302a057-6fb0-4fa4-a15b-d352e6422c89
+
+	column customer_key
+		dataType: int64
+		formatString: 0
+		lineageTag: bf070d85-11e4-4e2e-941a-5ddb6fd33dc7
+		summarizeBy: sum
+		sourceColumn: customer_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: ff1ac6ae-cdb4-4ef4-b658-371da7e4c602
+		summarizeBy: sum
+		sourceColumn: total_orders
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"marts vw_customer_activity","TableItemName":"total_orders (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column average_order_value
+		dataType: double
+		lineageTag: d59bee1c-3c71-4642-b580-337c7770697b
+		summarizeBy: sum
+		sourceColumn: average_order_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column customer_status
+		dataType: string
+		lineageTag: cfe9d0b6-5795-4a93-b918-289ff27389e3
+		summarizeBy: none
+		sourceColumn: customer_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column repeat_purchase_rate_pct
+		dataType: double
+		lineageTag: a077447a-17ba-41cf-b318-a1d44ad2907d
+		summarizeBy: sum
+		sourceColumn: repeat_purchase_rate_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'total_orders (bins)' =
+			IF(
+				ISBLANK('marts vw_customer_activity'[total_orders]),
+				BLANK(),
+				INT('marts vw_customer_activity'[total_orders])
+			)
+		formatString: 0
+		lineageTag: 73c3e8c3-8589-43f1-9466-6d303556c61f
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "marts vw_customer_activity"
+				          }
+				        },
+				        "Property": "total_orders"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 1.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"m","Entity":"marts vw_customer_activity"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"m"}},"Property":"total_orders"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"m"}},"Property":"total_orders"}},"Size":1.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 6d4e8f1a-2c7b-4a95-9e3d-8f1a6b4c9e2d
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_customer_activity' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_customer_activity = Source{[Schema="marts",Item="vw_customer_activity"]}[Data]
+				in
+				    marts_vw_customer_activity
+

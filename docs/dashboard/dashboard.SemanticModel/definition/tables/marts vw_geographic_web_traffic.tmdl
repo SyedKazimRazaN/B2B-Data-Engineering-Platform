@@ -1,0 +1,53 @@
+table 'marts vw_geographic_web_traffic'
+	lineageTag: a66a33f8-d7d7-492d-bbcc-fc8f18eaa83f
+
+	column country
+		dataType: string
+		lineageTag: 31ee6bc9-ef95-4164-89bd-028246e85ba1
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: f598319f-6814-49ff-a51d-9c129cc9c8b5
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column referer
+		dataType: string
+		lineageTag: 4095ca9f-65a7-4510-8926-d6ad814e7a98
+		summarizeBy: none
+		sourceColumn: referer
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 90f15861-d72c-4d04-a55a-4b3cd2cb6607
+		summarizeBy: sum
+		sourceColumn: total_sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	column traffic_source_rank
+		dataType: string
+		lineageTag: 1dc38c30-14ed-4ca7-8f14-31910735a962
+		summarizeBy: none
+		sourceColumn: traffic_source_rank
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_geographic_web_traffic' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_geographic_web_traffic = Source{[Schema="marts",Item="vw_geographic_web_traffic"]}[Data]
+				in
+				    marts_vw_geographic_web_traffic
+

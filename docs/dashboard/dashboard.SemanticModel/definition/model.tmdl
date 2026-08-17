@@ -1,0 +1,36 @@
+model Model
+	culture: en-MY
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-MY
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["marts vw_customer_activity","marts vw_customer_lifetime_value","marts vw_geographic_sales","marts vw_geographic_web_traffic","marts vw_gross_margin_analysis","marts vw_lead_conversion_funnel","marts vw_lead_quality_vs_order_value","marts vw_monthly_revenue_trend","marts vw_pipeline_execution_metrics","marts vw_pipeline_run_history","marts vw_pipeline_latest_run","marts vw_revenue_by_company","marts vw_revenue_by_product","marts vw_supplier_product_performance","marts vw_supplier_revenue","marts vw_traffic_by_device","marts vw_web_activity_quality","Measure"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'marts vw_customer_activity'
+ref table 'marts vw_customer_lifetime_value'
+ref table 'marts vw_geographic_sales'
+ref table 'marts vw_geographic_web_traffic'
+ref table 'marts vw_gross_margin_analysis'
+ref table 'marts vw_lead_conversion_funnel'
+ref table 'marts vw_lead_quality_vs_order_value'
+ref table 'marts vw_monthly_revenue_trend'
+ref table 'marts vw_pipeline_execution_metrics'
+ref table 'marts vw_revenue_by_company'
+ref table 'marts vw_revenue_by_product'
+ref table 'marts vw_supplier_product_performance'
+ref table 'marts vw_supplier_revenue'
+ref table 'marts vw_traffic_by_device'
+ref table 'marts vw_web_activity_quality'
+ref table Measure
+ref table 'marts vw_pipeline_run_history'
+ref table 'marts vw_pipeline_latest_run'
+
+ref cultureInfo en-MY
+

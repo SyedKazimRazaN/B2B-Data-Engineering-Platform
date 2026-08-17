@@ -1,3 +1,23 @@
+"""
+Transaction generator: builds the initial "seed" transactional data -
+Marketing Leads (Source 2), Web Logs (Source 3), and Orders/Order_Items
+(Source 1) - using the master data (companies/customers/supplier-product
+mapping) already loaded into SQL Server.
+
+Execution Flow (__main__):
+    generate_marketing_leads() / generate_web_logs()
+        -> generating_orders_and_orderitems_datasets(marketing_leads)
+                ├── generate_orders(companies, customers, marketing_leads)
+                ├── generate_order_items(orders, supplier_product_mapping)
+                └── populate_order_totals(orders, order_items)
+        -> load_to_sqlserver(datasets)          # Orders & Order_Items -> Source 1
+        -> load_source2(marketing_leads)        # -> Source 2 CSV
+        -> load_source3(web_logs)               # -> Source 3 CSV
+
+Run once, after master_generator.py, to initialize the transactional
+sources; daily incremental changes afterwards are handled by cdc_generator.py.
+"""
+
 import pandas as pd
 from faker import Faker
 from python.utils.logger import get_logger

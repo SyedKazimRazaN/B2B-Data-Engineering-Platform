@@ -1,0 +1,58 @@
+table 'marts vw_supplier_product_performance'
+	lineageTag: e43fb9fe-266b-4ee3-bec9-62e6c5c08506
+
+	column supplier_name
+		dataType: string
+		lineageTag: af9c31fe-725a-4f7a-9be3-52fef26fb358
+		summarizeBy: none
+		sourceColumn: supplier_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		lineageTag: 056d7ce0-e2b0-44a6-8929-b78c19bb5e21
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 8c284997-ae4a-4850-aeef-eac19c6c6949
+		summarizeBy: sum
+		sourceColumn: total_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 615f6e56-d361-42f6-b5b6-6f50d88cbe53
+		summarizeBy: sum
+		sourceColumn: total_quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_revenue
+		dataType: double
+		lineageTag: 51f8a2c5-f7a3-4a45-93ab-ad644e0358cf
+		summarizeBy: sum
+		sourceColumn: total_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_supplier_product_performance' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_supplier_product_performance = Source{[Schema="marts",Item="vw_supplier_product_performance"]}[Data]
+				in
+				    marts_vw_supplier_product_performance
+
+	annotation PBI_ResultType = Table
+

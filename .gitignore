@@ -2,3 +2,18 @@
 __pycache__
 *.pyc
 pipeline.log
+
+# Generated data output (regenerate via python -m python.pipelines.run_pipeline)
+data/marketing_leads/*.csv
+data/web_logs/*.csv
+
+# Power BI Desktop local cache/settings (regenerate automatically, machine-specific)
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+**/.pbi/editorSettings.json
+
+# Office lock files (created while a file is open in Word/Excel/PowerPoint)
+~$*
+
+# Presentation deck - kept local only, not part of the delivered repo
+docs/presentation/

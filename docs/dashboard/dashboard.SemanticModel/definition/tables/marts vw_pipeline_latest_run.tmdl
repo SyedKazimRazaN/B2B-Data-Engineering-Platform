@@ -1,0 +1,57 @@
+table 'marts vw_pipeline_latest_run'
+	lineageTag: 6215a75f-7776-42c6-adc6-82b4aa4e329b
+
+	column pipeline_name
+		dataType: string
+		lineageTag: 972a7a23-0d2d-4de5-9464-a2c6a4d3a671
+		summarizeBy: none
+		sourceColumn: pipeline_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 15667935-5319-4976-afcb-87cff42950f3
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column duration_seconds
+		dataType: double
+		lineageTag: 9db8d9a7-54a8-42fa-bd2b-4307c6c71924
+		summarizeBy: sum
+		sourceColumn: duration_seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column error_message
+		dataType: string
+		lineageTag: 55ff49ec-1419-4cf4-85c2-2d9bda65614d
+		summarizeBy: none
+		sourceColumn: error_message
+
+		annotation SummarizationSetBy = Automatic
+
+	column run_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c3e94d44-aa07-44bb-8577-718c2a6dbd27
+		summarizeBy: none
+		sourceColumn: run_timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_pipeline_latest_run' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_pipeline_latest_run = Source{[Schema="marts",Item="vw_pipeline_latest_run"]}[Data]
+				in
+				    marts_vw_pipeline_latest_run
+
+	annotation PBI_ResultType = Table
+

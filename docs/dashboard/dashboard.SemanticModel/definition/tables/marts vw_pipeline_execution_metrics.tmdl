@@ -1,0 +1,73 @@
+table 'marts vw_pipeline_execution_metrics'
+	lineageTag: f2714802-1dbd-4113-9237-7a70f148fa79
+
+	column pipeline_name
+		dataType: string
+		lineageTag: 897007a2-dedd-4923-8132-e564e8483f44
+		summarizeBy: none
+		sourceColumn: pipeline_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_load_time
+		dataType: double
+		lineageTag: f073d807-53e5-4c2c-9d5f-9dbb1bb46400
+		summarizeBy: sum
+		sourceColumn: avg_load_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column error_rate
+		dataType: double
+		lineageTag: 83d3b206-8d90-4650-b9cf-980886592e91
+		summarizeBy: sum
+		sourceColumn: error_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column success_rate
+		dataType: double
+		lineageTag: ebf54135-1548-4b8a-838f-ca9169dce740
+		summarizeBy: sum
+		sourceColumn: success_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column data_freshness
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 779c95fb-d838-4515-97f5-79e1d477dd85
+		summarizeBy: sum
+		sourceColumn: data_freshness
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column watermark_lag
+		dataType: double
+		lineageTag: 6fad460e-535b-4192-b3fc-1b1e4714ff5f
+		summarizeBy: sum
+		sourceColumn: watermark_lag
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'marts vw_pipeline_execution_metrics' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_pipeline_execution_metrics = Source{[Schema="marts",Item="vw_pipeline_execution_metrics"]}[Data]
+				in
+				    marts_vw_pipeline_execution_metrics
+
+	annotation PBI_ResultType = Table
+

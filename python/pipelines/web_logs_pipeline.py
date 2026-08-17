@@ -1,3 +1,15 @@
+"""
+ELT pipeline for Source 3 (Web Logs CSV): snapshot-based, full re-read of
+the CSV every run (no watermark) - truncates and reloads staging.web_logs
+on every execution.
+
+Execution Flow (run()):
+    extract_source3()      # read full web_logs CSV
+        -> profile_dataframe()
+        -> load_to_stagging()   # TRUNCATE + append into staging.web_logs
+        -> log_run_start()/log_run_end() bracket the whole run
+"""
+
 import pandas as pd
 from sqlalchemy import text
 from config.config import (WEB_LOGS_OUTPUT_PATH, STAGING_SCHEMA, CHUNK_SIZE)

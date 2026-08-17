@@ -1,3 +1,10 @@
+"""
+Static lookup values and weighted-distribution tables shared by the
+generators - operating locations/locales, product catalog templates,
+lead/traffic sources, order/payment status options, and the seasonal
+month/day-of-week/hour weight tables used by date_weighting.py - plus
+the raw SQL queries (SOURCE1_QUERIES) used by sql_server_pipeline.py.
+"""
 
 # ======================================
 # Business Constants

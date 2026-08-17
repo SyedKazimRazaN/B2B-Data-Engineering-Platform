@@ -1,3 +1,10 @@
+"""
+Builds and exposes the two SQLAlchemy engines used across the project -
+SQL_SERVER_ENGINE (Source 1) and POSTGRESQL_ENGINE (staging/intermediate/
+warehouse/marts) - from environment variables, and fails fast at import
+time if any required connection variable is missing.
+"""
+
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 import os

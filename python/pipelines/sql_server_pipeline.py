@@ -1,3 +1,17 @@
+"""
+ELT pipeline for Source 1 (SQL Server): incrementally extracts the
+source.* tables using a per-table watermark (updated_at), profiles each
+extracted DataFrame, loads the rows into staging.* on Postgres, and
+advances each table's watermark only after a successful load.
+
+Execution Flow (run()):
+    extracting_incremental_data()  # per-table watermark read -> SELECT ... WHERE updated_at > watermark
+        -> profile_dataframe() for each table
+        -> load_to_staging()        # append into staging schema
+        -> update_watermark() for each table whose watermark advanced
+        -> log_run_start()/log_run_end() bracket the whole run
+"""
+
 import pandas as pd
 from sqlalchemy import text
 from config.config import (CHUNK_SIZE)

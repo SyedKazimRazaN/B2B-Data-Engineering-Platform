@@ -1,0 +1,55 @@
+table 'marts vw_geographic_sales'
+	lineageTag: ae771727-1cd7-4272-9d6a-3d3e4a27c249
+
+	column country
+		dataType: string
+		lineageTag: aa204c9a-d3f6-4ab7-915d-28ce080f89ae
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: a777d020-4a11-4993-bb6a-75f85165fa43
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 2e013f5c-6107-4e99-8e93-2a9ce0f1e49d
+		summarizeBy: sum
+		sourceColumn: total_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenue_by_location
+		dataType: double
+		lineageTag: 29417244-93a3-402b-b4e5-414d865610a3
+		summarizeBy: sum
+		sourceColumn: revenue_by_location
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column performance
+		dataType: string
+		lineageTag: 06d80415-97ae-443e-9dc6-ffb16107b2aa
+		summarizeBy: none
+		sourceColumn: performance
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_geographic_sales' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_geographic_sales = Source{[Schema="marts",Item="vw_geographic_sales"]}[Data]
+				in
+				    marts_vw_geographic_sales
+

@@ -24,8 +24,8 @@ SELECT
     EXTRACT(YEAR FROM d)::INT,-- extraxting year from date
     EXTRACT(ISODOW FROM d)::INT IN (6, 7) -- checking if current date is weekend (6th or 7th) day of week or not
 FROM generate_series(
-    DATE '2024-08-01',
-    DATE '2026-08-31',
+    (CURRENT_DATE - INTERVAL '2 years')::DATE,
+    (CURRENT_DATE + INTERVAL '6 months')::DATE,
     INTERVAL '1 day'
 ) AS d
 ON CONFLICT (date_key) DO NOTHING;

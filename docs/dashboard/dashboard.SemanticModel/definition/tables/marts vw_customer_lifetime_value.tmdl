@@ -1,0 +1,55 @@
+table 'marts vw_customer_lifetime_value'
+	lineageTag: 21ac1ed6-ce92-433b-b962-6fc7bd85a5cf
+
+	column company_name
+		dataType: string
+		lineageTag: cba0f793-8acc-4a08-8d40-18c37399fca1
+		summarizeBy: none
+		sourceColumn: company_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 3e5ab4c6-e1af-48a8-922b-c203ad55461b
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_orders
+		dataType: int64
+		formatString: 0
+		lineageTag: 230b9ab3-fc11-45c1-8c7d-3082a35c18dc
+		summarizeBy: sum
+		sourceColumn: total_orders
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_spend
+		dataType: double
+		lineageTag: 2ffe409e-9784-48e2-8f7b-8eeafd692169
+		summarizeBy: sum
+		sourceColumn: total_spend
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column acquisition_cohort
+		dataType: string
+		lineageTag: 248a465a-48d1-432c-8670-3c695f6f82a9
+		summarizeBy: none
+		sourceColumn: acquisition_cohort
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'marts vw_customer_lifetime_value' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("localhost", "b2b_warehouse_db"),
+				    marts_vw_customer_lifetime_value = Source{[Schema="marts",Item="vw_customer_lifetime_value"]}[Data]
+				in
+				    marts_vw_customer_lifetime_value
+

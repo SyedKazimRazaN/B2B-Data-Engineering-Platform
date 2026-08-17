@@ -1,3 +1,10 @@
+"""
+Single helper - weighted_datetime_between() - that rejection-samples
+Faker's date_time_between() against seasonal/weekday/hourly weight
+tables (see constants.py) so generated timestamps follow realistic
+business patterns instead of a uniform distribution.
+"""
+
 import random
 
 
