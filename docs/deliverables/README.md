@@ -47,7 +47,7 @@ Proof: 08b KPI_Validation, KV-11 (view 6,044 = independent count 6,044)
 |------|-------|
 | Diagrams (editable, draw.io) | `docs/diagrams/*.drawio` — open in draw.io Desktop, export PNG to `docs/images/` |
 | Diagram images used in the documents | `docs/images/01-…08-*.png` |
-| Dashboard pages (labelled with KPI numbers) | `docs/images/*.jpg` |
+| Dashboard pages | `docs/images/*.jpg` (clean, used by the README) · `docs/images/kpi_labelled/*.jpg` (with KPI-xx markers, used in document 09) |
 | Evidence screenshots (S1–S14, S16–S17) | `docs/images/screenshots/` — used as figures in documents 01–09 |
 | Original plan (rules, phases) | [`project_plan.md`](project_plan.md) |
 | Technical deep-dive | [`project_document.md`](project_document.md) |
