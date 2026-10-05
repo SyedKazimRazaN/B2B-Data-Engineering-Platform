@@ -144,7 +144,9 @@ Master Generator → Initial SQL Server Data → Transaction Generator
 ## Staging Layer
 
 Staging receives data from the three sources with minimal transformation — no PK/FK/UNIQUE constraints,
-every row stamped with `_loaded_at`. Deduplication happens downstream, in Intermediate.
+every row stamped with `_loaded_at`. Deduplication happens downstream, in Intermediate. Staging is
+temporary: after the Intermediate step succeeds, `clear_staging()` checks that every staging row is in
+Intermediate or in `intermediate.rejected_records`, then truncates all staging tables.
 
 Loaded by three pipelines (`python/pipelines/`): `sql_server_pipeline.py` (per-table watermark
 extraction) and `marketing_leads_pipeline.py` / `web_logs_pipeline.py` (full-reload snapshots — the CSV
@@ -154,7 +156,9 @@ sources have no incremental extraction concept).
 
 Deduplicates (latest row per business key, via `ROW_NUMBER() OVER (PARTITION BY ... ORDER BY _loaded_at
 DESC)`), cleans (`TRIM`/`NULLIF` normalization), validates (FK existence, enum membership, price/date
-sanity), and `MERGE`s into constrained tables with real PK/FK/CHECK enforcement.
+sanity), and `MERGE`s into constrained tables with real PK/FK/CHECK enforcement. CSV rows that fail a
+check (about 1.5% are broken on purpose by the generators) are saved in `intermediate.rejected_records`
+with a reason instead of being dropped silently.
 
 Location: `postgresql/intermediate/transform/` — one `Transform_<entity>.sql` per entity, 10 files
 (dependency order in [Execution Flow & Load Order](#execution-flow--load-order)).

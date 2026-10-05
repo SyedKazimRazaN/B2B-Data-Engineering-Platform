@@ -250,10 +250,12 @@ B2B-Data-Platform/
     • Product can have multiple Suppliers.
         -> No. of products per Supplier: MIN(2) - MAX(5)
         -> Supplier_Product_Mapping row count is a derived output of this rule and not a fixed target set in config.
-        -> MIN/MAX_SUPPLIERS_PER_PRODUCT (2-5 suppliers per product, driven by the 1200 Products)
+        -> MIN/MAX_SUPPLIERS_PER_PRODUCT (2-5 suppliers per product, driven by the 96 Products in the catalog templates)
 #   Rule 5
     • Order belongs to one Customer.
-        -> Orders are randomly distributed across customers and across the time window, bounded below by that customer's own created_at (an order can never predate the customer who placed it).
+        -> The order date is picked first (seasonal month + weekday weights: Q4 peak, summer dip), then a random customer who already existed on that date (an order can never predate the customer who placed it).
+        -> Customers are created within 90 days of their company, so the customer base grows steadily over the 2 years.
+        -> Payment status follows the order status: Shipped/Delivered = paid, Cancelled = refunded/failed/pending, open orders = mostly pending, some failed.
         -> NUM_ORDERS in config covers only this repeat-customer portion — see Rule 8 for the additional lead-originated orders generated on top.
 #   Rule 6
     • Order has one or more Order Items.
@@ -262,7 +264,7 @@ B2B-Data-Platform/
         -> Enforced at data-generation time: generator computes each Order_Item's line_total first, then sums them into Orders.order_total.
 #   Rule 8
     • Lead conversion is not a percentage target — it's a direct 1:1 outcome of funnel_stage.
-        -> Every Won lead generates exactly one order at generation time (never reused across multiple orders). No time window — a lead is either linked to its one order or it isn't.
+        -> Every Won lead generates exactly one order at generation time (never reused across multiple orders), placed within 90 days of the lead's created_at, by a customer from the lead's country.
         -> Total Orders = NUM_ORDERS (repeat-customer orders, no lead attribution) + count(Won leads) (lead-originated orders).
         -> conversion_status (Converted / Not Converted) is computed in the Intermediate layer via a straight join on Orders.lead_id — leads with no matching order are Not Converted. No staging-layer column, no bounded window.
 #   Rule 9
@@ -276,6 +278,15 @@ B2B-Data-Platform/
 #   Rule 12
     • Companies are tracked as SCD Type 2 in the Warehouse (dim_companies).
         -> When any historical attribute changes (e.g. rating, location), they are preserved for accurate historical reporting.
+#   Rule 13
+    • Invalid rows are never silently dropped.
+        -> ~1.5% of CSV rows (marketing leads, web logs) are broken on purpose by the generators (DIRTY_DATA_PERCENT), because real files are messy.
+        -> The transforms save rows that fail validation in intermediate.rejected_records with a reason; valid rows are MERGEd into intermediate.
+        -> SQL Server tables are not made dirty: the source database's own rules (NOT NULL, CHECK, FK) refuse bad rows.
+#   Rule 14
+    • Staging is temporary.
+        -> After the intermediate transform succeeds, every staging row is checked to be in intermediate or rejected_records, then all staging tables are truncated.
+        -> If any row is unaccounted for, staging is kept and the run fails - no row is ever lost.
 
 
 
@@ -317,18 +328,22 @@ Business Entity Dependency
 
 #   Phase 3
         • SQL Server Population
-            In Progress — full historical bulk load to SQL Server done (all 8 tables); CDC Generator (daily inserts/updates/soft-deletes simulation) remaining
+            Completed at (06/08/2026) — full historical bulk load to SQL Server (all 8 tables) + CDC Generator (daily inserts/updates/soft-deletes simulation)
 
 #   Phase 4
         • Data Ingestion
+            Completed at (07/08/2026) — 3 ELT pipelines (SQL Server watermark CDC, Marketing Leads CSV, Web Logs CSV) loading the staging schema
 
 #   Phase 5
         • PostgreSQL Transformations
+            Completed at (11/08/2026) — intermediate schema transformed, validated and populated
 
 #   Phase 6
         • Warehouse
+            Completed at (16/08/2026) — galaxy schema (SCD2 dim_companies, partitioned facts), dim_supplier_product, pipeline run logging
 
 #   Phase 7
         • Marts(Analytics)
+            Completed at (17/08/2026) — KPI views in the marts schema + Power BI dashboard
 
 
