@@ -2,9 +2,9 @@
 
 A Data Engineering internship project implementing an end-to-end **ELT data platform for a synthetic B2B e-commerce business**.
 
-Three operational data sources are continuously generated, ingested into PostgreSQL, transformed through an Intermediate layer, modeled into a dimensional Warehouse (SCD Type 1 & 2, monthly-partitioned facts), and served through 15 business KPI views ready for Power BI.
+Three operational data sources are continuously generated, ingested into PostgreSQL, transformed through an Intermediate layer, modeled into a dimensional Warehouse (SCD Type 1 & 2, monthly-partitioned facts), and served through 17 views covering 15 business KPIs, ready for Power BI.
 
-**For the full technical deep-dive** — business rules, data model, layer-by-layer internals, execution flow, performance decisions, and requirements traceability — see the [Project Document](docs/deliverables/project_document.md).
+**For the full technical deep-dive** — business rules, data model, layer-by-layer internals, execution flow, performance decisions, and requirements traceability — see the [Project Document](docs/deliverables/project_document.md). The full documentation set (12 deliverables) is listed in [docs/deliverables](docs/deliverables/README.md).
 
 ---
 
@@ -95,7 +95,7 @@ Full entity-relationship detail: [Project Document → Business Data Model](docs
 | 3 — ELT Ingestion & Staging | Completed |
 | 4 — Intermediate Layer | Completed |
 | 5 — Warehouse | Completed |
-| 6 — Marts & Analytics (15/15 KPI views) | Completed |
+| 6 — Marts & Analytics (15/15 KPIs, 17 views) | Completed |
 
 Full milestone detail and Git history: [Project Document → Git Milestone History](docs/deliverables/project_document.md#git-milestone-history).
 
@@ -179,7 +179,7 @@ postgresql/staging/staging_ddl.sql            -- raw landing tables
 postgresql/intermediate/DDL/intermediate_ddl.sql
 postgresql/warehouse/DDL/warehouse_ddl.sql
 postgresql/warehouse/PARTITIONS_SETUP/partitioning.sql
-postgresql/marts/marts_ddl.sql                -- 15 KPI views
+postgresql/marts/marts_ddl.sql                -- 17 views for the 15 KPIs
 ```
 
 Run each with your preferred PostgreSQL client (psql, pgAdmin, DBeaver) or via `psql -f <file> -d <database>`.
@@ -213,7 +213,7 @@ Point Power BI's PostgreSQL connector at your `POSTGRESQL_DATABASE`, schema `mar
 <a id="query-examples"></a>
 # Query Examples
 
-All 15 KPI views live in the `marts` schema. Each also has its own readable, standalone source file under `postgresql/marts/KPI<N>.sql`.
+All mart views (17, covering the 15 KPIs) live in the `marts` schema. Each also has its own readable, standalone source file under `postgresql/marts/KPI<N>.sql`.
 
 | # | View | Business Question |
 |---|------|--------------------|
