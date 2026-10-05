@@ -21,13 +21,58 @@
 --     - Keep the latest source record
 --     - Normalize whitespace / empty strings
 --     - Handle textual missing values
---     - Validate company business rules
+--     - Validate the business rules for this table
 --     - Make the load idempotent
 -- ============================================================
 
 /* ============================================================================
    6. MARKETING LEADS
    ============================================================================ */
+
+-- ============================================================
+-- 0. QUARANTINE: save leads that fail validation
+--    Same rules as validate_leads below, written the other way round:
+--    the CASE returns the first rule the row breaks (NULL = row is valid).
+--    staging.marketing_leads is a full CSV snapshot (one row per lead),
+--    ON CONFLICT DO NOTHING = a lead already saved is not saved again.
+-- ============================================================
+INSERT INTO intermediate.rejected_records (table_name, record_id, reject_reason)
+SELECT
+    'marketing_leads',
+    lead_id,
+    reject_reason
+FROM (
+    SELECT
+        lead_id,
+        CASE
+            WHEN lead_score IS NULL OR lead_score NOT BETWEEN 1 AND 100
+                THEN 'invalid lead_score'
+            WHEN estimated_order_value IS NULL OR estimated_order_value < 0
+                THEN 'invalid estimated_order_value'
+            WHEN NULLIF(TRIM(funnel_stage), '') IS NULL
+              OR TRIM(funnel_stage) NOT IN ('New','Contacted','Qualified','Proposal','Negotiation','Won','Lost')
+                THEN 'invalid funnel_stage'
+            WHEN NULLIF(TRIM(source), '') IS NULL
+              OR NULLIF(TRIM(campaign_name), '') IS NULL
+              OR NULLIF(TRIM(utm_source), '') IS NULL
+              OR NULLIF(TRIM(utm_medium), '') IS NULL
+              OR NULLIF(TRIM(utm_campaign), '') IS NULL
+              OR NULLIF(TRIM(company_name), '') IS NULL
+              OR NULLIF(TRIM(company_size), '') IS NULL
+              OR NULLIF(TRIM(industry), '') IS NULL
+              OR NULLIF(TRIM(country), '') IS NULL
+              OR NULLIF(TRIM(city), '') IS NULL
+                THEN 'missing required field'
+            WHEN created_at IS NULL OR updated_at IS NULL OR updated_at < created_at
+                THEN 'invalid created_at / updated_at'
+            ELSE NULL
+        END AS reject_reason
+    FROM staging.marketing_leads
+    WHERE lead_id IS NOT NULL
+) checked_leads
+WHERE reject_reason IS NOT NULL
+ON CONFLICT (table_name, record_id) DO NOTHING;
+
 
 WITH latest_leads AS (
     -- ====================================================

@@ -30,6 +30,11 @@ CREATE SCHEMA IF NOT EXISTS marts
 -- ============================================================================
 -- KPI 1: Monthly Revenue Trend
 -- Gross and net revenue (excluding cancelled orders) by month with MoM growth %
+-- Only complete months: the current month is still running and the first
+-- month of the 2-year window is partial (both give misleading MoM %), and
+-- dim_date also runs 6 months into the future (empty months).
+-- month_num / month_start are added at the end so Power BI can sort the
+-- axis by date (CREATE OR REPLACE VIEW can only add columns at the end).
 -- ============================================================================
 CREATE OR REPLACE VIEW marts.vw_monthly_revenue_trend AS
 with revenue as (
@@ -43,6 +48,8 @@ FROM warehouse.dim_date d
 LEFT JOIN warehouse.fact_order_items oi
 ON oi.date_key = d.date_key
 AND oi.order_status <> 'Cancelled'
+WHERE d.full_date <  DATE_TRUNC('month', CURRENT_DATE)                        -- before the current month
+  AND d.full_date >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '23 months'  -- last 23 full months
 GROUP BY
 	d.year,
 	d.month_num,
@@ -65,7 +72,9 @@ SELECT
 	gross_revenue,
 	net_revenue,
     ROUND(((net_revenue - previous_net_revenue) / NULLIF(previous_net_revenue, 0)) * 100, 2) AS net_mom_pct,
-	ROUND(((gross_revenue - previous_gross_revenue) / NULLIF(previous_gross_revenue, 0)) * 100, 2) AS gross_mom_pct
+	ROUND(((gross_revenue - previous_gross_revenue) / NULLIF(previous_gross_revenue, 0)) * 100, 2) AS gross_mom_pct,
+	month_num,
+	MAKE_DATE(year, month_num, 1) AS month_start
 FROM revenue_with_previous
 ORDER BY
     year,
@@ -78,8 +87,10 @@ ORDER BY
 -- ============================================================================
 CREATE OR REPLACE VIEW marts.vw_revenue_by_company AS
 with revenue_by_companies as (
+	-- grouped by company_id only: a renamed company (SCD2 keeps both names)
+	-- must stay one row, otherwise it splits and the Pareto ranking is wrong
 	SELECT
-		company_name,
+		com.company_id,
 		COALESCE(SUM(oi.quantity * oi.unit_price), 0) AS gross_revenue
 	FROM warehouse.fact_order_items oi
 	JOIN warehouse.dim_companies com
@@ -87,18 +98,25 @@ with revenue_by_companies as (
     WHERE com.company_type = 'Buyer'
       AND oi.order_status <> 'Cancelled'
 	GROUP BY
-		company_id,
-		company_name
+		com.company_id
+)
+, company_current AS (
+	-- the company's current name (same pattern as KPI 5)
+	SELECT company_id, company_name
+	FROM warehouse.dim_companies
+	WHERE is_current = TRUE
 )
 , rank_companies AS (
 	SELECT
-		company_name,
-		gross_revenue,
+		cc.company_name,
+		r.gross_revenue,
 		ROW_NUMBER() OVER(ORDER BY gross_revenue DESC) as company_rank,
         COUNT(*) OVER () AS total_companies,
         SUM(gross_revenue) OVER (ORDER BY gross_revenue DESC) AS cumulative_revenue,
         SUM(gross_revenue) OVER () AS total_revenue
-	FROM revenue_by_companies
+	FROM revenue_by_companies r
+	JOIN company_current cc
+	ON cc.company_id = r.company_id
 )
 SELECT
 	company_name,
@@ -261,8 +279,10 @@ WITH customer_activity AS (
             ELSE 'One-time Customer'
         END AS customer_status
     FROM warehouse.fact_orders fo
+    -- company_key already points to the SCD2 version valid at order time; an
+    -- extra is_current filter would drop older versions (NULL country, split rows)
     LEFT JOIN warehouse.dim_companies dc
-        ON fo.company_key = dc.company_key AND dc.is_current = true
+        ON fo.company_key = dc.company_key
     WHERE fo.order_status <> 'Cancelled'
     GROUP BY fo.customer_key, dc.country
 ),

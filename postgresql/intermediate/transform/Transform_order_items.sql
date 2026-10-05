@@ -7,7 +7,7 @@
 --     Transform staging.order_items into intermediate.order_items
 --
 -- PIPELINE:
---     staging.orders
+--     staging.order_items
 --        ↓
 --     latest record per order_item_id
 --        ↓
@@ -21,7 +21,7 @@
 --     - Keep the latest source record
 --     - Normalize whitespace / empty strings
 --     - Handle textual missing values
---     - Validate company business rules
+--     - Validate the business rules for this table
 --     - Make the load idempotent
 -- ============================================================
 

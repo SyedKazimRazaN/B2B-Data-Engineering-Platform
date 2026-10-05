@@ -17,8 +17,7 @@ COMPANY_TYPES = ["Buyer", "Supplier"]
 COMPANY_TYPE_WEIGHTS = [70, 30]
 ORDER_STATUS = ['Confirmed',"Pending","Processing","Shipped","Delivered","Cancelled"]
 ORDER_STATUS_WEIGHTS = [10, 5, 10, 20, 50, 5]
-PAYMENT_STATUS = ["pending", "paid", "failed", "refunded"]
-PAYMENT_STATUS_WEIGHTS = [10, 82, 3, 5]
+PAYMENT_STATUS = ["pending", "paid", "failed", "refunded"]  # payment status is picked from the order status in transaction_generator.build_order()
 OPERATING_LOCATIONS = {                        # Used for weighted geographic distribution and Faker locale selection
     "United States": {
         "locale": "en_US",

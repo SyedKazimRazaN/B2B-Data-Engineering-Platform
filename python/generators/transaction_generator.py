@@ -10,6 +10,7 @@ Execution Flow (__main__):
                 ├── generate_orders(companies, customers, marketing_leads)
                 ├── generate_order_items(orders, supplier_product_mapping)
                 └── populate_order_totals(orders, order_items)
+        -> add_dirty_leads() / add_dirty_web_logs()  # break ~1.5% of CSV rows on purpose
         -> load_to_sqlserver(datasets)          # Orders & Order_Items -> Source 1
         -> load_source2(marketing_leads)        # -> Source 2 CSV
         -> load_source3(web_logs)               # -> Source 3 CSV
@@ -23,7 +24,7 @@ from faker import Faker
 from python.utils.logger import get_logger
 import random
 from config.database import (SQL_SERVER_ENGINE)
-from datetime import datetime
+from datetime import datetime, timedelta
 from python.generators.load_to_sqlserver import load_to_sqlserver
 from config.config import (
 NUM_WEB_LOGS,
@@ -33,7 +34,9 @@ RANDOM_SEED,
 NUM_MARKETING_LEADS,
 MARKETING_LEADS_OUTPUT_PATH,
 WEB_LOGS_OUTPUT_PATH,
-NUM_ORDERS
+NUM_ORDERS,
+SALES_CYCLE_MAX_DAYS,
+DIRTY_DATA_PERCENT
 )
 from python.utils.constants import (
 OPERATING_LOCATIONS,
@@ -123,7 +126,8 @@ faker_instances = initialize_faker_instances()
 # Data Generators
 # -----------------------------
 
-def generate_marketing_leads (num_marketing_leads=NUM_MARKETING_LEADS):
+def generate_marketing_leads (num_marketing_leads=NUM_MARKETING_LEADS, start_date=START_DATE, end_date=END_DATE):
+    """Leads created within [start_date, end_date]: the 2-year window for the backfill, today for the daily CDC run."""
     try:
         logger.info("Generating Marketing Leads...")
 
@@ -142,8 +146,8 @@ def generate_marketing_leads (num_marketing_leads=NUM_MARKETING_LEADS):
             city = random.choice(cities)
 
             campaign = random.choice(CAMPAIGNS)
-            created_at = fake.date_time_between(start_date=START_DATE, end_date=END_DATE)
-            updated_at = fake.date_time_between(start_date=created_at, end_date=END_DATE)
+            created_at = fake.date_time_between(start_date=start_date, end_date=end_date)
+            updated_at = fake.date_time_between(start_date=created_at, end_date=end_date)
 
             selected_stage = random.choices(FUNNEL_STAGES, weights=FUNNEL_STAGE_WEIGHTS, k=1)[0]
 
@@ -198,7 +202,13 @@ def generate_marketing_leads (num_marketing_leads=NUM_MARKETING_LEADS):
 
 
 
-def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS):
+def generate_orders(companies, customers, marketing_leads, num_orders=NUM_ORDERS, start_date=START_DATE, end_date=END_DATE):
+    """
+    Order date is picked first (seasonal weights), then a customer who already
+    existed on that date. Picking the customer first made orders pile up at the
+    end of the 2 years (most customers join late) and hid the seasonality.
+    Backfill: start_date/end_date = 2-year window. Daily CDC run: today only.
+    """
     try:
         logger.info("Generating Orders...")
         """
@@ -214,7 +224,7 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
 
         customers_list = customers.to_dict("records")
 
-        #creating 'won' leads for generating new orders 
+        #creating 'won' leads for generating new orders
         won_leads = marketing_leads[marketing_leads["funnel_stage"] == "Won"].to_dict("records")
 
         # ----------------------------------
@@ -233,53 +243,52 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
 
 
         # ----------------------------------
-        # Picking customers for Won Lead and creating list
+        # Picking a customer who already existed on the order date
+        # (from the lead's country for Won lead orders)
         # ----------------------------------
 
-        def picking_customers_for_leads(lead):
-            lead_country = lead["country"]
-            if lead_country in customers_by_country:
-                selected_customer = random.choice(customers_by_country[lead_country])
-                return selected_customer
+        def picking_customer(order_date, country = None):
+            if country in customers_by_country:
+                candidates = customers_by_country[country]
             else:
-                return random.choice(customers_list)
-        
+                candidates = customers_list
+
+            # keep picking until we find a customer created before the order date
+            for _ in range(200):
+                selected_customer = random.choice(candidates)
+                if pd.to_datetime(selected_customer["created_at"]) <= order_date:
+                    return selected_customer
+
+            return selected_customer   # none found in 200 tries (very early dates): build_order moves the date
+
         # ----------------------------------
         # Build Order
         # ----------------------------------
 
-        def build_order(selected_customer, lead = None):
+        def build_order(selected_customer, order_date, lead = None):
 
+            # a customer can't order before their account exists
             customer_created_at = pd.to_datetime(selected_customer["created_at"])
+            if customer_created_at > order_date:
+                order_date = customer_created_at
 
             if lead is not None:
-                #new orders through leads
-                lead_created_at = pd.to_datetime(lead["created_at"])
-                earliest = max(lead_created_at, customer_created_at)
-                order_date = weighted_datetime_between(
-                    fake, earliest, END_DATE,
-                    month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
-                )
-                lead_id = lead["lead_id"]
-
+                lead_id = lead["lead_id"]   #new orders through leads
             else:
-                    #legacy orders
-                    earliest = max(pd.to_datetime(START_DATE), customer_created_at)
-                    order_date = weighted_datetime_between(
-                        fake, earliest, END_DATE,
-                        month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
-                    )
-                    lead_id = None
+                lead_id = None              #legacy orders
 
             order_status = random.choices(ORDER_STATUS, weights=ORDER_STATUS_WEIGHTS, k=1)[0]
 
-            if order_status == "Cancelled":
-                payment_status = "pending"
-            elif order_status in ["Shipped", "Delivered"]:
+            # payment status follows the order status
+            if order_status in ["Shipped", "Delivered"]:
                 payment_status = "paid"
+            elif order_status == "Cancelled":
+                # refund only on cancelled orders, so refunds never count as revenue
+                payment_status = random.choices(["refunded", "failed", "pending"], weights=[50, 30, 20], k=1)[0]
             else:
-                payment_status = "pending"
-            
+                # Pending / Confirmed / Processing: waiting for payment, some payments fail
+                payment_status = random.choices(["pending", "failed"], weights=[90, 10], k=1)[0]
+
             return {
                 "order_id" : fake.uuid4().replace("-",""), 
                 "customer_id" : selected_customer["customer_id"], 
@@ -306,16 +315,27 @@ def generate_orders(companies,customers, marketing_leads, num_orders=NUM_ORDERS)
         # ----------------------------------
 
         for _ in range(num_orders):
-            selected_customer = random.choice(customers_list)
-            orders_dataset.append(build_order(selected_customer))
+            order_date = weighted_datetime_between(
+                fake, start_date, end_date,
+                month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
+            )
+            selected_customer = picking_customer(order_date)
+            orders_dataset.append(build_order(selected_customer, order_date))
 
 
         # ----------------------------------
         # Generate one order for each Won lead
+        # (placed within 90 days of the lead being created)
         # ----------------------------------
         for lead in won_leads:
-            selected_customer = picking_customers_for_leads(lead)
-            orders_dataset.append(build_order(selected_customer, lead))
+            lead_created_at = pd.to_datetime(lead["created_at"])
+            last_possible_date = min(lead_created_at + timedelta(days=SALES_CYCLE_MAX_DAYS), pd.to_datetime(end_date))
+            order_date = weighted_datetime_between(
+                fake, lead_created_at, last_possible_date,
+                month_weights=MONTH_WEIGHTS, dow_weights=DOW_WEIGHTS_ORDERS,
+            )
+            selected_customer = picking_customer(order_date, lead["country"])
+            orders_dataset.append(build_order(selected_customer, order_date, lead))
 
 
 
@@ -449,7 +469,8 @@ def populate_order_totals(orders, order_items):
 
 
 
-def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
+def generate_web_logs (num_web_logs=NUM_WEB_LOGS, start_date=START_DATE, end_date=END_DATE):
+    """Requests within [start_date, end_date]: the 2-year window for the backfill, today for the daily CDC run."""
     try:
 
         logger.info("Generating Web Logs...")
@@ -486,7 +507,7 @@ def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
                     "country": selected_country,
                     "city" : city,
                     "log_timestamp" : weighted_datetime_between(
-                        fake, START_DATE, END_DATE,
+                        fake, start_date, end_date,
                         dow_weights=DOW_WEIGHTS_TRAFFIC, hour_weights=HOUR_WEIGHTS_TRAFFIC,
                     ),
                     "client_ip" : fake_local.ipv4(),
@@ -517,6 +538,55 @@ def generate_web_logs (num_web_logs=NUM_WEB_LOGS):
         
 
 
+
+
+
+# -----------------------------
+# Dirty Data (CSV sources only)
+# -----------------------------
+# Real files are messy, so a small % of CSV rows are broken on purpose.
+# The transform scripts must catch them and save them in
+# intermediate.rejected_records. SQL Server tables are not made dirty:
+# the source database's own rules (NOT NULL, CHECK, FK) would refuse them.
+
+def add_dirty_leads(marketing_leads, dirty_percent=DIRTY_DATA_PERCENT):
+    # only non-Won leads: Won leads have an order pointing to them
+    candidates = marketing_leads[marketing_leads["funnel_stage"] != "Won"].index.tolist()
+    num_dirty = min(int(len(marketing_leads) * dirty_percent / 100), len(candidates))
+    dirty_rows = random.sample(candidates, k=num_dirty)
+
+    for index in dirty_rows:
+        problem = random.choice(["lead_score", "estimated_order_value", "industry"])
+
+        if problem == "lead_score":
+            marketing_leads.loc[index, "lead_score"] = random.choice([0, 150])   # valid range is 1-100
+        elif problem == "estimated_order_value":
+            marketing_leads.loc[index, "estimated_order_value"] = -1000.0        # can't be negative
+        else:
+            marketing_leads.loc[index, "industry"] = None                        # required field missing
+
+    logger.info(f"Made {num_dirty} marketing leads dirty on purpose ({dirty_percent}%)")
+    return marketing_leads
+
+
+def add_dirty_web_logs(web_logs, dirty_percent=DIRTY_DATA_PERCENT):
+    num_dirty = int(len(web_logs) * dirty_percent / 100)
+    dirty_rows = random.sample(web_logs.index.tolist(), k=num_dirty)
+
+    for index in dirty_rows:
+        problem = random.choice(["status_code", "bytes_sent", "http_method", "browser"])
+
+        if problem == "status_code":
+            web_logs.loc[index, "status_code"] = 999             # valid range is 100-599
+        elif problem == "bytes_sent":
+            web_logs.loc[index, "bytes_sent"] = -1               # can't be negative
+        elif problem == "http_method":
+            web_logs.loc[index, "http_method"] = "PATCH"         # only GET/POST/PUT/DELETE allowed
+        else:
+            web_logs.loc[index, "browser"] = None                # required field missing
+
+    logger.info(f"Made {num_dirty} web logs dirty on purpose ({dirty_percent}%)")
+    return web_logs
 
 
 
@@ -596,7 +666,11 @@ if __name__ == "__main__":
     web_logs = generate_web_logs()
 
     datasets = generating_orders_and_orderitems_datasets(marketing_leads)
-    
+
+# Breaking a small % of CSV rows on purpose (after orders are built from the Won leads)
+    marketing_leads = add_dirty_leads(marketing_leads)
+    web_logs = add_dirty_web_logs(web_logs)
+
 # Loading Datasets to SQL SERVER
     load_to_sqlserver(datasets)
     load_source2(marketing_leads)

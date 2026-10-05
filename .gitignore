@@ -17,3 +17,6 @@ data/web_logs/*.csv
 
 # Presentation deck - kept local only, not part of the delivered repo
 docs/presentation/
+# Local-only: document backups and personal study notes
+docs/deliverables/_backup*/
+docs/deliverables/_internal/

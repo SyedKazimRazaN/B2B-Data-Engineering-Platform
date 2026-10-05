@@ -48,7 +48,7 @@ HAVING COUNT(*) > 1;
 SELECT *
 FROM intermediate.categories
 WHERE category_name IS NULL
-   OR category_name = 'n/a'
+   OR category_name = 'n/a';
 
 
 
@@ -58,7 +58,7 @@ WHERE category_name IS NULL
 -- TEST 5: REQUIRED TIMESTAMPS
 -- ============================================================
 SELECT *
-FROM intermediate.companies
+FROM intermediate.categories
 WHERE created_at IS NULL
    OR updated_at IS NULL;
 

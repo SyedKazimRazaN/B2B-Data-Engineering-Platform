@@ -1,22 +1,28 @@
 /*
-Customer Activity 
+Customer Activity
 	Orders per customer, average order value (AOV), repeat purchase rate
 
 	AOV = total order value ÷ number of orders
 	Repeat Purchase Rate = Repeat Customers / Active Customers
+
+	country comes from the company version valid at order time (fact company_key
+	is an SCD2 as-of key, so no is_current filter).
 */
 WITH customer_activity AS (
     SELECT
-        customer_key,
+        fo.customer_key,
+        dc.country,
         COUNT(*) AS total_orders,
-        ROUND(SUM(order_total) / COUNT(*), 2) AS average_order_value,
+        ROUND(SUM(fo.order_total) / COUNT(*), 2) AS average_order_value,
         CASE
             WHEN COUNT(*) > 1 THEN 'Repeat Customer'
             ELSE 'One-time Customer'
         END AS customer_status
-    FROM warehouse.fact_orders
-    WHERE order_status <> 'Cancelled'
-    GROUP BY customer_key
+    FROM warehouse.fact_orders fo
+    LEFT JOIN warehouse.dim_companies dc
+        ON fo.company_key = dc.company_key
+    WHERE fo.order_status <> 'Cancelled'
+    GROUP BY fo.customer_key, dc.country
 ),
 customer_summary AS (
     SELECT
@@ -26,6 +32,7 @@ customer_summary AS (
 )
 SELECT
     ca.customer_key,
+    ca.country,
     ca.total_orders,
     ca.average_order_value,
     ca.customer_status,
@@ -33,12 +40,3 @@ SELECT
 FROM customer_activity ca
 CROSS JOIN customer_summary cs
 ORDER BY ca.total_orders DESC;
-
-
-
-
-
-
-
-
-

@@ -73,7 +73,7 @@ WHERE company_name IS NULL
    OR country = 'n/a'
 
    OR city IS NULL
-   OR city = 'n/a';
+   OR city = 'n/a'
 
    OR address IS NULL
    OR address = 'n/a'

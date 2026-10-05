@@ -6,7 +6,7 @@ staging.marketing_leads on every execution.
 Execution Flow (run()):
     extract_source2()      # read full marketing_leads CSV
         -> profile_dataframe()
-        -> load_to_stagging()   # TRUNCATE + append into staging.marketing_leads
+        -> load_to_staging()    # TRUNCATE + append into staging.marketing_leads (one transaction)
         -> log_run_start()/log_run_end() bracket the whole run
 """
 
@@ -43,24 +43,26 @@ def extract_source2():
 
 
 
-def load_to_stagging(marketing_leads_df):
+def load_to_staging(marketing_leads_df):
     try:
+        # TRUNCATE and load in the same transaction: if the load fails,
+        # the TRUNCATE is rolled back and staging keeps the previous data
         with POSTGRESQL_ENGINE.begin() as conn:
             conn.execute(text(f"""TRUNCATE TABLE {STAGING_SCHEMA}.marketing_leads"""))
 
-        marketing_leads_df.to_sql(
-            "marketing_leads",
-            schema="staging",
-            con=POSTGRESQL_ENGINE,
-            if_exists="append",
-            index=False,
-            chunksize = CHUNK_SIZE,
-                )
+            marketing_leads_df.to_sql(
+                "marketing_leads",
+                schema="staging",
+                con=conn,
+                if_exists="append",
+                index=False,
+                chunksize = CHUNK_SIZE,
+                    )
         
         logger.info(f"[{PIPELINE_NAME}] loaded {len(marketing_leads_df)} rows into staging.marketing_leads")
         return len(marketing_leads_df)
     except Exception as e:
-        logger.error(f"Error loading marketing leeds data into staging table {e}")
+        logger.error(f"Error loading marketing leads data into staging table {e}")
         raise
 
 
@@ -95,7 +97,7 @@ def run():
 
         rows_extracted = len(marketing_leads_df)
         profile_dataframe(marketing_leads_df)
-        rows_loaded = load_to_stagging(marketing_leads_df)
+        rows_loaded = load_to_staging(marketing_leads_df)
 
         log_run_end(run_id, PIPELINE_NAME, rows_extracted, rows_loaded, watermark_used=None, status = "completed")
         logger.info(f"{PIPELINE_NAME} completed")

@@ -20,7 +20,10 @@ INITIAL
 ├── Web logs pipeline → staging
 │
 ├── run_transform()
-│       └── staging → intermediate
+│       └── staging → intermediate  (bad CSV rows → intermediate.rejected_records)
+│
+├── clear_staging()
+│       └── check every staging row is in intermediate or rejected_records → TRUNCATE staging
 │
 └── run_warehouse_load()
         │
@@ -51,7 +54,11 @@ INCREMENTAL
 │
 ├── run_transform()
 │      ↓
-│   staging → intermediate
+│   staging → intermediate  (bad CSV rows → intermediate.rejected_records)
+│
+├── clear_staging()
+│      ↓
+│   check every staging row is accounted for → TRUNCATE staging
 │
 └── run_warehouse_load()
        │
@@ -64,9 +71,15 @@ INCREMENTAL
        ├── partitioning.sql
        │
        ├── fact_orders         → MERGE/update + insert
-       ├── fact_order_items    → insert-only
+       ├── fact_order_items    → MERGE/update + insert (order_status, payment_status)
        ├── fact_web_logs       → insert-only
-       └── fact_leads          → insert-only        
+       └── fact_leads          → MERGE/update + insert (funnel stage / conversion)
+
+
+
+WAREHOUSE
+│
+└── run_warehouse_load() only (no new data) → used to show a re-run changes nothing
 """
 
 
@@ -109,11 +122,8 @@ def run_transform():
         "Transform_web_logs.sql"
     ]
 
-    # Table each script above writes into - ANALYZE'd right after loading so
-    # the planner has real row-count stats for later steps in this same
-    # transaction (otherwise every table looks empty to the optimizer until
-    # commit, which can turn later joins into very slow nested loops at
-    # higher data volumes).
+    # Table each script writes into. ANALYZE it right after loading so the
+    # next scripts in this transaction see real row counts and pick fast joins.
     file_to_table = {
         "Transform_companies.sql": "companies",
         "Transform_categories.sql": "categories",
@@ -171,6 +181,70 @@ def run_transform():
 
 
 
+def clear_staging():
+    """
+    Staging is a temporary landing area. Once intermediate has taken the
+    batch, all staging tables are truncated so staging doesn't grow forever.
+
+    Safety check first: every staging row must be either in intermediate or
+    in intermediate.rejected_records. If any row is in neither, staging is
+    NOT cleared and the run fails, so no row is ever lost.
+    """
+
+    logger.info(
+        "...........................CHECKING AND CLEARING STAGING.............................."
+    )
+
+    # staging table -> its id column (intermediate uses the same names)
+    staging_tables = {
+        "companies": "company_id",
+        "categories": "category_id",
+        "customers": "customer_id",
+        "suppliers": "supplier_id",
+        "products": "product_id",
+        "supplier_product_mapping": "supplier_product_id",
+        "marketing_leads": "lead_id",
+        "orders": "order_id",
+        "order_items": "order_item_id",
+        "web_logs": "log_id",
+    }
+
+    with POSTGRESQL_ENGINE.begin() as connection:
+
+        # --------------------------------------------------------
+        # 1. Safety check: is every staging row accounted for?
+        # --------------------------------------------------------
+        for table_name, id_column in staging_tables.items():
+
+            missing_rows = connection.execute(text(f"""
+                SELECT COUNT(*)
+                FROM staging.{table_name} s
+                WHERE s.{id_column} IS NOT NULL
+                  AND NOT EXISTS (SELECT 1 FROM intermediate.{table_name} i
+                                  WHERE i.{id_column} = s.{id_column})
+                  AND NOT EXISTS (SELECT 1 FROM intermediate.rejected_records r
+                                  WHERE r.table_name = '{table_name}'
+                                    AND r.record_id = s.{id_column})
+            """)).scalar()
+
+            if missing_rows > 0:
+                raise ValueError(
+                    f"staging.{table_name}: {missing_rows} rows are neither in intermediate "
+                    f"nor in rejected_records - staging NOT cleared"
+                )
+
+        logger.info("Every staging row is in intermediate or rejected_records.")
+
+        # --------------------------------------------------------
+        # 2. Truncate all staging tables
+        # --------------------------------------------------------
+        for table_name in staging_tables:
+            connection.execute(text(f"TRUNCATE TABLE staging.{table_name}"))
+
+    logger.info("Staging tables cleared.")
+
+
+
 def run_warehouse_load():
 
     logger.info(
@@ -219,10 +293,8 @@ def run_warehouse_load():
         # Execute warehouse loads in dependency order
         # --------------------------------------------------------
 
-        # Table each script above writes into - ANALYZE'd right after
-        # loading (autovacuum doesn't run synchronously on commit, so the
-        # next script in this loop could otherwise still see stale/zero
-        # stats and pick a slow join plan at higher data volumes).
+        # Table each script writes into. ANALYZE it right after loading so the
+        # next script sees up-to-date row counts and picks fast joins.
         file_to_table = {
             "load_dim_date.sql": "dim_date",
             "load_dim_companies.sql": "dim_companies",
@@ -255,6 +327,20 @@ def run_warehouse_load():
                     rows_loaded += result.rowcount
 
             logger.info("%s completed successfully.", file_name)
+
+        # --------------------------------------------------------
+        # Cluster dimension tables on their primary key (the surrogate
+        # key the fact tables join on), so rows are stored in key order
+        # --------------------------------------------------------
+
+        dimension_tables = ["dim_date", "dim_companies", "dim_customers",
+                            "dim_suppliers", "dim_products", "dim_supplier_product"]
+
+        with POSTGRESQL_ENGINE.begin() as connection:
+            for table_name in dimension_tables:
+                connection.execute(text(f"CLUSTER warehouse.{table_name} USING {table_name}_pkey"))
+
+        logger.info("Dimension tables clustered on their primary keys.")
 
         logger.info(
             "All Warehouse loads completed successfully."
@@ -294,6 +380,7 @@ def run_initial():
 
     logger.info("...........................RUNNING TRANSFORM (LOAD TO INTERMEDIATE)...........................................")
     run_transform()
+    clear_staging()
 
     logger.info("...........................RUNNING WAREHOUSE LOAD...........................................")
     run_warehouse_load()
@@ -316,6 +403,7 @@ def run_incremental():
 
     logger.info("...........................RUNNING TRANSFORM (LOAD TO INTERMEDIATE)...........................................")
     run_transform()
+    clear_staging()
 
     logger.info("...........................RUNNING WAREHOUSE LOAD...........................................")
     run_warehouse_load()
@@ -324,7 +412,7 @@ def run_incremental():
 def main():
 
     if len(sys.argv) != 2:
-        print("Usage: python -m python.pipelines.run_pipeline [initial|incremental]")
+        print("Usage: python -m python.pipelines.run_pipeline [initial|incremental|warehouse]")
         sys.exit(1)
 
     mode = sys.argv[1].lower()
@@ -336,8 +424,12 @@ def main():
         elif mode == "incremental":
             run_incremental()
 
+        # re-run only the warehouse load (no new data) - used to show idempotency
+        elif mode == "warehouse":
+            run_warehouse_load()
+
         else:
-            print("Invalid mode. Use 'initial' or 'incremental'.")
+            print("Invalid mode. Use 'initial', 'incremental' or 'warehouse'.")
             sys.exit(1)
 
         notify("Pipeline Completed", f"{mode.capitalize()} pipeline run finished successfully.")

@@ -33,7 +33,9 @@ from config.config import (
     MIN_SUPPLIERS_PER_PRODUCT,
     MAX_SUPPLIERS_PER_PRODUCT,
     NUM_CATEGORIES,
+    CUSTOMER_ONBOARDING_MAX_DAYS,
 )
+from datetime import datetime, timedelta
 from python.utils.constants import (
     COMPANY_TYPES,
     OPERATING_LOCATIONS,
@@ -54,6 +56,7 @@ Faker.seed(RANDOM_SEED)
 random.seed(RANDOM_SEED) #controlling random.choice, .choices & .uniform
 logger = get_logger(__name__)
 fake = Faker()
+END_DATETIME = datetime(END_DATE.year, END_DATE.month, END_DATE.day)  # END_DATE as datetime, to compare with created_at
 
 # -----------------------------
 # Helper Functions
@@ -226,10 +229,14 @@ def generate_customers(companies):
             fake_local = faker_instances[company["country"]]
             num_customers_for_this_company = random.randint(MIN_CUSTOMERS_PER_COMPANY, MAX_CUSTOMERS_PER_COMPANY)   # Rule 1 range,
 
+            # customers join within 90 days of their company (not anytime up to today),
+            # so the customer base grows along with the companies
+            onboarding_end = min(company["created_at"] + timedelta(days=CUSTOMER_ONBOARDING_MAX_DAYS), END_DATETIME)
+
             for _ in range(num_customers_for_this_company):
 
                 created_at = weighted_datetime_between(
-                    fake, company["created_at"], END_DATE,
+                    fake, company["created_at"], onboarding_end,
                     month_weights=ONBOARDING_MONTH_WEIGHTS, dow_weights=ONBOARDING_DOW_WEIGHTS,
                 )
                 updated_at = weighted_datetime_between(

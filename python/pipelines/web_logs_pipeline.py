@@ -6,7 +6,7 @@ on every execution.
 Execution Flow (run()):
     extract_source3()      # read full web_logs CSV
         -> profile_dataframe()
-        -> load_to_stagging()   # TRUNCATE + append into staging.web_logs
+        -> load_to_staging()    # TRUNCATE + append into staging.web_logs (one transaction)
         -> log_run_start()/log_run_end() bracket the whole run
 """
 
@@ -32,8 +32,8 @@ def extract_source3():
         web_logs_df = pd.read_csv(WEB_LOGS_OUTPUT_PATH, parse_dates=["log_timestamp"])
 
         if not web_logs_df.empty:
-            logger.info("Succesfully extracted Marketing leads dataset")
-            logger.info(f"{PIPELINE_NAME} extracted {len(web_logs_df)} rows from Source 2")
+            logger.info("Succesfully extracted Web Logs dataset")
+            logger.info(f"{PIPELINE_NAME} extracted {len(web_logs_df)} rows from Source 3")
             return web_logs_df
         else:
             raise ValueError("web logs data is empty")
@@ -43,20 +43,22 @@ def extract_source3():
 
 
 
-def load_to_stagging(web_logs_df):
+def load_to_staging(web_logs_df):
     try:
         logger.info("Loading Started...........")
+        # TRUNCATE and load in the same transaction: if the load fails,
+        # the TRUNCATE is rolled back and staging keeps the previous data
         with POSTGRESQL_ENGINE.begin() as conn:
             conn.execute(text(f"""TRUNCATE TABLE {STAGING_SCHEMA}.web_logs"""))
 
-        web_logs_df.to_sql(
-            "web_logs",
-            schema="staging",
-            con=POSTGRESQL_ENGINE,
-            if_exists="append",
-            index=False,
-            chunksize = CHUNK_SIZE,
-                )
+            web_logs_df.to_sql(
+                "web_logs",
+                schema="staging",
+                con=conn,
+                if_exists="append",
+                index=False,
+                chunksize = CHUNK_SIZE,
+                    )
         
         logger.info(f"[{PIPELINE_NAME}] loaded {len(web_logs_df)} rows into staging.web_logs")
         return len(web_logs_df)
@@ -100,7 +102,7 @@ def run():
 
         rows_extracted = len(web_logs_df)
         profile_dataframe(web_logs_df)
-        rows_loaded = load_to_stagging(web_logs_df)
+        rows_loaded = load_to_staging(web_logs_df)
  
         log_run_end(run_id, PIPELINE_NAME, rows_extracted, rows_loaded, watermark_used=None, status = "completed")
         logger.info(f"{PIPELINE_NAME} completed")

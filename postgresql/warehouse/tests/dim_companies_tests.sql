@@ -113,15 +113,20 @@ WHERE rating < 1.0
 
 
 -- TEST 11: Initial warehouse version starts at source created_at
+-- (first version per company - a changed company's current version
+--  correctly starts at the change time, not at created_at)
 SELECT
     s.company_id,
     s.created_at,
-    d.effective_start_date
+    d.first_start_date
 FROM intermediate.companies s
-JOIN warehouse.dim_companies d
+JOIN (
+    SELECT company_id, MIN(effective_start_date) AS first_start_date
+    FROM warehouse.dim_companies
+    GROUP BY company_id
+) d
     ON d.company_id = s.company_id
-   AND d.is_current = TRUE
-WHERE d.effective_start_date <> s.created_at;
+WHERE d.first_start_date <> s.created_at;
 
 
 

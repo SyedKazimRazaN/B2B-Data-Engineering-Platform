@@ -19,6 +19,10 @@ Design principles
 5. Add `_loaded_at` to track when each record entered PostgreSQL staging.
 6. Data cleansing, deduplication, validation, and business transformations
    are performed in the Intermediate layer.
+7. Staging is temporary: after the Intermediate transform succeeds,
+   run_pipeline.clear_staging() checks that every staging row is in
+   intermediate or intermediate.rejected_records, then truncates all
+   staging tables. Staging only holds the batch not yet processed.
 
 Source systems
 --------------
@@ -61,7 +65,7 @@ CREATE SCHEMA IF NOT EXISTS staging
 --
 -- No PK/FK/UNIQUE/CHECK constraints are intentionally applied here.
 -- Duplicate and historical versions are preserved so that the Intermediate
--- layer can perform deterministic latest-record selection.
+-- layer can always pick the latest version of each record.
 --
 -- `_loaded_at` records the PostgreSQL ingestion timestamp and is used as
 -- ingestion metadata rather than source business data.

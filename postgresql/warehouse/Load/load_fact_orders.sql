@@ -19,13 +19,12 @@ Is the fact insert-only or can existing facts change?
    Existing facts can change.
 
     order_status can change:
-        Pending → Confirmed → Processing → Shipped → Delivered
-        or → Cancelled
+        Processing → Confirmed → Shipped → Delivered
+        or Processing → Cancelled
 
     payment_status can also change:
-        pending → paid
-        pending → failed
-        paid → refunded
+        pending → paid (when the order ships)
+        cancelled orders: refunded / failed / pending
 
     Therefore:
         NOT MATCHED → INSERT

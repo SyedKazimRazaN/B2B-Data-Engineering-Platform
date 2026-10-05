@@ -520,7 +520,7 @@ CREATE TABLE warehouse.fact_leads (
     funnel_stage                VARCHAR(30)     NOT NULL,
     conversion_status           VARCHAR(30)     NOT NULL,
 
-    CONSTRAINT pk_fact_leeds
+    CONSTRAINT pk_fact_leads
         PRIMARY KEY (lead_id, date_key),
 
     CONSTRAINT fk_fl_date

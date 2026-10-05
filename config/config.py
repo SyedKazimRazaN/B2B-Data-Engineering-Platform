@@ -1,7 +1,7 @@
 """
-Central project configuration: dataset volumes, generation time window
-and random seed, DB schema names, output file paths, pipeline batching/
-retry settings, and logging setup. Values are plain constants (with a
+Central project configuration: dataset volumes, generation time window,
+random seed and realism settings, DB schema names, output file paths,
+pipeline chunking, and logging setup. Values are plain constants (with a
 few environment-variable overrides) imported throughout the generators
 and pipelines.
 """
@@ -19,7 +19,7 @@ load_dotenv()
 # ============================================================================
 PROJECT_NAME = "B2B Data Engineering Internship Project"
 VERSION = "1.0.0"
-ENVIRONMENT = os.getenv("ENVIRONMENT","production") #(Development, Production, testing)
+ENVIRONMENT = os.getenv("ENVIRONMENT","production")  # development / testing / production
 AUTHOR = "Syed Kazim Raza"
 
 
@@ -38,8 +38,7 @@ NUM_ORDERS = 150000
 NUM_ORDER_ITEMS = 450000
 NUM_MARKETING_LEADS = 150000
 NUM_WEB_LOGS = 300000
-#not defining no. of NUM_SUPPLIER_PRODUCT_MAPPING  2-5 products per supplier × 250 suppliers ≈ not bounding for Rule 5
-# not defining NUM_Customers (10-80) per company
+# Not fixed numbers: each product gets 2-5 suppliers, each buyer company 10-80 customers (see master_generator.py)
 # ============================================================================
 
 # ----------------------------------------------------------------------------
@@ -62,6 +61,25 @@ END_DATE = current_date
 #Randomness:
 # ============================================================================
 RANDOM_SEED = 40
+
+
+# ============================================================================
+# Generation Realism
+# ============================================================================
+# Customers of a buyer company are created within 90 days of the company
+CUSTOMER_ONBOARDING_MAX_DAYS = 90
+# A Won lead places its order within 90 days of the lead being created
+SALES_CYCLE_MAX_DAYS = 90
+
+# Daily CDC volumes (min, max) - same level as the 2-year backfill:
+# 150,000 orders / 730 days ≈ 205 per day, 150,000 leads ≈ 205, 300,000 web logs ≈ 410
+DAILY_ORDERS_RANGE = (180, 230)
+DAILY_LEADS_RANGE = (180, 230)
+DAILY_WEB_LOGS_RANGE = (370, 450)
+
+# % of rows in the CSV sources (marketing leads, web logs) broken on purpose,
+# because real files are messy - proves the validation + quarantine works
+DIRTY_DATA_PERCENT = 1.5
 
 
 # ============================================================================
@@ -90,20 +108,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 LOGS_DIR = BASE_DIR / "logs"
 
-WEB_LOGS_OUTPUT_PATH = DATA_DIR /"web_logs"/"web_logs.csv"  # exists in folder(data)->folder(weblogs)->.log file
-MARKETING_LEADS_OUTPUT_PATH = DATA_DIR /"marketing_leads"/"marketing_leads.csv" # exists in folder(data)->folder(marketing_leads)->.csv file
-PIPELINE_LOGS_PATH = LOGS_DIR / "pipeline.log" # exists in folder(logs)->.log file
+WEB_LOGS_OUTPUT_PATH = DATA_DIR /"web_logs"/"web_logs.csv"  # data/web_logs/web_logs.csv
+MARKETING_LEADS_OUTPUT_PATH = DATA_DIR /"marketing_leads"/"marketing_leads.csv"  # data/marketing_leads/marketing_leads.csv
+PIPELINE_LOGS_PATH = LOGS_DIR / "pipeline.log"  # logs/pipeline.log
 
 
 
 # ======================================
 # Pipeline Configuration
 # ======================================
-MAX_RETRIES = 3
-RETRY_DELAY_SECONDS = 2
-
-BATCH_SIZE = 5000
-
 CHUNK_SIZE = 2500
 
 

@@ -11,7 +11,8 @@ Partition key:
 Coverage:
     Rolling window: 2 years back through 6 months ahead of CURRENT_DATE,
     computed dynamically each run so partitions never age out of range
-    (matches the same rolling window config.py uses for data generation).
+    (matches the same rolling window config.py uses for data generation),
+    plus one DEFAULT partition per fact table for rows outside that window.
 
 ===============================================================================
 */
@@ -93,6 +94,25 @@ BEGIN
         -- Move to the next month
         month_start := (month_start + INTERVAL '1 month')::DATE;
 
+    END LOOP;
+
+
+    /*
+    ---------------------------------------------------------------------------
+    DEFAULT partition per fact table:
+        catches any row whose date_key falls outside the monthly window,
+        so the load does not fail. It should stay empty (check with
+        SELECT COUNT(*) FROM warehouse.fact_orders_default;) - if it has rows
+        for a month, create that month's partition after moving them out.
+    ---------------------------------------------------------------------------
+    */
+    FOREACH parent_table IN ARRAY parent_tables LOOP
+        EXECUTE format(
+            'CREATE TABLE IF NOT EXISTS warehouse.%I
+             PARTITION OF warehouse.%I DEFAULT',
+            parent_table || '_default',
+            parent_table
+        );
     END LOOP;
 
 END $$;

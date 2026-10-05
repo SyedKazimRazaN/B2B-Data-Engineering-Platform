@@ -21,12 +21,55 @@
 --     - Keep the latest source record
 --     - Normalize whitespace / empty strings
 --     - Handle textual missing values
---     - Validate company business rules
+--     - Validate the business rules for this table
 --     - Make the load idempotent
 -- ============================================================
 /* ============================================================================
    10. WEB LOGS
    ============================================================================ */
+
+-- ============================================================
+-- 0. QUARANTINE: save web logs that fail validation
+--    Same rules as validate_logs below, written the other way round:
+--    the CASE returns the first rule the row breaks (NULL = row is valid).
+--    staging.web_logs is a full CSV snapshot (one row per log),
+--    ON CONFLICT DO NOTHING = a log already saved is not saved again.
+-- ============================================================
+INSERT INTO intermediate.rejected_records (table_name, record_id, reject_reason)
+SELECT
+    'web_logs',
+    log_id,
+    reject_reason
+FROM (
+    SELECT
+        log_id,
+        CASE
+            WHEN status_code IS NULL OR status_code NOT BETWEEN 100 AND 599
+                THEN 'invalid status_code'
+            WHEN bytes_sent IS NULL OR bytes_sent < 0
+                THEN 'invalid bytes_sent'
+            WHEN NULLIF(TRIM(http_method), '') IS NULL
+              OR UPPER(TRIM(http_method)) NOT IN ('GET','POST','PUT','DELETE')
+                THEN 'invalid http_method'
+            WHEN log_timestamp IS NULL
+                THEN 'missing log_timestamp'
+            WHEN NULLIF(TRIM(country), '') IS NULL
+              OR NULLIF(TRIM(city), '') IS NULL
+              OR NULLIF(TRIM(client_ip), '') IS NULL
+              OR session_id IS NULL
+              OR NULLIF(TRIM(request_path), '') IS NULL
+              OR NULLIF(TRIM(referer), '') IS NULL
+              OR NULLIF(TRIM(device_type), '') IS NULL
+              OR NULLIF(TRIM(browser), '') IS NULL
+                THEN 'missing required field'
+            ELSE NULL
+        END AS reject_reason
+    FROM staging.web_logs
+    WHERE log_id IS NOT NULL
+) checked_logs
+WHERE reject_reason IS NOT NULL
+ON CONFLICT (table_name, record_id) DO NOTHING;
+
 
 WITH latest_logs AS (
 	-- ====================================================

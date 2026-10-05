@@ -487,6 +487,30 @@ CREATE TABLE intermediate.web_logs (
 
 
 -- ============================================================================
+-- Rejected Records (quarantine)
+-- ============================================================================
+-- Rows from the CSV sources (marketing leads, web logs) that fail the
+-- validation rules in the transform scripts are saved here with a reason,
+-- instead of being silently dropped.
+--
+-- One row per rejected record: UNIQUE (table_name, record_id) +
+-- ON CONFLICT DO NOTHING in the transforms, so the same bad record is not
+-- saved again on every run (the CSV files are re-read in full each run).
+-- ============================================================================
+
+CREATE TABLE intermediate.rejected_records (
+    reject_id       SERIAL          PRIMARY KEY,
+    table_name      VARCHAR(50)     NOT NULL,
+    record_id       CHAR(32)        NOT NULL,
+    reject_reason   VARCHAR(100)    NOT NULL,
+    rejected_at     TIMESTAMP       NOT NULL DEFAULT now(),
+
+    CONSTRAINT uq_rejected_record
+        UNIQUE (table_name, record_id)
+);
+
+
+-- ============================================================================
 -- End of Intermediate DDL
 -- ============================================================================
 -- Transformation logic is intentionally maintained separately from this

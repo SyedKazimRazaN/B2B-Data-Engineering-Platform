@@ -15,8 +15,8 @@ Execution Flow (__main__):
                 ├── generate_and_update_leads()
                 └── generate_and_deactivate_products()
 
-Intended to be run once per day (e.g. via a scheduler) after the sources
-have been initialized once by master_generator.py / transaction_generator.py.
+Runs at the start of every incremental pipeline run (one simulated business day),
+after the sources were created once by master_generator.py / transaction_generator.py.
 """
 
 from python.generators.load_to_sqlserver import load_to_sqlserver
@@ -26,7 +26,9 @@ generate_order_items,
 generating_orders_and_orderitems_datasets,
 generate_marketing_leads,
 generate_web_logs,
-populate_order_totals
+populate_order_totals,
+add_dirty_leads,
+add_dirty_web_logs
 )
 import pandas as pd
 from faker import Faker
@@ -34,12 +36,15 @@ from config.database import (SQL_SERVER_ENGINE, text)
 import random
 from python.utils.logger import get_logger
 from python.utils.seed_manager import get_live_seed
-from datetime import datetime
+from datetime import datetime, date
 import os
 from config.config import (
 RANDOM_SEED,
 MARKETING_LEADS_OUTPUT_PATH,
 WEB_LOGS_OUTPUT_PATH,
+DAILY_ORDERS_RANGE,
+DAILY_LEADS_RANGE,
+DAILY_WEB_LOGS_RANGE
 )
 from python.utils.constants import (
 OPERATING_LOCATIONS,
@@ -106,20 +111,29 @@ def generate_daily_datasets(fetched_datasets):
         companies = fetched_datasets["companies"]
         customers = fetched_datasets["customers"]
         supplier_product_mapping = fetched_datasets["supplier_product_mapping"]
-        num_orders = random.randint(30,50)
-        num_leads = random.randint(15,30)
-        num_web_logs = random.randint(700, 1200)
+        num_orders = random.randint(DAILY_ORDERS_RANGE[0], DAILY_ORDERS_RANGE[1])
+        num_leads = random.randint(DAILY_LEADS_RANGE[0], DAILY_LEADS_RANGE[1])
+        num_web_logs = random.randint(DAILY_WEB_LOGS_RANGE[0], DAILY_WEB_LOGS_RANGE[1])
 
-        daily_web_logs = generate_web_logs(num_web_logs)
-        daily_leads = generate_marketing_leads(num_leads)
-        daily_orders = generate_orders(companies, customers, daily_leads, num_orders) 
+        # new daily records are dated today (midnight -> now), not spread over the past 2 years
+        today_start = datetime.combine(date.today(), datetime.min.time())
+        now = datetime.now()
 
-#        sanity check for newly generated orders len
-        if len(daily_orders) > num_orders + 10:
-            raise ValueError(f"generate_orders() returned {len(daily_orders)} rows, expected around {num_orders}.")
+        daily_web_logs = generate_web_logs(num_web_logs, start_date=today_start, end_date=now)
+        daily_leads = generate_marketing_leads(num_leads, start_date=today_start, end_date=now)
+        daily_orders = generate_orders(companies, customers, daily_leads, num_orders, start_date=today_start, end_date=now)
 
-        daily_order_items = generate_order_items(daily_orders,supplier_product_mapping) 
+#        sanity check for newly generated orders len (daily orders + one order per Won lead)
+        num_won_leads = len(daily_leads[daily_leads["funnel_stage"] == "Won"])
+        if len(daily_orders) != num_orders + num_won_leads:
+            raise ValueError(f"generate_orders() returned {len(daily_orders)} rows, expected {num_orders + num_won_leads}.")
+
+        daily_order_items = generate_order_items(daily_orders,supplier_product_mapping)
         populate_order_totals(daily_orders, daily_order_items) #filling order totals in orders from order items
+
+        # breaking a small % of today's CSV rows on purpose (after orders are built from the Won leads)
+        daily_leads = add_dirty_leads(daily_leads)
+        daily_web_logs = add_dirty_web_logs(daily_web_logs)
 
         logger.info("Daily Datasets Generated Succesfully!")
         logger.info(f"Generated {len(daily_orders)} Orders")
@@ -346,10 +360,12 @@ def generate_and_update_orders():
         selected_orders_dataframe = pd.read_sql(query, con=SQL_SERVER_ENGINE).to_dict("records")
 
         for order in selected_orders_dataframe:
+            payment_status = order["payment_status"]
             if order["order_status"] == "Processing":
                 status = random.choice(["Confirmed", "Cancelled"])
             elif order["order_status"] == "Confirmed":
                 status = "Shipped"
+                payment_status = "paid"   # an order is paid before it ships
             elif order["order_status"] == "Shipped":
                 status = "Delivered"
             else:
@@ -361,10 +377,11 @@ def generate_and_update_orders():
                     text("""UPDATE source.Orders 
                         SET
                             order_status = :status,
+                            payment_status = :payment_status,
                             updated_at = :update_time
                         WHERE order_id = :order_id
                         """),
-                        {"status": status,"update_time": datetime.now(),"order_id" :order["order_id"]}
+                        {"status": status, "payment_status": payment_status, "update_time": datetime.now(),"order_id" :order["order_id"]}
                 )
         logger.info("Successfully updated Orders")
         return len(selected_orders_dataframe)
@@ -415,13 +432,9 @@ def generate_and_update_leads():
 
 def generate_and_deactivate_products():
     """
-    Soft-delete simulation: occasionally discontinue a small number of
-    currently active products (is_active = False), per docs/project_plan.md's
-    "Daily Inserts -> Daily Updates -> Daily Soft Deletes" CDC step.
-
-    Scoped to Products because it's the only source table with an is_active
-    column end-to-end (source -> staging -> intermediate -> dim_products).
-    One-directional: deactivated products are never reactivated here.
+    Soft delete: set is_active = 0 on 0-2 active products per day.
+    Products is the only source table with an is_active column, so this is
+    where deletes are simulated. Deactivated products are never reactivated.
     """
     try:
         logger.info("Generating product deactivations")

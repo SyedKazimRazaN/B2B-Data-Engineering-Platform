@@ -1,8 +1,7 @@
 """
-Single helper - weighted_datetime_between() - that rejection-samples
-Faker's date_time_between() against seasonal/weekday/hourly weight
-tables (see constants.py) so generated timestamps follow realistic
-business patterns instead of a uniform distribution.
+weighted_datetime_between(): picks random dates that follow business patterns
+(busy Q4, quiet summer, weekdays, office hours) using the weight tables in
+constants.py, instead of spreading dates evenly.
 """
 
 import random
@@ -18,13 +17,11 @@ def weighted_datetime_between(
     max_attempts=50,
 ):
     """
-    Rejection-samples fake.date_time_between() toward realistic
-    seasonal / weekly / hourly patterns, without breaking deterministic
-    seeding (still driven entirely by `fake`'s seeded RNG + `random`,
-    both of which are seeded once at generator startup).
-
-    Each weight table maps candidate.month / candidate.weekday() / candidate.hour
-    to a weight around 100 (100 = baseline, >100 = boosted, <100 = suppressed).
+    Draws a random date and keeps it with a chance of weight / highest weight
+    (for its month, weekday and hour). The busiest month/day/hour is always kept,
+    quieter ones less often, so the data shows the Q4 peak and the summer dip.
+    Tries up to max_attempts times, then returns the last date drawn.
+    Uses the seeded Faker / random, so the same seed gives the same dates.
     """
     candidate = None
     for _ in range(max_attempts):
@@ -32,11 +29,11 @@ def weighted_datetime_between(
 
         weight = 1.0
         if month_weights:
-            weight *= month_weights.get(candidate.month, 100) / 100
+            weight *= month_weights.get(candidate.month, 100) / max(month_weights.values())
         if dow_weights:
-            weight *= dow_weights.get(candidate.weekday(), 100) / 100
+            weight *= dow_weights.get(candidate.weekday(), 100) / max(dow_weights.values())
         if hour_weights:
-            weight *= hour_weights.get(candidate.hour, 100) / 100
+            weight *= hour_weights.get(candidate.hour, 100) / max(hour_weights.values())
 
         if random.random() <= weight:
             return candidate

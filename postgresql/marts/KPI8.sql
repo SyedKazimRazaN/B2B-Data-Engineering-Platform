@@ -1,5 +1,5 @@
 /*
-Traffic by Device Type 
+Traffic by Device Type
 	Desktop/Mobile/Tablet breakdown; device-specific conversion metrics
 */
 
@@ -10,7 +10,7 @@ WITH sessions AS (
         BOOL_OR(request_path = '/checkout') AS reached_checkout
     FROM warehouse.fact_web_logs
     WHERE is_bot = FALSE
-    GROUP BY session_id,device_type
+    GROUP BY session_id, device_type
 )
 SELECT
     device_type,
@@ -20,6 +20,3 @@ SELECT
 FROM sessions
 GROUP BY device_type
 ORDER BY conversion_rate_pct DESC;
-
-
-	

@@ -1,8 +1,4 @@
-SELECT log_id, country, city, log_timestamp, client_ip, auth_user, session_id, http_method, request_path, status_code, bytes_sent, referer, device_type, browser, is_bot
-	FROM intermediate.web_logs;
-
-
-	-- ============================================================
+-- ============================================================
 -- FILE: test_web_logs.sql
 -- PURPOSE:
 -- Data-quality tests for intermediate.web_logs
